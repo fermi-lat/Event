@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.5 2000/11/21 02:23:34 igable Exp $
+// $Id: EventModel.h,v 1.6 2000/12/05 00:16:38 igable Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -22,10 +22,14 @@
 
         namespace MC {
             _EXTERN_ std::string Event;
-            _EXTERN_ std::string MCTKRHits;
-            _EXTERN_ std::string MCCalorimeterHits;
-            _EXTERN_ std::string MCACDHits;
         };
+
+        namespace Irf {
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string IrfTkrHits;
+            _EXTERN_ std::string IrfCalHits;
+            _EXTERN_ std::string IrfAcdHits;
+        }
 
         namespace Raw {
             _EXTERN_ std::string Event;
