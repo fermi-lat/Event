@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: frailis  Fri Aug  9 03:25:44 PDT 2002
+Event/src/test
+
+Modified Files:
+	test_RelTabs.cxx 
+Log Message:
+Added tho methods in the Relation class to change data pointer
+
+    *
+------------------------------------------------------------
+User: frailis  Fri Aug  9 03:25:44 PDT 2002
 Event/Event/RelTable
 
 Modified Files:
