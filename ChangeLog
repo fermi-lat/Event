@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Sun Dec 26 15:18:45 PST 2004
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Prepare for tag v10r1: remove id() from TkrCluster, prepare for ToT updates
+
+    *
+------------------------------------------------------------
+User: lsrea  Sun Dec 26 15:18:45 PST 2004
 Event/Event/Recon/TkrRecon
 
 Modified Files:
