@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.38 2002/04/25 22:11:04 chehtman Exp $
+// $Id: EventModel.cpp,v 1.39 2002/05/07 21:04:06 usher Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.38 2002/04/25 22:11:04 chehtman Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.39 2002/05/07 21:04:06 usher Exp $
  */
 class EvModel {
         
@@ -46,7 +46,7 @@ public:
         // reconstructed data (Tracker)
         EventModel::TkrRecon::Event          = EventModel::Event + "/TkrRecon";
         EventModel::TkrRecon::SiLayers       = EventModel::TkrRecon::Event + "/SiLayers";
-        EventModel::TkrRecon::TkrClusters    = EventModel::TkrRecon::Event + "/TkrClusters";
+        EventModel::TkrRecon::TkrClusterCol  = EventModel::TkrRecon::Event + "/TkrClusterCol";
         EventModel::TkrRecon::TkrPatCandCol  = EventModel::TkrRecon::Event + "/TkrPatCandCol";
         EventModel::TkrRecon::SiRecObjs      = EventModel::TkrRecon::Event + "/SiRecObjs";
         EventModel::TkrRecon::TkrFitTrackCol = EventModel::TkrRecon::Event + "/TkrFitTrackCol";
