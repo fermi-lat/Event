@@ -1,4 +1,4 @@
-// $Header: /cvs/LHCbEvent/LHCbEvent/MonteCarlo/MCCalorimeterHit.h,v 1.1.1.1 2000/08/09 21:15:47 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Hits/MCCalorimeterHit.h,v 1.1 2000/10/23 19:18:39 igable Exp $
 #ifndef MCCalorimeterHit_H
 #define MCCalorimeterHit_H 1
 
@@ -10,7 +10,7 @@
 #include "Gaudi/Kernel/SmartRefVector.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "GlastEvent/Utilities/CellID.h"
-#include "GlastEvent/Hits/MCTrack.h"
+#include "GlastEvent/MonteCarlo/MCTrack.h"
 // Include all LHCb container types here
 //   to simplify inlude statements in algorithms
 #include "GlastEvent/TopLevel/ObjectVector.h"
@@ -135,7 +135,7 @@ private:
 //
 // Inline code must be outside the class definition
 //
-#include "GlastEvent/Hits/MCTrack.h"
+#include "GlastEvent/MonteCarlo/MCTrack.h"
 
 
 /// Retrieve pointer to vector of MCParticles (const or non-const)

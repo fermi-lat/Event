@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Hits/MCTrack.h,v 1.1 2000/10/23 19:21:11 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Hits/MCTrack.h,v 1.2 2000/10/23 20:31:33 igable Exp $
 
 #ifndef _H_GlastHitsEvt_MCTrack_v0_
 #define _H_GlastHitsEvt_MCTrack_v0_ 1
