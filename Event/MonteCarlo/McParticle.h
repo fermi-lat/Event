@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.7 2001/04/18 19:07:25 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.8 2001/05/18 22:48:32 burnett Exp $
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
 
@@ -23,6 +23,8 @@
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ObjectList.h"
 
+// Forward declarations
+class McVertex;
 
 
 /*!
@@ -44,9 +46,6 @@
  */
 
 //namespace GlastEvent {  // NameSpace
-
-// Forward declarations
-class McVertex;
 
 extern const CLID& CLID_McParticle;
 
