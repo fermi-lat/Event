@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Feb 22 07:06:48 PST 2001
+GlastEvent/GlastEvent/Irf IrfTkrLayer.h
+
+Modified Files:
+	IrfTkrLayer.h 
+Log Message:
+store returned StreamBuffer when call TkrHits's serialize method
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 20 09:06:42 PST 2001
 GlastEvent/GlastEvent/TopLevel MCEvent.h
 
