@@ -34,7 +34,7 @@
  *
  * @author Brian Baughman
  *
- * $Header: /home/cvs/SLAC/Event/Event/Recon/TkrRecon/TkrFitMatrix.h,v 1.2 2002/05/11 14:17:04 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitMatrix.h,v 1.3 2002/07/16 17:54:44 burnett Exp $
  */
 
 namespace Event { //Namespace
@@ -149,7 +149,8 @@ namespace Event { //Namespace
     //operator overload for TkrFitMatrix*TkrFitPar
     const TkrFitPar operator *(const TkrFitPar& A) const;
     
-	   
+    //operator overload for TkrFitMatrix*double
+    const TkrFitMatrix operator *(const double& A) const;	   
   };
 
 }; //Namespace
