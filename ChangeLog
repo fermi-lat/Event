@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: burnett  Sat May 11 07:17:03 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrClusterCol.h TkrFitHit.h TkrFitMatrix.h 
+	TkrFitPar.h TkrFitPlane.h TkrFitTrack.h TkrFitTrackCol.h 
+	TkrPatCand.h TkrPatCandCol.h TkrPatCandHit.h TkrRecInfo.h 
+	TkrVertex.h TkrVertexCol.h 
+Log Message:
+
+change TkrRecon namespace to Event
+    *
+------------------------------------------------------------
 User: burnett  Fri May 10 21:27:38 PDT 2002
 Event/src/TopLevel
 
