@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 15 15:24:46 PST 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.cxx 
+Removed Files:
+	TkrFitHit.cxx TkrFitMatrix.cxx TkrFitPar.cxx TkrFitPlane.cxx 
+	TkrFitTrack.cxx TkrKalFitTrack.cxx TkrPatCand.cxx 
+	TkrPatCandHit.cxx 
+Log Message:
+1) Small patches to "new" TkrRecon TDS classes
+2) Remove now obsolete TkrRecon TDS classes
+3) Small mods to other Event objects to reflect these changes
+    *
+------------------------------------------------------------
 User: usher  Wed Dec 15 15:24:40 PST 2004
 Event/Event/Recon/TkrRecon
 
