@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug  7 20:25:02 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+let's be const correct
+    *
+------------------------------------------------------------
 User: heather  Wed Aug  7 20:15:27 PDT 2002
 Event/Event/MonteCarlo
 
