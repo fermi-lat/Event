@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jul  3 06:29:20 PDT 2002
+Event/Event/Recon
+
+Modified Files:
+	AcdRecon.h 
+Log Message:
+use const for input vectors
+    *
+------------------------------------------------------------
 User: burnett  Thu Jun 27 12:57:51 PDT 2002
 Event/doc
 
