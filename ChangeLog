@@ -1,5 +1,27 @@
 ------------------------------------------------------------
 User: igable  Wed Apr 18 12:07:27 PDT 2001
+GlastEvent/src/Factories DigiInstantiation.cpp GlastEvent_dll.cpp HitInstanciation.cpp IrfInstantiation.cpp MCInstanciation.cpp RawInstantiation.cpp TopInstantiation.cpp
+
+Modified Files:
+	DigiInstantiation.cpp GlastEvent_dll.cpp HitInstanciation.cpp 
+	IrfInstantiation.cpp MCInstanciation.cpp RawInstantiation.cpp 
+	TopInstantiation.cpp 
+Log Message:
+This is the first attempt to move over to Gaudi v7
+
+Main Changes are
+
+#include "Gaudi/Kernel...
+
+to:
+#include "GaudiKernel
+
+Also changed includes to use the version of ObjectVector and ObjectList
+which are now in the GaudiKernel Package and not in GlastEvent anymore.
+
+    *
+------------------------------------------------------------
+User: igable  Wed Apr 18 12:07:27 PDT 2001
 GlastEvent/mgr requirements
 
 Modified Files:
