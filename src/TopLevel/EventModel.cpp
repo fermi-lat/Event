@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.26 2001/04/18 19:07:27 igable Exp $
+// $Id: EventModel.cpp,v 1.27 2001/05/18 22:48:33 burnett Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -54,6 +54,9 @@ public:
         EventModel::TkrRecon::SiLayers    = EventModel::TkrRecon::Event + "/SiLayers";
         EventModel::TkrRecon::SiClusters  = EventModel::TkrRecon::Event + "/SiClusters";
         EventModel::TkrRecon::SiRecObjs   = EventModel::TkrRecon::Event + "/SiRecObjs";
+
+        // reconstructed ACD data
+        EventModel::AcdRecon::Event       = EventModel::Event + "/AcdRecon";
     }
 };
     

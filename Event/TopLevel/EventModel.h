@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.16 2001/03/03 03:30:10 igable Exp $
+// $Id: EventModel.h,v 1.17 2001/05/18 22:48:33 burnett Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -73,6 +73,10 @@
             _EXTERN_ std::string SiLayers;
             _EXTERN_ std::string SiClusters;
             _EXTERN_ std::string SiRecObjs;
+        }
+
+        namespace AcdRecon {
+            _EXTERN_ std::string Event;
         }
     }
 
