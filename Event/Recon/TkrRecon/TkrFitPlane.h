@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.11 2002/12/19 20:53:42 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.12 2003/03/20 00:58:52 usher Exp $
 */
 
 namespace Event { // Namespace
@@ -93,8 +93,8 @@ protected:
     // Adding Hits, energy and other variables
     void            setHit(const TkrFitHit& hit);
     inline void     setEnergy(double const e)                  {m_eneplane = e;}
-    inline void     setIDHit(unsigned id)                      {m_IDHit = id; 
-                                                                m_IDTower = (int) id/1000000;}
+    inline void     setIDHit(unsigned id)                      {m_IDHit = id;}
+    inline void     setIDTower(unsigned id)                    {m_IDTower = id;}
     inline void     setIDPlane(int id)                         {m_IDPlane = id;}
     inline void     setZPlane(double z)                        {m_zplane = z;}
     inline void     setRadLen(double rl)                       {m_radLen = rl;}
