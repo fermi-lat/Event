@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Fri Jul 26 09:22:19 PDT 2002
+Event/src/MonteCarlo
+
+Modified Files:
+	McPositionHit.cxx 
+Log Message:
+Added new global entry and exit point to the McPositionHit; added also an init methods to McPositionHit to pas both local and global points
+    *
+------------------------------------------------------------
 User: riccardo  Fri Jul 26 09:22:18 PDT 2002
 Event/Event/MonteCarlo
 
