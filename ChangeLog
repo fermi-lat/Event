@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul  1 10:57:42 PDT 2003
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx 
+Log Message:
+minor fix for vc8
+    *
+------------------------------------------------------------
 User: usher  Thu Mar 20 13:05:15 PST 2003
 Event/doc
 
