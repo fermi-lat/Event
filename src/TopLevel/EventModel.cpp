@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.11 2000/12/12 21:33:28 heather Exp $
+// $Id: EventModel.cpp,v 1.12 2000/12/15 20:35:13 igable Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -72,4 +72,5 @@ public:
     const CLID& CLID_TdCsIDataCnv         = 2016;
     const CLID& CLID_TdSiData           =  2017;
     const CLID& CLID_TdSiDataCnv        =   2018;
+    const CLID& CLID_TdGlastData        =   2019;
         
