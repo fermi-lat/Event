@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Thu Dec 16 11:10:43 PST 2004
+Event/src/test
+
+Modified Files:
+	test_TkrRecon.cxx 
+Log Message:
+Fix tracker test program so it compiles and runs, bump patch tag up
+    *
+------------------------------------------------------------
+User: usher  Thu Dec 16 11:10:43 PST 2004
 Event/doc
 
 Modified Files:
