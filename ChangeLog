@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Sep  5 13:08:06 PDT 2002
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdRecon.h 
+Log Message:
+fix warning
+    *
+------------------------------------------------------------
 User: burnett  Thu Sep  5 06:46:38 PDT 2002
 Event/Event/Digi
 
