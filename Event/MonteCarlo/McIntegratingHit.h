@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.16 2002/05/11 22:54:55 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.17 2002/07/18 08:33:21 riccardo Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -29,7 +29,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.16 2002/05/11 22:54:55 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.17 2002/07/18 08:33:21 riccardo Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -78,9 +78,15 @@ class McIntegratingHit : virtual public ContainedObject {
     /// Retrieve itemized energy with ID
     const energyDepositMapId& itemizedEnergyId() const;
     energyDepositMapId& itemizedEnergyId();
+    /// Retrieve energy from array for minimal tree
+    double energyArray( Particle p );
+    const double* energyArray() { return m_energyArray; };
    
     /// Update all energyInfos
     void setEnergyItems( const energyDepositMap& value );
+    void setEnergyItems( double totalEnergy, const double *energyArr,
+        const HepPoint3D &moment1, const HepPoint3D &moment2) ;
+
     /// Remove all energyInfos
     void clearEnergyItems();
     
