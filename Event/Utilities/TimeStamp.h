@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.2 2001/04/18 19:07:26 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.3 2002/05/10 01:17:36 burnett Exp $
 #ifndef LHCBEVENT_TIMESTAMP_H
 #define LHCBEVENT_TIMESTAMP_H 1
 
@@ -35,13 +35,15 @@ public:
   ~TimeStamp()                                                               { }
 
   /// Retrieve time
-  long time() const                                                            {
+  double time() const                                                            {
     return m_time;
   }
   /// Update time 
-  void setTime( long value )                                                   {
+  void setTime( double value )                                                   {
     m_time = value;
   }
+
+  operator double()const { return time(); }
 
   /// Serialize the object for writing
   friend StreamBuffer& operator<< ( StreamBuffer& s, const TimeStamp& obj )    {
@@ -66,7 +68,7 @@ public:
 private:
 
   /// Time
-  long m_time;
+  double m_time;
 
 };
 
