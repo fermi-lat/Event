@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Fri Mar  2 19:37:38 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+removed data directory from GlastEvent library
+    *
+------------------------------------------------------------
 User: igable  Fri Mar  2 19:30:11 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
