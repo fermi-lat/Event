@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri May 10 08:14:13 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+problem with namespace, class having the same name
+    *
+------------------------------------------------------------
 User: richard  Thu May  9 22:30:54 PDT 2002
 Event/Event/Recon/CalRecon
 
