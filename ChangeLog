@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Wed Feb 18 10:55:52 PST 2004
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Modifications to enable TDS storage of new MC relational tables
+
+    *
+------------------------------------------------------------
 User: usher  Wed Feb 18 10:54:28 PST 2004
 Event/Event/MonteCarlo
 
