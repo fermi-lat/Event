@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.53 2002/10/01 22:52:26 jrb Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.54 2002/10/08 22:20:16 lsrea Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.53 2002/10/01 22:52:26 jrb Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.54 2002/10/08 22:20:16 lsrea Exp $
  */
 class EvModel {
         
@@ -48,7 +48,9 @@ public:
         EventModel::TkrRecon::TkrPatCandCol  = EventModel::TkrRecon::Event + "/TkrPatCandCol";
         EventModel::TkrRecon::SiRecObjs      = EventModel::TkrRecon::Event + "/SiRecObjs";
         EventModel::TkrRecon::TkrFitTrackCol = EventModel::TkrRecon::Event + "/TkrFitTrackCol";
+        EventModel::TkrRecon::TkrTrackTab    = EventModel::TkrRecon::Event + "/TkrTrackTab";
         EventModel::TkrRecon::TkrVertexCol   = EventModel::TkrRecon::Event + "/TkrVertexCol";
+        EventModel::TkrRecon::TkrVertexTab   = EventModel::TkrRecon::Event + "/TkrVertexTab";
 
 
         //reconstructed Cal data
