@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct  1 15:51:13 PDT 2002
+Event/cmt
+
+Modified Files:
+	.cvsignore 
+Log Message:
+Ignore Linux build and set up files
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Oct  1 15:50:36 PDT 2002
 Event
 
