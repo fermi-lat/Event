@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.35 2002/03/15 21:03:38 heather Exp $
+// $Id: EventModel.cpp,v 1.36 2002/04/12 16:15:03 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.35 2002/03/15 21:03:38 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.36 2002/04/12 16:15:03 heather Exp $
  */
 class EvModel {
         
@@ -26,8 +26,8 @@ public:
         EventModel::MC::McVertexCol         = EventModel::MC::Event  + "/McVertexCol";
         EventModel::MC::McParticleCol       = EventModel::MC::Event  + "/McParticleCol";
 
-        EventModel::MC::McPositionHitCol      = EventModel::MC::Event  + "/PositionHitCol";
-        EventModel::MC::McIntegratingHitCol   = EventModel::MC::Event  + "/IntegratingHitCol";
+        EventModel::MC::McPositionHitCol      = EventModel::MC::Event  + "/PositionHitsCol";
+        EventModel::MC::McIntegratingHitCol   = EventModel::MC::Event  + "/IntegratingHitsCol";
 
         // Digi event
         EventModel::Digi::Event             = EventModel::Event + "/Digi";
