@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Tue Jul 22 08:48:44 PDT 2003
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+Changes for the new pruneCal mode of G4Generator; added the initial and final volume Id to an McParticle
+    *
+------------------------------------------------------------
 User: frailis  Fri Jul 18 16:09:49 PDT 2003
 Event/Event/RelTable
 
