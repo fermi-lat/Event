@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: cohen  Fri May 31 16:24:50 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.h TkrVertex.h 
+Removed Files:
+	TkrFitTrackCol.h 
+Log Message:
+STL Compliance of TkrFitTrackCol
+    *
+------------------------------------------------------------
 User: burnett  Fri May 31 12:11:29 PDT 2002
 Event/doc
 
