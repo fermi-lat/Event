@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.20 2001/11/26 19:28:50 usher Exp $
+// $Id: EventModel.h,v 1.21 2002/01/27 19:52:59 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -75,6 +75,7 @@
             _EXTERN_ std::string TkrCandidates;
             _EXTERN_ std::string SiRecObjs;
             _EXTERN_ std::string TkrTracks;
+            _EXTERN_ std::string TkrVertexCol;
         }
 
         namespace AcdRecon {
