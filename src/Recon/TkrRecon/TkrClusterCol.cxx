@@ -1,4 +1,4 @@
-//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.5 2002/09/22 19:22:14 lsrea Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.6 2002/10/06 19:06:48 lsrea Exp $
 //
 // Description:
 //      TkrClusterCol is a container for Tkr clusters, and has the methods
@@ -83,7 +83,8 @@ TkrCluster* TkrClusterCol::getHit(int i) const
     if (i==m_clustersList[i]->id()) {
         ptr = m_clustersList[i];
     } else {
-        for (int j = 0; j< m_clustersList.size(); j++) {
+        int size = m_clustersList.size();
+        for (int j = 0; j<size; j++) {
             if (m_clustersList[j]->id()==i) ptr = m_clustersList[j];
         }
     }
