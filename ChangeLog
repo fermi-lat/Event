@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Mon Mar  4 13:56:41 PST 2002
+GlastEvent/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+
+update to reflect new TkrVertexCol addition to the event model
+    *
+------------------------------------------------------------
+User: burnett  Mon Mar  4 13:56:41 PST 2002
 GlastEvent/doc
 
 Modified Files:
