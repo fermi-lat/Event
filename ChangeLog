@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Oct  1 16:33:48 PDT 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.h 
+Log Message:
+Fix Linux compile warnings
+    *
+------------------------------------------------------------
 User: usher  Fri Oct  1 12:35:31 PDT 2004
 Event/src/Dll
 
