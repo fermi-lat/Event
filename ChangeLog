@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Aug  4 12:41:47 PDT 2003
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrPatCand.h TkrPatCandHit.h 
+Log Message:
+Made TkrPatCandHit a "contained object" to allow use with relational tables.
+Modify TkrPatCand class accordingly (small mods)
+
+    *
+------------------------------------------------------------
 User: usher  Fri Jul 25 09:35:15 PDT 2003
 Event/Event/MonteCarlo
 
