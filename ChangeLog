@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 14 11:37:49 PST 2001
+GlastEvent/GlastEvent/Digi AcdDigi.h
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+fixed initialization of m_packedPHA
+    *
+------------------------------------------------------------
 User: igable  Tue Feb 13 14:31:11 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
