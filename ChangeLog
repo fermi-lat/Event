@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Wed Feb 18 11:02:27 PST 2004
+Event/src/MonteCarlo
+
+Modified Files:
+	McEventStructure.cxx 
+Removed Files:
+	McSiLayerHit.cxx 
+Log Message:
+Modifications for new MC relational tables scheme. Modify McEventStructure and 
+EventModel, remove the unecessary McSiLayerHit
+
+    *
+------------------------------------------------------------
 User: usher  Wed Feb 18 10:55:52 PST 2004
 Event/Event/TopLevel
 
