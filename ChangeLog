@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Feb  1 16:09:01 PST 2005
+Event/Event/TopLevel
+
+Modified Files:
+      Tag: EngineeringModel-v3r0407p1
+	DigiEvent.h 
+Log Message:
+default value for fromMc true
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r2, operation: add
 Package: Event
