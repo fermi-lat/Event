@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 28 13:30:19 PDT 2002
+Event/Event/Recon/AcdRecon
+
+Added Files:
+	AcdRecon.h 
+Log Message:
+moving to AcdRecon directory and added row active distance 
+collection
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 28 13:29:34 PDT 2002
 Event/Event/Recon
 
