@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Tue Aug 20 10:19:27 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitMatrix.cxx 
+Log Message:
+Added method to multiply matrix by a double.  
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Aug 12 13:20:39 PDT 2002
 Event/src/test
 
