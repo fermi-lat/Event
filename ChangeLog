@@ -18,3 +18,12 @@ Log Message:
 Added the CLID for TdGlastData
 
     *
+------------------------------------------------------------
+User: heather  Tue Dec 19 08:53:17 PST 2000
+GlastEvent/GlastEvent/Irf IrfTkrLayer.h
+
+Modified Files:
+	IrfTkrLayer.h 
+Log Message:
+update to properly serialize the tkr hits
+    *
