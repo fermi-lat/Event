@@ -1,4 +1,21 @@
 ------------------------------------------------------------
+User: frailis  Wed Oct  9 09:07:23 PDT 2002
+Event/src/test
+
+Modified Files:
+	test_RelTabs.cxx 
+Log Message:
+Changes in RelTable class:
+- AddNoDupRel renamed to addRelation: so, now, the addRelation method add a 
+  relation to the table if there is no other relation in the table between
+  the same two object, otherware it appends the infos vector to the one of 
+  the existing one
+- previous AddRelation method renamed to addDupRel, so it let the user to
+  insert many relations between the same two objects, maybe having different
+  infos vectors
+
+    *
+------------------------------------------------------------
 User: frailis  Wed Oct  9 09:07:22 PDT 2002
 Event/Event/RelTable
 
