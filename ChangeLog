@@ -1,3 +1,24 @@
+
+Modified Files: 
+	EventModel.cpp 
+	EventModel.h
+
+Corrections and extensive updates. New definition of paths
+and IDs. 
+
+Several names had to be changed:
+  for logical paths (EventModel.cpp)
+       McVertex   --> McVertices
+       McParticle --> Mcparticles  
+
+  Path variables (EventModel.h)
+       AcdDigi    --> AcdDigis
+
+In MC paths ::MC included (EventModel.cpp)
+
+Added proposal for class categories and ID range. This may
+be moved to documentation later. 
+
 ------------------------------------------------------------
 User: tlindner  Wed Feb 14 16:15:10 PST 2001
 GlastEvent/mgr requirements
@@ -53,6 +74,7 @@ Log Message:
 fixed initialization of m_packedPHA
     *
 ------------------------------------------------------------
+>>>>>>> 1.76
 User: igable  Tue Feb 13 14:31:11 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
