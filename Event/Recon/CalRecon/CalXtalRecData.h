@@ -16,9 +16,6 @@
 
 extern const CLID& CLID_CalXtalRecData;
 
-namespace Event 
-{
-
 /**
 * @class   CalXtalRecData        
 *
@@ -40,8 +37,10 @@ namespace Event
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.5 2002/06/12 00:04:40 chehtman Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.6 2002/09/06 21:46:49 heather Exp $
 */
+namespace Event 
+{
     class CalXtalRecData : virtual public ContainedObject { 
         
     public:
