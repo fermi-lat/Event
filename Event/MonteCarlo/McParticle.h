@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.22 2002/05/10 01:55:49 richard Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.23 2002/05/10 21:17:06 burnett Exp $
 */
 #ifndef Event_McParticle_H
 #define Event_McParticle_H 1
@@ -94,13 +94,15 @@ class McParticle  : virtual public ContainedObject  {
         unsigned int statusBits,
         const HepLorentzVector& initialMomentum,
         const HepLorentzVector& finalMomentum,
+        const HepPoint3D& initialPosition,
         const HepPoint3D& finalPosition);
 
     //! Set the initial attributes of the McParticle
     void initialize( McParticle* mother, 
         StdHepId id, 
         unsigned int statusBits,
-        const HepLorentzVector& initialMomentum);
+        const HepLorentzVector& initialMomentum,
+        const HepPoint3D& initialPosition);
 
     //! Set the final attributes of the McParticle
     void finalize( const HepLorentzVector& finalMomentum,
@@ -145,6 +147,8 @@ class McParticle  : virtual public ContainedObject  {
     StdHepId                  m_particleID;
     /// Bit-field status flag
     unsigned long             m_statusFlags;
+    /// Initial position
+    HepPoint3D                 m_initialPosition;
     /// Final position
     HepPoint3D                 m_finalPosition;
     /// 4-momentum vectors:
