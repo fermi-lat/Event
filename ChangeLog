@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: frailis  Fri Jul 18 16:09:49 PDT 2003
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h 
+Log Message:
+modified the RelTable::addRelation method returned value. Now, it returns false if the realtion is a duplicate and has not been added to the table. In this case the user has to delete it.
+    *
+------------------------------------------------------------
 User: burnett  Fri Jul 18 14:10:27 PDT 2003
 Event/src/TopLevel
 
