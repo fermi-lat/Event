@@ -4,17 +4,18 @@
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/IInterface.h"
 #include "geometry/Point.h"
 #include "Event/Recon/TkrRecon/TkrCluster.h"
 
-extern const CLID& CLID_TkrClusterCol;
+static const CLID& CLID_TkrClusterCol=InterfaceID("TkrClusterCol",1,0);
 
 /** 
 * @class TkrClusterCol
 *
 * @brief TDS Object for TkrCluster vector, and array of vectors.
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.9 2002/09/22 19:22:13 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/Attic/TkrClusterCol.h,v 1.10 2002/10/06 19:06:47 lsrea Exp $
 */
 
 namespace Event { //Namespace

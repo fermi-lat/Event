@@ -11,9 +11,11 @@
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/ObjectVector.h"
 #include "Event/TopLevel/Definitions.h"
+#include "GaudiKernel/IInterface.h"
 
+#include "Event/TopLevel/Definitions.h"
 
-extern const CLID& CLID_CalDigi;
+static const CLID& CLID_CalDigi=InterfaceID("CalDigi",1,0);
 
 /** @class CalDigi
  * @brief Transient Data Store class for CAL Digitizations.Actual readout data
@@ -24,7 +26,7 @@ extern const CLID& CLID_CalDigi;
  *
  * @author E. Grove
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.17 2002/11/17 01:55:35 richard Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.18 2003/12/08 12:57:25 berthon Exp $
 */
 
 namespace Event {

@@ -6,6 +6,7 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/Recon/TkrRecon/TkrFitTrackBase.h"
 #include "Event/Recon/TkrRecon/TkrFitPlane.h"
 #include "Event/Recon/TkrRecon/TkrCluster.h"
@@ -23,10 +24,10 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.9 2002/12/19 20:53:42 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/Attic/TkrFitTrack.h,v 1.10 2004/03/11 05:15:13 heather Exp $
 */
 
-extern const CLID& CLID_TkrFitTrack;
+static const CLID& CLID_TkrFitTrack=InterfaceID("TkrFitTrack",1,0);
 
 namespace Event {  // NameSpace
 

@@ -2,6 +2,7 @@
 #define Event_GltDigi_H 1
 
 #include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/IInterface.h"
 #include <vector>
 
 /*!
@@ -11,10 +12,10 @@
 * \brief TDS class for Glt data
 * TDS Trigger class for interface to filter algorithms
 * 
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.1 2002/12/02 20:51:19 cohen Exp $
 */
 
-extern const CLID& CLID_GltDigi;
+static const CLID& CLID_GltDigi=InterfaceID("GltDigi",1,0);
 
 namespace Event {
 

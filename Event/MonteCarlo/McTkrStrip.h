@@ -10,6 +10,7 @@
 //#include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/IInterface.h"
 
 #include "Event/TopLevel/Definitions.h"
 #include "Event/MonteCarlo/McPositionHit.h"
@@ -27,7 +28,7 @@
 *  Intermediate class for TkrDigi process.
 */
 
-extern const CLID& CLID_McTkrStrip;
+static const CLID& CLID_McTkrStrip=InterfaceID("McTkrStrip",1,0);
 
 namespace Event {
 

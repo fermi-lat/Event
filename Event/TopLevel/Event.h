@@ -5,10 +5,11 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/Utilities/TimeStamp.h"
 #include "Event/TopLevel/Definitions.h"
 
-extern const CLID& CLID_Event;
+static const CLID& CLID_Event=InterfaceID("Event",1,0);
 
 /** @class EventHeader
 * @brief Essential header information of the event.
@@ -20,7 +21,7 @@ extern const CLID& CLID_Event;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.11 2004/08/11 20:11:42 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.12 2004/09/14 16:03:32 burnett Exp $
 */
 namespace Event{
 

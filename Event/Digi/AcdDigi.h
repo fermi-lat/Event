@@ -8,6 +8,7 @@
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/IInterface.h"
 
 #include "Event/TopLevel/Definitions.h"
 
@@ -32,10 +33,10 @@
 * the data members through the constructor.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.16 2002/12/04 20:18:49 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.17 2004/06/23 18:26:33 heather Exp $
 */
 
-extern const CLID& CLID_AcdDigi;
+static const CLID& CLID_AcdDigi=InterfaceID("AcdDigi",1,0);
 
 namespace Event {
     class AcdDigi : virtual public ContainedObject  { 

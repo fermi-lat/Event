@@ -9,11 +9,14 @@ use CLHEP          v2r* IExternal
 use geometry  v3r*
 use idents    v2r*
 
-apply_pattern package_include
-apply_pattern package_linkopts
+#apply_pattern package_include
 
+apply_pattern shared_library 
+
+private
 
 apply_pattern package_headers
+
 
 macro_append Event_headers "" WIN32 " \
         ../Event/*.h \ 
@@ -26,7 +29,7 @@ macro_append Event_headers "" WIN32 " \
         ../Event/Recon/CalRecon/*.h\
         ../Event/RelTable/*.h
 
-library Event -no_share\
+library Event \
         MonteCarlo/*.cxx \
         Recon/TkrRecon/*.cxx \
         Recon/CalRecon/*.cxx \
@@ -35,7 +38,7 @@ library Event -no_share\
         ${Event_headers}
 
 ###  non-standard definition -- why is it needed?
-macro GlastEvent_stamps   "${Event_root}/${BINDIR}/Event.stamp"
+#macro GlastEvent_stamps   "${Event_root}/${BINDIR}/Event.stamp"
 
 # simple test program
 # use this when we want to make a Gaudi test program apply_pattern package_test
