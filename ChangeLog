@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: igable  Tue Feb  6 11:51:51 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Removed the dependence on instrument, once and for all. The load methods 
+(require instrument) which were in the Td Classes will shortly be moved 
+over to GlastSvc into private classes.
+
+    *
+------------------------------------------------------------
+User: igable  Tue Feb  6 11:51:51 PST 2001
 GlastEvent/src/Factories RawInstantiation.cpp
 
 Modified Files:
