@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep  9 17:26:37 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+fix wildcard for GaudiKernel
+    *
+------------------------------------------------------------
 User: heather  Mon Sep  9 16:03:31 PDT 2002
 Event/src
 
