@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Sat Nov 16 17:55:35 PST 2002
+Event/Event/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+leave old interface for CalXtalReadout for now
+    *
+------------------------------------------------------------
 User: richard  Sat Nov 16 15:20:33 PST 2002
 Event/Event/Digi
 
