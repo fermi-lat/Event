@@ -25,7 +25,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertexCol.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertexCol.h,v 1.3 2002/05/11 14:17:03 burnett Exp $
 */
 
 
@@ -50,7 +50,7 @@ public:
     int                 getNumVertices() const {return m_Vertices.size();}
 
     //Access to tracks through an iterator
-    TkrVertexVecPtr     getVertexPtr()         {return m_Vertices.begin();}
+    TkrVertexVecPtr     getVertexIterBegin()   {return m_Vertices.begin();}
 
     //Access to tracks by index
     TkrVertex*          getVertex(int idx)     {return m_Vertices[idx];}
