@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Aug 23 15:15:35 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	TimeStamp.h 
+Log Message:
+Julian date structure removed from TimeStamp - that functionality will be put into the astro package.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Aug 22 09:22:19 PDT 2002
 Event/src/test
 
