@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Sep  6 14:46:49 PDT 2002
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h CalXtalRecData.h 
+Log Message:
+update documentation
+    *
+------------------------------------------------------------
 User: heather  Fri Sep  6 14:45:29 PDT 2002
 Event/Event/Recon/AcdRecon
 
