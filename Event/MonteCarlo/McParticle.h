@@ -10,6 +10,8 @@
 #include "GaudiKernel/SmartRef.h"
 #include "GaudiKernel/SmartRefVector.h"
 
+#include "idents/VolumeIdentifier.h"
+
 #include "Event/TopLevel/Definitions.h"
 #include "Event/Utilities/ParticleID.h"
 
@@ -32,7 +34,7 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.28 2002/09/09 23:00:52 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.29 2002/09/24 16:56:48 riccardo Exp $
  */
 extern const CLID& CLID_McParticle;
 
@@ -66,7 +68,7 @@ class McParticle  : virtual public ContainedObject  {
     static const CLID& classID()       { return CLID_McParticle; }
     /// Constructors
     McParticle() :
-     m_statusFlags(0)
+      m_statusFlags(0)
     {}
     /// Destructor
     virtual ~McParticle() {}
@@ -126,6 +128,14 @@ class McParticle  : virtual public ContainedObject  {
     /// access the process name
     const std::string getProcess()const{return m_process;};
 
+    /// set the initial and final volume identifiers
+    void setInitialId(idents::VolumeIdentifier id){m_initialId = id;};
+    void setFinalId(idents::VolumeIdentifier id){m_finalId = id;};
+
+    /// get the initial and final volume identifier
+    idents::VolumeIdentifier getInitialId(){return m_initialId;};
+    idents::VolumeIdentifier getFinalId(){return m_finalId;};
+
 
     /// access to the list of daughters
     const SmartRefVector<McParticle>& daughterList()const;
@@ -160,6 +170,12 @@ class McParticle  : virtual public ContainedObject  {
     SmartRefVector<McParticle> m_daughters;
     /// String with the process name that poduces this particle
     std::string                m_process;
+    /// Volume identifiers where the particle start
+    idents::VolumeIdentifier   m_initialId;
+    /// Volume identifiers where the particle stop
+    idents::VolumeIdentifier   m_finalId;
+    
+
 };
 
 
