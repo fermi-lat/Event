@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.14 2002/04/02 22:31:12 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.15 2002/04/03 04:21:57 burnett Exp $
 */
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
@@ -89,11 +89,22 @@ class McParticle  : virtual public ContainedObject  {
     virtual ~McParticle() {}
 
     //! completely initialize a newed object. No other way to set most attributes.
+    //! it will be replaced by the following methods (left here just in the transition)
     void init( McParticle* mother, 
         StdHepId id, 
         unsigned int statusBits,
         const HepLorentzVector& initialMomentum,
         const HepLorentzVector& finalMomentum,
+        const HepPoint3D& finalPosition);
+
+    //! Set the initial attributes of the McParticle
+    void initialize( McParticle* mother, 
+        StdHepId id, 
+        unsigned int statusBits,
+        const HepLorentzVector& initialMomentum);
+
+    //! Set the final attributes of the McParticle
+    void finalize( const HepLorentzVector& finalMomentum,
         const HepPoint3D& finalPosition);
 
 
