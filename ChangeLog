@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sun Sep 22 12:22:13 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+fix up the "const"s
+    *
+------------------------------------------------------------
 User: chehtman  Fri Sep 13 16:40:20 PDT 2002
 Event/Event/Recon/CalRecon
 
