@@ -1,4 +1,26 @@
 ------------------------------------------------------------
+User: igable  Wed Apr 18 12:07:26 PDT 2001
+GlastEvent/GlastEvent/TopLevel AnalEvent.h DigiEvent.h Event.h EventHits.h EventTag.h IrfEvent.h MCEvent.h RawEvent.h RecEvent.h RefTable.h Run.h SubMCEvent.h
+
+Modified Files:
+	AnalEvent.h DigiEvent.h Event.h EventHits.h EventTag.h 
+	IrfEvent.h MCEvent.h RawEvent.h RecEvent.h RefTable.h Run.h 
+	SubMCEvent.h 
+Log Message:
+This is the first attempt to move over to Gaudi v7
+
+Main Changes are
+
+#include "Gaudi/Kernel...
+
+to:
+#include "GaudiKernel
+
+Also changed includes to use the version of ObjectVector and ObjectList
+which are now in the GaudiKernel Package and not in GlastEvent anymore.
+
+    *
+------------------------------------------------------------
 User: igable  Wed Apr 18 12:07:25 PDT 2001
 GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
 
