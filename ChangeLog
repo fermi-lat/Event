@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: riccardo  Thu Jul 18 03:39:07 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+Corrected the init method of McParticle in order not to break other clients of its interface
+
+
+    *
+------------------------------------------------------------
 User: riccardo  Thu Jul 18 01:33:23 PDT 2002
 Event/src/TopLevel
 
