@@ -9,7 +9,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.5 2002/09/04 23:15:25 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.6 2002/09/05 00:01:53 lsrea Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
@@ -23,17 +23,17 @@ class TkrPatCand: public TkrRecInfo
 public:
     
     TkrPatCand(int layer, int tower, double energy, double quality, const Ray& testRay);
-    ~TkrPatCand() {}
+    ~TkrPatCand();
 
     /// Define the TkrRecInfo routines
-    double        getQuality()                      const ;
-    double        getEnergy(TrackEnd end = Start)   const ;
-    int           getLayer(TrackEnd end = Start)    const ;
-    int           getTower(TrackEnd end = Start)    const ;
-    Point         getPosition(TrackEnd end = Start) const ;
+    double        getQuality()                       const ;
+    double        getEnergy(TrackEnd end = Start)    const ;
+    int           getLayer(TrackEnd end = Start)     const ;
+    int           getTower(TrackEnd end = Start)     const ;
+    Point         getPosition(TrackEnd end = Start)  const ;
     Vector        getDirection(TrackEnd end = Start) const ;
-    Ray           getRay(TrackEnd end = Start)      const ;
-    TkrFitPar     getTrackPar(TrackEnd end = Start) const ;
+    Ray           getRay(TrackEnd end = Start)       const ;
+    TkrFitPar     getTrackPar(TrackEnd end = Start)  const ;
     double        getTrackParZ(TrackEnd end = Start)   const ;
     TkrFitMatrix  getTrackCov(TrackEnd end = Start)    const ; 
     bool          empty(int numHits)                const ;
@@ -57,7 +57,7 @@ public:
     TkrPatCandHit*   getFoLPlane(TrackEnd end = Start);
 
     //Provide access to a vector iterator (do we want this?)
-    CandHitVectorPtr getHitIterBegin()     {return m_hits.begin();}
+    CandHitVectorPtr getHitIterBegin()   {return m_hits.begin();}
            
 private:
     //For sorting the hits
