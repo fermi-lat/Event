@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Tue Aug 20 10:20:24 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.cxx 
+Log Message:
+Probably a null change from the last - code for Bethe-Block dE/dX commented out 
+    *
+------------------------------------------------------------
 User: atwood  Tue Aug 20 10:19:27 PDT 2002
 Event/src/Recon/TkrRecon
 
