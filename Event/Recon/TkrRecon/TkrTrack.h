@@ -23,7 +23,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.4 2004/11/23 19:24:34 atwood Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.5 2004/12/01 01:10:23 usher Exp $
 */
 
 #include "GaudiKernel/ObjectVector.h"
@@ -101,7 +101,7 @@ public:
                                            const {return m_chisqSegment + penaltyGap*getNumGaps();}
     inline int          getNumXHits()            const {return m_nxHits;}
     inline int          getNumYHits()            const {return m_nyHits;}
-	inline int          getNumFitHits()          const {return m_nyHits + m_nyHits;}
+	inline int          getNumFitHits()          const {return m_nxHits + m_nyHits;}
     /// JCT: THE FOLLOWING SHOULD BE COMMENTED
     inline double       getTkrCalRadlen()        const {return m_TkrCal_radlen;}
 
