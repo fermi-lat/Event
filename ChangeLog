@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Mon Apr  8 13:02:47 PDT 2002
+GlastEvent/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+remove McConstants.h, bit fields in McPositionHit, McIntegratingHit, tag v6r3
+
+    *
+------------------------------------------------------------
+User: burnett  Mon Apr  8 13:02:47 PDT 2002
 GlastEvent/GlastEvent/MonteCarlo
 
 Modified Files:
