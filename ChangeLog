@@ -1,4 +1,19 @@
 ------------------------------------------------------------
+User: atwood  Mon Jun  3 16:17:48 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.h 
+Log Message:
+
+Added data member to TkrFitPlane.h - active_distance used to veto tracks which hit live SSD's and don't make
+any hits. 
+
+Added member func's to access active_distance (get & set)
+
+Fixed a bug in the getDeltaChiSq member function.  
+    *
+------------------------------------------------------------
 User: usher  Mon Jun  3 15:06:42 PDT 2002
 Event/src/Recon/TkrRecon
 
