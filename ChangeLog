@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: riccardo  Thu Feb 28 17:13:03 PST 2002
+GlastEvent/src/MonteCarlo
+
+Modified Files:
+	McPositionHit.cxx 
+Log Message:
+Added namespace mc to McPositionHit; modified McPositionHit to use the new VolumeIdentifier
+    *
+------------------------------------------------------------
+User: riccardo  Thu Feb 28 17:13:03 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
 Modified Files:
