@@ -23,7 +23,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.5 2002/05/31 23:24:50 cohen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.6 2002/06/03 19:25:03 usher Exp $
 */
 namespace Event {  // NameSpace
 
@@ -33,6 +33,13 @@ public:
     /// Constructor/destructor for the class
     TkrFitTrack();
    ~TkrFitTrack();
+
+    void     initializeInfo(unsigned int xgaps, unsigned int ygaps, 
+        unsigned int x1st, unsigned int y1st);
+    void     initializeQual(double chiSq, double ChiSqSmooth, 
+        double rms, double quality, double e, double ms);
+
+
 
     /// Define the TkrRecInfo access methods
     /// Provides access to the basic information needed by external users
