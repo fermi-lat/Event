@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Feb  1 21:18:49 PST 2005
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+default value of DigiEvent::fromMc set to true
+    *
+------------------------------------------------------------
 TAG
 Tag name: v9r13p1em2, operation: add
 Package: Event
