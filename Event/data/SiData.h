@@ -1,4 +1,4 @@
-// $Id: SiData.h,v 1.1.1.1 1999/12/28 01:35:11 burnett Exp $
+// $Id: SiData.h,v 1.1 2000/11/21 19:12:43 burnett Exp $
 
 #ifndef SI_DATA_H
 #define SI_DATA_H 1
@@ -10,6 +10,14 @@
 
 #include <iostream>
 #include <vector>
+
+#include "Gaudi/Kernel/Kernel.h"
+#include "Gaudi/Kernel/DataObject.h"
+#include "Gaudi/Kernel/SmartRefVector.h"
+#include "GlastEvent/TopLevel/Definitions.h"
+#include "GlastEvent/Utilities/CellID.h"
+#include "instrument/SiIDetector.h"
+
 
 class GPStime;
 class GlastEvent;
@@ -47,10 +55,12 @@ bool operator<(const SiData_Hit&, const SiData_Hit&);
 bool operator==(const SiData_Hit&, const SiData_Hit&);
 #endif
 
-class SiData
+class CsIData : virtual public DataObject
 {
 public:
-
+    virtual const CLID& clID() const   { return SiData::classID(); }
+    static const  CLID& classID()       { return CLID_SiData; }
+    
     enum Axis{X,Y};
 
   public:
