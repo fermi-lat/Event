@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jul 26 03:43:44 PDT 2002
+Event/Event/TopLevel
+
+Added Files:
+	DigiEvent.h 
+Log Message:
+restore this bool
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul 25 02:21:26 PDT 2002
 Event/Event/Recon
 
