@@ -9,7 +9,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.4 2002/05/13 18:39:04 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.5 2002/09/04 23:15:25 lsrea Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
@@ -23,7 +23,7 @@ class TkrPatCand: public TkrRecInfo
 public:
     
     TkrPatCand(int layer, int tower, double energy, double quality, const Ray& testRay);
-   ~TkrPatCand();
+    ~TkrPatCand() {}
 
     /// Define the TkrRecInfo routines
     double        getQuality()                      const ;
