@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: ozaki  Wed Jan 10 00:24:32 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McConstants.h McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
+
+Modified Files:
+	McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h 
+Added Files:
+	McConstants.h 
+Log Message:
+include inlines in .h file
+    *
+------------------------------------------------------------
 User: ozaki  Wed Jan 10 00:20:19 PST 2001
 GlastEvent/src/MonteCarlo McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx McVertex.cxx
 
