@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Feb 28 20:22:05 PST 2003
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+fix order of initialization to shut unix up
+
+    *
+------------------------------------------------------------
 User: lsrea  Wed Feb 26 22:58:01 PST 2003
 Event/Event/Recon/TkrRecon
 
