@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu May  9 09:36:17 PDT 2002
+Event/src/Hits
+
+Modified Files:
+	SiLayers.cpp 
+Log Message:
+Change GlastEvent to Event.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 09:36:16 PDT 2002
 Event/Event/Utilities
 
