@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec 16 11:10:43 PST 2004
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Fix tracker test program so it compiles and runs, bump patch tag up
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r0p0, operation: add
 Package: Event
