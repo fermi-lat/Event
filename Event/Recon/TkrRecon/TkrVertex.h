@@ -27,7 +27,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.4 2002/05/13 18:39:04 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.5 2002/05/31 16:57:21 cohen Exp $
 */
 
 namespace Event { //Namespace
@@ -78,10 +78,7 @@ private:
     TkrFitCol    m_tracks;
 };
 
-//Following typedefs for containing fit track objects
-typedef std::vector<TkrVertex*>            TkrVertexVec;
-typedef std::vector<TkrVertex*>::iterator  TkrVertexVecPtr;
-
+//typedef for the Container
 typedef ObjectVector<TkrVertex>     TkrVertexCol;
 
 }; //Namespace
