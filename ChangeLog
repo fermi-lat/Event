@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Wed Feb 14 14:15:44 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+remved Digi/*cpp part from GlastEvent library
+    *
+------------------------------------------------------------
 User: tlindner  Wed Feb 14 14:06:01 PST 2001
 GlastEvent/mgr requirements
 
