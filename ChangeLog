@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Tue Feb  3 20:10:30 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitMatrix.h TkrFitPar.h 
+Log Message:
+fix to remove unix compilation warning
+    *
+------------------------------------------------------------
 User: berthon  Fri Jan 30 00:57:55 PST 2004
 Event/src/TopLevel
 
