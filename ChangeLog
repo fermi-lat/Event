@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Sat Jan 13 04:25:50 PST 2001
+GlastEvent/src/MonteCarlo McParticle.cxx
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+removing origin/endMcVertex and adding mcVertex
+    *
+------------------------------------------------------------
 User: ozaki  Sat Jan 13 04:25:08 PST 2001
 GlastEvent/GlastEvent/Utilities VolumeID.h
 
