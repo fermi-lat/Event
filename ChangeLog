@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Mon May  6 16:18:29 PDT 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+modified according to Heather's recommendations, to follow coding conventions
+    *
+------------------------------------------------------------
 User: heather  Wed May  1 16:32:13 PDT 2002
 GlastEvent/src/MonteCarlo
 
