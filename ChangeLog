@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Wed Aug 11 13:11:42 PDT 2004
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add  livetime to Event::EventHeader; tag v9r13
+    *
+------------------------------------------------------------
+User: burnett  Wed Aug 11 13:11:42 PDT 2004
 Event/Event/TopLevel
 
 Modified Files:
