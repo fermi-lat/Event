@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: burnett  Sat Feb 17 13:02:53 PST 2001
+GlastEvent/GlastEvent/data AcdData.h CalData.h TkrData.h
+
+Added Files:
+	AcdData.h CalData.h TkrData.h 
+Log Message:
+
+Put in empty classes that add DataObject inheritance to the "data" classes:
+ AcdData --> data/IVetoData
+ CalData --> data/CsIData
+ TkrData --> data/SiData
+This makes it easier to interface old recon code to the new system, in that 
+now we can fill data classes either from an IRF, or directly from GismoGenerator
+
+    *
+------------------------------------------------------------
 User: hansl  Fri Feb 16 07:13:23 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
