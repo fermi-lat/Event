@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Fri Jan  5 00:38:02 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.cpp McIntegratingHit.h
+
+Added Files:
+	McIntegratingHit.cpp McIntegratingHit.h 
+Log Message:
+MCIntegratingHits -> McIntegratingHit
+    *
+------------------------------------------------------------
 User: igable  Mon Dec 18 12:23:07 PST 2000
 GlastEvent/GlastEvent/Raw TdGlastData.h
 
