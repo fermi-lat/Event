@@ -14,7 +14,7 @@ extern const CLID& CLID_TkrClusterCol;
 *
 * @brief TDS Object for TkrCluster vector, and array of vectors.
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.3 2002/05/11 14:17:02 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.4 2002/05/11 16:10:42 lsrea Exp $
 */
 
 namespace Event { //Namespace
@@ -58,7 +58,7 @@ public:
 	}
 	
 	/// returns the number of clusters in a given view and plane
-	int nHits(TkrCluster::view v, int iplane) {return (int) getHits(v,iplane).size();}
+	int nHits(TkrCluster::view v, int iplane); 
 	
 	void addCluster(TkrCluster* cl);
 
