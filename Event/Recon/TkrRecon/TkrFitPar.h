@@ -24,7 +24,7 @@
  *
  * @author Brian Baughman
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.3 2002/07/16 17:54:44 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.4 2004/02/04 04:10:30 lsrea Exp $
  */
 
 class Ray; 
@@ -67,28 +67,28 @@ namespace Event { // Namespace
 
        
     // Access methods for individual fit parameters
-    double TkrFitPar::getXPosition() const;
+    double getXPosition() const;
     double TkrFitPar::getXSlope()    const;
 	   
-    double TkrFitPar::getYPosition() const;
+    double getYPosition() const;
     double TkrFitPar::getYSlope()    const;
 	       
 	       
     //operator overload for element access TkrFitPar(element)
     //!NOTE index starts with (1). In case of index error returns (1)
-    const double & TkrFitPar::operator() (const int &element) const;
+    const double & operator() (const int &element) const;
 		 
 		 
     //!NOTE index starts with (1). In case of index error returns (1)
-    double & TkrFitPar::operator() (const int &element);
+    double & operator() (const int &element);
 	    
     //operator overload for element access TkrFitPar(element)
     //!NOTE index starts with [0]. In case of index error returns [0]
-    const double & TkrFitPar::operator[] (const int &element) const;
+    const double & operator[] (const int &element) const;
 		 
 		 
     //!NOTE index starts with [0]. In case of index error returns [0]
-    double & TkrFitPar::operator[] (const int &element);
+    double & operator[] (const int &element);
 
 
     //operator overload for TkrFitPar+TkrFitPar
