@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.12 2002/03/28 02:19:49 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.13 2002/04/02 18:35:06 burnett Exp $
 */
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
@@ -92,7 +92,7 @@ class McParticle  : virtual public ContainedObject  {
     void init( McParticle* mother, 
         StdHepId id, 
         unsigned int statusBits,
-        const HepLorentzVector& initalMomentum,
+        const HepLorentzVector& initialMomentum,
         const HepLorentzVector& finalMomentum,
         const HepPoint3D& finalPosition);
 
@@ -114,12 +114,20 @@ class McParticle  : virtual public ContainedObject  {
     const HepLorentzVector&  initialFourMomemtum()const;
     const HepLorentzVector&  finalFourMomemtum()const;
 
+    /// access to the mother particle
+    const McParticle& mother()const; 
+
+
+    /// access to the list of daughters
+    const SmartRefVector<McParticle>& daugherList()const;
+
     /// Serialize the object for writing
     virtual StreamBuffer& serialize( StreamBuffer& s ) const ;
     /// Serialize the object for reading
     virtual StreamBuffer& serialize( StreamBuffer& s );
     /// Fill the ASCII output stream
     virtual std::ostream& fillStream( std::ostream& s ) const;
+
 
   private:
 
