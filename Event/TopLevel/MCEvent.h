@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.2 2000/10/24 21:16:41 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.3 2000/12/19 16:54:44 heather Exp $
 #ifndef LHCBEVENT_MCEVENT_H
 #define LHCBEVENT_MCEVENT_H 1
 
@@ -15,7 +15,7 @@
 
 
 // Externals
-extern const CLID& CLID_MCEvent;
+extern const CLID& CLID_McEvent;
 
 
 //------------------------------------------------------------------------------
@@ -57,7 +57,7 @@ public:
 
   /// Retrieve reference to class definition structure
   virtual const CLID& clID() const                { return MCEvent::classID(); }
-  static const CLID& classID()                          { return CLID_MCEvent; }
+  static const CLID& classID()                          { return CLID_McEvent; }
 
   /// Clone operator
   MCEvent& operator=(const MCEvent& copy)                                      {
