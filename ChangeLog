@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Wed Feb 14 15:09:53 PST 2001
+GlastEvent/GlastEvent/data TdSiData.h
+
+Modified Files:
+	TdSiData.h 
+Log Message:
+strangely needed linux fix
+    *
+------------------------------------------------------------
 User: tlindner  Wed Feb 14 14:19:42 PST 2001
 GlastEvent/GlastEvent/TopLevel ObjectList.h
 
