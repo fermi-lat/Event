@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Mon Aug 12 13:20:39 PDT 2002
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+difference function added to skyDir to allow for calcualtion of opening angle between 2 skydir's - test function in test utility.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Mon Aug 12 13:20:39 PDT 2002
 Event/src/Utilities
 
 Modified Files:
