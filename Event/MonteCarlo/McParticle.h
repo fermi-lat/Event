@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.17 2002/04/08 20:02:47 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.18 2002/04/11 18:55:40 heather Exp $
 */
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
@@ -201,20 +201,44 @@ inline StreamBuffer& McParticle::serialize( StreamBuffer& s )
 /// Fill the ASCII output stream
 inline std::ostream& McParticle::fillStream( std::ostream& s ) const
 {
-#if 0
-  s << "class McParticle"
-    << " (SubEvent:" << m_subEvtID << ")"
+//#if 0
+  return s << "class McParticle"
     << " :"
     << "\n    Particle ID                = " << m_particleID
-    << "\n    Particle Property          = " << m_particleProperty
-    << "\n    Sub Event ID               = " << m_subEvtID
-    << "\n    McVertex                   = " << m_mcVertex(this);
-#endif
-  return s;
+    << "\n    Status Flags               = " << m_statusFlags
+    << "\n    Final position (x, y, z) = ( "
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalPosition.x() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalPosition.y() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalPosition.z() << " ) "
+    << "\n    Initial Momentum  (x,y,z,t)   = ( " 
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_initialFourMomentum.x() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_initialFourMomentum.y() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_initialFourMomentum.z() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_initialFourMomentum.t() << " ) "
+    << "\n    Final Momentum   (x,y,z,t)    = ( " 
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalFourMomentum.x() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalFourMomentum.y() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalFourMomentum.z() << ","
+    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << m_finalFourMomentum.t() << " )";
+    
+    //<< "\n    Mother                     = " << m_mother;
+//#endif
+  //return s;
 }
 
 
-} // NameSpace GlastEvent
+} // NameSpace mc
 
 
 #endif    // GlastEvent_McParticle_H
