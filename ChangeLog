@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: berthon  Thu Mar 11 08:45:33 PST 2004
+Event/Event/Recon/TkrRecon
+
+Added Files:
+	TkrRecon.h 
+Log Message:
+add CalRecon and TkrRecon TDS classes, necessary for converters
+
+    *
+------------------------------------------------------------
+User: berthon  Thu Mar 11 08:45:33 PST 2004
 Event/Event/Recon/CalRecon
 
 Added Files:
