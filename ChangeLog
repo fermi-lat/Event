@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu May  9 18:17:36 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	Definitions.h Event.h MCEvent.h 
+Log Message:
+
+Some GlastEvent conversions that didn't get made. Deal with the format guy.
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 18:17:35 PDT 2002
 Event/Event/MonteCarlo
 
