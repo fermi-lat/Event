@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Aug 12 13:20:39 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	SkyDir.h 
+Log Message:
+difference function added to skyDir to allow for calcualtion of opening angle between 2 skydir's - test function in test utility.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Aug 12 11:46:59 PDT 2002
 Event/src/test
 
