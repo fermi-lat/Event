@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Tue Apr 20 15:57:53 PDT 2004
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use Event_root/BINDIR instead of EventDir
+    *
+------------------------------------------------------------
 User: lsrea  Mon Apr 12 15:19:55 PDT 2004
 Event/Event/Recon/TkrRecon
 
