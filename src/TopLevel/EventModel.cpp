@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.10 2000/12/05 00:14:40 igable Exp $
+// $Id: EventModel.cpp,v 1.11 2000/12/12 21:33:28 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -35,6 +35,7 @@ public:
 
         EventModel::Raw::Event = EventModel::Event + "/Raw";
         EventModel::Raw::TdCsIDatas = EventModel::Raw::Event + "/TdCsIDatas";
+        EventModel::Raw::TdSiDatas = EventModel::Raw::Event + "/TdSiDatas";
     }
 };
     
@@ -69,4 +70,6 @@ public:
     const CLID& CLID_TdCsIData            = 2014;
     const CLID& CLID_Xtal               = 2015;
     const CLID& CLID_TdCsIDataCnv         = 2016;
+    const CLID& CLID_TdSiData           =  2017;
+    const CLID& CLID_TdSiDataCnv        =   2018;
         
