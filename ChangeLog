@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Tue Nov 30 17:10:23 PST 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.cxx 
+Log Message:
+Adding more description to Track Hits and Tracks
+    *
+------------------------------------------------------------
+User: usher  Tue Nov 30 17:10:23 PST 2004
 Event/Event/Recon/TkrRecon
 
 Modified Files:
