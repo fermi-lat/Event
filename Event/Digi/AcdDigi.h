@@ -28,7 +28,7 @@
 *             
 * There are no set methods in this class, users are expected to fill
 * the data members through the constructor.
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.11 2002/06/05 13:24:43 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.12 2002/06/07 21:59:12 heather Exp $
 */
 
 extern const CLID& CLID_AcdDigi;
@@ -46,7 +46,7 @@ namespace Event {
         AcdDigi(const idents::AcdId &id, const idents::VolumeIdentifier &volId,
             double energy, unsigned short *pha, 
             bool *veto, bool *lowThresh, bool *highThresh) 
-            : m_id(id), m_energy(energy)
+            : m_id(id), m_volId(volId), m_energy(energy)
         {  
             m_pulseHeight[0] = pha[0]; m_pulseHeight[1] = pha[1];
             m_veto[0] = veto[0]; m_veto[1] = veto[1];
