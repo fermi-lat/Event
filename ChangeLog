@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jun 15 12:34:52 PDT 2001
+GlastEvent/GlastEvent/TopLevel EventModel.h
+
+Modified Files:
+	EventModel.h 
+Log Message:
+new class for the AcdRecon data
+    *
+------------------------------------------------------------
 User: heather  Fri Jun 15 12:34:25 PDT 2001
 GlastEvent/GlastEvent/Recon AcdRecon.h
 
