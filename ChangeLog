@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Wed Nov 10 14:48:27 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.h 
+Log Message:
+modified the statusBits
+    *
+------------------------------------------------------------
 User: atwood  Wed Nov 10 14:46:45 PST 2004
 Event/Event/Recon/TkrRecon
 
