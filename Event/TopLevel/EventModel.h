@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.23 2002/03/15 21:02:06 heather Exp $
+// $Id: EventModel.h,v 1.24 2002/04/12 16:16:44 heather Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -64,9 +64,9 @@
             _EXTERN_ std::string Event;
             _EXTERN_ std::string SiLayers;
             _EXTERN_ std::string TkrClusters;
-            _EXTERN_ std::string TkrCandidates;
+            _EXTERN_ std::string TkrPatCandCol;
             _EXTERN_ std::string SiRecObjs;
-            _EXTERN_ std::string TkrTracks;
+            _EXTERN_ std::string TkrFitTrackCol;
             _EXTERN_ std::string TkrVertexCol;
         }
 
