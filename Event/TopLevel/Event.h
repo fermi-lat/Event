@@ -20,16 +20,16 @@ extern const CLID& CLID_Event;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.10 2002/06/10 18:55:46 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.11 2004/08/11 20:11:42 burnett Exp $
 */
 namespace Event{
 
 class EventHeader : public DataObject                                                {
     
 public:
-    
+    /// default constructor: flag all fields invalic
     EventHeader()
-        : DataObject(), m_event(-1), m_run(-1) { }
+        : DataObject(), m_event(-1), m_run(-1), m_time(-1),  m_trigger(-1) { }
     
     virtual ~EventHeader() { }
     
