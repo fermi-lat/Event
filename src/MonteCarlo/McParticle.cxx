@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.11 2002/04/05 16:22:45 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.12 2002/04/11 19:07:57 heather Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McParticle.h"
@@ -33,6 +33,7 @@ void McParticle::init( McParticle* mother,
     m_initialFourMomentum = initialMomentum;
     m_finalFourMomentum = finalMomentum;
     m_finalPosition = finalPosition;
+    if (!mother) return;
     if( mother != this) mother->m_daughters.push_back(this);
 }
 
