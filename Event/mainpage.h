@@ -1,4 +1,4 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/mainpage.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/mainpage.h,v 1.2 2000/11/01 00:40:28 igable Exp $
 // (Special "header" just for doxygen)
 
 /*! @mainpage  package GlastEvent
@@ -24,6 +24,13 @@ rather than from DataObject. The three classes completed to date are below.
   - MCACDHit
   - MCTKRHit
 
+\section RawData RawData
+
+CsIData from GlastSim has been adapted to be a DataObject capable of travelling through 
+the TDS unharmed. In addition a new branch has been added to the TDS namely /Event/Raw/.
+
+- DataObject classes
+  - CsIData
 
 \section reference Reference Document
   See the formal  
