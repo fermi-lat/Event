@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Feb 20 09:06:42 PST 2001
+GlastEvent/GlastEvent/TopLevel MCEvent.h
+
+Modified Files:
+	MCEvent.h 
+Log Message:
+CLID_MCEvent -> CLID_McEvent, so the head will compile with
+the new EventModel
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 20 09:05:48 PST 2001
 GlastEvent/GlastEvent/data TdSiData.h
 
