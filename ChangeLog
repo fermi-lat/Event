@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Tue Apr  2 10:35:06 PST 2002
+GlastEvent/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+update to include access methods to all fields
+    *
+------------------------------------------------------------
+User: burnett  Tue Apr  2 10:35:06 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
 Modified Files:
