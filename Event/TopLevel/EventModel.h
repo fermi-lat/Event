@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.9 2001/01/30 00:31:20 igable Exp $
+// $Id: EventModel.h,v 1.10 2001/02/05 10:01:13 ozaki Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -38,6 +38,7 @@
 
         namespace Raw {
             _EXTERN_ std::string Event;
+            _EXTERN_ std::string AcdDigi;
             _EXTERN_ std::string TdCsIDatas;
             _EXTERN_ std::string TdSiDatas;
         };
