@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Mon Apr  2 15:55:22 PDT 2001
+GlastEvent/GlastEvent/Hits silayers.h
+
+Added Files:
+	silayers.h 
+Log Message:
+
+SiLayers created by TBIOROOT from Test Beam input format data and stored in the TDS.
+Accessed by TkrDigiAlg to then create TkrDigi's which are input to the Tkr Recon.
+
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Mar 21 19:24:43 PST 2001
 GlastEvent/GlastEvent/data TdGlastData.h
 
