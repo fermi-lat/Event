@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: berthon  Wed Jan 28 09:56:51 PST 2004
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+include CLID-s for collections
+    *
+------------------------------------------------------------
 User: usher  Fri Jan  9 12:13:06 PST 2004
 Event/src/TopLevel
 
