@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Wed Sep  4 21:17:34 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+fix initialization for unix
+    *
+------------------------------------------------------------
 User: lsrea  Wed Sep  4 21:16:54 PDT 2002
 Event/Event/Recon/TkrRecon
 
