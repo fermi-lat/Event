@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Mar 21 19:24:43 PST 2001
+GlastEvent/GlastEvent/data TdGlastData.h
+
+Modified Files:
+	TdGlastData.h 
+Log Message:
+allow setting MCTruth pointer.
+
+    *
+------------------------------------------------------------
 User: lsrea  Wed Mar 14 06:35:05 PST 2001
 GlastEvent/GlastEvent/Digi TkrDigi.h
 
