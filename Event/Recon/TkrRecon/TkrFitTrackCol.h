@@ -4,7 +4,7 @@
 
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
-#include "GlastEvent/Recon/TkrRecon/TkrFitTrack.h"
+#include "Event/Recon/TkrRecon/TkrFitTrack.h"
 #include "GaudiKernel/DataObject.h"
 
 extern const CLID& CLID_TkrFitTrackCol;
@@ -18,7 +18,7 @@ extern const CLID& CLID_TkrFitTrackCol;
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitTrackCol.h,v 1.1 2002/05/07 20:55:09 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrackCol.h,v 1.2 2002/05/07 22:40:01 usher Exp $
 */
 
 namespace TkrRecon { //Namespace

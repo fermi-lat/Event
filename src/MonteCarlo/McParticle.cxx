@@ -1,8 +1,8 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.12 2002/04/11 19:07:57 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.13 2002/05/01 23:32:13 heather Exp $
 
 #include <iostream>
-#include "GlastEvent/MonteCarlo/McParticle.h"
-#include "GlastEvent/Utilities/CLHEPStreams.h"
+#include "Event/MonteCarlo/McParticle.h"
+#include "Event/Utilities/CLHEPStreams.h"
 
 
 namespace mc {

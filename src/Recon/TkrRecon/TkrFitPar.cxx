@@ -1,5 +1,5 @@
 
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/Recon/TkrRecon/TkrFitPar.cxx,v 1.1 2002/04/23 16:28:41 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrFitPar.cxx,v 1.1 2002/05/07 20:58:15 usher Exp $
 
 //----------------------------------------------------------------------
 //    
@@ -11,7 +11,7 @@
 //      
 //-----------------------------------------------------------------------
 
-#include "GlastEvent/Recon/TkrRecon/TkrFitPar.h"
+#include "Event/Recon/TkrRecon/TkrFitPar.h"
 #include "geometry/Ray.h"
 
 using namespace TkrRecon;

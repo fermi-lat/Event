@@ -1,16 +1,16 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/CLHEPStreams.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/CLHEPStreams.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_CLHEPSTREAMS_H
 #define LHCBEVENT_CLHEPSTREAMS_H 1
 
 
 // Include files
 #include "GaudiKernel/StreamBuffer.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 //------------------------------------------------------------------------------
 //
-// Description: Streams operators of CLHEP classes used in GlastEvent
+// Description: Streams operators of CLHEP classes used in Event
 //              (used in serialize() methods)
 //
 // CLHEPStreams.h defines additional oprators to used classes from
