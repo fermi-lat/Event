@@ -13,7 +13,7 @@
 *
 * @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.1 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.2 2004/11/03 22:05:17 usher Exp $
 */
 
 #include <iostream>
@@ -67,7 +67,8 @@ public:
     inline const double getyPosySlp()   const {return m_yPos_ySlp; }
     inline const double getySlpySlp()   const {return m_ySlp_ySlp; }
 
-    /// Define indices for look up with the array operators
+    /// Define track parameter types and indices for look up with the array operators
+    enum ParamType  {Position, Slope};
     enum ParamIndex {xPosIdx = 1, xSlpIdx = 2, yPosIdx = 3, ySlpIdx = 4};
 
     /// Define an ( ) operator (allows read/write - indexing from 1!!)
