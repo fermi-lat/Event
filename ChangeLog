@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: berthon  Fri May  7 05:51:44 PDT 2004
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+re-add line that was removed by error
+    *
+------------------------------------------------------------
 User: berthon  Fri May  7 04:37:14 PDT 2004
 Event/src/TopLevel
 
