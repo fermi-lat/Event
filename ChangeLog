@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Fri Nov 22 16:44:47 PST 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.h 
+Log Message:
+Fix compile error for unix (unix stinks!)
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Nov 21 13:36:00 PST 2002
 Event/doc
 
