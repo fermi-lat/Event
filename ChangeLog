@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Aug 22 09:22:19 PDT 2002
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+structure D2Entry added, SkyDir reomved (moved to the astro package.)  test program cleaned up.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Aug 22 09:22:19 PDT 2002
 Event/src/Utilities
 
 Removed Files:
