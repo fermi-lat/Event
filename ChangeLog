@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: ozaki  Wed Jan 10 01:00:42 PST 2001
+GlastEvent/GlastEvent/MonteCarlo MCIntegratingHits.cpp MCIntegratingHits.h MCParticle.cpp MCParticle.h MCPositionHits.cpp MCPositionHits.h MCVertex.cpp MCVertex.h McIntegratingHit.cpp McParticle.cpp McPositionHit.cpp McVertex.cpp
+
+Removed Files:
+	MCIntegratingHits.cpp MCIntegratingHits.h MCParticle.cpp 
+	MCParticle.h MCPositionHits.cpp MCPositionHits.h MCVertex.cpp 
+	MCVertex.h McIntegratingHit.cpp McParticle.cpp 
+	McPositionHit.cpp McVertex.cpp 
+Log Message:
+
+removing obsolate files
+
+    *
+------------------------------------------------------------
 User: ozaki  Wed Jan 10 00:24:32 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McConstants.h McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
 
