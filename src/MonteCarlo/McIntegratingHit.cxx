@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.5 2002/03/11 17:22:30 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.6 2002/03/27 05:33:22 burnett Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
@@ -119,46 +119,6 @@ void McIntegratingHit::addEnergyItem(const double& energy, SmartRef<mc::McPartic
     m_totalEnergy      += energy;
     m_moment1seed += energy * position;
     m_moment2seed += energy * position2;
-}
-
-
-/// Retrieve primary-origin flag
-bool McIntegratingHit::primaryOrigin() const
-{
-    using GlastEvent::McConstants::ORIGIN_PRIMARY;
-    return m_packedFlags & ORIGIN_PRIMARY;
-}
-
-
-/// Update primary-origin flag
-void McIntegratingHit::setPrimaryOrigin( bool value )
-{
-    using GlastEvent::McConstants::ORIGIN_PRIMARY;
-    if (value){
-        m_packedFlags |= ORIGIN_PRIMARY;
-    } else {
-        m_packedFlags &= ~ORIGIN_PRIMARY;
-    }
-}
-
-
-/// Retrieve whether this hit should be digitized
-bool McIntegratingHit::needDigi() const
-{
-    using GlastEvent::McConstants::NEED_DIGI;
-    return m_packedFlags & NEED_DIGI;
-}
-
-
-/// Update whether this hit should be digitized
-void McIntegratingHit::setNeedDigi( bool value )
-{
-    using GlastEvent::McConstants::NEED_DIGI;
-    if (value){
-        m_packedFlags |= NEED_DIGI;
-    } else {
-        m_packedFlags &= ~NEED_DIGI;
-    }
 }
 
 }

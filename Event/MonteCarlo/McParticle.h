@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.15 2002/04/03 04:21:57 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.16 2002/04/05 16:22:45 riccardo Exp $
 */
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
@@ -18,7 +18,6 @@
 #include "GaudiKernel/SmartRef.h"
 #include "GaudiKernel/SmartRefVector.h"
 
-#include "GlastEvent/MonteCarlo/McConstants.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "GlastEvent/Utilities/ParticleID.h"
 
