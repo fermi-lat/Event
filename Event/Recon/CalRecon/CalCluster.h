@@ -9,12 +9,6 @@
 
 extern const CLID& CLID_CalClusterCol;
 
-
-
-
-namespace Event 
-{
-
 /**
 *  @class CalCluster
 *
@@ -27,8 +21,11 @@ namespace Event
 *  \author Regis Terrier
 *  \author Jose Angel Hernando
 *
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.10 2002/09/06 21:46:49 heather Exp $
 */
+
+namespace Event 
+{
     class CalCluster 
     {
         

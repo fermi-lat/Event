@@ -14,14 +14,24 @@
 
 extern const CLID& CLID_AcdRecon;
 
-namespace Event {
-    
 /** @class AcdRecon        
 * @brief Reconstruction data for ACD
+*
+* The reconstruction data consists of:
+* - Total Energy deposited in the whole ACD system.
+* - Number of Acd Tiles over veto threshold.
+* - Minimum Distance of Closest Approach (DOCA)
+* - List of minimum DOCAs for top and side rows.
+* - Minimum Active Distance quantity
+* - List of minimum Active Distance quantities for top and side rows.
+* - DOCA using the reconstructed gamma direction.
+* - Collection of reconstructed energies detected by each ACD Tile.
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.2 2002/09/05 20:08:05 heather Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.3 2002/09/06 21:45:29 heather Exp $          
 */
+namespace Event {
+    
     class AcdRecon : virtual public DataObject  { 
         
     public:
@@ -99,7 +109,7 @@ namespace Event {
         double m_totEnergy;
         /// Total number of ACD tiles above threshold
         int m_tileCount;
-        /// Distance of Closest Approach for the reconstructed gamme, 
+        /// Distance of Closest Approach for the reconstructed gamma, 
         /// if there is one
         double m_gammaDoca;
         /// Minimum Distance of Closest Approach for all tracks and all ACD tiles
