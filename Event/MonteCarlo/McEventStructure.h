@@ -13,7 +13,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.3 2004/09/18 18:16:57 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.4 2004/10/01 19:35:29 usher Exp $
  */
 
 #ifndef McEventStructure_h
