@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.26 2002/05/07 21:06:27 usher Exp $
+// $Id: EventModel.h,v 1.27 2002/05/08 22:40:55 heather Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -24,7 +24,7 @@
 
 #include <string>
 
-#if defined(_GlastEvent_EventModel_CPP_)
+#if defined(_Event_EventModel_CPP_)
 #define  _EXTERN_ 
 #else
 #define  _EXTERN_ extern
