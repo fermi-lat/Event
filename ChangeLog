@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Fri May 10 14:17:09 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	TriggerPattern.h 
+Log Message:
+
+bunch of GlastEvent conversions.
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 14:17:09 PDT 2002
 Event/Event/TopLevel
 
 Modified Files:
