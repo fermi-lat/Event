@@ -1,0 +1,37 @@
+// $Id: EventModel.h,v 1.4 2000/09/18 13:35:16 heather Exp $
+// 
+//  Original author: Sawyer Gillespie
+//                   hgillesp@u.washington.edu
+//
+#ifndef _H_GlastEvent_EventModel_
+#define _H_GlastEvent_EventModel_
+
+// Include files
+#include <string>
+
+#if defined(_GlastEvent_EventModel_CPP_)
+#define  _EXTERN_ 
+#else
+#define  _EXTERN_ extern
+#endif
+
+    
+    namespace EventModel {
+        _EXTERN_ std::string   Event;
+
+        _EXTERN_ std::string ACDTilesName;
+
+
+        namespace Hits  {
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string Glast;
+            //_EXTERN_ std::string TowerName;
+            //_EXTERN_ std::string SiLayersName;
+            _EXTERN_ std::string ACDTilesName;
+            //_EXTERN_ std::string CalorimeterName;
+        
+        };
+    };
+#undef _EXTERN_
+
+#endif // LHCBEVENT_EVENTMODEL_H
