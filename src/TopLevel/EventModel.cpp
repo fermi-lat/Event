@@ -1,4 +1,5 @@
-// $Id: EventModel.cpp,v 1.50 2002/07/30 16:42:26 frailis Exp $
+// File and Version Information:
+// $Header$
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.50 2002/07/30 16:42:26 frailis Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.51 2002/08/22 16:22:18 srobinsn Exp $
  */
 class EvModel {
         
