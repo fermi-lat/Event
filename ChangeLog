@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Jan  5 17:37:49 PST 2001
+GlastEvent/GlastEvent/Raw TdGlastData.h
+
+Modified Files:
+	TdGlastData.h 
+Log Message:
+missing semicolon added
+    *
+------------------------------------------------------------
 User: tlindner  Fri Jan  5 16:19:41 PST 2001
 GlastEvent/mgr requirements
 
