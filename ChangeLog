@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Mar 25 20:45:50 PST 2004
+Event
+
+Modified Files:
+	.cvsignore 
+Log Message:
+fix warnings
+    *
+------------------------------------------------------------
 User: cohen  Thu Mar 25 20:45:49 PST 2004
 Event/Event/Recon/TkrRecon
 
