@@ -1,12 +1,11 @@
 /**
  * @class McEventStructure
  *
- * @brief Implements a Gaudi Tool for setting the candidate track energies before 
- *        the track fit
+ * @brief Implements the methods described in McEventStructure.h
  *
- * @author The Tracking Software Group
+ * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/TkrRecon/src/MonteCarlo/McEventStructure.cxx,v 1.2 2003/08/19 00:17:54 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McEventStructure.cxx,v 1.1 2004/01/09 20:13:06 usher Exp $
  */
 #include "Event/MonteCarlo/McEventStructure.h"
 #include "GaudiKernel/SmartDataPtr.h"
