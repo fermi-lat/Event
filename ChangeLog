@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Wed Jan 31 03:31:52 PST 2001
+GlastEvent/src/MonteCarlo McParticle.cxx
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+replaced ParticleProperty with StdHepId
+    *
+------------------------------------------------------------
 User: ozaki  Tue Jan 30 03:53:10 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
