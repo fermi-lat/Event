@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Sun Dec 26 21:11:09 PST 2004
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+patch for unix compile error
+
+    *
+------------------------------------------------------------
+User: lsrea  Sun Dec 26 21:11:09 PST 2004
 Event/cmt
 
 Modified Files:
