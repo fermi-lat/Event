@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: usher  Mon Nov 26 11:28:50 PST 2001
+GlastEvent/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+EventModel modified to allow new tracking pattern rec object to be put in
+the transient data store
+
+    *
+------------------------------------------------------------
+User: usher  Mon Nov 26 11:28:50 PST 2001
 GlastEvent/GlastEvent/TopLevel
 
 Modified Files:
