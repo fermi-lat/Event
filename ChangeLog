@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Nov 15 13:10:25 PST 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.cxx 
+Log Message:
+Enumerate the options for accessing track parameters
+    *
+------------------------------------------------------------
 User: usher  Mon Nov 15 13:10:24 PST 2004
 Event/Event/Recon/TkrRecon
 
