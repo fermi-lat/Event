@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Thu Apr 25 15:05:18 PDT 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+Log replaced by Xtal, some enum definitions moved to CalXtalId.
+    *
+------------------------------------------------------------
 User: heather  Mon Apr 22 07:04:58 PDT 2002
 GlastEvent/GlastEvent/MonteCarlo
 
