@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: ozaki  Wed Jan 10 00:20:19 PST 2001
+GlastEvent/src/MonteCarlo McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx McVertex.cxx
+
+Added Files:
+	McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx 
+	McVertex.cxx 
+Log Message:
+new implementation
+    *
+------------------------------------------------------------
 User: tlindner  Tue Jan  9 11:10:29 PST 2001
 /GlastEvent/GlastEvent/Raw TdGlastData.h
 
