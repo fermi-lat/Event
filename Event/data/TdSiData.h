@@ -1,4 +1,4 @@
-// $Id: TdSiData.h,v 1.1 2001/02/06 01:39:45 igable Exp $
+// $Id: TdSiData.h,v 1.2 2001/02/06 19:51:49 igable Exp $
 
 #ifndef RECOSI_DATA_H
 #define RECOSI_DATA_H 1
@@ -28,7 +28,13 @@ class TdSiData : virtual public SiData , virtual public DataObject {
     class Strip {
         private:
             friend class TdSiData;
-        
+
+	    /* For some reson we are required to make LdSiData a 
+	       friend class of Strip. This is only true for Unix.
+	       A better work around should be found at some point
+	    */
+            friend class LdSiData;        
+
         public:
             Strip () {}
         
