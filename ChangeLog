@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed May  8 15:33:22 PDT 2002
+GlastEvent/GlastEvent/Recon/CalRecon
+
+Added Files:
+	CalXtalRecData.h CalCluster.h 
+Log Message:
+CalRecon TDS classes moved to GlastEvent/Recon/CalRecon
+    *
+------------------------------------------------------------
 User: chehtman  Wed May  8 15:30:44 PDT 2002
 GlastEvent/GlastEvent/Recon/CalRecon
 
