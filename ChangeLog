@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: berthon  Mon Dec  8 04:57:25 PST 2003
+Event/Event/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+added methods classID() and clID() in CalDigigi.h and CalXtalRecData.h
+    *
+------------------------------------------------------------
 User: lsrea  Thu Nov  6 10:58:05 PST 2003
 Event/doc
 
