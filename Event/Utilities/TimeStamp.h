@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.5 2002/06/01 17:30:30 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.6 2002/08/09 08:59:30 srobinsn Exp $
 #ifndef EVENT_TIMESTAMP_H
 #define EVENT_TIMESTAMP_H 1
 
@@ -21,10 +21,10 @@ public:
     dateRep(int years, int months, int days, double hours):
     m_years(years),m_months(months),m_days(days),m_hours(hours)
     {}
-    int years(){return m_years;}
-    int months(){return m_months;}
-    int days(){return m_days;}
-    double hours(){return m_hours;}
+    int years() const{return m_years;}
+    int months() const{return m_months;}
+    int days() const{return m_days;}
+    double hours() const{return m_hours;}
     void reSet(int years, int months, int days, double hours){
         m_years = years;
         m_months = months;
