@@ -22,7 +22,7 @@ static const CLID& CLID_Event = 110;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.12 2004/09/14 16:03:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.13 2004/09/18 18:16:58 usher Exp $
 */
 namespace Event{
 
@@ -31,7 +31,7 @@ class EventHeader : public DataObject                                           
 public:
     /// default constructor: flag all fields invalic
     EventHeader()
-        : DataObject(), m_event(-1), m_run(-1), m_time(-1),  m_trigger(-1) { }
+        : DataObject(), m_event(-1), m_run(-1), m_time(-1),  m_trigger((unsigned int)-1) { }
     
     virtual ~EventHeader() { }
     
