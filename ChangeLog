@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Fri Jan  5 00:38:48 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McParticle.cpp McParticle.h
+
+Added Files:
+	McParticle.cpp McParticle.h 
+Log Message:
+MCParticle -> McParticle
+    *
+------------------------------------------------------------
 User: ozaki  Fri Jan  5 00:38:27 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McPositionHit.cpp McPositionHit.h
 
