@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.16 2002/04/05 16:22:45 riccardo Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.17 2002/04/08 20:02:47 burnett Exp $
 */
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
@@ -129,7 +129,7 @@ class McParticle  : virtual public ContainedObject  {
 
 
     /// access to the list of daughters
-    const SmartRefVector<McParticle>& daugherList()const;
+    const SmartRefVector<McParticle>& daughterList()const;
 
     /// Serialize the object for writing
     virtual StreamBuffer& serialize( StreamBuffer& s ) const ;
