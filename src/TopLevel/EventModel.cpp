@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.22 2001/02/28 21:45:41 chehtman Exp $
+// $Id: EventModel.cpp,v 1.23 2001/02/28 22:28:48 burnett Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -31,6 +31,7 @@ public:
         // Digi event
         EventModel::Digi::Event           = EventModel::Event + "/Digi";
         EventModel::Digi::AcdDigis        = EventModel::Digi::Event + "/AcdDigis";
+        EventModel::Digi::TkrDigis        = EventModel::Digi::Event + "/TkrDigis";
 
         // Irf event
         EventModel::Irf::Event            = EventModel::Event + "/Irf";
@@ -50,6 +51,7 @@ public:
         EventModel::TkrRecon::SiRecObjs   = EventModel::TkrRecon::Event + "/SiRecObjs";
     }
 };
+    
     
     static EvModel mod;    // where  used? has file scope     
     
@@ -153,8 +155,6 @@ public:
 
     //! Analysis
     const CLID& CLID_AnalEvent          = 4000;
-
-    
         
     //! Classes adapted by Sasha Chekhtman from tb calorimeter reconstruction
     
