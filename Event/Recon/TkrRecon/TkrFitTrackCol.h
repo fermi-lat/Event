@@ -7,7 +7,7 @@
 #include "GlastEvent/Recon/TkrRecon/TkrFitTrack.h"
 #include "GaudiKernel/DataObject.h"
 
-extern const CLID& CLID_TkrTracks;
+extern const CLID& CLID_TkrFitTrackCol;
 
 /** 
 * @class TkrFitTrackCol
@@ -18,7 +18,7 @@ extern const CLID& CLID_TkrTracks;
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitTrackCol.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitTrackCol.h,v 1.1 2002/05/07 20:55:09 usher Exp $
 */
 
 namespace TkrRecon { //Namespace
@@ -33,7 +33,7 @@ public:
     void writeOut(MsgStream& log) const;
 
 	//! GAUDI members to be use by the converters
-	static const CLID&  classID()           {return CLID_TkrTracks;}
+	static const CLID&  classID()           {return CLID_TkrFitTrackCol;}
 	virtual const CLID& clID()        const {return classID();}
 
     //How many reconstructed tracks are there?
