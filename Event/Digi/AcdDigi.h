@@ -28,7 +28,9 @@
 *             
 * There are no set methods in this class, users are expected to fill
 * the data members through the constructor.
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.12 2002/06/07 21:59:12 heather Exp $
+*
+* @author Heather Kelly
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.13 2002/06/12 07:49:31 heather Exp $
 */
 
 extern const CLID& CLID_AcdDigi;
