@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: frailis  Tue Jul 30 09:42:26 PDT 2002
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Added in EventModel a path to store relations between CalDigi and McIntegratingHit
+    *
+------------------------------------------------------------
+User: frailis  Tue Jul 30 09:42:26 PDT 2002
 Event/Event/TopLevel
 
 Modified Files:
