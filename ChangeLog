@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Mon Dec  2 12:51:19 PST 2002
+Event/Event/Digi
+
+Added Files:
+	GltDigi.h 
+Log Message:
+creation of a GltDigi class, filled in TriggerAlg.cxx (for now!)
+    *
+------------------------------------------------------------
 User: burnett  Thu Nov 28 10:40:30 PST 2002
 Event/doc
 
