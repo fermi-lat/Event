@@ -9,7 +9,8 @@
 #include "Event/Utilities/TimeStamp.h"
 #include "Event/TopLevel/Definitions.h"
 
-static const CLID& CLID_Event=InterfaceID("Event",1,0);
+//static const CLID& CLID_Event=InterfaceID("Event",1,0);
+static const CLID& CLID_Event=110;
 
 /** @class EventHeader
 * @brief Essential header information of the event.
@@ -21,7 +22,7 @@ static const CLID& CLID_Event=InterfaceID("Event",1,0);
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.12 2004/09/14 16:03:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.12.4.1 2005/01/17 20:46:58 heather Exp $
 */
 namespace Event{
 
