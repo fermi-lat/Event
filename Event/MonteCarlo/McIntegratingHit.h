@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.7 2002/03/12 17:24:23 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.8 2002/03/27 05:33:21 burnett Exp $
 #ifndef GlastEvent_McIntegratingHit_H
 #define GlastEvent_McIntegratingHit_H 1
 
@@ -61,8 +61,8 @@ class McIntegratingHit : virtual public ContainedObject {
     typedef std::map<McParticle*,double>  energyDepositMap;
 
     /// Constructors
-    McIntegratingHit() : m_packedFlags(0)
-    {}
+    McIntegratingHit() : m_packedFlags(0),m_totalEnergy(0),m_moment1seed(0),
+        m_moment2seed(0){}
     /// Destructor
     ~McIntegratingHit(){}
 
