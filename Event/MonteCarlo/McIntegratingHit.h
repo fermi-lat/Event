@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.12 2002/05/10 01:17:35 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.13 2002/05/10 01:55:49 richard Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -29,7 +29,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.12 2002/05/10 01:17:35 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.13 2002/05/10 01:55:49 richard Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -75,8 +75,8 @@ class McIntegratingHit : virtual public ContainedObject {
     /// Remove all energyInfos
     void clearEnergyItems();
     /// Add single energyInfo to energyDepositMap
-    void addEnergyItem( const double& energy, Event::McParticle* t, const HepPoint3D& position );
-    void addEnergyItem( const double& energy, SmartRef<Event::McParticle> t, const HepPoint3D& position );
+    void addEnergyItem( const double& energy, McParticle* t, const HepPoint3D& position );
+    void addEnergyItem( const double& energy, SmartRef<McParticle> t, const HepPoint3D& position );
 
     /// Retrieve primary-origin flag
     bool primaryOrigin() const;
@@ -150,7 +150,7 @@ inline StreamBuffer& McIntegratingHit::serialize( StreamBuffer& s )
         double               second;
         s >> first(this)
           >> second;
-        m_energyItem.push_back(std::pair<Event::McParticle*, double>(first, second));
+        m_energyItem.push_back(std::pair<McParticle*, double>(first, second));
     }
         return s
       >> m_packedFlags;
@@ -186,9 +186,9 @@ inline std::ostream& McIntegratingHit::fillStream( std::ostream& s ) const
 
 
 // Definition of all container types of McIntegratingHit
-template <class TYPE> class ObjectVector;
+//template <class TYPE> class ObjectVector;
 typedef ObjectVector<McIntegratingHit>     McIntegratingHitVector;
-template <class TYPE> class ObjectList;
+//template <class TYPE> class ObjectList;
 typedef ObjectList<McIntegratingHit>       McIntegratingHitList;
 }
 
