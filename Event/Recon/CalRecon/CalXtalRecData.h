@@ -37,7 +37,7 @@ extern const CLID& CLID_CalXtalRecData;
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.7 2002/09/09 23:02:27 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.8 2002/09/13 23:13:52 chehtman Exp $
 */
 namespace Event 
 {
@@ -70,9 +70,9 @@ namespace Event
                             double eneM) :
                   m_eneP(eneP), 
                   m_eneM(eneM),
-                  m_pos(Point(0.,0.,0.))
+                  m_pos(Point(0.,0.,0.)),
                   m_rangeP(rangeP), 
-                  m_rangeM(rangeM), 
+                  m_rangeM(rangeM) 
               {};
               
               ~CalRangeRecData() {};
