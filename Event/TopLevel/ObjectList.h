@@ -1,4 +1,4 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/ObjectList.h,v 1.3 2000/08/26 19:15:22 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/ObjectList.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 #ifndef LHCBEVENT_OBJECTLIST_H
 #define LHCBEVENT_OBJECTLIST_H 1
 
@@ -88,6 +88,14 @@ public:
   typedef typename std::list<TYPE*>::_Nodeptr          link_type;
   link_type __Node(const ObjectList<TYPE>::iterator& i)       const        { return i._Mynode(); }
   link_type __Node(const ObjectList<TYPE>::const_iterator& i) const        { return i._Mynode(); }
+#elif defined(linux)
+  // Patched by OZAKI Masanobu <ozaki@astro.isas.ac.jp> (2000-01-26):
+  // THIS MAY BE INCORRECT, because I don't know what _Nodeptr or link_type means
+  // and I hacked up on them by refering GCC2.95.2's <g++-3/stl_list.h>.
+  // FIXME!!!
+  typedef typename std::list<TYPE*>::_Node*            link_type;
+  link_type __Node(const ObjectList<TYPE>::iterator& i)       const             { return i._M_node; }
+  link_type __Node(const ObjectList<TYPE>::const_iterator& i) const             { return i._M_node; }
 #else
   typedef typename std::list<TYPE*>::link_type         link_type;
   link_type __Node(const ObjectList<TYPE>::iterator& i)       const             { return i.node; }
