@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Tue Jan 11 09:01:15 PST 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+      Tag: GlastRelease-v4r5
+	TkrCluster.h 
+Log Message:
+prepare for tag v9r13p1gr4: reorder inits in TkrCluster.h to quiet unix build
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v9r13p1gr3, operation: add
 Package: Event
