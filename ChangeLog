@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue Mar 13 22:26:36 PST 2001
+GlastEvent/GlastEvent/Digi TkrDigi.h
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+Debug iterators of m_hits, cleanup
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Mar 13 14:31:56 PST 2001
 GlastEvent/GlastEvent/Digi TkrDigi.h
 
