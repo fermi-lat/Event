@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Thu Jun 13 12:02:06 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+Doxygen comments with class description moved to be just before the class definition
+    *
+------------------------------------------------------------
 User: burnett  Wed Jun 12 07:35:00 PDT 2002
 Event/doc
 
