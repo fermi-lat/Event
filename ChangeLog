@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Fri Jul  5 06:12:26 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+In RelTable , access methods have been changed to const
+
+    *
+------------------------------------------------------------
 User: frailis  Fri Jul  5 06:12:25 PDT 2002
 Event/Event/RelTable
 
