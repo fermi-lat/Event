@@ -6,7 +6,7 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ContainedObject.h"
-#include "Event/Recon/TkrRecon/TkrRecInfo.h"
+#include "Event/Recon/TkrRecon/TkrFitTrackBase.h"
 #include "Event/Recon/TkrRecon/TkrFitPlane.h"
 #include "Event/Recon/TkrRecon/TkrCluster.h"
 
@@ -23,11 +23,12 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.7 2002/07/03 13:30:43 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.8 2002/09/04 23:15:25 lsrea Exp $
 */
 namespace Event {  // NameSpace
 
-  class TkrFitTrack: public TkrRecInfo, virtual public ContainedObject
+//  class TkrFitTrack: public TkrRecInfo, virtual public ContainedObject
+class TkrFitTrack: public TkrFitTrackBase
 {    
 public:
     /// Constructor/destructor for the class
@@ -123,9 +124,9 @@ protected:
 };
 
 //typedef for the Container
-  typedef ObjectVector<TkrFitTrack>      TkrFitTrackCol;
-  typedef TkrFitTrackCol::const_iterator TkrFitConPtr;
-  typedef TkrFitTrackCol::iterator       TkrFitColPtr;
+//  typedef ObjectVector<TkrFitTrack>      TkrFitTrackCol;
+//  typedef TkrFitTrackCol::const_iterator TkrFitConPtr;
+//  typedef TkrFitTrackCol::iterator       TkrFitColPtr;
 
 }; //Namespace
 

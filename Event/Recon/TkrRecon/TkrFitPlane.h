@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.9 2002/11/21 20:02:49 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.10 2002/11/23 00:44:47 usher Exp $
 */
 
 namespace Event { // Namespace
@@ -83,6 +83,7 @@ public:
 
     /// Classes allowed access for filling the information
     friend class KalFitTrack;
+    friend class KalFitter;
     friend class TkrKalFitTrack;
     friend class KalmanFilter;
 
