@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:22:28 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+Added idents::VolumeIdentifier to McIntegratingHit
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Mar  8 15:35:55 PST 2002
 GlastEvent/mgr
 
