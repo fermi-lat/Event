@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.10 2002/04/03 04:21:06 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.11 2002/04/05 16:22:45 riccardo Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McParticle.h"
@@ -86,7 +86,7 @@ const McParticle& McParticle::mother()const
 
 
 /// access to the list of daughters: null if none
-const SmartRefVector<McParticle>& McParticle::daugherList()const
+const SmartRefVector<McParticle>& McParticle::daughterList()const
 {
     return m_daughters;
 }
