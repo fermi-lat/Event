@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu May  9 18:50:28 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+
+Another GlastEvent->Event
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 18:17:36 PDT 2002
 Event/src/MonteCarlo
 
