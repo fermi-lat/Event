@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 28 13:29:34 PDT 2002
+Event/Event/Recon
+
+Removed Files:
+	AcdRecon.h 
+Log Message:
+moving to AcdRecon directory
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 28 13:28:52 PDT 2002
 Event/Event/Recon/AcdRecon
 
