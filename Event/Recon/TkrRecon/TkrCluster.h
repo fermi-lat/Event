@@ -22,7 +22,7 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.2 2002/05/11 14:17:02 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.3 2002/10/08 22:20:14 lsrea Exp $
 */
 
 namespace Event { //Namespace
@@ -73,6 +73,7 @@ public:
     inline view v()          const {return m_view;}
     inline int  firstStrip() const {return m_strip0;}
     inline int  lastStrip()  const {return m_stripf;}
+    inline double ToT()      const {return m_ToT;}
 
 	int chip();
 	double strip();
