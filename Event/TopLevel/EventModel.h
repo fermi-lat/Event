@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.2 2000/10/24 21:16:41 heather Exp $
+// $Id: EventModel.h,v 1.3 2000/10/30 20:28:26 heather Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -19,8 +19,6 @@
     namespace EventModel {
         _EXTERN_ std::string   Event;
 
-        _EXTERN_ std::string ACDTilesName;
-
         namespace MC {
             _EXTERN_ std::string Event;
             _EXTERN_ std::string MCTKRHits;
@@ -28,15 +26,6 @@
             _EXTERN_ std::string MCACDHits;
         };
 
-        namespace Hits  {
-            _EXTERN_ std::string Event;
-            _EXTERN_ std::string Glast;
-            //_EXTERN_ std::string TowerName;
-            //_EXTERN_ std::string SiLayersName;
-            _EXTERN_ std::string ACDTilesName;
-            //_EXTERN_ std::string CalorimeterName;
-        
-        };
     };
 #undef _EXTERN_
 
