@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/test/test_RelTabs.cxx,v 1.1 2002/07/03 16:59:51 frailis Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/test/test_RelTabs.cxx,v 1.2 2002/08/09 10:25:44 frailis Exp $
 
 
 #include "Event/RelTable/Relation.h"
@@ -126,7 +126,7 @@ int main()
  
   for (i = locs.begin(); i != locs.end(); i++)
     {
-      (*i)->setFirst(0);
+      tab.changeFirst(*i,0);
     }
   
   std::cout << std::endl << "Jack Tripper set to null"  << std::endl;  
@@ -147,6 +147,17 @@ int main()
                   << "     ssn: " << (*i)->getFirst()->ssn   << std::endl;
     }
   
+  std::cout << std::endl << "Now, let's remove relations with location 1" << std::endl;
+
+  locs.clear();
+  locs = tab.getRelBySecond(location1);
+  for (i = locs.begin(); i != locs.end(); i++)
+  {
+    tab.erase(*i);
+  }
+
+  std::cout << "Number of relations = " << tab.size() << std::endl;   
+ 
 
   // Using the TDS, one can finally register the collection of relations:
   // SomeSvc()->registerObject("/Event/MC/RelFakeOneFakeTwo",
