@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: usher  Tue May  7 14:04:06 PDT 2002
+GlastEvent/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+EventModel: Changed TkrTracks to TkrFitTrackCol, TkrCandidates to TkrPatCandCol
+requirements: Added source code for TkrRecon output classes to library
+
+    *
+------------------------------------------------------------
+User: usher  Tue May  7 14:04:06 PDT 2002
 GlastEvent/mgr
 
 Modified Files:
