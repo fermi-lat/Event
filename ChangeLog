@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: hansl  Wed Aug 25 11:20:42 PDT 2004
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+rearrange AcdRecon.h to avoid warnings
+    *
+------------------------------------------------------------
 User: hansl  Wed Aug 25 11:15:40 PDT 2004
 Event/Event/Recon/AcdRecon
 
