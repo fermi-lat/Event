@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri May 18 15:48:33 PDT 2001
+GlastEvent/GlastEvent/TopLevel EventModel.h
+
+Modified Files:
+	EventModel.h 
+Log Message:
+
+switch McVertex and McParticle to use "Col" for collections.
+    *
+------------------------------------------------------------
 User: burnett  Fri May 18 15:48:32 PDT 2001
 GlastEvent/GlastEvent/MonteCarlo McParticle.h McVertex.h
 
