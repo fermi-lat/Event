@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 10 21:20:28 PST 2004
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+fix up CLIDs for conversion services
+    *
+------------------------------------------------------------
 User: heather  Wed Mar 10 21:15:13 PST 2004
 Event/Event/Recon/TkrRecon
 
