@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Aug 14 11:19:01 PDT 2001
+GlastEvent/GlastEvent/TopLevel MCEvent.h
+
+Modified Files:
+	MCEvent.h 
+Log Message:
+
+fix bug: needed inline.
+    *
+------------------------------------------------------------
 User: chehtman  Wed Jul 25 07:27:42 PDT 2001
 GlastEvent/GlastEvent/Digi CalDigi.h
 
