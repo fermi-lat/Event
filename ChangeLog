@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Feb  5 14:27:33 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+add AcdDigi to EventModel
+    *
+------------------------------------------------------------
 User: heather  Mon Feb  5 14:27:15 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
