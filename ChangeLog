@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu May  9 09:36:17 PDT 2002
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalCluster.cxx 
+Log Message:
+Change GlastEvent to Event.
+
+    *
+------------------------------------------------------------
+User: burnett  Thu May  9 09:36:17 PDT 2002
 Event/src/MonteCarlo
 
 Modified Files:
