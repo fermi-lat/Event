@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul 25 02:20:42 PDT 2002
+Event/Event/TopLevel
+
+Removed Files:
+	AnalEvent.h DigiEvent.h EventHits.h EventTag.h ObjectList.h 
+	ObjectVector.h RawEvent.h RecEvent.h RefTable.h Run.h 
+	SubMCEvent.h 
+Log Message:
+remove stuff from LHCb that was never used
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul 25 02:19:07 PDT 2002
 Event/Event/Utilities
 
