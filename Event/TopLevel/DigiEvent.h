@@ -16,7 +16,7 @@ static const CLID& CLID_DigiEvent = InterfaceID("DigiEvent", 1, 0);
 * It contains:
 * - m_fromMc, if coming from Monte Carlo
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/DigiEvent.h,v 1.10 2002/09/06 21:51:56 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/DigiEvent.h,v 1.11 2004/09/18 18:16:58 usher Exp $
 */
 namespace Event {  // NameSpace
 
@@ -25,7 +25,7 @@ class DigiEvent : public DataObject {
 public:
     
     DigiEvent()
-        : DataObject(), m_fromMc(false) { }
+        : DataObject(), m_fromMc(true) { }
     
     virtual ~DigiEvent() { }
     
