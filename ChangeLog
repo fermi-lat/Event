@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sun Dec 26 21:11:09 PST 2004
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+patch for unix compile error
+
+    *
+------------------------------------------------------------
 User: lsrea  Sun Dec 26 21:11:08 PST 2004
 Event/Event/Recon/TkrRecon
 
