@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Tue May  7 13:55:11 PDT 2002
+GlastEvent/GlastEvent/Recon/TkrRecon
+
+Added Files:
+	TkrCluster.h TkrClusterCol.h TkrFitHit.h TkrFitMatrix.h 
+	TkrFitPar.h TkrFitPlane.h TkrFitTrack.h TkrFitTrackCol.h 
+	TkrPatCand.h TkrPatCandCol.h TkrPatCandHit.h TkrRecInfo.h 
+	TkrVertex.h TkrVertexCol.h 
+Log Message:
+Move TkrRecon Recon output class definitions to GlastEvent/Recon/TkrRecon
+
+    *
+------------------------------------------------------------
 User: usher  Tue May  7 13:47:05 PDT 2002
 GlastEvent/GlastEvent/Recon/TkrRecon
 
