@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Thu Jul 18 14:08:25 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.cxx 
+Log Message:
+Change the Chisq. Alg. to be the correct 3D version 
+    *
+------------------------------------------------------------
 User: riccardo  Thu Jul 18 03:39:07 PDT 2002
 Event/Event/MonteCarlo
 
