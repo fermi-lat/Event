@@ -29,7 +29,7 @@
 *
 * @author(s) The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrRecInfo.h,v 1.3 2002/05/11 14:17:03 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrRecInfo.h,v 1.4 2002/05/13 18:39:04 usher Exp $
 */
 namespace Event { // Namespace
 
@@ -71,6 +71,9 @@ public:
 
     /// Utility function to tell us a valid track/vertex exists
     virtual bool         empty(int numHits)                 const = 0;
+
+    /// seems to need a virtual destructor
+    virtual ~TkrRecInfo() {}
 }; 
 
 }; // Namespace
