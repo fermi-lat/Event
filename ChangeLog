@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Sun Jan 27 11:52:59 PST 2002
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+
+Add the definition of TkrTracks which is the new Fit Track data object which
+will be stored in the TDS. 
+
+
+    *
+------------------------------------------------------------
 User: usher  Mon Nov 26 11:28:50 PST 2001
 GlastEvent/src/TopLevel
 
