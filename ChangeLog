@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Aug  9 14:21:00 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	SkyDir.h TimeStamp.h 
+Log Message:
+Access methods made "const," cleanup of code, SkyDir can be rotated like a Hep3Vector, and the access methods for l,b,ra,dec still work.
+
+    *
+------------------------------------------------------------
 User: frailis  Fri Aug  9 03:25:44 PDT 2002
 Event/src/test
 
