@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/ParticleID.h,v 1.4 2002/03/11 17:22:30 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/ParticleID.h,v 1.5 2002/05/09 16:36:16 burnett Exp $
 #ifndef LHCBEVENT_PARTICLEID_H
 #define LHCBEVENT_PARTICLEID_H 1
 
@@ -62,7 +62,7 @@ public:
   /// Fill the output stream (ASCII)
   std::ostream& fillStream( std::ostream& s ) const                            {
     return s << "class ParticleID : "
-	     << EventField( Event::field4 )
+	     << EventField( EventFormat::field4 )
       << m_id;
   }
 

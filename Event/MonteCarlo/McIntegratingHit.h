@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.10 2002/04/30 21:40:09 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.11 2002/05/09 16:36:15 burnett Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -29,7 +29,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.10 2002/04/30 21:40:09 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.11 2002/05/09 16:36:15 burnett Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -164,21 +164,21 @@ inline std::ostream& mc::McIntegratingHit::fillStream( std::ostream& s ) const
 {
     s << "class McCaloHitBase :"
       << "\n    Deposited Energy        = "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_totalEnergy
       << "\n    First moment (x, y, z)  = "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment1seed.x() / m_totalEnergy << ", "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment1seed.y() / m_totalEnergy << ", "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment1seed.z() / m_totalEnergy << " )"
       << "\n    Second moment (x, y, z) = "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment2seed.x() / m_totalEnergy << ", "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment2seed.y() / m_totalEnergy << ", "
-      << EventFloatFormat( Event::width, Event::precision )
+      << EventFloatFormat( EventFormat::width, EventFormat::precision )
       << m_moment2seed.z() / m_totalEnergy << " )"
       << "\n    Volume ID               = " << m_volumeID.name();
     return s;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Definitions.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Definitions.h,v 1.2 2002/05/09 16:36:16 burnett Exp $
 #ifndef LHCBEVENT_DEFINITIONS_H
 #define LHCBEVENT_DEFINITIONS_H 1
 
@@ -18,7 +18,7 @@
 //
 //------------------------------------------------------------------------------
 
-namespace Event {
+namespace EventFormat {
 
   // Width of the output field of a floating point number
   const int width      = 12;
