@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Thu Jan 25 04:34:14 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McPositionHit.h
+
+Modified Files:
+	McPositionHit.h 
+Log Message:
+adding originMcParticle
+    *
+------------------------------------------------------------
 User: ozaki  Thu Jan 25 04:33:49 PST 2001
 GlastEvent/src/MonteCarlo McPositionHit.cxx
 
