@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: usher  Wed Oct  9 16:38:27 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrPatCand.h 
+Removed Files:
+	TkrPatCandCol.h 
+Log Message:
+Modify TkrPatCand.h to typdef TkrPatCandCol and then remove explicit class
+
+    *
+------------------------------------------------------------
 User: frailis  Wed Oct  9 09:07:23 PDT 2002
 Event/src/test
 
