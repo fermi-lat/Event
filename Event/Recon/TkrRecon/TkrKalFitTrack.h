@@ -19,7 +19,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrKalFitTrack.h,v 1.8 2002/09/04 23:15:25 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrKalFitTrack.h,v 1.1 2002/12/19 20:53:42 usher Exp $
 */
 namespace Event {  // NameSpace
 
@@ -122,8 +122,8 @@ public:
     inline void   setKalEnergyError(double x)         {m_KalEnergyErr = x;}
     inline void   setNumXGaps(int i)                  {m_Xgaps = i;}
     inline void   setNumYGaps(int i)                  {m_Ygaps = i;}
-    inline void   setNumXFirstGaps(int i)             {m_XistGaps;}
-    inline void   setNumYFirstGaps(int i)             {m_YistGaps;}
+    inline void   setNumXFirstGaps(int i)             {m_XistGaps = i;}
+    inline void   setNumYFirstGaps(int i)             {m_YistGaps = i;}
     inline void   setStartEnergy(double x)            {m_energy0 = x;}
     inline void   setNumSegmentPoints(int i)          {m_numSegmentPoints = i;}
     inline void   setNumXHits(int i)                  {m_nxHits = i;}
