@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/LHCbEvent/LHCbEvent/MonteCarlo/MCVertex.h,v 1.1.1.2 2000/11/17 12:06:32 hansl Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCVertex.cpp,v 1.1 2000/12/11 14:13:24 ozaki Exp $
 
 //
 // Inline code must be outside the class definition
@@ -6,20 +6,38 @@
 #include "GlastEvent/MonteCarlo/MCParticle.h"  // aka MCParticleKinematics
 
 
-/// Retrieve position
-inline const HepPoint3D& MCVertex::position () const
+/// Retrieve initial position
+inline const HepPoint3D& MCVertex::initialPosition () const
 {
-  return m_position;
+  return m_initialPosition;
 }
-inline HepPoint3D& MCVertex::position ()
+/// Retrieve initial position
+inline HepPoint3D& MCVertex::initialPosition ()
 {
-  return m_position;
+  return m_initialPosition;
 }
-/// Update vertex position
-inline void MCVertex::setPosition (const HepPoint3D& value)
+/// Update initial position
+inline void MCVertex::setInitialPosition (const HepPoint3D& value)
 {
-  m_position = value;
+  m_initialPosition = value;
 }
+
+/// Retrieve final position
+inline const HepPoint3D& MCVertex::finalPosition () const
+{
+  return m_finalPosition;
+}
+/// Retrieve final position
+inline HepPoint3D& MCVertex::finalPosition ()
+{
+  return m_finalPosition;
+}
+/// Update final position
+inline void MCVertex::setFinalPosition (const HepPoint3D& value)
+{
+  m_finalPosition = value;
+}
+
 /// retrieve time of flight
 inline double MCVertex::timeOfFlight () const
 {

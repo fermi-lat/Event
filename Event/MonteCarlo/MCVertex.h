@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/LHCbEvent/LHCbEvent/MonteCarlo/MCVertex.h,v 1.1.1.2 2000/11/17 12:06:32 hansl Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCVertex.h,v 1.1 2000/12/11 14:13:24 ozaki Exp $
 #ifndef GlastEvent_MCVertex_H
 #define GlastEvent_MCVertex_H 1
 
@@ -68,11 +68,20 @@ public:
     virtual ~MCVertex() { }
 
 
-    /// Retrieve position
-    const HepPoint3D& position () const;
-          HepPoint3D& position ();
-    /// Update vertex position
-    void setPosition (const HepPoint3D& value);
+    /// Retrieve initial position
+    const HepPoint3D& initialPosition () const;
+    /// Retrieve initial position
+          HepPoint3D& initialPosition ();
+    /// Update initial position
+    void setInitialPosition (const HepPoint3D& value);
+
+    /// Retrieve final position
+    const HepPoint3D& finalPosition () const;
+    /// Retrieve final position
+          HepPoint3D& finalPosition ();
+    /// Update final position
+    void setFinalPosition (const HepPoint3D& value);
+
     /// retrieve time of flight
     double timeOfFlight () const;
     /// update time of flight
@@ -134,9 +143,12 @@ private:
     /// Sub-event ID
     short                      m_subEvtID;
 #endif // NeedSubEvtID
-    /// Position
+    /// Positions:
     /// <A HREF="http://wwwinfo.cern.ch/asd/lhc++/clhep/manual/RefGuide/Geometry/HepPoint3D.html">class HepPoint3D</A>
-    HepPoint3D                 m_position;
+    /// Initial position
+    HepPoint3D                 m_initialPosition;
+    /// Final position
+    HepPoint3D                 m_finalPosition;
     /// Time of fligfht
     double                     m_timeOfFlight;
     /// vertex type
