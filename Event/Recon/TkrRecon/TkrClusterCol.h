@@ -14,7 +14,7 @@ extern const CLID& CLID_TkrClusterCol;
 *
 * @brief TDS Object for TkrCluster vector, and array of vectors.
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.4 2002/05/11 16:10:42 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.5 2002/06/27 18:43:11 usher Exp $
 */
 
 namespace Event { //Namespace
@@ -45,7 +45,7 @@ public:
 	/// returns pointer to the ith TkrCluster in simple cluster list
 	TkrCluster* getHit(int i) const {return m_clustersList[i];}
 	/// returns pointer to the ith TkrCluster (view obsolete)
-	TkrCluster* getHit(TkrCluster::view v, int i) {return m_clustersList[i];}
+	TkrCluster* getHit(TkrCluster::view /*v*/, int i) {return m_clustersList[i];}
 	/// returns size of the cluster with id "id"(view obsolete)
 	double const size(TkrCluster::view v, int i)      {return getHit(v,i)->size();}     
 	/// returns  space position of the  ithTkrCluster (view obsolete)
