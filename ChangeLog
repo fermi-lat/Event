@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Fri May 10 11:07:52 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	DigiEvent.h 
+Log Message:
+GlastEvent namespace change
+    *
+------------------------------------------------------------
 User: richard  Fri May 10 11:00:18 PDT 2002
 Event/Event/MonteCarlo
 
