@@ -28,8 +28,9 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.10 2002/09/04 23:15:25 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.11 2002/12/19 20:53:42 usher Exp $
 */
+extern const CLID& CLID_TkrVertex;
 
 namespace Event { //Namespace
   
@@ -39,6 +40,11 @@ public:
     
     TkrVertex( int layer, int tower, double energy, double quality, const Ray& testRay);
    ~TkrVertex() {}
+
+   //! Retrieve pointer to class defininition structure
+   virtual const CLID& clID() const   { return TkrVertex::classID(); }
+   static const CLID& classID()       { return CLID_TkrVertex; }
+
 
     /// Define the TkrBase routines
     double        getQuality() const;                    

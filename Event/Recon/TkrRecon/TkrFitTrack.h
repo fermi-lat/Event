@@ -23,8 +23,11 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.8 2002/09/04 23:15:25 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.9 2002/12/19 20:53:42 usher Exp $
 */
+
+extern const CLID& CLID_TkrFitTrack;
+
 namespace Event {  // NameSpace
 
 //  class TkrFitTrack: public TkrRecInfo, virtual public ContainedObject
@@ -34,6 +37,10 @@ public:
     /// Constructor/destructor for the class
     TkrFitTrack();
    ~TkrFitTrack();
+
+   //! Retrieve pointer to class defininition structure
+   virtual const CLID& clID() const   { return TkrFitTrack::classID(); }
+   static const CLID& classID()       { return CLID_TkrFitTrack; }
 
     void     initializeInfo(unsigned int xgaps, unsigned int ygaps, 
         unsigned int x1st, unsigned int y1st);

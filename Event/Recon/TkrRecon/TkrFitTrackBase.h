@@ -29,8 +29,10 @@
 *
 * @author(s) The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrFitTrackBase.h,v 1.5 2002/09/05 07:24:16 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrackBase.h,v 1.1 2002/12/19 20:53:42 usher Exp $
 */
+extern const CLID& CLID_TkrFitTrackBase;
+
 namespace Event { // Namespace
 
 class TkrFitTrackBase : public TkrFitPlaneCol, virtual public ContainedObject
@@ -38,6 +40,11 @@ class TkrFitTrackBase : public TkrFitPlaneCol, virtual public ContainedObject
 public:
     /// Retrieve track information at the Start or End of the track
     enum TrackEnd { Null, Start, End };
+
+    //! Retrieve pointer to class defininition structure
+   virtual const CLID& clID() const   { return TkrFitTrackBase::classID(); }
+   static const CLID& classID()       { return CLID_TkrFitTrackBase; }
+
 
     /// The track quality
     virtual double       getQuality()                       const = 0;

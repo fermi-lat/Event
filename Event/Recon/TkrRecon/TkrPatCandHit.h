@@ -14,8 +14,10 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.5 2003/08/04 19:41:47 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.6 2003/08/06 16:37:37 usher Exp $
 */
+
+extern const CLID& CLID_TkrPatCandHit;
 
 namespace Event { //Namespace
 
@@ -27,6 +29,11 @@ public:
     TkrPatCandHit(unsigned int hitId, const Point& pos, unsigned int tower, 
         unsigned int layer, TkrCluster::view v);
    ~TkrPatCandHit() {}
+
+   //! Retrieve pointer to class defininition structure
+   virtual const CLID& clID() const   { return TkrPatCandHit::classID(); }
+   static const CLID& classID()       { return CLID_TkrPatCandHit; }
+
 
     //Output method to write out the contents of the class
     void writeOut(MsgStream& log) const; 
