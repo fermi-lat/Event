@@ -43,7 +43,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.13 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.14 2004/12/13 23:32:58 atwood Exp $
 */
 
 static const CLID& CLID_TkrVertex = InterfaceID("TkrVertex", 1, 0);
@@ -107,13 +107,16 @@ namespace Event { //Namespace
         inline void   setChiSquare(double x)              {m_chiSquare  = x;}
         inline void   setQuality(double x)                {m_quality    = x;}
         inline void   setAddedRadLen(double x)            {m_radlen     = x;}
+        inline void   setTkr1ArcLen(double x)             {m_arcLen1    = x;}
+        inline void   setTkr2ArcLen(double x)             {m_arcLen2    = x;}
+        inline void   setDOCA(double x)                   {m_doca       = x;}
 		inline void   setTkrID(idents::TkrId& tkrID)      {m_vtxID      = tkrID;}
 		inline void   setParams(TkrTrackParams& params)   {m_params     = params;}
         inline void   setStatusBit(unsigned int status)   {m_statusBits |= status;}
         inline void   clearStatusBits()                   {m_statusBits = 0;}
-		
+
         // Add tracks to the list
-        void addTrack(TkrTrack* pTrack) {m_tracks.push_back(pTrack);}
+        void addTrack(const Event::TkrTrack* pTrack)      {m_tracks.push_back(pTrack);}
 
 		// delete last track in the list
         void deleteTrack() {m_tracks.pop_back();}

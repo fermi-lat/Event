@@ -6,7 +6,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McRelTableDefs.h,v 1.1 2004/02/18 18:54:28 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McRelTableDefs.h,v 1.2 2004/09/18 18:16:57 usher Exp $
  */
 
 #ifndef McRelTableDefs_h
@@ -23,14 +23,11 @@ namespace Event {
 class McParticle;
 class McPositionHit;
 class McSiLayerHit;
-class McCandTrack;
 
 // Forward declarations for recon information
 class TkrCluster;
 class TkrTrack;
 class TkrTrackHit;
-class TkrPatCandHit;
-class TkrPatCand;
 
 // typedefs for relating McParticles to associated McPositionHits
 typedef Event::RelTable<Event::McParticle, Event::McPositionHit>   McPartToPosHitTab;
@@ -55,18 +52,6 @@ typedef Event::RelTable<Event::McParticle, ClusMcPosHitRel>        McPartToClusP
 typedef Event::Relation<Event::McParticle, ClusMcPosHitRel>        McPartToClusPosHitRel;
 typedef ObjectList<McPartToClusPosHitRel>                          McPartToClusPosHitTabList;
 typedef std::vector<Event::McPartToClusPosHitRel*>                 McPartToClusPosHitVec;
-
-// typedefs for relating TkrPatCandHits to McParticles
-typedef Event::RelTable<Event::McParticle, Event::TkrPatCandHit>   McPartToTkrCandHitTab;
-typedef Event::Relation<Event::McParticle, Event::TkrPatCandHit>   McPartToTkrCandHitRel;
-typedef ObjectList<McPartToTkrCandHitRel>                          McPartToTkrCandHitTabList;
-typedef std::vector<McPartToTkrCandHitRel*>                        McPartToTkrCandHitVec;
-
-// typedefs for relating TkrPatCands to McParticles
-typedef Event::RelTable<Event::McParticle, Event::TkrPatCand>      McPartToTkrPatCandTab;
-typedef Event::Relation<Event::McParticle, Event::TkrPatCand>      McPartToTkrPatCandRel;
-typedef ObjectList<Event::McPartToTkrPatCandRel>                   McPartToTkrPatCandTabList;
-typedef std::vector<Event::McPartToTkrPatCandRel*>                 McPartToTkrPatCandVec;
 
 // typedefs for relating TkrTrackHits to McParticles
 typedef Event::RelTable<Event::McParticle, Event::TkrTrackHit>     McPartToTkrTrackHitTab;
