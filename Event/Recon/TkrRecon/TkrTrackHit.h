@@ -26,7 +26,7 @@
 *
 * @author Bill Atwood, Leon Rochester, Johann Cohen-Tanugi, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackHit.h,v 1.5 2004/11/10 22:48:27 atwood Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackHit.h,v 1.6 2004/11/15 21:10:24 usher Exp $
 */
 
 static const CLID& CLID_TkrTrackHit = InterfaceID("TkrTrackHit",  1, 0);
@@ -63,6 +63,7 @@ public:
                      HASFILTERED  = 0x0008,  // Hit has valid filtered parameters
                      HASSMOOTHED  = 0x0010,  // Hit has valid smoothed parameters
                      HASMATERIAL  = 0x0020,  // Hit has valid material matrix
+					 UPWARDS      = 0x0040,  // Track direction is upwards (tz > 0)
 					 HITISSSD     = 0x0100,  // Hit comes from a SSD
 					 HITISDEADST  = 0x0200,  // Hit coresponds to a dead SSD Strip
 					 HITISGAP     = 0x0400,  // Hit comes from gap between SSDs
@@ -112,6 +113,7 @@ public:
     inline const bool validFilteredHit()  const {return (m_statusBits & HASFILTERED ) == HASFILTERED;}
     inline const bool validSmoothedHit()  const {return (m_statusBits & HASSMOOTHED ) == HASSMOOTHED;}
     inline const bool validMaterial()     const {return (m_statusBits & HASMATERIAL ) == HASMATERIAL;}
+    inline const bool upwards()         const {return (m_statusBits & UPWARDS ) == UPWARDS;}
 
     /// Access the hit's associated information
     inline const TkrClusterPtr getClusterPtr()      const {return m_cluster;   }
