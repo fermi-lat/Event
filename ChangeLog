@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Tue May  7 14:06:27 PDT 2002
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Change TkrClusters to TkrClusterCol
+
+    *
+------------------------------------------------------------
 User: usher  Tue May  7 14:04:06 PDT 2002
 GlastEvent/src/TopLevel
 
