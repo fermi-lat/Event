@@ -13,9 +13,10 @@
 *
 * @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/users/TkrGroup/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.1 2004/09/08 15:10:45 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.1 2004/09/18 18:16:58 usher Exp $
 */
 
+#include <iostream>
 
 namespace Event { //Namespace Event
 
@@ -92,7 +93,13 @@ public:
     inline void setyPosyPos(const double& val)   {m_yPos_yPos = val; }
     inline void setyPosySlp(const double& val)   {m_yPos_ySlp = val; }
     inline void setySlpySlp(const double& val)   {m_ySlp_ySlp = val; }
-    
+
+    std::ostream& fillStream( std::ostream& s ) const;
+    friend std::ostream& operator<< ( std::ostream& s, const TkrTrackParams& obj ) 
+      {
+	return obj.fillStream(s);
+      }
+
 private:
     /// Private intialization method
     void initDataMembers();
