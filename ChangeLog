@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: usher  Thu Jun 27 11:43:11 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.cxx 
+Log Message:
+Provide some (minimal) protection against bad parameters in lookup of clusters by view and layer
+
+    *
+------------------------------------------------------------
+User: usher  Thu Jun 27 11:43:11 PDT 2002
 Event/Event/Recon/TkrRecon
 
 Modified Files:
