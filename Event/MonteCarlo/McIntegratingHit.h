@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.14 2002/05/10 05:26:22 richard Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.15 2002/05/10 18:00:18 richard Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -29,7 +29,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.14 2002/05/10 05:26:22 richard Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.15 2002/05/10 18:00:18 richard Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -188,6 +188,7 @@ inline std::ostream& McIntegratingHit::fillStream( std::ostream& s ) const
 // Definition of all container types of McIntegratingHit
 //template <class TYPE> class ObjectVector;
 typedef ObjectVector<McIntegratingHit>     McIntegratingHitVector;
+typedef ObjectVector<McIntegratingHit>     McIntegratingHitCol;
 //template <class TYPE> class ObjectList;
 typedef ObjectList<McIntegratingHit>       McIntegratingHitList;
 
