@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Fri Mar  2 18:53:44 PST 2001
+GlastEvent/GlastEvent/data TdCsIData.h TdSiData.h
+
+Removed Files:
+	TdCsIData.h TdSiData.h 
+Log Message:
+Moved over to GlastSvc/src/data
+
+    *
+------------------------------------------------------------
 User: igable  Fri Mar  2 18:51:30 PST 2001
 GlastEvent/src/data TdCsIData.cpp TdSiData.cpp
 
