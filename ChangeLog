@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri May 18 15:48:32 PDT 2001
+GlastEvent/GlastEvent/MonteCarlo McParticle.h McVertex.h
+
+Modified Files:
+	McParticle.h McVertex.h 
+Log Message:
+
+switch McVertex and McParticle to use "Col" for collections.
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 19 10:35:03 PDT 2001
 GlastEvent/mgr requirements
 
