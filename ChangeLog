@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: riccardo  Tue Mar 12 09:24:23 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h McPositionHit.h 
+Log Message:
+Added two small classes, ComparePosHits and CompareIntHits, to use the sort algorithms on the
+collection of hits
+
+    *
+------------------------------------------------------------
 User: riccardo  Mon Mar 11 09:22:30 PST 2002
 GlastEvent/src/MonteCarlo
 
