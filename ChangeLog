@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lsrea  Wed Sep  4 16:15:25 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.cxx TkrPatCand.cxx TkrVertex.cxx 
+Log Message:
+First whack at eliminating the unix warnings
+    *
+------------------------------------------------------------
+User: lsrea  Wed Sep  4 16:15:25 PDT 2002
 Event/Event/Recon/TkrRecon
 
 Modified Files:
