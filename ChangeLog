@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr  2 10:35:06 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+update to include access methods to all fields
+    *
+------------------------------------------------------------
 User: richard  Thu Mar 28 16:54:04 PST 2002
 GlastEvent/GlastEvent/Digi
 
