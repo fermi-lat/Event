@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Sat Nov 16 15:20:33 PST 2002
+Event/Event/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+add bitfield for readout bits
+    *
+------------------------------------------------------------
 User: lsrea  Wed Oct  9 20:55:08 PDT 2002
 Event/doc
 
