@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue May 14 13:58:54 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+update fillStream to include initialPosition
+    *
+------------------------------------------------------------
 User: heather  Tue May 14 13:58:18 PDT 2002
 Event/Event/Digi
 
