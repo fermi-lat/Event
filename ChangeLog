@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul 25 02:19:07 PDT 2002
+Event/Event/Utilities
+
+Removed Files:
+	CellID.h Classification.h DetectorDataObject.h 
+	ProcessingVersion.h RandomNumberSeed.h SummaryPID.h 
+	SummarySeenDetectors.h TriggerPattern.h VolumeID.h 
+Log Message:
+remove stuff from LHCb that was never used
+    *
+------------------------------------------------------------
 User: burnett  Mon Jul 22 05:18:51 PDT 2002
 Event/src/TopLevel
 
