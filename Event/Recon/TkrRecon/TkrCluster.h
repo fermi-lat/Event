@@ -27,7 +27,7 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.7 2004/10/01 19:35:30 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.8 2004/12/26 23:18:45 lsrea Exp $
 */
 
 #include "GaudiKernel/IInterface.h"
@@ -116,7 +116,7 @@ namespace Event {
             return m_tkrId.getTray()*2 + m_tkrId.getBotTop() - getPlaneOffset(); 
         }
         // construct layer from Plane
-        inline getLayer()     const { 
+        inline int getLayer() const { 
             return (getPlane() + getLayerOffset())/2 ; }
         // cluster used on a track
         bool hitFlagged()     const { 
