@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Wed Feb 14 14:19:42 PST 2001
+GlastEvent/GlastEvent/TopLevel ObjectList.h
+
+Modified Files:
+	ObjectList.h 
+Log Message:
+reverting to previous version since Masanobu's fix breaks gcc 2.91.66
+    *
+------------------------------------------------------------
 User: tlindner  Wed Feb 14 14:15:44 PST 2001
 GlastEvent/mgr requirements
 
