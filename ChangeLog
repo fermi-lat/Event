@@ -36,3 +36,12 @@ Modified Files:
 Log Message:
 comment out serialization of members that are used at this point
     *
+------------------------------------------------------------
+User: heather  Tue Dec 19 08:55:32 PST 2000
+GlastEvent/src/Factories TopInstantiation.cpp
+
+Modified Files:
+	TopInstantiation.cpp 
+Log Message:
+instantiate the Event and IrfEvent objects
+    *
