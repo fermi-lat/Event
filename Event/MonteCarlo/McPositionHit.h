@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.6 2001/04/18 19:07:25 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.7 2002/03/01 01:13:03 riccardo Exp $
 #ifndef GlastEvent_McPositionHit_H
 #define GlastEvent_McPositionHit_H 1
 
@@ -12,6 +12,7 @@
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "CLHEP/Geometry/Point3D.h"
 #include "GlastEvent/Utilities/CLHEPStreams.h"
+#include "GlastEvent/Utilities/IDStreams.h"
 // Include all Gaudi container types here
 //   to simplify inlude statements in algorithms
 #include "GaudiKernel/ObjectVector.h"
@@ -164,7 +165,7 @@ inline StreamBuffer& McPositionHit::serialize( StreamBuffer& s ) const
 {
   ContainedObject::serialize(s);
   return s
-//    << m_volumeID
+    << m_volumeID
     << m_entry
     << m_exit
     << m_depositedEnergy
@@ -181,7 +182,7 @@ inline StreamBuffer& McPositionHit::serialize( StreamBuffer& s )
 {
   ContainedObject::serialize(s);
   return s
-//    >> m_volumeID
+    >> m_volumeID
     >> m_entry
     >> m_exit
     >> m_depositedEnergy
