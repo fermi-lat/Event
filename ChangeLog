@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Thu Jun 21 15:54:52 PDT 2001
+GlastEvent/GlastEvent/Recon ISiRecObjs.h
+
+Added Files:
+	ISiRecObjs.h 
+Log Message:
+New interface for /TkrRecon/SiRecObjs
+
+    *
+------------------------------------------------------------
 User: burnett  Sat Jun 16 07:07:31 PDT 2001
 GlastEvent/mgr requirements
 
