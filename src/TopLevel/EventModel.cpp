@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.6 2000/10/30 20:29:13 heather Exp $
+// $Id: EventModel.cpp,v 1.7 2000/11/01 22:17:09 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -51,4 +51,8 @@ public:
     const CLID& CLID_MCCalorimeterHit   = 2011;
     const CLID& CLID_MCEvent            = 2012;
     const CLID& CLID_MCSiLayer          = 2013;
+
+    //! Raw event definitions
+    const CLID& CLID_CsIData            = 2051;
+    const CLID& CLID_Xtal               = 2052;
         
