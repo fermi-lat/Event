@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.31 2001/11/08 06:08:34 usher Exp $
+// $Id: EventModel.cpp,v 1.32 2001/11/26 19:28:50 usher Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -55,6 +55,7 @@ public:
         EventModel::TkrRecon::TkrClusters   = EventModel::TkrRecon::Event + "/TkrClusters";
         EventModel::TkrRecon::TkrCandidates = EventModel::TkrRecon::Event + "/TkrCandidates";
         EventModel::TkrRecon::SiRecObjs     = EventModel::TkrRecon::Event + "/SiRecObjs";
+        EventModel::TkrRecon::TkrTracks     = EventModel::TkrRecon::Event + "/TkrTracks";
 
         // reconstructed ACD data
         EventModel::AcdRecon::Event         = EventModel::Event + "/AcdRecon";
@@ -157,6 +158,7 @@ public:
     const CLID& CLID_TkrClusters        = 3102;  // Is this really Layers, Clusters, RecObjs
     const CLID& CLID_TkrCandidates      = 3103;  // Is this really Layers, Clusters, RecObjs
     const CLID& CLID_SiRecObjs          = 3104;  // or rather Layer, Cluster, RecObj objects?
+    const CLID& CLID_TkrTracks          = 3105;  // or rather Layer, Cluster, RecObj objects?
 
     //! Reconstruction: Tkr class IDs
     const CLID& CLID_CalRecon           = 3200;
