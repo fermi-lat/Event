@@ -1,4 +1,102 @@
 ------------------------------------------------------------
+TAG
+Tag name: v9r13p1gr4, operation: add
+Package: Event
+User: lsrea  Tue Jan 11 09:02:22 2005
+Files:
+  Event/.cvsignore  1.3
+  Event/ChangeLog  1.637
+  Event/Event/Digi/AcdDigi.h  1.17
+  Event/Event/Digi/TkrDigi.h  1.14
+  Event/Event/Digi/CalDigi.h  1.18
+  Event/Event/Digi/GltDigi.h  1.1
+  Event/Event/Factories/WrapperFactory.h  1.2
+  Event/Event/Hits/SiLayers.h  1.2
+  Event/Event/MonteCarlo/McParticle.h  1.31
+  Event/Event/MonteCarlo/McEventStructure.h  1.2
+  Event/Event/MonteCarlo/McTkrStrip.h  1.4
+  Event/Event/MonteCarlo/Exposure.h  1.1
+  Event/Event/MonteCarlo/D2Entry.h  1.2
+  Event/Event/MonteCarlo/McRelTableDefs.h  1.1
+  Event/Event/MonteCarlo/McPositionHit.h  1.19
+  Event/Event/MonteCarlo/McTrajectory.h  1.2
+  Event/Event/MonteCarlo/McIntegratingHit.h  1.21
+  Event/Event/Recon/AcdRecon/AcdRecon.h  1.8
+  Event/Event/Recon/CalRecon/CalXtalRecData.h  1.10
+  Event/Event/Recon/CalRecon/CalCluster.h  1.12
+  Event/Event/Recon/CalRecon/CalRecon.h  1.1
+  Event/Event/Recon/TkrRecon/TkrVertex.h  1.12
+  Event/Event/Recon/TkrRecon/TkrPatCand.h  1.13
+  Event/Event/Recon/TkrRecon/TkrVertexTab.h  1.1
+  Event/Event/Recon/TkrRecon/TkrFitHit.h  1.3
+  Event/Event/Recon/TkrRecon/TkrRecon.h  1.1
+  Event/Event/Recon/TkrRecon/TkrRecInfo.h  1.5
+  Event/Event/Recon/TkrRecon/TkrKalFitTrack.h  1.2
+  Event/Event/Recon/TkrRecon/TkrClusterCol.h  1.10
+  Event/Event/Recon/TkrRecon/TkrFitMatrix.h  1.8
+  Event/Event/Recon/TkrRecon/TkrCluster.h  1.5.2.3
+  Event/Event/Recon/TkrRecon/TkrPatCandHit.h  1.7
+  Event/Event/Recon/TkrRecon/TkrTrackTab.h  1.1
+  Event/Event/Recon/TkrRecon/TkrFitPlane.h  1.14
+  Event/Event/Recon/TkrRecon/TkrFitTrackBase.h  1.2
+  Event/Event/Recon/TkrRecon/TkrFitPar.h  1.8
+  Event/Event/Recon/TkrRecon/TkrFitTrack.h  1.10
+  Event/Event/RelTable/RelTable.h  1.8
+  Event/Event/RelTable/Relation.h  1.3
+  Event/Event/RelTable/RelKey.h  1.2
+  Event/Event/TopLevel/Event.h  1.12
+  Event/Event/TopLevel/EventModel.h  1.39
+  Event/Event/TopLevel/DigiEvent.h  1.10
+  Event/Event/TopLevel/MCEvent.h  1.11
+  Event/Event/TopLevel/Definitions.h  1.4
+  Event/Event/Utilities/TimeStamp.h  1.9
+  Event/Event/Utilities/CLHEPStreams.h  1.3
+  Event/Event/Utilities/ParticleID.h  1.6
+  Event/Event/Utilities/IDStreams.h  1.3
+  Event/cmt/.cvsignore  1.2
+  Event/cmt/requirements  1.47.2.3
+  Event/doc/.cvsignore  1.1.1.1
+  Event/doc/release.notes  1.57.2.4
+  Event/mgr/.cvsignore  1.1.1.1
+  Event/mgr/cleanup.csh  1.2
+  Event/mgr/requirements  1.46
+  Event/mgr/cleanup.sh  1.2
+  Event/mgr/Makefile  1.1.1.1
+  Event/src/mainpage.h  1.4
+  Event/src/Factories/GlastEvent_load.cpp  1.7
+  Event/src/Factories/MCInstanciation.cpp  1.8
+  Event/src/Factories/RawInstantiation.cpp  1.4
+  Event/src/Factories/GlastEvent_dll.cpp  1.3
+  Event/src/Factories/IrfInstantiation.cpp  1.3
+  Event/src/Factories/DigiInstantiation.cpp  1.2
+  Event/src/Factories/HitInstanciation.cpp  1.5
+  Event/src/Factories/TopInstantiation.cpp  1.8
+  Event/src/Hits/SiLayers.cpp  1.3
+  Event/src/MonteCarlo/D2Entry.cxx  1.1
+  Event/src/MonteCarlo/McPositionHit.cxx  1.9
+  Event/src/MonteCarlo/McParticle.cxx  1.19
+  Event/src/MonteCarlo/McEventStructure.cxx  1.2
+  Event/src/MonteCarlo/McIntegratingHit.cxx  1.13
+  Event/src/MonteCarlo/McTrajectory.cxx  1.1
+  Event/src/Recon/CalRecon/CalCluster.cxx  1.6
+  Event/src/Recon/TkrRecon/TkrFitTrack.cxx  1.11
+  Event/src/Recon/TkrRecon/TkrCluster.cxx  1.7.2.1
+  Event/src/Recon/TkrRecon/TkrPatCandHit.cxx  1.5
+  Event/src/Recon/TkrRecon/TkrFitMatrix.cxx  1.4
+  Event/src/Recon/TkrRecon/TkrFitPlane.cxx  1.9
+  Event/src/Recon/TkrRecon/TkrKalFitTrack.cxx  1.2
+  Event/src/Recon/TkrRecon/TkrClusterCol.cxx  1.7
+  Event/src/Recon/TkrRecon/TkrFitHit.cxx  1.3
+  Event/src/Recon/TkrRecon/TkrVertex.cxx  1.9
+  Event/src/Recon/TkrRecon/TkrPatCand.cxx  1.11
+  Event/src/Recon/TkrRecon/TkrFitPar.cxx  1.5
+  Event/src/TopLevel/EventModel.cpp  1.66
+  Event/src/test/test_RelTabs.cxx  1.6
+  Event/src/test/test_TkrRecon.cxx  1.1
+  Event/src/test/testmain.cxx  1.8
+
+    *
+------------------------------------------------------------
 User: lsrea  Tue Jan 11 09:01:16 PST 2005
 Event/doc
 
