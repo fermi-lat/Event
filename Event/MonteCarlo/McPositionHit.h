@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.13 2002/05/10 01:17:35 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.14 2002/05/10 01:55:49 richard Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -240,8 +240,8 @@ inline std::ostream& McPositionHit::fillStream( std::ostream& s ) const
 }
 
 typedef ObjectVector<McPositionHit> McPositionHitVector;
+typedef ObjectVector<McPositionHit> McPositionHitCol;
 typedef ObjectList<McPositionHit>   McPositionHitList;
-
 }
 
 /*! A small class to use the sort algorithm */
