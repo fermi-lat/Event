@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.52 2002/09/06 21:55:18 heather Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.51 2002/08/22 16:22:18 srobinsn Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.52 2002/09/06 21:55:18 heather Exp $
  */
 class EvModel {
         
@@ -109,7 +109,8 @@ public:
                                      Typically not written to persistent store.
     Note:
     Detector description and calibrations have their own trees, not connected
-    to the EventModel tree.  
+    to the EventModel tree.   Calibration CLID's will be contained within
+    the range 6000 - 6999.
  */
     
     // Declaration of Identifiers
