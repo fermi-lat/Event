@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Feb 20 09:05:48 PST 2001
+GlastEvent/GlastEvent/data TdSiData.h
+
+Modified Files:
+	TdSiData.h 
+Log Message:
+added dummy serialize methods
+    *
+------------------------------------------------------------
 User: burnett  Sat Feb 17 13:02:53 PST 2001
 GlastEvent/GlastEvent/data AcdData.h CalData.h TkrData.h
 
