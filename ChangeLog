@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: frailis  Thu Sep 12 21:51:23 PDT 2002
+Event/Event/RelTable
+
+Modified Files:
+	RelKey.h RelTable.h Relation.h 
+Log Message:
+setFirst() and setSecond() methods of the Relation class are now private. 
+The RelTable class now has three new methods:
+-erase, to remove a particular relation from the table
+-changeFirst, to modify the first data pointer of a relation already 
+              inserted into the table
+-changeSecond, to modify the second data pointer of a relation already 
+               inserted into the table
+
+    *
+------------------------------------------------------------
 User: heather  Tue Sep 10 08:05:15 PDT 2002
 Event/Event/Digi
 
