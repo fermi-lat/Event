@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Mon Apr  2 16:22:35 PDT 2001
+GlastEvent/src/Hits SiLayers.cpp
+
+Added Files:
+	SiLayers.cpp 
+Log Message:
+
+Code to implement the SiLayers class, created by TBIOROOT for test beam input
+ format data, used by TkrDigiAlg to create TkrDigis for input to the Tkr Recon
+
+
+    *
+------------------------------------------------------------
 User: usher  Mon Apr  2 16:21:54 PDT 2001
 GlastEvent/src/Hits - New directory
 
