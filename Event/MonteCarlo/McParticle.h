@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.24 2002/05/14 16:07:35 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.25 2002/05/14 20:58:54 heather Exp $
 */
 #ifndef Event_McParticle_H
 #define Event_McParticle_H 1
@@ -95,14 +95,16 @@ class McParticle  : virtual public ContainedObject  {
         const HepLorentzVector& initialMomentum,
         const HepLorentzVector& finalMomentum,
         const HepPoint3D& initialPosition,
-        const HepPoint3D& finalPosition);
+        const HepPoint3D& finalPosition,
+        const std::string process);
 
     //! Set the initial attributes of the McParticle
     void initialize( McParticle* mother, 
         StdHepId id, 
         unsigned int statusBits,
         const HepLorentzVector& initialMomentum,
-        const HepPoint3D& initialPosition);
+        const HepPoint3D& initialPosition,
+        const std::string process);
 
     //! Set the final attributes of the McParticle
     void finalize( const HepLorentzVector& finalMomentum,
@@ -128,6 +130,9 @@ class McParticle  : virtual public ContainedObject  {
 
     /// access to the mother particle
     const McParticle& mother()const; 
+
+    /// access the process name
+    const std::string getProcess()const{return m_process;};
 
 
     /// access to the list of daughters
@@ -161,6 +166,8 @@ class McParticle  : virtual public ContainedObject  {
     SmartRef<McParticle>       m_mother;
     /// Vector of pointers to daughter particles
     SmartRefVector<McParticle> m_daughters;
+    /// String with the process name that poduces this particle
+    std::string                m_process;
 };
 
 

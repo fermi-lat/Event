@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.15 2002/05/12 03:45:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.16 2002/06/03 16:20:35 riccardo Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -131,6 +131,11 @@ class McPositionHit : virtual public ContainedObject {
     /// Set the particle ID
     void setMcParticleId(McParticle::StdHepId id){m_mcParticleId = id;};
 
+    /// Retrieve ancestor particle ID
+    McParticle::StdHepId getOriginMcParticleId(){return m_originMcParticleId;};
+    /// Set the ancestor particle ID
+    void setOriginMcParticleId(McParticle::StdHepId id){m_originMcParticleId = id;};
+
     /// Retrieve pointer to the ancestor McParticle (const or non-const)
     const McParticle* originMcParticle() const;
           McParticle* originMcParticle();
@@ -160,6 +165,8 @@ class McPositionHit : virtual public ContainedObject {
     double                  m_timeOfFlight;
     /// ID of the McParticle causing the hit
     McParticle::StdHepId    m_mcParticleId;
+    /// ID of the ancestor McParticle
+    McParticle::StdHepId    m_originMcParticleId;
     /// Pointer to McParticle causing the hit
     SmartRef<McParticle>    m_mcParticle;
     /// Pointer to the ancestor McParticle

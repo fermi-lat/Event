@@ -1,7 +1,7 @@
-//$Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/mainpage.h,v 1.3 2000/11/21 02:25:49 igable Exp $
+//$Header: /nfs/slac/g/glast/ground/cvs/Event/src/mainpage.h,v 1.1 2002/03/15 19:55:47 heather Exp $
 // (Special "header" just for doxygen)
 
-/*! @mainpage  package GlastEvent
+/*! @mainpage  package Event
 
 This package contains definitions for all GLAST event data:
 	- Event
