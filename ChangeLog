@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri May 10 21:27:09 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+add to Event namespace
+    *
+------------------------------------------------------------
 User: burnett  Fri May 10 14:17:09 PDT 2002
 Event/src/TopLevel
 
