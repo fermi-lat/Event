@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Wed Nov 10 14:41:07 PST 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.cxx 
+Log Message:
+change HASCLUSTER to HITONFIT (1st status bit)
+    *
+------------------------------------------------------------
 User: usher  Wed Nov  3 14:05:17 PST 2004
 Event/src
 
