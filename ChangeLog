@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Thu May  9 22:28:27 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h AcdDigi.h CalDigi.h 
+Log Message:
+change to Event package/namespace
+    *
+------------------------------------------------------------
 User: richard  Thu May  9 22:26:22 PDT 2002
 Event/Event/MonteCarlo
 
