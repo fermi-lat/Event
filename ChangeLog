@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri May 10 14:17:07 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+
+bunch of GlastEvent conversions.
+    *
+------------------------------------------------------------
 User: burnett  Fri May 10 14:17:06 PDT 2002
 Event/Event/Digi
 
