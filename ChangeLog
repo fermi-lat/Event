@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: burnett  Thu May  9 09:36:18 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx TkrClusterCol.cxx TkrFitHit.cxx TkrFitPar.cxx 
+	TkrFitPlane.cxx TkrFitTrack.cxx TkrFitTrackCol.cxx 
+	TkrPatCand.cxx TkrPatCandCol.cxx TkrPatCandHit.cxx 
+	TkrVertex.cxx TkrVertexCol.cxx 
+Log Message:
+Change GlastEvent to Event.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 09:36:17 PDT 2002
 Event/src/Recon/CalRecon
 
