@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.37 2003/07/18 21:10:26 burnett Exp $
+// $Id: EventModel.h,v 1.38 2004/01/09 20:13:05 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -42,10 +42,11 @@
             _EXTERN_ std::string D2EntryCol;
             _EXTERN_ std::string ExposureCol;
             _EXTERN_ std::string McEventStructure;
-            _EXTERN_ std::string McPartToHitTab;
-            _EXTERN_ std::string McClusToLyrHitTab;
-            _EXTERN_ std::string McLyrToHitTab;
-            _EXTERN_ std::string McSiLayerHitCol;
+            _EXTERN_ std::string McPartToPosHitTab;
+            _EXTERN_ std::string McPartToClusTab;
+            _EXTERN_ std::string McPartToClusHitTab;
+            _EXTERN_ std::string McPartToTkrCandHitTab;
+            _EXTERN_ std::string McPartToTkrPatCandTab;
         }
 
         namespace Digi {
