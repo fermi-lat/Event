@@ -1,5 +1,28 @@
 ------------------------------------------------------------
 User: igable  Wed Apr 18 12:07:26 PDT 2001
+GlastEvent/GlastEvent/Utilities CLHEPStreams.h CellID.h Classification.h DetectorDataObject.h ParticleID.h ProcessingVersion.h RandomNumberSeed.h SummaryPID.h SummarySeenDetectors.h TimeStamp.h TriggerPattern.h VolumeID.h
+
+Modified Files:
+	CLHEPStreams.h CellID.h Classification.h DetectorDataObject.h 
+	ParticleID.h ProcessingVersion.h RandomNumberSeed.h 
+	SummaryPID.h SummarySeenDetectors.h TimeStamp.h 
+	TriggerPattern.h VolumeID.h 
+Log Message:
+This is the first attempt to move over to Gaudi v7
+
+Main Changes are
+
+#include "Gaudi/Kernel...
+
+to:
+#include "GaudiKernel
+
+Also changed includes to use the version of ObjectVector and ObjectList
+which are now in the GaudiKernel Package and not in GlastEvent anymore.
+
+    *
+------------------------------------------------------------
+User: igable  Wed Apr 18 12:07:26 PDT 2001
 GlastEvent/GlastEvent/TopLevel AnalEvent.h DigiEvent.h Event.h EventHits.h EventTag.h IrfEvent.h MCEvent.h RawEvent.h RecEvent.h RefTable.h Run.h SubMCEvent.h
 
 Modified Files:
