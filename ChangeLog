@@ -1,14 +1,4 @@
 ------------------------------------------------------------
-User: usher  Fri Jan  9 12:13:05 PST 2004
-Event/Event/MonteCarlo
-
-Added Files:
-	McEventStructure.h McSiLayerHit.h 
-Log Message:
-Add new objects giving more detailed Monte Carlo information for the tracker 
-
-    *
-------------------------------------------------------------
 User: berthon  Mon Dec  8 04:57:25 PST 2003
 Event/Event/Recon/CalRecon
 
