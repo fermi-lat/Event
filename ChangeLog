@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Apr 11 11:55:40 PDT 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+insert t for daughterList method
+    *
+------------------------------------------------------------
 User: burnett  Thu Apr 11 04:53:22 PDT 2002
 GlastEvent/mgr
 
