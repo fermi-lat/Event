@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.39 2002/05/07 21:04:06 usher Exp $
+// $Id: EventModel.cpp,v 1.40 2002/05/07 21:06:27 usher Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.39 2002/05/07 21:04:06 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.40 2002/05/07 21:06:27 usher Exp $
  */
 class EvModel {
         
@@ -144,10 +144,10 @@ public:
     //! Reconstruction: Tkr class IDs
     const CLID& CLID_TkrRecon           = 3100;
     const CLID& CLID_SiLayers           = 3101;  // Use Tkr instead of Si ?
-    const CLID& CLID_TkrClusters        = 3102;  // Is this really Layers, Clusters, RecObjs
-    const CLID& CLID_TkrCandidates      = 3103;  // Is this really Layers, Clusters, RecObjs
+    const CLID& CLID_TkrClusterCol      = 3102;  // Is this really Layers, Clusters, RecObjs
+    const CLID& CLID_TkrPatCandCol      = 3103;  // Is this really Layers, Clusters, RecObjs
     const CLID& CLID_SiRecObjs          = 3104;  // or rather Layer, Cluster, RecObj objects?
-    const CLID& CLID_TkrTracks          = 3105;  // or rather Layer, Cluster, RecObj objects?
+    const CLID& CLID_TkrFitTrackCol     = 3105;  // or rather Layer, Cluster, RecObj objects?
     const CLID& CLID_TkrVertexCol       = 3106;  // or rather Layer, Cluster, RecObj objects?
 
     //! Reconstruction: Cal class IDs
