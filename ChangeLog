@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: frailis  Fri Sep 13 13:52:55 PDT 2002
+Event/src/test
+
+Modified Files:
+	test_RelTabs.cxx 
+Log Message:
+Fixed Relational Tables implementation bugs. Now they should work. 
+
+    *
+------------------------------------------------------------
+User: frailis  Fri Sep 13 13:52:55 PDT 2002
 Event/Event/RelTable
 
 Modified Files:
