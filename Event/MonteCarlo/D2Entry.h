@@ -3,7 +3,6 @@
 
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
-#include "Event/Recon/TkrRecon/TkrPatCand.h"
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/ContainedObject.h"
 
@@ -22,7 +21,7 @@ namespace Event { //Namespace
 *
 * @author Sean Robinson
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.2 2002/09/06 21:44:54 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.3 2004/09/18 18:16:57 usher Exp $
 */
     class D2Entry : virtual public ContainedObject//public DataObject
     {
