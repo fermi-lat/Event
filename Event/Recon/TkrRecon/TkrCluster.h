@@ -22,7 +22,7 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5.2.1 2004/12/14 02:34:47 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5.2.2 2005/01/10 19:21:09 lsrea Exp $
 */
 
 extern const CLID& CLID_TkrCluster;
@@ -75,20 +75,21 @@ namespace Event { //Namespace
         * @param ToT 
         * @param tower tower number
         */
-        TkrCluster(int id, int ilayer, int v, int istrip0, int istripf, 
+        TkrCluster(int id, int layer, int v, int strip0, int stripf, 
             Point position, double ToT, int tower, int rawToT, int end) 
-            : m_id(id), m_view(intToView(v)), m_plane(ilayer),
-            m_strip0(istrip0), m_stripf(istripf), m_position(position),
-            m_ToT(ToT), m_tower(tower), m_flag(Version<<shiftVersion) 
+            :m_tower(tower), m_plane(layer), m_view(intToView(v)),
+            m_strip0(strip0), m_stripf(stripf), m_ToT(ToT),
+            m_position(position), m_flag(Version<<shiftVersion),m_id(id)
         {
             m_flag = m_flag | maskRawToT&(rawToT<<shiftRawToT);  
             m_flag = m_flag | maskEnd&(end<<shiftEnd);
         }
-         TkrCluster(int id, int ilayer, int v, int istrip0, int istripf, 
+         TkrCluster(int id, int layer, int v, int strip0, int stripf, 
             Point position, double ToT, int tower, int status) 
-            : m_id(id), m_view(intToView(v)), m_plane(ilayer),
-            m_strip0(istrip0), m_stripf(istripf), m_position(position),
-            m_ToT(ToT), m_tower(tower), m_flag(status)
+            :m_tower(tower), m_plane(layer), m_view(intToView(v)),
+            m_strip0(strip0), m_stripf(stripf), m_ToT(ToT),
+            m_position(position), m_flag(Version<<shiftVersion),m_id(id)
+
          {}
 
        virtual ~TkrCluster() {}
