@@ -27,3 +27,12 @@ Modified Files:
 Log Message:
 update to properly serialize the tkr hits
     *
+------------------------------------------------------------
+User: heather  Tue Dec 19 08:54:44 PST 2000
+GlastEvent/GlastEvent/TopLevel Event.h MCEvent.h
+
+Modified Files:
+	Event.h MCEvent.h 
+Log Message:
+comment out serialization of members that are used at this point
+    *
