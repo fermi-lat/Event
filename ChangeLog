@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jul  3 10:53:04 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.cxx TkrFitTrack.cxx TkrPatCandHit.cxx 
+Log Message:
+implement new init routines
+    *
+------------------------------------------------------------
 User: frailis  Wed Jul  3 09:59:51 PDT 2002
 Event/src/test
 
