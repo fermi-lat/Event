@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 10 21:15:13 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrFitTrack.h TkrFitTrackBase.h TkrPatCand.h 
+	TkrPatCandHit.h TkrVertex.h 
+Log Message:
+add CLID mthds for conversion services
+    *
+------------------------------------------------------------
 User: usher  Thu Feb 19 17:38:36 PST 2004
 Event/doc
 
