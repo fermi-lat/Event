@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Mon May 13 16:23:38 PDT 2002
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalCluster.cxx 
+Log Message:
+writeOut modified to write to MsgStream
+    *
+------------------------------------------------------------
 User: chehtman  Mon May 13 16:21:20 PDT 2002
 Event/Event/Recon/CalRecon
 
