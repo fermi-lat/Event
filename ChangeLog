@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Sep  5 06:46:38 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+unix warning fix
+    *
+------------------------------------------------------------
 User: cohen  Thu Sep  5 05:29:34 PDT 2002
 Event/Event/Recon/TkrRecon
 
