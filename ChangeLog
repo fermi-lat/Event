@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Mon Feb  7 12:35:21 PST 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrTrack.h TkrTrackHit.h TkrVertex.h 
+Log Message:
+redo TkrCluster, fix tabs
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r2p0, operation: add
 Package: Event
