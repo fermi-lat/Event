@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.14 2001/01/30 00:31:21 igable Exp $
+// $Id: EventModel.cpp,v 1.15 2001/01/30 11:53:09 ozaki Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -27,9 +27,10 @@ public:
             
         // set up the MC structure
         EventModel::MC::Event = EventModel::Event + "/MC";
-        EventModel::MC::Event = EventModel::Event + "/McPaticles";
-        EventModel::MC::Event = EventModel::Event + "/McIntegratingHit";
-        EventModel::MC::Event = EventModel::Event + "/McVertex";
+        EventModel::MC::McParticle        = EventModel::Event + "/McPaticles";
+        EventModel::MC::McIntegratingHits = EventModel::Event + "/McIntegratingHits";
+        EventModel::MC::McVertex          = EventModel::Event + "/McVertex";
+        EventModel::MC::McPositionHits    = EventModel::Event + "/McPositionHits";
 
         EventModel::Irf::Event = EventModel::Event + "/Irf";
         EventModel::Irf::IrfAcdHits = EventModel::Irf::Event + "/IrfAcdHits";
