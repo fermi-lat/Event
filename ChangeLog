@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Mon Jan 29 16:31:19 PST 2001
+GlastEvent/GlastEvent/Irf IrfCalHit.h
+
+Modified Files:
+	IrfCalHit.h 
+Log Message:
+Added CLID for the MC Classes. Updated the Event Model. Made the 
+serialize methods inline.
+
+    *
+------------------------------------------------------------
 User: igable  Mon Jan 29 15:36:29 PST 2001
 GlastEvent/GlastEvent/MonteCarlo MCTrack.h
 
