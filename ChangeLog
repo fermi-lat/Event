@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Tue Feb 13 14:31:10 PST 2001
+GlastEvent/GlastEvent/data TdCsIData.h
+
+Modified Files:
+	TdCsIData.h 
+Log Message:
+Changes to EventModel for Jose's Gaudi Modified TB Recon classes. Comments
+on CLID new CLID rules also added to EventModel
+
+    *
+------------------------------------------------------------
 User: igable  Tue Feb 13 14:31:08 PST 2001
 GlastEvent/GlastEvent/TopLevel EventModel.h
 
