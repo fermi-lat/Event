@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: riccardo  Mon Jun  3 09:20:36 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McPositionHit.h 
+Log Message:
+Added a new member m_mcParticleId to McPositionHit along with a set and get
+methods; this is used in G4Generator to associate a StdHepId (an integer) to
+an McPositionHit produced in the tracker.
+
+
+    *
+------------------------------------------------------------
 User: burnett  Sun Jun  2 10:58:17 PDT 2002
 Event/Event/Recon/CalRecon
 
