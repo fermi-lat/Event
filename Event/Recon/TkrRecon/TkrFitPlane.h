@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.4 2002/06/03 23:17:48 atwood Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.5 2002/07/03 13:30:43 heather Exp $
 */
 
 namespace Event { // Namespace
@@ -43,8 +43,8 @@ public:
     {}
 
     TkrFitPlane(unsigned id, int kplane, double ene, double z, const TkrFitHit& hit, AXIS prj)
-        : m_IDHit(id), m_IDPlane(kplane), m_zplane(z), m_eneplane(ene), m_projection(prj),
-          m_radLen(0), m_activeDist(0)  
+        : m_IDHit(id), m_IDPlane(kplane), m_eneplane(ene), m_zplane(z), m_projection(prj),
+          m_radLen(0), m_activeDist(0)   
     { 
 	    setHit(hit); 
     }
