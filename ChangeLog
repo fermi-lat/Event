@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Apr 30 14:40:47 PDT 2002
+GlastEvent/src/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.cxx 
+Log Message:
+update vector of pair<McParticle*, double> rather than map
+    *
+------------------------------------------------------------
 User: heather  Tue Apr 30 14:40:09 PDT 2002
 GlastEvent/GlastEvent/MonteCarlo
 
