@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri Jul 18 14:10:27 PDT 2003
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+add exposure TDS collection
+    *
+------------------------------------------------------------
+User: burnett  Fri Jul 18 14:10:27 PDT 2003
 Event/doc
 
 Modified Files:
