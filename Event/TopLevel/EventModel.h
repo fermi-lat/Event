@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.14 2001/02/27 23:10:31 heather Exp $
+// $Id: EventModel.h,v 1.15 2001/03/02 01:15:08 lsrea Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -60,10 +60,12 @@
             _EXTERN_ std::string IrfAcdHits;
         }
 
-        namespace Raw {
+        namespace Data {
             _EXTERN_ std::string Event;
-            _EXTERN_ std::string TdSiDatas;
-            _EXTERN_ std::string TdCsIDatas;
+            _EXTERN_ std::string TdSiData;
+            _EXTERN_ std::string TdCsIData;
+            _EXTERN_ std::string TdGlastData;
+            _EXTERN_ std::string TdVetoData;
         }
 
         namespace TkrRecon {
