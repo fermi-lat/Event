@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.10 2001/02/05 10:01:13 ozaki Exp $
+// $Id: EventModel.h,v 1.11 2001/02/05 22:25:27 heather Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -41,6 +41,13 @@
             _EXTERN_ std::string AcdDigi;
             _EXTERN_ std::string TdCsIDatas;
             _EXTERN_ std::string TdSiDatas;
+        }
+
+        namespace TkrRecon{
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string SiLayers;
+            _EXTERN_ std::string SiClusters;
+            _EXTERN_ std::string SiRecObjs;
         };
 
 
