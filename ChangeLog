@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu May  9 09:36:15 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h McParticle.h McPositionHit.h 
+Log Message:
+Change GlastEvent to Event.
+
+    *
+------------------------------------------------------------
 User: burnett  Thu May  9 09:26:39 PDT 2002
 Event/cmt
 
