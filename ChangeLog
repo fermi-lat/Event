@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Thu Nov  6 10:58:04 PST 2003
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+prepare for tag v9r11p1
+add removeHit() method to TkrDigi.h
+
+    *
+------------------------------------------------------------
 User: heather  Mon Oct 20 17:17:09 PDT 2003
 Event/cmt
 
