@@ -19,9 +19,11 @@ extern const CLID& CLID_Event;
 * - event number
 * - time stamp
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.5 2002/03/15 21:02:06 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.6 2002/05/10 01:17:35 burnett Exp $
 */
-namespace Event{
+//THB: temporarily disable this: not possible to have class, and namespace the same name? 
+//  namespace Event{
+
 class Event : public DataObject                                                {
     
 public:
@@ -111,5 +113,5 @@ inline std::ostream& Event::fillStream( std::ostream& s ) const                {
         << m_run
         << "\n    Time         = " << m_time;
 }
-} // namespace Event
+//} // namespace Event
 #endif    // Event_EVENT_H
