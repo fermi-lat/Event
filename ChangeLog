@@ -45,3 +45,13 @@ Modified Files:
 Log Message:
 instantiate the Event and IrfEvent objects
     *
+------------------------------------------------------------
+User: heather  Tue Dec 19 10:56:35 PST 2000
+GlastEvent/GlastEvent/Raw TdCsIData.h
+
+Modified Files:
+	TdCsIData.h 
+Log Message:
+added default constructor, and uncommented the serialize mtds
+for use with db converters
+    *
