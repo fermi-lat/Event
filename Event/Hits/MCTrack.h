@@ -1,4 +1,4 @@
-// $Header: /cvs/LHCbEvent/LHCbEvent/MonteCarlo/MCParticle.h,v 1.1.1.1 2000/08/09 21:15:47 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Hits/MCTrack.h,v 1.1 2000/10/23 19:21:11 igable Exp $
 
 #ifndef _H_GlastHitsEvt_MCTrack_v0_
 #define _H_GlastHitsEvt_MCTrack_v0_ 1
@@ -102,14 +102,14 @@ public:
   bool oscillationFlag() const                { return m_oscillationFlag; }
   /// Set oscillation flag
   void setOscillationFlag( bool value )       { m_oscillationFlag = value; }
-
+*/
   /// Serialize the object for writing
   virtual StreamBuffer& serialize( StreamBuffer& s ) const ;
   /// Serialize the object for reading
   virtual StreamBuffer& serialize( StreamBuffer& s );
   /// Fill the ASCII output stream
   virtual std::ostream& fillStream( std::ostream& s ) const;
-  */
+  
 
 private:
   /// 4-momentum vector
