@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed May  8 17:03:05 PDT 2002
+GlastEvent/GlastEvent/data
+
+Removed Files:
+	AcdData.h CalData.h TdGlastData.h TkrData.h 
+Log Message:
+remove obsolete definitions
+    *
+------------------------------------------------------------
 User: chehtman  Wed May  8 15:46:40 PDT 2002
 GlastEvent/src/TopLevel
 
