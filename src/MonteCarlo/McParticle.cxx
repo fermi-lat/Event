@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.6 2002/03/26 21:35:20 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.7 2002/03/27 05:33:22 burnett Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McParticle.h"
@@ -14,17 +14,10 @@ McParticle::StdHepId McParticle::particleProperty() const
 }
 
 
-/// Update particle property
-void McParticle::setParticleProperty( McParticle::StdHepId value )
-{
-  m_particleID = value;
-}
-
-
 /// Retrieve whether this is a primary particle
 bool McParticle::primaryParticle() const
 {
-  return m_statusFlags & PRIMARY;
+  return (m_statusFlags & PRIMARY)==PRIMARY;
 }
 
 void McParticle::init( McParticle* mother,         
@@ -54,6 +47,14 @@ const HepPoint3D& McParticle::finalPosition()const
 const HepLorentzVector&  McParticle::initialFourMomemtum()const
 {
     return m_initialFourMomentum;
+}
+const HepLorentzVector&  McParticle::finalFourMomemtum()const
+{
+    return m_finalFourMomentum;
+}
+
+unsigned int McParticle::statusFlags()const{
+    return m_statusFlags;
 }
 
 
