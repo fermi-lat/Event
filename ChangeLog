@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 17 12:46:57 PST 2005
+Event/Event/MonteCarlo
+
+Modified Files:
+      Tag: EngineeringModel-v3r0407p1
+	Exposure.h McEventStructure.h McIntegratingHit.h McParticle.h 
+	McPositionHit.h McTkrStrip.h McTrajectory.h 
+Log Message:
+fix up string definitions like at HEAD
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 17 12:46:56 PST 2005
 Event/Event/Digi
 
