@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.36 2002/04/12 16:15:03 heather Exp $
+// $Id: EventModel.cpp,v 1.37 2002/04/22 13:46:22 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.36 2002/04/12 16:15:03 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.37 2002/04/22 13:46:22 heather Exp $
  */
 class EvModel {
         
@@ -150,8 +150,9 @@ public:
     const CLID& CLID_TkrTracks          = 3105;  // or rather Layer, Cluster, RecObj objects?
     const CLID& CLID_TkrVertexCol       = 3106;  // or rather Layer, Cluster, RecObj objects?
 
-    //! Reconstruction: Tkr class IDs
+    //! Reconstruction: Cal class IDs
     const CLID& CLID_CalRecon           = 3200;
+    const CLID& CLID_CalXtalRecData     = 3201;
 
     //! Reconstruction: Acd class IDs
     const CLID& CLID_AcdRecon           = 3300;
