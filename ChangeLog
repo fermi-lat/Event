@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: igable  Mon Jan 29 16:31:20 PST 2001
+GlastEvent/GlastEvent/Raw TdCsIData.h TdSiData.h
+
+Modified Files:
+	TdCsIData.h TdSiData.h 
+Log Message:
+Added CLID for the MC Classes. Updated the Event Model. Made the 
+serialize methods inline.
+
+    *
+------------------------------------------------------------
+User: igable  Mon Jan 29 16:31:20 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
 
 Modified Files:
