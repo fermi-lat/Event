@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Thu Nov  6 10:58:05 PST 2003
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+prepare for tag v9r11p1
+add removeHit() method to TkrDigi.h
+
+    *
+------------------------------------------------------------
+User: lsrea  Thu Nov  6 10:58:05 PST 2003
 Event/cmt
 
 Modified Files:
