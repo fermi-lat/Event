@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.52 2002/09/06 21:55:18 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.53 2002/10/01 22:52:26 jrb Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.52 2002/09/06 21:55:18 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.53 2002/10/01 22:52:26 jrb Exp $
  */
 class EvModel {
         
@@ -37,6 +37,8 @@ public:
         EventModel::Digi::TkrDigiCol         = EventModel::Digi::Event + "/TkrDigiCol";
         EventModel::Digi::CalDigiCol         = EventModel::Digi::Event + "/CalDigiCol";
         EventModel::Digi::CalDigiHitTab      = EventModel::Digi::Event + "/CalDigiHitTab";
+        EventModel::Digi::TkrDigiHitTab      = EventModel::Digi::Event + "/TkrDigiHitTab";
+        EventModel::Digi::TkrClusterHitTab   = EventModel::Digi::Event + "/TkrClusterHitTab";
         
 
         // reconstructed data (Tracker)
