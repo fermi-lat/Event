@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Mon Jan 29 15:36:29 PST 2001
+GlastEvent/GlastEvent/MonteCarlo MCTrack.h
+
+Removed Files:
+	MCTrack.h 
+Log Message:
+Clean Up of never used class.
+
+    *
+------------------------------------------------------------
 User: igable  Mon Jan 29 15:20:47 PST 2001
 GlastEvent/src/MonteCarlo McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx McVertex.cxx
 
