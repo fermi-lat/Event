@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Wed Jan 29 15:17:57 PST 2003
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx TkrFitTrack.cxx TkrKalFitTrack.cxx 
+	TkrPatCand.cxx TkrPatCandHit.cxx TkrVertex.cxx 
+Log Message:
+more MSG::DEBUG fixes
+    *
+------------------------------------------------------------
 User: lsrea  Wed Jan 29 13:44:07 PST 2003
 Event/src/Recon/TkrRecon
 
