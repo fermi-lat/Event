@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.21 2002/01/27 19:52:59 usher Exp $
+// $Id: EventModel.h,v 1.22 2002/03/04 19:03:23 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -22,7 +22,6 @@
  * @author   T. H.-Kozanecka
  */ 
 
-// Include files
 #include <string>
 
 #if defined(_GlastEvent_EventModel_CPP_)
@@ -51,13 +50,6 @@
             _EXTERN_ std::string Event;
             _EXTERN_ std::string AcdDigis;
             _EXTERN_ std::string TkrDigis;
-        }
-
-        namespace Irf {
-            _EXTERN_ std::string Event;
-            _EXTERN_ std::string IrfTkrHits;
-            _EXTERN_ std::string IrfCalHits;
-            _EXTERN_ std::string IrfAcdHits;
         }
 
         namespace Data {
