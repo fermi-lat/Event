@@ -1,4 +1,4 @@
-//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.3 2002/05/11 14:17:03 burnett Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.4 2002/06/27 18:43:11 usher Exp $
 //
 // Description:
 //      TkrClusterCol is a container for Tkr clusters, and has the methods
@@ -62,7 +62,7 @@ void TkrClusterCol::ini()
 	}
 }
 
-int TkrClusterCol::nHits(TkrCluster::view v, int iplane)
+int TkrClusterCol::nHits(TkrCluster::view v, int iplane) const
 {
     if ((v == TkrCluster::X || v == TkrCluster::Y) && iplane >= 0 && iplane < NPLANES)
     {
