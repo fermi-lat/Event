@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 15 15:29:25 PST 2004
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Remove useless string definitions
+    *
+------------------------------------------------------------
 User: usher  Wed Dec 15 15:24:46 PST 2004
 Event/src/Recon/TkrRecon
 
