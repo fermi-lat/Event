@@ -9,16 +9,18 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.7 2002/09/05 01:21:06 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.8 2002/09/05 04:16:54 lsrea Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
+#include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/ContainedObject.h"
 #include "Event/Recon/TkrRecon/TkrRecInfo.h"
 #include "Event/Recon/TkrRecon/TkrPatCandHit.h"
 
 namespace Event { //Namespace
 
-class TkrPatCand: public TkrRecInfo
+class TkrPatCand: public TkrRecInfo, virtual public ContainedObject
 {    
 public:
     
@@ -76,8 +78,13 @@ private:
 };
 
 //Following typedefs for containing track candidate objects
-typedef std::vector<TkrPatCand*>            CandTrkVector;
-typedef std::vector<TkrPatCand*>::iterator  CandTrkVectorPtr;
+//typedef std::vector<TkrPatCand*>            CandTrkVector;
+//typedef std::vector<TkrPatCand*>::iterator  CandTrkVectorPtr;
+
+//typedef for the Container
+typedef ObjectVector<TkrPatCand>      TkrPatCandCol;
+typedef TkrPatCandCol::const_iterator TkrPatCandColConstPtr;
+typedef TkrPatCandCol::iterator       TkrPatCandColPtr;
 
 }; //Namespace
 
