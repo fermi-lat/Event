@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Fri Mar  2 18:51:30 PST 2001
+GlastEvent/src/data TdCsIData.cpp TdSiData.cpp
+
+Removed Files:
+	TdCsIData.cpp TdSiData.cpp 
+Log Message:
+Moved over to GlastSvc/src/data
+
+    *
+------------------------------------------------------------
 User: lsrea  Thu Mar  1 17:15:09 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
