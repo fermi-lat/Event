@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Wed Feb 28 14:28:48 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McConstants.h
+
+Modified Files:
+	McConstants.h 
+Log Message:
+
+fix duplication in EventModel; disable the shareable that we don't use
+    *
+------------------------------------------------------------
 User: chehtman  Wed Feb 28 13:45:41 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
