@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jun  7 14:59:13 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+store volumeId with AcdDigi on the TDS for use with AcdRecon
+    *
+------------------------------------------------------------
 User: burnett  Thu Jun  6 06:59:44 PDT 2002
 Event/src/test
 
