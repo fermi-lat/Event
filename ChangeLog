@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sat May 11 15:54:55 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+define the Col
+    *
+------------------------------------------------------------
 User: lsrea  Sat May 11 09:10:42 PDT 2002
 Event/Event/Recon/TkrRecon
 
