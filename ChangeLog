@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Dec 31 08:26:39 PST 2002
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdRecon.h 
+Log Message:
+provide init method
+    *
+------------------------------------------------------------
 User: usher  Thu Dec 19 12:53:43 PST 2002
 Event/src/Recon/TkrRecon
 
