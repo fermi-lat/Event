@@ -26,7 +26,7 @@
 *
 * @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/users/TkrGroup/Event/Event/Recon/TkrRecon/TkrTrackHit.h,v 1.1 2004/09/08 15:10:45 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackHit.h,v 1.1 2004/09/18 18:16:58 usher Exp $
 */
 
 static const CLID& CLID_TkrTrackHit = InterfaceID("TkrTrackHit",  1, 0);
@@ -80,8 +80,8 @@ public:
                     m_energy(hitEnergy), m_radLen(hitRadLen), m_activeDist(hitActDist),
                     m_chiSquareFilter(hitChiFilter), m_chiSquareSmooth(hitChiSmooth)
     {
-        if (m_cluster != 0)  m_statusBits  = StatusBits::HASCLUSTER;
-        if (tkrID.hasTray()) m_statusBits |= StatusBits::HASVALIDTKR;
+        if (m_cluster != 0)  m_statusBits  = HASCLUSTER;
+        if (tkrID.hasTray()) m_statusBits |= HASVALIDTKR;
     }
 
     //! Destructor
@@ -95,12 +95,12 @@ public:
     inline const unsigned int  getStatusBits() const {return m_statusBits;}
 
     /// Answer quick questions based on status bits
-    inline const bool validCluster()      const {return (m_statusBits & StatusBits::HASCLUSTER  ) == StatusBits::HASCLUSTER;}
-    inline const bool validMeasuredHit()  const {return (m_statusBits & StatusBits::HASMEASURED ) == StatusBits::HASMEASURED;}
-    inline const bool validPredictedHit() const {return (m_statusBits & StatusBits::HASPREDICTED) == StatusBits::HASPREDICTED;}
-    inline const bool validFilteredHit()  const {return (m_statusBits & StatusBits::HASFILTERED ) == StatusBits::HASFILTERED;}
-    inline const bool validSmoothedHit()  const {return (m_statusBits & StatusBits::HASSMOOTHED ) == StatusBits::HASSMOOTHED;}
-    inline const bool validMaterial()     const {return (m_statusBits & StatusBits::HASMATERIAL ) == StatusBits::HASMATERIAL;}
+    inline const bool validCluster()      const {return (m_statusBits & HASCLUSTER  ) == HASCLUSTER;}
+    inline const bool validMeasuredHit()  const {return (m_statusBits & HASMEASURED ) == HASMEASURED;}
+    inline const bool validPredictedHit() const {return (m_statusBits & HASPREDICTED) == HASPREDICTED;}
+    inline const bool validFilteredHit()  const {return (m_statusBits & HASFILTERED ) == HASFILTERED;}
+    inline const bool validSmoothedHit()  const {return (m_statusBits & HASSMOOTHED ) == HASSMOOTHED;}
+    inline const bool validMaterial()     const {return (m_statusBits & HASMATERIAL ) == HASMATERIAL;}
 
     /// Access the hit's associated information
     inline const TkrClusterPtr getClusterPtr()      const {return m_cluster;   }
