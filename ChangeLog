@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Fri Mar  2 20:00:09 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+don't build GlastEvent shareable anymore, so can't link against it
+    *
+------------------------------------------------------------
 User: tlindner  Fri Mar  2 19:37:38 PST 2001
 GlastEvent/mgr requirements
 
