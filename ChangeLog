@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Fri Mar  2 19:30:11 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Changes made to get ready to work on aoRecon. EventModel updated for new
+classes added to GlastSvc.
+
+    *
+------------------------------------------------------------
 User: igable  Fri Mar  2 19:30:10 PST 2001
 GlastEvent/GlastEvent/data TdGlastData.h
 
