@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Mon Apr 12 15:19:55 PDT 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitMatrix.h TkrFitPar.h 
+Log Message:
+Prepare to tag v9r11p12; Refix the unix warnings fix
+
+    *
+------------------------------------------------------------
 User: baughman  Mon Apr  5 11:10:26 PDT 2004
 Event/src/test
 
