@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Sep 14 09:03:32 PDT 2004
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+initialize all fields to -1 (invalid)
+    *
+------------------------------------------------------------
 User: hansl  Wed Aug 25 11:20:42 PDT 2004
 Event/doc
 
