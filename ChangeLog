@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Feb  5 14:27:15 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+add AcdDigi to EventModel
+    *
+------------------------------------------------------------
 User: heather  Mon Feb  5 14:26:49 PST 2001
 GlastEvent/src/Factories RawInstantiation.cpp GlastEvent_load.cpp MCInstanciation.cpp TopInstantiation.cpp
 
