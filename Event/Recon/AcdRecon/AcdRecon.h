@@ -12,15 +12,16 @@
 #include <vector>
 #include <map>
 
-/** @class   AcdRecon        
-* @brief Reconstruction data for ACD                                
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.1 2002/08/28 20:30:19 heather Exp $          
-*/
-
 extern const CLID& CLID_AcdRecon;
 
 namespace Event {
     
+/** @class AcdRecon        
+* @brief Reconstruction data for ACD
+*                                 
+* @author Heather Kelly
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.2 2002/09/05 20:08:05 heather Exp $          
+*/
     class AcdRecon : virtual public DataObject  { 
         
     public:

@@ -14,8 +14,6 @@
 #include "Event/TopLevel/Definitions.h"
 #include "geometry/Point.h"
 
-
-
 extern const CLID& CLID_CalXtalRecData;
 
 namespace Event 
@@ -42,7 +40,7 @@ namespace Event
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.4 2002/06/05 21:43:39 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.5 2002/06/12 00:04:40 chehtman Exp $
 */
     class CalXtalRecData : virtual public ContainedObject { 
         
