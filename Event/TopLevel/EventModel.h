@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.31 2002/05/13 23:15:28 chehtman Exp $
+// $Id: EventModel.h,v 1.32 2002/07/22 12:18:50 burnett Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -46,6 +46,7 @@
             _EXTERN_ std::string AcdDigiCol;
             _EXTERN_ std::string TkrDigiCol;
             _EXTERN_ std::string CalDigiCol;
+            _EXTERN_ std::string CalDigiHitTab;
         }
 
         namespace TkrRecon {
