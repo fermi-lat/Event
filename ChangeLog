@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Nov 30 17:10:23 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h TkrTrackHit.h 
+Log Message:
+Adding more description to Track Hits and Tracks
+    *
+------------------------------------------------------------
 User: atwood  Tue Nov 23 11:24:34 PST 2004
 Event/Event/Recon/TkrRecon
 
