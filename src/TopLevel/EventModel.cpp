@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.44 2002/05/09 16:36:18 burnett Exp $
+// $Id: EventModel.cpp,v 1.45 2002/05/10 21:17:09 burnett Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.44 2002/05/09 16:36:18 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.45 2002/05/10 21:17:09 burnett Exp $
  */
 class EvModel {
         
@@ -23,24 +23,17 @@ public:
             
         // Monte Carlo 
         EventModel::MC::Event                = EventModel::EventHeader + "/MC";
-        EventModel::MC::McVertexCol          = EventModel::MC::Event  + "/McVertexCol";
         EventModel::MC::McParticleCol        = EventModel::MC::Event  + "/McParticleCol";
 
-        EventModel::MC::McPositionHitCol      = EventModel::MC::Event  + "/PositionHitsCol";
-        EventModel::MC::McIntegratingHitCol   = EventModel::MC::Event  + "/IntegratingHitsCol";
+        EventModel::MC::McPositionHitCol     = EventModel::MC::Event  + "/PositionHitsCol";
+        EventModel::MC::McIntegratingHitCol  = EventModel::MC::Event  + "/IntegratingHitsCol";
 
         // Digi event
-        EventModel::Digi::Event             = EventModel::EventHeader + "/Digi";
-        EventModel::Digi::AcdDigis          = EventModel::Digi::Event + "/AcdDigis";
-        EventModel::Digi::TkrDigis          = EventModel::Digi::Event + "/TkrDigis";
-        EventModel::Digi::CalDigiCol          = EventModel::Digi::Event + "/CalDigis";
+        EventModel::Digi::Event              = EventModel::EventHeader + "/Digi";
+        EventModel::Digi::AcdDigiCol         = EventModel::Digi::Event + "/AcdDigiCol";
+        EventModel::Digi::TkrDigiCol         = EventModel::Digi::Event + "/TkrDigiCol";
+        EventModel::Digi::CalDigiCol         = EventModel::Digi::Event + "/CalDigiCol";
 
-        // Data Data
-        EventModel::Data::Event              = EventModel::EventHeader + "/Data";
-        EventModel::Data::TdGlastData        = EventModel::Data::Event + "/TdGlastData";
-        EventModel::Data::TdSiData           = EventModel::Data::Event + "/TdSiData";
-        EventModel::Data::TdCsIData          = EventModel::Data::Event + "/TdCsIData";
-        EventModel::Data::TdVetoData         = EventModel::Data::Event + "/TdVetoData";
         
 
         // reconstructed data (Tracker)
