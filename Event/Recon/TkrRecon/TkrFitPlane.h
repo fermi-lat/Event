@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.10 2002/11/23 00:44:47 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.11 2002/12/19 20:53:42 usher Exp $
 */
 
 namespace Event { // Namespace
@@ -43,14 +43,14 @@ public:
 		  m_activeDist(0)
     {}
 
-    TkrFitPlane(unsigned id, int kplane, double ene, double z, const TkrFitHit& hit, AXIS prj)
-        : m_IDHit(id), m_IDPlane(kplane), m_projection(prj), m_projPlus(TkrCluster::XY), 
+    TkrFitPlane(unsigned id, int tower, int kplane, double ene, double z, const TkrFitHit& hit, AXIS prj)
+        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projection(prj), m_projPlus(TkrCluster::XY), 
 		  m_zplane(z), m_eneplane(ene), m_radLen(0), m_activeDist(0)   
     { 
 	    setHit(hit);
     }
-    TkrFitPlane(unsigned id, int kplane, double ene, double z, AXIS prj)
-        : m_IDHit(id), m_IDPlane(kplane), m_projPlus(TkrCluster::XY), m_eneplane(ene),
+    TkrFitPlane(unsigned id, int tower, int kplane, double ene, double z, AXIS prj)
+        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projPlus(TkrCluster::XY), m_eneplane(ene),
           m_radLen(0), m_activeDist(0)
     {
         m_zplane = z;
