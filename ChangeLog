@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed Feb 28 13:45:41 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+move of tb_recon calorimeter reconstruction to Gaudi
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 27 15:17:45 PST 2001
 GlastEvent/src/Factories DigiInstantiation.cpp TopInstantiation.cpp RawInstantiation.cpp GlastEvent_load.cpp
 
