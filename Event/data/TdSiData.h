@@ -1,4 +1,4 @@
-// $Id: TdSiData.h,v 1.2 2001/01/30 00:31:20 igable Exp $
+// $Id: TdSiData.h,v 1.1 2001/02/06 01:39:45 igable Exp $
 
 #ifndef RECOSI_DATA_H
 #define RECOSI_DATA_H 1
@@ -22,10 +22,10 @@
 
 extern const CLID& CLID_TdSiData;
 
-    class TdSiData : virtual public SiData , virtual public DataObject {
+class TdSiData : virtual public SiData , virtual public DataObject {
         public:
     
-        class Strip {
+    class Strip {
         private:
             friend class TdSiData;
         
@@ -50,10 +50,7 @@ extern const CLID& CLID_TdSiData;
     TdSiData ();
     
     TdSiData (unsigned int n);
-    
-    //copy constructor
-    TdSiData (TdSiData*,unsigned int n);
-    
+        
     virtual ~TdSiData ();
     
     //	access to module id if desired

@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.16 2001/02/05 10:01:14 ozaki Exp $
+// $Id: EventModel.cpp,v 1.17 2001/02/05 22:27:15 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -65,12 +65,12 @@ public:
 
     //! Raw event definitions
     const CLID& CLID_RawEvent           = 2017;
-    const CLID& CLID_TdCsIData            = 2014;
+    const CLID& CLID_TdCsIData          = 2014;
     const CLID& CLID_Xtal               = 2015;
-    const CLID& CLID_TdCsIDataCnv         = 2016;
-    const CLID& CLID_TdSiData           =  2017;
-    const CLID& CLID_TdSiDataCnv        =   2018;
-    const CLID& CLID_TdGlastData        =   2019;
+    const CLID& CLID_TdCsIDataCnv       = 2016;
+    const CLID& CLID_TdSiData           = 2017;
+    const CLID& CLID_TdSiDataCnv        = 2018;
+    const CLID& CLID_TdGlastData        = 2019;
 
     // Monte Carlo class IDs
     const CLID& CLID_MCEvent            = 2012;
