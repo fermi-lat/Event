@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Wed Mar 27 18:19:49 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+last vestige of McVertex
+    *
+------------------------------------------------------------
 User: burnett  Wed Mar 27 18:14:47 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
