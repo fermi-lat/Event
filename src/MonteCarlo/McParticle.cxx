@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.8 2002/04/02 18:35:06 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.9 2002/04/02 22:31:19 burnett Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McParticle.h"
@@ -44,11 +44,11 @@ const HepPoint3D& McParticle::finalPosition()const
 {
     return m_finalPosition;
 }
-const HepLorentzVector&  McParticle::initialFourMomemtum()const
+const HepLorentzVector&  McParticle::initialFourMomentum()const
 {
     return m_initialFourMomentum;
 }
-const HepLorentzVector&  McParticle::finalFourMomemtum()const
+const HepLorentzVector&  McParticle::finalFourMomentum()const
 {
     return m_finalFourMomentum;
 }
