@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed Jul 25 07:27:42 PDT 2001
+GlastEvent/GlastEvent/Digi CalDigi.h
+
+Added Files:
+	CalDigi.h 
+Log Message:
+First release of CalDigi class.
+    *
+------------------------------------------------------------
 User: burnett  Sun Jul 15 17:51:45 PDT 2001
 GlastEvent/mgr requirements
 
