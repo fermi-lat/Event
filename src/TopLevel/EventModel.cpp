@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.13 2000/12/18 20:29:56 igable Exp $
+// $Id: EventModel.cpp,v 1.14 2001/01/30 00:31:21 igable Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -73,6 +73,7 @@ public:
     // Monte Carlo class IDs
     const CLID& CLID_MCEvent            = 2012;
     const CLID& CLID_McParticle         = 2100;
-    const CLID& CLID_McIntergratingHit  = 2101;
+    const CLID& CLID_McIntegratingHit   = 2101;
     const CLID& CLID_McVertex           = 2102;
+    const CLID& CLID_McPositionHit      = 2103;
         
