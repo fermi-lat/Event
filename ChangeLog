@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Wed Feb 14 16:15:10 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+reflect the fact that this package no longer depends on instrument
+    *
+------------------------------------------------------------
 User: tlindner  Wed Feb 14 15:09:53 PST 2001
 GlastEvent/GlastEvent/data TdSiData.h
 
