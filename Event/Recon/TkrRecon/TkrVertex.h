@@ -28,7 +28,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.7 2002/05/31 23:24:50 cohen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.8 2002/06/03 22:06:42 usher Exp $
 */
 
 namespace Event { //Namespace
@@ -80,7 +80,9 @@ private:
 };
 
 //typedef for the Container
-typedef ObjectVector<TkrVertex>     TkrVertexCol;
+typedef ObjectVector<TkrVertex>      TkrVertexCol;
+typedef TkrVertexCol::const_iterator TkrVertexConPtr;
+typedef TkrVertexCol::iterator       TkrVertexColPtr;
 
 }; //Namespace
 
