@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 17 12:46:36 PST 2005
+Event/cmt
+
+Modified Files:
+      Tag: EngineeringModel-v3r0407p1
+	requirements 
+Log Message:
+fix up string definitions like at HEAD
+    *
+------------------------------------------------------------
 TAG
 Tag name: EngineeringModel-v3r0407p1, operation: add
 Package: Event
