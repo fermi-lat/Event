@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 15 13:02:53 PST 2002
+GlastEvent/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+remove Irf usage
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 15 13:02:06 PST 2002
 GlastEvent/GlastEvent/TopLevel
 
