@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Sun Jun 10 14:49:34 PDT 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+remove Llinkopts
+    *
+------------------------------------------------------------
 User: burnett  Fri May 18 15:48:34 PDT 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
