@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: frailis  Wed Oct  9 07:45:24 PDT 2002
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h 
+Log Message:
+-Fixed a bug into getRelByFirst and getRelBySecond methods of the RelTable
+ class.
+-Added method addNoDupRel to RelTable class: this method  add a Relation to
+ the table if it doesn't contain a relation between the same two objects, 
+ otherwise it appends the infos vector to the exsisting relation
+
+    *
+------------------------------------------------------------
 User: lsrea  Tue Oct  8 16:57:13 PDT 2002
 Event/Event/Digi
 
