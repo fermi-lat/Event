@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu Apr 11 04:53:22 PDT 2002
+GlastEvent/mgr
+
+Modified Files:
+	requirements 
+Log Message:
+tag v7r0 since interface change to CalDigi class
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 11 04:53:22 PDT 2002
 GlastEvent/doc
 
 Modified Files:
