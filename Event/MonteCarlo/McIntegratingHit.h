@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.6 2002/03/11 17:22:28 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.7 2002/03/12 17:24:23 riccardo Exp $
 #ifndef GlastEvent_McIntegratingHit_H
 #define GlastEvent_McIntegratingHit_H 1
 
@@ -89,8 +89,8 @@ class McIntegratingHit : virtual public ContainedObject {
     /// Remove all energyInfos
     void clearEnergyItems();
     /// Add single energyInfo to energyDepositMap
-    void addEnergyItem( const double& energy, McParticle* t, const HepPoint3D& position );
-    void addEnergyItem( const double& energy, SmartRef<McParticle> t, const HepPoint3D& position );
+    void addEnergyItem( const double& energy, mc::McParticle* t, const HepPoint3D& position );
+    void addEnergyItem( const double& energy, SmartRef<mc::McParticle> t, const HepPoint3D& position );
 
     /// Retrieve primary-origin flag
     bool primaryOrigin() const;

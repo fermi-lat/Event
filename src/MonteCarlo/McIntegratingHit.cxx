@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.4 2001/01/30 00:31:21 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.5 2002/03/11 17:22:30 riccardo Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
@@ -24,7 +24,7 @@ void McIntegratingHit::setEnergyItems( const energyDepositMap& value )
     typedef energyDepositMap::const_iterator CI;
     for (CI it = m_energyItem.begin(); it != m_energyItem.end(); it++){
         const double&     energy    = it->second;
-        const HepPoint3D& position  = it->first->mcVertex()->finalPosition();
+        const HepPoint3D& position  = it->first->finalPosition();
         HepPoint3D        position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
         m_totalEnergy += energy;
         m_moment1seed += energy * position;
@@ -99,7 +99,7 @@ McIntegratingHit::energyDepositMap& McIntegratingHit::itemizedEnergy()
 
 
 /// Add an energyItem
-void McIntegratingHit::addEnergyItem(const double& energy, McParticle* t, const HepPoint3D& position)
+void McIntegratingHit::addEnergyItem(const double& energy, mc::McParticle* t, const HepPoint3D& position)
 {
     m_energyItem[t] += energy;
 
@@ -111,7 +111,7 @@ void McIntegratingHit::addEnergyItem(const double& energy, McParticle* t, const 
 
 
 /// Add an energyItem
-void McIntegratingHit::addEnergyItem(const double& energy, SmartRef<McParticle> t, const HepPoint3D& position)
+void McIntegratingHit::addEnergyItem(const double& energy, SmartRef<mc::McParticle> t, const HepPoint3D& position)
 {
     m_energyItem[t] += energy;
 
