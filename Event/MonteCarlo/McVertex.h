@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.5 2001/01/30 00:31:20 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.6 2001/04/18 19:07:25 igable Exp $
 #ifndef GlastEvent_McVertex_H
 #define GlastEvent_McVertex_H 1
 
@@ -179,6 +179,7 @@ template <class TYPE> class ObjectVector;
 typedef ObjectVector<McVertex>     McVertexVector;
 template <class TYPE> class ObjectList;
 typedef ObjectList<McVertex>       McVertexList;
+typedef ObjectList<McVertex>       McVertexCol;
 
 //} // NameSpace GlastEvent
 

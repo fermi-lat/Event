@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.25 2001/03/03 03:30:10 igable Exp $
+// $Id: EventModel.cpp,v 1.26 2001/04/18 19:07:27 igable Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -24,8 +24,9 @@ public:
             
         // Monte Carlo 
         EventModel::MC::Event             = EventModel::Event + "/MC";
-        EventModel::MC::McVertices        = EventModel::MC::Event  + "/McVertices";
-        EventModel::MC::McParticles       = EventModel::MC::Event  + "/McParticles";
+        EventModel::MC::McVertexCol        = EventModel::MC::Event  + "/McVertexCol";
+        EventModel::MC::McParticleCol       = EventModel::MC::Event  + "/McParticleCol";
+
         EventModel::MC::McPositionHits    = EventModel::MC::Event  + "/McPositionHits";
         EventModel::MC::McIntegratingHits = EventModel::MC::Event  + "/McIntegratingHits";
 

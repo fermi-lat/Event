@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.6 2001/01/31 11:31:52 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.7 2001/04/18 19:07:25 igable Exp $
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
 
@@ -114,10 +114,12 @@ class McParticle  : virtual public ContainedObject  {
 
 
 // Definition of all container types of McParticle
-template <class TYPE> class ObjectVector;
-typedef ObjectVector<McParticle>     McParticleVector;
+//template <class TYPE> class ObjectVector;
+//typedef ObjectVector<McParticle>     McParticleVector;
+
 template <class TYPE> class ObjectList;
 typedef ObjectList<McParticle>       McParticleList;
+typedef ObjectList<McParticle>       McParticleCol;
 
 inline StreamBuffer& McParticle::serialize( StreamBuffer& s ) const
 {
