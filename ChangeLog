@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Oct  2 06:51:27 PDT 2002
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdRecon.h 
+Log Message:
+use vectors to replace map of energies and ids
+    *
+------------------------------------------------------------
 User: heather  Wed Oct  2 06:50:26 PDT 2002
 Event/doc
 
