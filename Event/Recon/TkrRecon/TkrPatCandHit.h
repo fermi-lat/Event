@@ -14,7 +14,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.7 2004/03/11 05:15:13 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.8 2004/09/18 18:16:58 usher Exp $
 */
 
 #include "GaudiKernel/IInterface.h"
@@ -30,7 +30,7 @@ public:
     TkrPatCandHit() {}
     TkrPatCandHit(TkrCluster* pCluster);
     TkrPatCandHit(unsigned int hitId, const Point& pos, unsigned int tower, 
-        unsigned int layer, TkrCluster::view v);
+        unsigned int layer, int v);
    ~TkrPatCandHit() {}
 
    //! Retrieve pointer to class defininition structure
@@ -46,7 +46,7 @@ public:
     int   HitIndex()         const {return m_hitIndex;}
     int   TowerIndex()       const {return m_towerIndex;}
     int   PlaneIndex()       const {return m_planeIndex;}
-    TkrCluster::view  View() const {return m_view;}
+    int   View()             const {return m_view;}
 
     //The following provided to allow sorting (by layer)
     friend bool operator>( const TkrPatCandHit& o1, const TkrPatCandHit& o2) {return o1.m_position.z() <  o2.m_position.z();}
@@ -59,7 +59,7 @@ private:
     int   m_hitIndex;          //Index into TkrClusters list of this hit
     int   m_towerIndex;        //Index of the tower containing this hit
     int   m_planeIndex;        //Plane (layer) index
-    TkrCluster::view  m_view;  //Primary measurement projection (x or y)
+    int   m_view;              //Primary measurement projection (x or y)
 };
 
 //Following typedefs for containing hits

@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.14 2004/03/23 23:07:47 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.15 2004/09/18 18:16:58 usher Exp $
 */
 
 namespace Event { // Namespace
@@ -35,23 +35,24 @@ class TkrFitPlane
     // Note: X and Y planes are recored individually
 
 public:
-    typedef TkrCluster::view AXIS;
+    //typedef TkrCluster::view AXIS;
+    typedef int AXIS;
     
     TkrFitPlane() 
-        : m_IDHit (0), m_IDTower(0),  m_IDPlane(0), m_projection(TkrCluster::XY), 
-		  m_projPlus(TkrCluster::XY), m_zplane(0), m_eneplane(0), m_radLen(0),  
+        : m_IDHit (0), m_IDTower(0),  m_IDPlane(0), m_projection(idents::TkrId::eMeasureNone), 
+		  m_projPlus(idents::TkrId::eMeasureNone), m_zplane(0), m_eneplane(0), m_radLen(0),  
 		  m_activeDist(0)
     {}
 
     TkrFitPlane(unsigned id, int tower, int kplane, double ene, double z, const TkrFitHit& hit, AXIS prj)
-        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projection(prj), m_projPlus(TkrCluster::XY), 
+        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projection(prj), m_projPlus(idents::TkrId::eMeasureNone), 
 		  m_zplane(z), m_eneplane(ene), m_radLen(0), m_activeDist(0)   
     { 
 	    setHit(hit);
     }
     TkrFitPlane(unsigned id, int tower, int kplane, double ene, double z, AXIS prj)
-        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projPlus(TkrCluster::XY), m_eneplane(ene),
-          m_radLen(0), m_activeDist(0)
+        : m_IDHit(id), m_IDTower(tower), m_IDPlane(kplane), m_projPlus(idents::TkrId::eMeasureNone), 
+          m_eneplane(ene), m_radLen(0), m_activeDist(0)
     {
         m_zplane = z;
         m_projection = prj;
