@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Mon Jan 29 15:20:46 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
+
+Modified Files:
+	McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h 
+Log Message:
+Added MonteCarlo/*.cxx to requirements. Removed inlines and fixed some 
+windows compile problems.
+
+    *
+------------------------------------------------------------
 User: ozaki  Fri Jan 26 02:20:04 PST 2001
 GlastEvent/GlastEvent/TopLevel ObjectList.h
 
