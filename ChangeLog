@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Tue Jul 16 10:54:45 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+tagging v8r12 after more efficient classes. Documented at ucsc web site
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 16 10:54:45 PDT 2002
 Event/Event/Recon/TkrRecon
 
 Modified Files:
