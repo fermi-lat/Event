@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Mon Dec 13 18:34:47 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+      Tag: GlastRelease-v4r5
+	TkrCluster.h 
+Log Message:
+prepare for tag v9r13p1gr2 - Revised TkrCluster (on I&T branch)
+
+    *
+------------------------------------------------------------
 User: atwood  Mon Dec 13 15:35:53 PST 2004
 Event/src/Recon/TkrRecon
 
