@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: frailis  Fri Apr 26 01:54:11 PDT 2002
+GlastEvent/GlastEvent/Utilities
+
+Modified Files:
+	IDStreams.h 
+Log Message:
+IDStreams.h changed because of VolumeIdentifier changed interface
+    *
+------------------------------------------------------------
 User: chehtman  Thu Apr 25 15:11:04 PDT 2002
 GlastEvent/src/TopLevel
 
