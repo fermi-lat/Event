@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.8 2002/03/07 16:28:45 frailis Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.9 2002/03/12 17:24:23 riccardo Exp $
 #ifndef GlastEvent_McPositionHit_H
 #define GlastEvent_McPositionHit_H 1
 
@@ -68,6 +68,9 @@ class McPositionHit : virtual public ContainedObject {
     {}
     /// Destructor
     virtual ~McPositionHit() { }
+
+    /// special set
+    void init(double edep, idents::VolumeIdentifier id, const HepPoint3D& entry, const HepPoint3D& exit);
 
     /// Retrieve cell identifier
     idents::VolumeIdentifier volumeID() const;
@@ -158,6 +161,14 @@ class McPositionHit : virtual public ContainedObject {
     /// Packed flags for the internal use.
     unsigned long           m_packedFlags;
 };
+
+inline void McPositionHit::init(double edep, idents::VolumeIdentifier id, const HepPoint3D& entry, const HepPoint3D& exit)
+{
+    m_depositedEnergy = edep;
+    m_volumeID=id;
+    m_entry = entry;
+    m_exit = exit;
+}
 
 /// Serialize the object for writing
 inline StreamBuffer& McPositionHit::serialize( StreamBuffer& s ) const
