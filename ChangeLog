@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed May  8 15:37:01 PDT 2002
+GlastEvent/src/Recon/CalRecon
+
+Added Files:
+	CalCluster.cxx 
+Log Message:
+CalRecon TDS classes moved to GlastEvent/Recon/CalRecon
+    *
+------------------------------------------------------------
 User: chehtman  Wed May  8 15:35:22 PDT 2002
 GlastEvent/src/Recon/CalRecon
 
