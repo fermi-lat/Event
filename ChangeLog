@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: usher  Fri Oct  1 12:35:30 PDT 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx TkrFitPlane.cxx TkrPatCandHit.cxx 
+Log Message:
+1) Remove dll specific files
+2) Update Tracker TDS classes (TkrCluster now inline, etc.)
+3) Inline McEventStructure
+    *
+------------------------------------------------------------
+User: usher  Fri Oct  1 12:35:30 PDT 2004
 Event/src/MonteCarlo
 
 Modified Files:
