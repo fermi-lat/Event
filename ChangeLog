@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Tue Mar 26 21:33:21 PST 2002
+GlastEvent/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+Remove McVertex, new McParticle in mc namespace. Tag v6r1
+    *
+------------------------------------------------------------
+User: burnett  Tue Mar 26 21:33:21 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
 Modified Files:
