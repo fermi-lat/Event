@@ -1,5 +1,20 @@
 ------------------------------------------------------------
 User: usher  Sat Sep 18 11:16:59 PDT 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx 
+Added Files:
+	TkrTrack.cxx TkrTrackHit.cxx TkrTrackParams.cxx 
+Removed Files:
+	TkrClusterCol.cxx 
+Log Message:
+Begin modifications for two "major" changes:
+1) Convert Event to become a dll on windows (involves changes to EventModel and addition of dll subfolder in src) as well as changes to the CLID definitions for each TDS class 
+2) Add new Fit Track classes to Event/Recon/TkrRecon
+    *
+------------------------------------------------------------
+User: usher  Sat Sep 18 11:16:59 PDT 2004
 Event/src/MonteCarlo
 
 Modified Files:
