@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.3 2001/01/13 12:24:07 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McParticle.h,v 1.4 2001/01/29 23:20:46 igable Exp $
 #ifndef GlastEvent_McParticle_H
 #define GlastEvent_McParticle_H 1
 
@@ -78,8 +78,13 @@
 // Forward declarations
 class McVertex;
 
+extern const CLID& CLID_McParticle;
+
 class McParticle  : virtual public ContainedObject  {
   public:
+
+    virtual const CLID& clID() const   { return McParticle::classID(); }
+    static const CLID& classID()       { return CLID_McParticle; }
     /// Constructors
     McParticle() :
      m_subEvtID(0),
@@ -142,6 +147,46 @@ template <class TYPE> class ObjectVector;
 typedef ObjectVector<McParticle>     McParticleVector;
 template <class TYPE> class ObjectList;
 typedef ObjectList<McParticle>       McParticleList;
+
+inline StreamBuffer& McParticle::serialize( StreamBuffer& s ) const
+{
+  ContainedObject::serialize(s);
+  return s
+    << m_particleID
+    << m_particleProperty
+    << m_subEvtID
+    << m_statusFlags
+    << m_mcVertex(this);
+}
+
+
+/// Serialize the object for reading
+inline StreamBuffer& McParticle::serialize( StreamBuffer& s )
+{
+  ContainedObject::serialize(s);
+  s
+    >> m_particleID
+    >> m_particleProperty
+    >> m_subEvtID
+    >> m_statusFlags
+    >> m_mcVertex(this);
+  return s;
+}
+
+
+/// Fill the ASCII output stream
+inline std::ostream& McParticle::fillStream( std::ostream& s ) const
+{
+  s << "class McParticle"
+    << " (SubEvent:" << m_subEvtID << ")"
+    << " :"
+    << "\n    Particle ID                = " << m_particleID
+    << "\n    Particle Property          = " << m_particleProperty
+    << "\n    Sub Event ID               = " << m_subEvtID
+    << "\n    McVertex                   = " << m_mcVertex(this);
+  return s;
+}
+
 
 //} // NameSpace GlastEvent
 

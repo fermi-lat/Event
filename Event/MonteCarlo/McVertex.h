@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.3 2001/01/13 12:24:32 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.4 2001/01/29 23:20:46 igable Exp $
 #ifndef GlastEvent_McVertex_H
 #define GlastEvent_McVertex_H 1
 
@@ -50,8 +50,13 @@
 // Forward declarations
 class McParticle;
 
+extern const CLID& CLID_McVertex;
+
 class McVertex : virtual public ContainedObject {
   public:
+
+    virtual const CLID& clID() const   { return McVertex::classID(); }
+    static const CLID& classID()       { return CLID_McVertex; }
     // vertex type definition
     enum originType {primaryOrigin = 1, daughterOrigin = 2, decayProduct = 3, showerContents = 4, showerBacksplash = 5};
 

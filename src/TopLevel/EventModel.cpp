@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.12 2000/12/15 20:35:13 igable Exp $
+// $Id: EventModel.cpp,v 1.13 2000/12/18 20:29:56 igable Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -27,6 +27,9 @@ public:
             
         // set up the MC structure
         EventModel::MC::Event = EventModel::Event + "/MC";
+        EventModel::MC::Event = EventModel::Event + "/McPaticles";
+        EventModel::MC::Event = EventModel::Event + "/McIntegratingHit";
+        EventModel::MC::Event = EventModel::Event + "/McVertex";
 
         EventModel::Irf::Event = EventModel::Event + "/Irf";
         EventModel::Irf::IrfAcdHits = EventModel::Irf::Event + "/IrfAcdHits";
@@ -57,13 +60,6 @@ public:
     const CLID& CLID_IrfEvent           = 2004;
     const CLID& CLID_IrfTkrLayer        = 2005;
 
-    // Monte Carlo class IDs
-  //  const CLID& CLID_MCTKRHit           = 2008;  
-  //  const CLID& CLID_MCACDHit           = 2009;
-    const CLID& CLID_MCTrack            = 2010; 
- //   const CLID& CLID_MCCalorimeterHit   = 2011;
-    const CLID& CLID_MCEvent            = 2012;
-//    const CLID& CLID_MCSiLayer          = 2013;
 
     //! Raw event definitions
     const CLID& CLID_RawEvent           = 2017;
@@ -73,4 +69,10 @@ public:
     const CLID& CLID_TdSiData           =  2017;
     const CLID& CLID_TdSiDataCnv        =   2018;
     const CLID& CLID_TdGlastData        =   2019;
+
+    // Monte Carlo class IDs
+    const CLID& CLID_MCEvent            = 2012;
+    const CLID& CLID_McParticle         = 2100;
+    const CLID& CLID_McIntergratingHit  = 2101;
+    const CLID& CLID_McVertex           = 2102;
         

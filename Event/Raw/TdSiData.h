@@ -1,4 +1,4 @@
-// $Id: RecoSiData.h,v 1.2 2000/12/11 16:38:44 burnett Exp $
+// $Id: TdSiData.h,v 1.1 2000/12/15 20:33:47 igable Exp $
 
 #ifndef RECOSI_DATA_H
 #define RECOSI_DATA_H 1
@@ -13,7 +13,6 @@
 #include "Gaudi/Kernel/SmartRefVector.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "GlastEvent/Utilities/CellID.h"
-#include "GlastEvent/MonteCarlo/MCTrack.h"
 #include "GlastEvent/TopLevel/ObjectVector.h"
 #include "GlastEvent/TopLevel/ObjectList.h"
 
