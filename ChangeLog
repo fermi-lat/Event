@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Fri Sep 13 16:31:19 PDT 2002
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalCluster.cxx 
+Log Message:
+compilation warnings on linux corrected
+    *
+------------------------------------------------------------
 User: chehtman  Fri Sep 13 16:13:52 PDT 2002
 Event/Event/Recon/CalRecon
 
