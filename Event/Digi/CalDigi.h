@@ -24,7 +24,7 @@ extern const CLID& CLID_CalDigi;
  *
  * @author E. Grove
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.15 2002/09/09 22:59:41 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.16 2002/11/16 23:20:33 richard Exp $
 */
 
 namespace Event {
@@ -52,6 +52,15 @@ public:
 	  m_rangeM(rangeM),
 	  m_status(status)
           {};
+
+        CalXtalReadout(char rangeP, unsigned short adcP, char rangeM, 
+		       unsigned short adcM) :
+	  m_adcP(adcP), 
+	  m_adcM(adcM),
+          m_rangeP(rangeP), 
+	  m_rangeM(rangeM){
+	m_status = 0;
+	};
           
           ~CalXtalReadout() {};
           
