@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Thu Jul 25 02:21:26 PDT 2002
+Event/Event/Recon
+
+Removed Files:
+	ICsIClusters.h ISiRecObjs.h 
+Log Message:
+remove stuff from LHCb that was never used
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul 25 02:20:42 PDT 2002
 Event/Event/TopLevel
 
