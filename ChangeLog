@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Mon Jan 27 11:45:21 PST 2003
+Event/Event/MonteCarlo
+
+Modified Files:
+	McTkrStrip.h 
+Log Message:
+Added info from alignment
+    *
+------------------------------------------------------------
 User: als  Thu Jan 16 18:19:36 PST 2003
 Event/cmt
 
