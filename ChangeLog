@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sun Dec 26 15:18:45 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+Prepare for tag v10r1: remove id() from TkrCluster, prepare for ToT updates
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r0p1, operation: add
 Package: Event
