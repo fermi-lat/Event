@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jul 25 09:35:15 PDT 2003
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+Adding a method to remove daughter particle from list (for pruning)
+    *
+------------------------------------------------------------
 User: usher  Fri Jul 25 09:34:48 PDT 2003
 Event/src/MonteCarlo
 
