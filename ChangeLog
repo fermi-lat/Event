@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 11 04:53:22 PDT 2002
+GlastEvent/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+tag v7r0 since interface change to CalDigi class
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Apr 10 19:20:09 PDT 2002
 GlastEvent/mgr
 
