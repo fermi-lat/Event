@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCACDHit.h,v 1.1 2000/10/25 16:47:17 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCACDHit.h,v 1.2 2000/10/30 20:28:02 heather Exp $
 // Author: H. Arrighi
 
 #ifndef MCACDHit_H
@@ -14,26 +14,12 @@
 // Externals 
 extern const CLID& CLID_MCACDHit;
 
-
-//------------------------------------------------------------------------------
-//
-// ClassName:   MCACDHit
-//  
-// Description: Essential information of the MCACDHit
-//
-//              It contains:
-//                  - id
-//                  - energy
-//
-//
-//------------------------------------------------------------------------------
-
-/*!
-Essential information of the MCACDHit.
+/*! \class MCACDHit
+\brief MC data concerning the ACD - currently filled with IRF data
 
   It contains:
-  - id
-  - energy
+  - ACD tile id
+  - energy deposited (GeV)
 */
 
 
@@ -54,8 +40,9 @@ public:
     unsigned int id () const           { return m_id; }
     void setId (long value)            { m_id = value; }
     
-    //! energy deposited (GeV)
+    //! get energy (GeV) deposited in this ACD tile
     float energy () const              { return m_energy; }
+    //! set the energy (GeV) deposited in this ACD tile
     void setEnergy (float value)        { m_energy = value; }
     
     //! used to convert container of objects
