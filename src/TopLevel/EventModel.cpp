@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.54 2002/10/08 22:20:16 lsrea Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.55 2003/03/12 23:21:44 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.54 2002/10/08 22:20:16 lsrea Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.55 2003/03/12 23:21:44 usher Exp $
  */
 class EvModel {
         
@@ -30,6 +30,7 @@ public:
         EventModel::MC::McIntegratingHitCol  = EventModel::MC::Event  + "/IntegratingHitsCol";
         EventModel::MC::McTkrStripCol        = EventModel::MC::Event  + "/StripCol";
         EventModel::MC::D2EntryCol           = EventModel::MC::Event  + "/D2EntryCol";
+        EventModel::MC::ExposureCol          = EventModel::MC::Event  + "/ExposureCol";
 
         // Digi event
         EventModel::Digi::Event              = EventModel::EventHeader + "/Digi";
@@ -131,7 +132,8 @@ public:
     const CLID& CLID_McIntegratingHit   = 1104;
     const CLID& CLID_McTrajectory       = 1105;
     const CLID& CLID_McTkrStrip         = 1106;
-    const CLID& CLID_D2Entry        = 1107;
+    const CLID& CLID_D2Entry            = 1107;
+    const CLID& CLID_Exposure           = 1108;
 
     //! Raw event and Digi IDs
     const CLID& CLID_DigiEvent          = 1300; 
