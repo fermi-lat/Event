@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.16 2002/05/14 16:07:36 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.17 2002/07/18 08:33:23 riccardo Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -55,6 +55,11 @@ void McParticle::finalize(const HepLorentzVector& finalMomentum,
     m_finalPosition = finalPosition;
 }
 
+
+void McParticle::setMother(const SmartRef<McParticle> m)
+{
+  m_mother = m;
+}
 
 const HepPoint3D& McParticle::initialPosition()const
 {
