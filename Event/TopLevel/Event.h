@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/Event.h,v 1.2 2000/12/19 16:54:44 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/Event.h,v 1.3 2001/04/18 19:07:26 igable Exp $
 #ifndef GLASTEVENT_EVENT_H
 #define GLASTEVENT_EVENT_H 1
 
@@ -10,9 +10,6 @@
 #include "GaudiKernel/DataObject.h"
 #include "GlastEvent/Utilities/TimeStamp.h"
 #include "GlastEvent/TopLevel/Definitions.h"
-
-// Externals 
-extern const CLID& CLID_Event;
 
 
 //------------------------------------------------------------------------------
