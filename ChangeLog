@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 12 00:49:31 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+actually need to store volId
+    *
+------------------------------------------------------------
 User: chehtman  Tue Jun 11 17:16:44 PDT 2002
 Event/src/Recon/CalRecon
 
