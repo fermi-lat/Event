@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Jun 10 16:18:35 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.cxx 
+Log Message:
+Track direction now follows long standing Glast convention - Track direction is 
+returned as that along the direction of propagation of the track. 
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Jun 10 12:16:38 PDT 2002
 Event/doc
 
