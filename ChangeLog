@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Sun Jul 15 17:51:45 PDT 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+
+Start McEvent as a place for top-level info: here just the event id.
+    *
+------------------------------------------------------------
+User: burnett  Sun Jul 15 17:51:45 PDT 2001
 GlastEvent/GlastEvent/TopLevel MCEvent.h
 
 Modified Files:
