@@ -27,7 +27,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.5 2002/05/31 16:57:21 cohen Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.6 2002/05/31 17:45:33 cohen Exp $
 */
 
 namespace Event { //Namespace
@@ -59,8 +59,8 @@ public:
     int  getNumTracks()                {return m_tracks.size();}
 
     // Pointers to track info
-    TkrFitColPtr getTrackIterBegin()   {return m_tracks.begin();}
-    TkrFitColPtr getTrackIterEnd()     {return m_tracks.end();}
+    TkrFitTrackCol::iterator getTrackIterBegin()   {return m_tracks.begin();}
+    TkrFitTrackCol::iterator getTrackIterEnd()     {return m_tracks.end();}
 
     /// Utilities 
     void writeOut(MsgStream& log) const; 
@@ -75,7 +75,7 @@ private:
     int          m_firstLayer;
     int          m_itower;        
     
-    TkrFitCol    m_tracks;
+    TkrFitTrackCol    m_tracks;
 };
 
 //typedef for the Container
