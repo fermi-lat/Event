@@ -1,5 +1,25 @@
 ------------------------------------------------------------
 User: igable  Wed Apr 18 12:07:25 PDT 2001
+GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
+
+Modified Files:
+	McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h 
+Log Message:
+This is the first attempt to move over to Gaudi v7
+
+Main Changes are
+
+#include "Gaudi/Kernel...
+
+to:
+#include "GaudiKernel
+
+Also changed includes to use the version of ObjectVector and ObjectList
+which are now in the GaudiKernel Package and not in GlastEvent anymore.
+
+    *
+------------------------------------------------------------
+User: igable  Wed Apr 18 12:07:25 PDT 2001
 GlastEvent/GlastEvent/Irf IrfAcdHit.h IrfCalHit.h IrfTkrHit.h IrfTkrLayer.h
 
 Modified Files:
