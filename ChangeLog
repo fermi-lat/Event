@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat Mar  1 09:16:53 PST 2003
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.cxx 
+Log Message:
+fixed unix warning
+
+    *
+------------------------------------------------------------
 User: lsrea  Fri Feb 28 20:57:03 PST 2003
 Event/doc
 
