@@ -23,7 +23,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.4 2002/05/13 18:39:04 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.5 2002/05/31 23:24:50 cohen Exp $
 */
 namespace Event {  // NameSpace
 
@@ -70,8 +70,8 @@ public:
     int           getNumHits()             const {return m_hits.size();}
     TkrFitPlane   getFoLPlane(TrackEnd end = Start) const;
 
-    TkrFitPlaneConPtr getHitIterBegin()          {return m_hits.begin();}
-    TkrFitPlaneConPtr getHitIterEnd()            {return m_hits.end();}
+    TkrFitPlaneConPtr getHitIterBegin()    const {return m_hits.begin();}
+    TkrFitPlaneConPtr getHitIterEnd()      const {return m_hits.end();}
 
     /// Add hits to our track 
     void          addPlane(TkrFitPlane& newPlane) {m_hits.push_back(newPlane);}
@@ -100,7 +100,9 @@ protected:
 };
 
 //typedef for the Container
-  typedef ObjectVector<TkrFitTrack>     TkrFitTrackCol;
+  typedef ObjectVector<TkrFitTrack>      TkrFitTrackCol;
+  typedef TkrFitTrackCol::const_iterator TkrFitConPtr;
+  typedef TkrFitTrackCol::iterator       TkrFitColPtr;
 
 }; //Namespace
 
