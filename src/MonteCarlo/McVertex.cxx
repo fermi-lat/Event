@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.1 2001/01/05 08:39:13 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McVertex.cxx,v 1.1 2001/01/10 08:20:19 ozaki Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McVertex.h"
@@ -25,6 +25,7 @@ StreamBuffer& McVertex::serialize( StreamBuffer& s ) const
     << tmp // m_vertexType
     << m_initialFourMomentum
     << m_finalFourMomentum
+    << m_mcParticle(this)
     << m_motherMcParticle(this)
     << m_daughterMcParticles(this);
 }
@@ -42,6 +43,7 @@ StreamBuffer& McVertex::serialize( StreamBuffer& s )
     >> tmp // m_vertexType
     >> m_initialFourMomentum
     >> m_finalFourMomentum
+    >> m_mcParticle(this)
     >> m_motherMcParticle(this)
     >> m_daughterMcParticles(this);
 
@@ -91,6 +93,7 @@ std::ostream& McVertex::fillStream( std::ostream& s ) const
     << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
     << m_finalFourMomentum.e()  << " )"
     << "\n    Vertex Type           = " << int(m_vertexType)
+    << "\n    Pair McParticle       = " << m_mcParticle(this)
     << "\n    Mother McParticle     = " << m_motherMcParticle(this)
     << "\n    Daughter McParticles  = ";
     SmartRefVector<McParticle>::const_iterator it;
