@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: usher  Wed Aug  6 09:37:37 PDT 2003
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrPatCand.cxx 
+Log Message:
+Bug fix: changing to ObjectVector storage of hits requires modifications to 
+the sort hitting. Now implemented in a new TkrPatCand method using std::sort
+with a comparison class passed in
+
+    *
+------------------------------------------------------------
+User: usher  Wed Aug  6 09:37:37 PDT 2003
 Event/Event/Recon/TkrRecon
 
 Modified Files:
