@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Sat May 11 08:50:41 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h CalDigi.h 
+Log Message:
+
+Put into proper namespace, define ..Col when appropriate.
+    *
+------------------------------------------------------------
 User: burnett  Sat May 11 07:17:05 PDT 2002
 Event/src/Recon/TkrRecon
 
