@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.5 2001/04/18 19:07:26 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.6 2001/07/16 00:51:45 burnett Exp $
 #ifndef LHCBEVENT_MCEVENT_H
 #define LHCBEVENT_MCEVENT_H 1
 
@@ -77,7 +77,7 @@ private:
 
 };
 
-void MCEvent::setSourceId(int s)
+inline void MCEvent::setSourceId(int s)
 {
 	m_sourceId = s;
 }
