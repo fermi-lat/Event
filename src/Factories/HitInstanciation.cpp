@@ -1,4 +1,4 @@
-// $Id: HitInstanciation.cpp,v 1.2 2000/10/23 19:26:18 igable Exp $
+// $Id: HitInstanciation.cpp,v 1.3 2000/10/25 19:09:08 igable Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -26,15 +26,6 @@
 
 #include "GlastEvent/TopLevel/EventModel.h"
 using namespace GlastEvent;
-
-// ====================================================================
-// Object factory implementation for objects of class GsimACDTileHits
-// ====================================================================
-#include "GlastEvent/MonteCarlo/MCACDHit.h"
-_ImplementHitContainedFactories(MCACDHit)
-
-#include "GlastEvent/MonteCarlo/MCCalorimeterHit.h"
-_ImplementHitContainedFactories(MCCalorimeterHit)
 
 // ====================================================================
 // Object factory implementation for objects of class GsimCalorimeterHits
@@ -89,8 +80,6 @@ _ImplementHitContainedFactories(MCCalorimeterHit)
 //_ImplementDataObjectFactory( GsimSiLayerHits )
 
 void HitInstanciation()  {
-  DLL_DECL_CONTAINEDOBJECTFACTORY( MCACDhit );
-  DLL_DECL_CONTAINEDOBJECTFACTORY( MCCalorimeterHit );
   //DLL_DECL_CONTAINEDOBJECTFACTORY( GsimCalorimeterLogHits );
   //DLL_DECL_CONTAINEDOBJECTFACTORY( GsimSiStripHits );
 }
