@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.48 2002/07/18 08:33:23 riccardo Exp $
+// $Id: EventModel.cpp,v 1.49 2002/07/22 12:18:51 burnett Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.48 2002/07/18 08:33:23 riccardo Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.49 2002/07/22 12:18:51 burnett Exp $
  */
 class EvModel {
         
@@ -34,7 +34,7 @@ public:
         EventModel::Digi::AcdDigiCol         = EventModel::Digi::Event + "/AcdDigiCol";
         EventModel::Digi::TkrDigiCol         = EventModel::Digi::Event + "/TkrDigiCol";
         EventModel::Digi::CalDigiCol         = EventModel::Digi::Event + "/CalDigiCol";
-
+        EventModel::Digi::CalDigiHitTab      = EventModel::Digi::Event + "/CalDigiHitTab";
         
 
         // reconstructed data (Tracker)
