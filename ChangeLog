@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Wed Nov 10 14:46:45 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h 
+Log Message:
+added clearStatusBits()
+    *
+------------------------------------------------------------
 User: atwood  Wed Nov 10 14:42:56 PST 2004
 Event/src/Recon/TkrRecon
 
