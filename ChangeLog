@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Tue May  7 15:40:01 PDT 2002
+GlastEvent/GlastEvent/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrackCol.h TkrPatCandCol.h 
+Log Message:
+Modify the CLID's to be consistent with the new names for these TkrRecon classes
+
+    *
+------------------------------------------------------------
 User: usher  Tue May  7 14:06:27 PDT 2002
 GlastEvent/src/TopLevel
 
