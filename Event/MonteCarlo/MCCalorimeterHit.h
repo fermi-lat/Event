@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCCalorimeterHit.h,v 1.1 2000/10/25 16:47:17 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/MCCalorimeterHit.h,v 1.2 2000/10/26 22:40:00 igable Exp $
 #ifndef MCCalorimeterHit_H
 #define MCCalorimeterHit_H 1
 
@@ -14,9 +14,7 @@
 #include "GlastEvent/TopLevel/ObjectVector.h"
 #include "GlastEvent/TopLevel/ObjectList.h"
 
-/*! Represents the data from the CsI logs. Originally adapted from H. Arrighi
-    MCACDHit class. The IRF parser used with this class is CsIDetector
-*/
+
 
 
 // Forward declarations
@@ -25,7 +23,9 @@
 
 //! Externals 
 extern const CLID& CLID_MCCalorimeterHit;
-
+/*! Represents the data from the CsI logs. Originally adapted from H. Arrighi
+    MCACDHit class. The IRF parser used with this class is CsIDetector
+*/
 
 
 
