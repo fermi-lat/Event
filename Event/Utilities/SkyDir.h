@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/SkyDir.h,v 1.1 2002/08/08 21:18:24 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/SkyDir.h,v 1.2 2002/08/09 21:21:00 srobinsn Exp $
 #ifndef EVENT_SKYDIR_H
 #define EVENT_SKYDIR_H 1
 
@@ -32,8 +32,10 @@ public:
     double b () const;
     double ra () const;
     double dec () const;
-    Hep3Vector r () const;
+    Hep3Vector dir () const;
     Hep3Vector m_dir;
+    //to return the opening angle between two objects:
+    double SkyDir::difference(const SkyDir& other)const;
 
 private:
     Rotation celToGal() const;
@@ -41,5 +43,9 @@ private:
     std::pair<double,double> setGalCoordsFromDir() const;
 
 };
+
+inline double SkyDir::difference(const SkyDir& other)const{
+    return 2.*asin(0.5*(m_dir-other.dir()).mag());
+}
 
 #endif    // LHCBEVENT_SKYDIR_H
