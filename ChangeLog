@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 17 12:48:23 PST 2005
+Event/doc
+
+Modified Files:
+      Tag: EngineeringModel-v3r0407p1
+	release.notes 
+Log Message:
+apply fixes for shared lib and std::string as in HEAD
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 17 12:47:10 PST 2005
 Event/src/TopLevel
 
