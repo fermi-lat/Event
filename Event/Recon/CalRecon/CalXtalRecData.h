@@ -37,13 +37,17 @@ extern const CLID& CLID_CalXtalRecData;
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.8 2002/09/13 23:13:52 chehtman Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.9 2002/09/13 23:40:20 chehtman Exp $
 */
 namespace Event 
 {
     class CalXtalRecData : virtual public ContainedObject { 
         
     public:
+	    /// Retrieve reference to class definition structure
+ 	    virtual const CLID& clID() const   {return CalXtalRecData::classID(); }
+	    static const CLID& classID()       {return  CLID_CalXtalRecData; }
+
         
     /** @class   CalRangeRecData        
     * 
@@ -75,23 +79,23 @@ namespace Event
                   m_rangeM(rangeM) 
               {};
               
-              ~CalRangeRecData() {};
+	    ~CalRangeRecData() {};
               
-              /// The separate setting function for reconstructed position
-              /// is needed, because position reconstruction is performed              
-              /// later, than energy reconstruction and is based
-              /// on reconstructed energies
-              void setPosition (Point pos) { m_pos = pos;}
+	    /// The separate setting function for reconstructed position
+	    /// is needed, because position reconstruction is performed              
+	    /// later, than energy reconstruction and is based
+	    /// on reconstructed energies
+	    void setPosition (Point pos) { m_pos = pos;}
               
-              /// retrieve position value
-              Point getPosition() const { return m_pos;}
+	    /// retrieve position value
+	    Point getPosition() const { return m_pos;}
               
-              /// retrieve energy from specified face
-              inline double getEnergy(idents::CalXtalId::XtalFace face) const
+	    /// retrieve energy from specified face
+	    inline double getEnergy(idents::CalXtalId::XtalFace face) const
               {return face == idents::CalXtalId::POS ? m_eneP : m_eneM;}
               
-              /// retrieve energy range from specified face
-              inline char getRange(idents::CalXtalId::XtalFace face) const 
+	    /// retrieve energy range from specified face
+	    inline char getRange(idents::CalXtalId::XtalFace face) const 
               {return face == idents::CalXtalId::POS ? m_rangeP : m_rangeM;}
               
               
