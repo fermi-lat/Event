@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Thu Mar 28 16:54:04 PST 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+remove Gaudi inheritance from CalReadoutLogs; use vector of objects, not ptrs in CalDigi
+    *
+------------------------------------------------------------
 User: burnett  Wed Mar 27 18:19:49 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
