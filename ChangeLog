@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: tlindner  Tue Apr 17 16:48:27 PDT 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Initial mods for conversion to new Gaudi.  
+
+    *
+------------------------------------------------------------
 User: tlindner  Tue Apr 10 17:47:52 PDT 2001
 GlastEvent/GlastEvent/Hits SiLayers.h
 
