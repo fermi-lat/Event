@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Jun  3 15:06:42 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVertex.h 
+Log Message:
+Turn the TkrFitTrack collection into a SmartRefVector to prevent problems
+
+    *
+------------------------------------------------------------
 User: usher  Mon Jun  3 12:25:03 PDT 2002
 Event/Event/Recon/TkrRecon
 
