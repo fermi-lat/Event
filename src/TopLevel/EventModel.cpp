@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.20 2001/02/16 15:13:23 hansl Exp $
+// $Id: EventModel.cpp,v 1.21 2001/02/27 23:16:44 heather Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -154,6 +154,17 @@ public:
     //! Analysis
     const CLID& CLID_AnalEvent          = 4000;
 
+    
+    //! Classes adapted by Jose from the test beam
+    const CLID& CLID_SiLayers           = 2452;
+    const CLID& CLID_SiClusters         = 2454;
+    const CLID& CLID_SiRecObjs          = 2456;
+        
+    //! Classes adapted by Sasha Chekhtman from tb calorimeter reconstruction
+
+	const CLID& CLID_CalADCLogs         = 2601;
+	const CLID& CLID_CalRecLogs         = 2602;
+	const CLID& CLID_CalClusterList     = 2603;
 
     //! Utilities
     const CLID& CLID_RefTable1to1       =  321;
