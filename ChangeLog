@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: frailis  Wed Aug  7 08:16:33 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	IDStreams.h 
+Log Message:
+Removed a small warning
+    *
+------------------------------------------------------------
 User: frailis  Tue Jul 30 09:42:26 PDT 2002
 Event/src/TopLevel
 
