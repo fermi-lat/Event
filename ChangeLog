@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Mar  2 09:53:20 PST 2005
+Event/Event/MonteCarlo
+
+Modified Files:
+	McEventStructure.h 
+Log Message:
+fix linux warning - add new line to end of file
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r3p0, operation: add
 Package: Event
