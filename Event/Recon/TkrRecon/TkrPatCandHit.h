@@ -3,6 +3,8 @@
 #define __TkrPatCandHit_H 1
 
 #include <vector>
+#include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/MsgStream.h"
 #include "Event/Recon/TkrRecon/TkrCluster.h"
 /** 
@@ -12,12 +14,12 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.3 2002/05/11 14:17:03 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.4 2002/07/03 13:30:43 heather Exp $
 */
 
 namespace Event { //Namespace
 
-class TkrPatCandHit
+class TkrPatCandHit : virtual public ContainedObject
 {    
 public:
     
@@ -52,8 +54,10 @@ private:
 };
 
 //Following typedefs for containing hits
-typedef std::vector<TkrPatCandHit>           CandHitVector;
-typedef std::vector<TkrPatCandHit>::iterator CandHitVectorPtr;
+//typedef std::vector<TkrPatCandHit>           CandHitVector;
+//typedef std::vector<TkrPatCandHit>::iterator CandHitVectorPtr;
+typedef ObjectVector<TkrPatCandHit>           CandHitVector;
+typedef ObjectVector<TkrPatCandHit>::iterator CandHitVectorPtr;
 
 };
     

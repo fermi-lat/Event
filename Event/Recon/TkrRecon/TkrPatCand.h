@@ -9,7 +9,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.9 2002/10/09 23:38:27 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.10 2003/03/12 23:20:33 usher Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
@@ -60,7 +60,8 @@ public:
 
     //Provide access to the vector of hit candidates
     int              numPatCandHits()    {return m_hits.size();}
-    TkrPatCandHit*   getCandHit(int idx) {return &m_hits[idx];}
+    ////TkrPatCandHit*   getCandHit(int idx) {return &m_hits[idx];}
+    TkrPatCandHit*   getCandHit(int idx) {return m_hits[idx];}
     TkrPatCandHit*   getFoLPlane(TrackEnd end = Start);
 
     //Provide access to a vector iterator (do we want this?)
