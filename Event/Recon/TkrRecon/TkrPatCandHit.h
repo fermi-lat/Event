@@ -12,7 +12,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.3 2002/05/11 14:17:03 burnett Exp $
 */
 
 namespace Event { //Namespace
@@ -22,6 +22,8 @@ class TkrPatCandHit
 public:
     
     TkrPatCandHit(TkrCluster* pCluster);
+    TkrPatCandHit(unsigned int hitId, const Point& pos, unsigned int tower, 
+        unsigned int layer, TkrCluster::view v);
    ~TkrPatCandHit() {}
 
     //Output method to write out the contents of the class

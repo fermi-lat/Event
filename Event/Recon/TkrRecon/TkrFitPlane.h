@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.3 2002/05/11 14:17:03 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.4 2002/06/03 23:17:48 atwood Exp $
 */
 
 namespace Event { // Namespace
@@ -52,6 +52,13 @@ public:
         : m_IDHit(id), m_IDPlane(kplane), m_zplane(z), m_eneplane(ene), m_projection(prj),
           m_radLen(0), m_activeDist(0)
     {}
+
+    void     initializeInfo(unsigned int hit, unsigned int tower, unsigned int plane, AXIS proj,
+                            AXIS nextProj, double z, double energy, double radLen, double activeDist);
+
+    void     initializeHits(const TkrFitHit& meas, const TkrFitHit& pred, const TkrFitHit& fit,
+                            const TkrFitHit& smooth, const TkrFitMatrix& material);
+
 
     // Access Information
     inline unsigned getIDHit()                           const {return m_IDHit;}
