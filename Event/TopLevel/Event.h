@@ -20,7 +20,7 @@ extern const CLID& CLID_Event;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.9 2002/05/31 19:11:28 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.10 2002/06/10 18:55:46 burnett Exp $
 */
 namespace Event{
 
@@ -57,6 +57,12 @@ public:
     /// update trigger word
     void setTrigger(unsigned int value)                         {m_trigger = value;}
     
+ 
+    /// Retrieve live time
+    double livetime()const                                { return m_livetime;}
+    /// update live time
+    void setLivetime(double value)                         {m_livetime = value;}
+    
     /// Serialize the object for writing
     virtual StreamBuffer& serialize( StreamBuffer& s ) const;
     /// Serialize the object for reading
@@ -76,8 +82,11 @@ private:
     long                m_run;
     /// Time stamp: use special class to encapsulate type
     TimeStamp           m_time;
-    /// trigger word: note that a class is available to use for this
+    /// trigger word: note that a class is available to use for this (THB: do we need this?)
     unsigned int        m_trigger;
+
+    /// live time
+    double              m_livetime;
 };
 
 
