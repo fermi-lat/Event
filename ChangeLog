@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Nov  7 22:08:34 PST 2001
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Modified EventModel to change SiClusters references to TkrClusters
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct 10 10:32:26 PDT 2001
 GlastEvent/mgr requirements
 
