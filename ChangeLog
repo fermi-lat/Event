@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Mon Aug 12 11:46:59 PDT 2002
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+SkyDir transformation code checked and corrected, internal representation is the celestial unit vector, and skyDir can be transformed like a vector also.  Associated tests put in the test program.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Mon Aug 12 11:46:58 PDT 2002
 Event/src/Utilities
 
