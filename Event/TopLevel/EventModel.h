@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.13 2001/02/16 15:13:23 hansl Exp $
+// $Id: EventModel.h,v 1.14 2001/02/27 23:10:31 heather Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -50,6 +50,7 @@
         namespace Digi {
             _EXTERN_ std::string Event;
             _EXTERN_ std::string AcdDigis;
+            _EXTERN_ std::string TkrDigis;
         }
 
         namespace Irf {
