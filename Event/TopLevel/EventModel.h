@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.25 2002/05/07 21:04:06 usher Exp $
+// $Id: EventModel.h,v 1.26 2002/05/07 21:06:27 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -50,6 +50,7 @@
             _EXTERN_ std::string Event;
             _EXTERN_ std::string AcdDigis;
             _EXTERN_ std::string TkrDigis;
+            _EXTERN_ std::string CalDigiCol;
         }
 
         namespace Data {
