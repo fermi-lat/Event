@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sun Sep 22 12:22:14 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.cxx 
+Log Message:
+fix up the "const"s
+    *
+------------------------------------------------------------
 User: lsrea  Sun Sep 22 12:22:13 PDT 2002
 Event/Event/Recon/TkrRecon
 
