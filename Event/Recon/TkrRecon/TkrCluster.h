@@ -22,7 +22,7 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5 2004/03/11 05:15:13 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5.2.1 2004/12/14 02:34:47 lsrea Exp $
 */
 
 extern const CLID& CLID_TkrCluster;
@@ -158,7 +158,7 @@ namespace Event { //Namespace
         inline int getStatusWord() const { return m_flag; }
         /// retrieve end
         inline int getEnd() const {
-            return ( m_flag&maskVersion ? m_flag&(maskEnd>>shiftEnd) : 2 );
+            return ( m_flag&maskVersion ? (m_flag&maskEnd)>>shiftEnd : 2 );
         }
         /// retrieve version number (old-style is zero)
         inline int getVersion() const {
