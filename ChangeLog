@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Wed Jan 10 23:50:54 PST 2001
+GlastEvent/GlastEvent/Utilities VolumeID.h
+
+Modified Files:
+	VolumeID.h 
+Log Message:
+importing inlines
+    *
+------------------------------------------------------------
 User: ozaki  Wed Jan 10 01:00:42 PST 2001
 GlastEvent/GlastEvent/MonteCarlo MCIntegratingHits.cpp MCIntegratingHits.h MCParticle.cpp MCParticle.h MCPositionHits.cpp MCPositionHits.h MCVertex.cpp MCVertex.h McIntegratingHit.cpp McParticle.cpp McPositionHit.cpp McVertex.cpp
 
