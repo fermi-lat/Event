@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 15 13:02:06 PST 2002
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	DigiEvent.h Event.h EventModel.h MCEvent.h 
+Removed Files:
+	IrfEvent.h 
+Log Message:
+updates for Gaudi v9, change in DataObject ctor and removing
+IrfEvent.
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 15 12:59:33 PST 2002
 GlastEvent/doc
 
