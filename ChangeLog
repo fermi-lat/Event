@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Nov 26 11:28:50 PST 2001
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+EventModel modified to allow new tracking pattern rec object to be put in
+the transient data store
+
+    *
+------------------------------------------------------------
 User: usher  Wed Nov  7 22:08:34 PST 2001
 GlastEvent/src/TopLevel
 
