@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.3 2001/01/29 23:20:46 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McParticle.cxx,v 1.4 2001/01/30 00:31:21 igable Exp $
 
 #include <iostream>
 #include "GlastEvent/MonteCarlo/McParticle.h"
@@ -29,14 +29,14 @@ void McParticle::setParticleID( ParticleID value )
 
 
 /// Retrieve particle property
-ParticleProperty McParticle::particleProperty() const
+McParticle::StdHepId McParticle::particleProperty() const
 {
   return m_particleProperty;
 }
 
 
 /// Update particle property
-void McParticle::setParticleProperty( ParticleProperty value )
+void McParticle::setParticleProperty( McParticle::StdHepId value )
 {
   m_particleProperty = value;
 }
