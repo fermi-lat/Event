@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/TriggerPattern.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TriggerPattern.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_TRIGGERPATTERN_H
 #define LHCBEVENT_TRIGGERPATTERN_H 1
 
@@ -6,7 +6,7 @@
 // Include files
 #include <iostream>
 #include "GaudiKernel/StreamBuffer.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 //------------------------------------------------------------------------------
@@ -71,7 +71,7 @@ public:
   /// Fill the output stream (ASCII)
   std::ostream& fillStream( std::ostream& s ) const                            {
     return s << "class TriggerPattern : "
-      << GlastEventField( GlastEvent::field12 )
+      << GlastEventField( EventFormat::field12 )
       << m_pattern;
   }
 
