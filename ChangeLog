@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Tue Mar 26 14:25:08 PST 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+change CalReadoutLog in CalDig to std::vector
+    *
+------------------------------------------------------------
 User: burnett  Tue Mar 26 13:35:20 PST 2002
 GlastEvent/src/MonteCarlo
 
