@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/test/test_RelTabs.cxx,v 1.4 2002/09/13 20:52:55 frailis Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/test/test_RelTabs.cxx,v 1.5 2002/10/09 14:45:24 frailis Exp $
 
 
 #include "Event/RelTable/Relation.h"
@@ -93,8 +93,7 @@ int main()
   tab.addRelation(rel2);
   tab.addRelation(rel3);
   tab.addRelation(rel4);
-
-  tab.addNoDupRel(rel5);
+  tab.addRelation(rel5);
 
   // Using the TDS, the table is directly initialized by the ObjectList of relations: 
   // RelTable<FakeOne, FakeTwo> tab(rels);
@@ -198,7 +197,7 @@ int main()
  std::cout << std::endl << person2->name << std::endl;
 
 
-  int index;
+  unsigned int index;
   // Now, we verify how many times person2 has been in a location
   locs = tab.getRelByFirst(person2);
   for (i = locs.begin(); i != locs.end(); i++)
