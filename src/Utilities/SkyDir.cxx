@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Utilities/SkyDir.cxx,v 1.2 2002/08/09 21:21:00 srobinsn Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Utilities/SkyDir.cxx,v 1.3 2002/08/12 18:46:58 srobinsn Exp $
 
 // Include files
 #include <iostream>
@@ -118,7 +118,7 @@ double SkyDir::dec ()const{
     return setCelCoordsFromDir().second;
 }
 
-Hep3Vector SkyDir::r ()const{
+Hep3Vector SkyDir::dir ()const{
     return m_dir;
 }
 
