@@ -24,7 +24,7 @@
  *
  * @author Brian Baughman
  *
- * $Header: /home/cvs/SLAC/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.2 2002/05/11 14:17:03 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.3 2002/07/16 17:54:44 burnett Exp $
  */
 
 class Ray; 
@@ -61,7 +61,7 @@ namespace Event { // Namespace
     TkrFitPar (const Ray &); 
     TkrFitPar (const Ray *); 
 
-#endif TIMETRIAL
+#endif // TIMETRIAL
     // Create with explicit values
     TkrFitPar(double ax, double sx, double ay,double sy);
 
@@ -106,5 +106,5 @@ namespace Event { // Namespace
 
 }; //Namespace
 
-#endif _TkrFitPar_H
+#endif // _TkrFitPar_H
 

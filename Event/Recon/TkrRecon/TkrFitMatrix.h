@@ -34,7 +34,7 @@
  *
  * @author Brian Baughman
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitMatrix.h,v 1.3 2002/07/16 17:54:44 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitMatrix.h,v 1.4 2002/08/20 17:21:03 atwood Exp $
  */
 
 namespace Event { //Namespace
@@ -155,7 +155,7 @@ namespace Event { //Namespace
 
 }; //Namespace
 
-#endif _TkrFitMatrix_H
+#endif // _TkrFitMatrix_H
 
 
 
