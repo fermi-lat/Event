@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: riccardo  Thu Jul 18 01:33:23 PDT 2002
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Added two new classes, McTrajectory for storing a montecarlo trajectory, and McTkrStrip, used as an intermediate step from hits to digits
+    *
+------------------------------------------------------------
+User: riccardo  Thu Jul 18 01:33:23 PDT 2002
 Event/src/MonteCarlo
 
 Modified Files:
