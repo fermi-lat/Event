@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: burnett  Tue Mar 26 13:35:20 PST 2002
+GlastEvent/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Removed Files:
+	McVertex.cxx 
+Log Message:
+new version--just a start
+    *
+------------------------------------------------------------
 User: burnett  Tue Mar 26 13:34:14 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
