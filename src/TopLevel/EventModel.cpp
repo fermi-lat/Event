@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.55 2003/03/12 23:21:44 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.56 2003/07/18 21:10:27 burnett Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.55 2003/03/12 23:21:44 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.56 2003/07/18 21:10:27 burnett Exp $
  */
 class EvModel {
         
@@ -31,6 +31,13 @@ public:
         EventModel::MC::McTkrStripCol        = EventModel::MC::Event  + "/StripCol";
         EventModel::MC::D2EntryCol           = EventModel::MC::Event  + "/D2EntryCol";
         EventModel::MC::ExposureCol          = EventModel::MC::Event  + "/ExposureCol";
+
+        EventModel::MC::McEventStructure     = EventModel::MC::Event  + "/McEventStructure";
+
+        EventModel::MC::McPartToHitTab       = EventModel::MC::Event  + "/McPartToHitTab";
+        EventModel::MC::McClusToLyrHitTab    = EventModel::MC::Event  + "/McClusToLyrHitTab";
+        EventModel::MC::McLyrToHitTab        = EventModel::MC::Event  + "/McLyrToHitTab";
+        EventModel::MC::McSiLayerHitCol      = EventModel::MC::Event  + "/McSiLayerHitCol";
 
         // Digi event
         EventModel::Digi::Event              = EventModel::EventHeader + "/Digi";
