@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Tue Sep 24 09:56:50 PDT 2002
+Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+Small changes to the McParticle interface
+    *
+------------------------------------------------------------
 User: riccardo  Tue Sep 24 09:56:49 PDT 2002
 Event/Event/MonteCarlo
 
