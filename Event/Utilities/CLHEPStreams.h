@@ -1,10 +1,10 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/Utilities/CLHEPStreams.h,v 1.2 2000/08/15 22:55:53 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/CLHEPStreams.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_CLHEPSTREAMS_H
 #define LHCBEVENT_CLHEPSTREAMS_H 1
 
 
 // Include files
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 
 

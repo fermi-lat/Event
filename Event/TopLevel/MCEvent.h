@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.3 2000/12/19 16:54:44 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/MCEvent.h,v 1.4 2001/02/20 17:06:42 heather Exp $
 #ifndef LHCBEVENT_MCEVENT_H
 #define LHCBEVENT_MCEVENT_H 1
 
@@ -7,9 +7,9 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/DataObject.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/TopLevel/SubMCEvent.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 

@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/Event.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/Event.h,v 1.2 2000/12/19 16:54:44 heather Exp $
 #ifndef GLASTEVENT_EVENT_H
 #define GLASTEVENT_EVENT_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
-#include "Gaudi/Kernel/DataObject.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/StreamBuffer.h"
+#include "GaudiKernel/DataObject.h"
 #include "GlastEvent/Utilities/TimeStamp.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.4 2001/01/29 23:20:46 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McVertex.h,v 1.5 2001/01/30 00:31:20 igable Exp $
 #ifndef GlastEvent_McVertex_H
 #define GlastEvent_McVertex_H 1
 
@@ -8,18 +8,18 @@
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/ContainedObject.h"
-#include "Gaudi/Kernel/SmartRef.h"
-#include "Gaudi/Kernel/SmartRefVector.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/SmartRef.h"
+#include "GaudiKernel/SmartRefVector.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "CLHEP/Geometry/Point3D.h"
 #include "CLHEP/Vector/LorentzVector.h"
 #include "GlastEvent/Utilities/CLHEPStreams.h"
 // Include all Glast container types here
 //   to simplify inlude statements in algorithms
-#include "GlastEvent/TopLevel/ObjectVector.h"
-#include "GlastEvent/TopLevel/ObjectList.h"
+#include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/ObjectList.h"
 
 
 

@@ -1,13 +1,13 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/RecEvent.h,v 1.2 2000/08/15 22:55:52 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/RecEvent.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_RECEVENT_H
 #define LHCBEVENT_RECEVENT_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
-#include "Gaudi/Kernel/DataObject.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/StreamBuffer.h"
+#include "GaudiKernel/DataObject.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 
 

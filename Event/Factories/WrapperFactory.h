@@ -1,4 +1,4 @@
-// $Id: WrapperFactory.h,v 1.1.1.1 2000/08/15 17:50:44 burnett Exp $
+// $Id: WrapperFactory.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -8,7 +8,7 @@
 #define _H_GlastEvent_WrapperFactory_
 
 // includes
-#include "Gaudi/Kernel/ObjectFactory.h"
+#include "GaudiKernel/ObjectFactory.h"
 
 /** Templated factory to create concrete instances of a given contained object
 */

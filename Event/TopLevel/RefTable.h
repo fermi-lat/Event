@@ -1,15 +1,15 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/RefTable.h,v 1.1.1.1 2000/08/15 17:50:45 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/RefTable.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_REFTABLE_H
 #define LHCBEVENT_REFTABLE_H 1
 
 
 // Include files
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/DataObject.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
-#include "Gaudi/Kernel/SmartRefVector.h"
-#include "Gaudi/Kernel/SmartRef.h"
-#include "Gaudi/Kernel/HashTable.h" // Cannot use maps through sharable images....
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/StreamBuffer.h"
+#include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/SmartRef.h"
+#include "GaudiKernel/HashTable.h" // Cannot use maps through sharable images....
 
 
 // Externals 

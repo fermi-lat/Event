@@ -1,11 +1,12 @@
-// $Id: EventModel.cpp,v 1.24 2001/03/02 01:15:09 lsrea Exp $
+// $Id: EventModel.cpp,v 1.25 2001/03/03 03:30:10 igable Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
 
 // Include files
 #include "GlastEvent/TopLevel/EventModel.h"
-#include "Gaudi/Kernel/Kernel.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/ClassID.h"
 
     
 /*! \class EvModel

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/VolumeID.h,v 1.2 2001/01/11 07:50:54 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/VolumeID.h,v 1.3 2001/01/13 12:25:08 ozaki Exp $
 #ifndef GlastEvent_VolumeID_H
 #define GlastEvent_VolumeID_H 1
 
@@ -8,7 +8,7 @@
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 
 /*!

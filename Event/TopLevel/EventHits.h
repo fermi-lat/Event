@@ -1,4 +1,4 @@
-// $Id: EventHits.h,v 1.3 2000/08/28 00:59:10 burnett Exp $
+// $Id: EventHits.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 //
 //  Original Author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -8,7 +8,7 @@
 #define _H_GlastEvent_EventHits
 
 // includes
-#include "Gaudi/Kernel/DataObject.h"
+#include "GaudiKernel/DataObject.h"
 #include "GlastEvent/Hits/GlastHits.h"
 
 namespace GlastEvent { // declare the namespace for the glast raw event
