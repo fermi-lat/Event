@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.1 2001/01/05 08:38:02 ozaki Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.1 2001/01/10 08:20:19 ozaki Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
@@ -23,7 +23,7 @@ void McIntegratingHit::setEnergyItems( const energyDepositMap& value )
     typedef energyDepositMap::const_iterator CI;
     for (CI it = m_energyItem.begin(); it != m_energyItem.end(); it++){
         const double&     energy    = it->second;
-        const HepPoint3D& position  = it->first->endMcVertex()->finalPosition();
+        const HepPoint3D& position  = it->first->mcVertex()->finalPosition();
         HepPoint3D        position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
         m_totalEnergy += energy;
         m_moment1seed += energy * position;
