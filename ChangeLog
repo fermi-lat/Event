@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Tue Jan 30 03:53:10 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+CLID_McPositionHit and CLID_McIntegratingHit
+    *
+------------------------------------------------------------
 User: igable  Mon Jan 29 16:31:21 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
