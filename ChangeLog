@@ -226,6 +226,7 @@ Modified Files:
 	RawEvent.h 
 Log Message:
 comment out RawEvent's member variables from the serialize method.
+
 should determine what, if any, variables we do want in this class.
     *
 ------------------------------------------------------------
@@ -245,6 +246,7 @@ Modified Files:
 	MCEvent.h 
 Log Message:
 CLID_MCEvent -> CLID_McEvent, so the head will compile with
+
 the new EventModel
     *
 ------------------------------------------------------------
@@ -1053,5 +1055,6 @@ Modified Files:
 	TdCsIData.h 
 Log Message:
 added default constructor, and uncommented the serialize mtds
+
 for use with db converters
     *
