@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.4 2000/09/18 13:35:16 heather Exp $
+// $Id: EventModel.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -21,6 +21,12 @@
 
         _EXTERN_ std::string ACDTilesName;
 
+        namespace MC {
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string MCTrackerHits;
+            _EXTERN_ std::string MCCalorimeterHits;
+            _EXTERN_ std::string MCACDHits;
+        };
 
         namespace Hits  {
             _EXTERN_ std::string Event;
@@ -34,4 +40,4 @@
     };
 #undef _EXTERN_
 
-#endif // LHCBEVENT_EVENTMODEL_H
+#endif // GLASTEVENT_EVENTMODEL_H
