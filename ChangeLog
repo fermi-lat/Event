@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May  1 16:32:13 PDT 2002
+GlastEvent/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+return if mother is null in initialize
+    *
+------------------------------------------------------------
 User: heather  Wed May  1 12:20:19 PDT 2002
 GlastEvent/mgr
 
