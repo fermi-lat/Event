@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: burnett  Thu May  9 09:36:15 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h TkrFitHit.h TkrFitPlane.h TkrFitTrack.h 
+	TkrFitTrackCol.h TkrPatCand.h TkrPatCandCol.h TkrPatCandHit.h 
+	TkrRecInfo.h TkrVertex.h TkrVertexCol.h 
+Log Message:
+Change GlastEvent to Event.
+
+    *
+------------------------------------------------------------
+User: burnett  Thu May  9 09:36:15 PDT 2002
 Event/Event/Recon/CalRecon
 
 Modified Files:
