@@ -1,13 +1,13 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/AnalEvent.h,v 1.2 2000/08/15 22:55:50 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/AnalEvent.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 #ifndef LHCBEVENT_ANALEVENT_H
 #define LHCBEVENT_ANALEVENT_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/DataObject.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/Utilities/Classification.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 

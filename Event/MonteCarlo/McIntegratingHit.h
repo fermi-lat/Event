@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.3 2001/01/29 23:20:46 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.4 2001/01/30 00:31:20 igable Exp $
 #ifndef GlastEvent_McIntegratingHit_H
 #define GlastEvent_McIntegratingHit_H 1
 
@@ -10,16 +10,16 @@
 #include <iostream>
 #include <map>
 #include "CLHEP/Geometry/Point3D.h"
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/ContainedObject.h"
-#include "Gaudi/Kernel/SmartRefVector.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/SmartRefVector.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 #include "GlastEvent/Utilities/VolumeID.h"
 #include "GlastEvent/Utilities/CLHEPStreams.h"
 // Include all Glast container types here
 //   to simplify inlude statements in algorithms
-#include "GlastEvent/TopLevel/ObjectVector.h"
-#include "GlastEvent/TopLevel/ObjectList.h"
+#include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/ObjectList.h"
 
 
 

@@ -1,14 +1,14 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/EventTag.h,v 1.3 2000/08/27 18:26:08 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/EventTag.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
 #ifndef LHCBEVENT_EVENTTAG_H
 #define LHCBEVENT_EVENTTAG_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/DataObject.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
-#include "Gaudi/Kernel/SmartRef.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/StreamBuffer.h"
+#include "GaudiKernel/SmartRef.h"
 #include "GlastEvent/Utilities/TriggerPattern.h"
 #include "GlastEvent/Utilities/Classification.h"
 #include "GlastEvent/TopLevel/Definitions.h"

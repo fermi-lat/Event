@@ -1,4 +1,4 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/SubMCEvent.h,v 1.2 2000/08/15 22:55:52 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/SubMCEvent.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_SUBMCEVENT_H
 #define LHCBEVENT_SUBMCEVENT_H 1
 
@@ -6,8 +6,8 @@
 // Include files
 #include <iostream>
 #include <vector>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/Utilities/RandomNumberSeed.h"
 #include "GlastEvent/Utilities/ProcessingVersion.h"
 #include "CLHEP/Geometry/Point3D.h"

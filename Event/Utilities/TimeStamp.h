@@ -1,11 +1,11 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/Utilities/TimeStamp.h,v 1.2 2000/08/15 22:55:56 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/TimeStamp.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_TIMESTAMP_H
 #define LHCBEVENT_TIMESTAMP_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 
 

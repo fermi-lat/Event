@@ -1,13 +1,13 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/RawEvent.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/RawEvent.h,v 1.2 2001/02/22 15:08:14 heather Exp $
 #ifndef LHCBEVENT_RAWEVENT_H
 #define LHCBEVENT_RAWEVENT_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/Kernel.h"
-#include "Gaudi/Kernel/StreamBuffer.h"
-#include "Gaudi/Kernel/DataObject.h"
+#include "GaudiKernel/Kernel.h"
+#include "GaudiKernel/StreamBuffer.h"
+#include "GaudiKernel/DataObject.h"
 #include "GlastEvent/Utilities/TriggerPattern.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 

@@ -1,11 +1,11 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.2 2000/08/15 22:55:55 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_PARTICLEID_H
 #define LHCBEVENT_PARTICLEID_H 1
 
 
 // Include files
 #include <iostream>
-#include "Gaudi/Kernel/StreamBuffer.h"
+#include "GaudiKernel/StreamBuffer.h"
 #include "GlastEvent/TopLevel/Definitions.h"
 
 

@@ -1,4 +1,4 @@
-// $Id: HitInstanciation.cpp,v 1.3 2000/10/25 19:09:08 igable Exp $
+// $Id: HitInstanciation.cpp,v 1.4 2000/10/25 20:08:12 heather Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -10,9 +10,9 @@
 //
 
 // Include files
-#include "Gaudi/Kernel/ObjectFactory.h"
-#include "GlastEvent/TopLevel/ObjectVector.h"
-#include "GlastEvent/TopLevel/ObjectList.h"
+#include "GaudiKernel/ObjectFactory.h"
+#include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/ObjectList.h"
 
 #define _ImplementHitContainedFactories(x)  \
   _ImplementContainedObjectFactory( x )    \
