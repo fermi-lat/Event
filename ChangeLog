@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 15 15:24:35 PST 2004
+Event/Event/MonteCarlo
+
+Modified Files:
+	D2Entry.h McRelTableDefs.h 
+Log Message:
+1) Small patches to "new" TkrRecon TDS classes
+2) Remove now obsolete TkrRecon TDS classes
+3) Small mods to other Event objects to reflect these changes
+    *
+------------------------------------------------------------
 TAG
 Tag name: v9r13p1gr2, operation: add
 Package: Event
