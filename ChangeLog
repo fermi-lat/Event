@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Thu Mar 20 10:44:04 PST 2003
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.h 
+Log Message:
+Fix (for sure) tower id
+
+    *
+------------------------------------------------------------
 User: usher  Wed Mar 19 16:58:52 PST 2003
 Event/Event/Recon/TkrRecon
 
