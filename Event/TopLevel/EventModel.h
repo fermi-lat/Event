@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.29 2002/05/10 21:17:08 burnett Exp $
+// $Id: EventModel.h,v 1.30 2002/05/11 04:27:38 burnett Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -56,6 +56,12 @@
             _EXTERN_ std::string TkrFitTrackCol;
             _EXTERN_ std::string TkrVertexCol;
         }
+
+        namespace CalRecon {
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string CalXtalRecCol;
+            _EXTERN_ std::string CalClusterCol;
+		}
 
         namespace AcdRecon {
             _EXTERN_ std::string Event;

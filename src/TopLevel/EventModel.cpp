@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.45 2002/05/10 21:17:09 burnett Exp $
+// $Id: EventModel.cpp,v 1.46 2002/05/11 04:27:38 burnett Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.45 2002/05/10 21:17:09 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.46 2002/05/11 04:27:38 burnett Exp $
  */
 class EvModel {
         
@@ -45,7 +45,16 @@ public:
         EventModel::TkrRecon::TkrFitTrackCol = EventModel::TkrRecon::Event + "/TkrFitTrackCol";
         EventModel::TkrRecon::TkrVertexCol   = EventModel::TkrRecon::Event + "/TkrVertexCol";
 
-        // reconstructed ACD data
+
+        //reconstructed Cal data
+
+		EventModel::CalRecon::Event          = EventModel::EventHeader + "/CalRecon";
+		EventModel::CalRecon::CalXtalRecCol  = EventModel::CalRecon::Event + "/CalXtalRecCol";
+		EventModel::CalRecon::CalClusterCol  = EventModel::CalRecon::Event + "/CalClusterCol";
+
+		
+		
+		// reconstructed ACD data
         EventModel::AcdRecon::Event          = EventModel::EventHeader + "/AcdRecon";
     }
 };
