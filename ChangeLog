@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: burnett  Tue Jul 16 10:54:45 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPar.cxx 
+Added Files:
+	TkrFitMatrix.cxx 
+Log Message:
+
+tagging v8r12 after more efficient classes. Documented at ucsc web site
+    *
+------------------------------------------------------------
+User: burnett  Tue Jul 16 10:54:45 PDT 2002
 Event/doc
 
 Modified Files:
