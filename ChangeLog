@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: igable  Mon Jan 29 15:20:46 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Added MonteCarlo/*.cxx to requirements. Removed inlines and fixed some 
+windows compile problems.
+
+    *
+------------------------------------------------------------
+User: igable  Mon Jan 29 15:20:46 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McIntegratingHit.h McParticle.h McPositionHit.h McVertex.h
 
 Modified Files:
