@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.5 2001/04/18 19:07:25 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McIntegratingHit.h,v 1.6 2002/03/11 17:22:28 riccardo Exp $
 #ifndef GlastEvent_McIntegratingHit_H
 #define GlastEvent_McIntegratingHit_H 1
 
@@ -21,7 +21,6 @@
 //   to simplify inlude statements in algorithms
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ObjectList.h"
-
 
 
 /*!
@@ -204,6 +203,14 @@ template <class TYPE> class ObjectVector;
 typedef ObjectVector<mc::McIntegratingHit>     McIntegratingHitVector;
 template <class TYPE> class ObjectList;
 typedef ObjectList<mc::McIntegratingHit>       McIntegratingHitList;
+
+/*! A small class to use the sort algorithm */
+class CompareIntHits {
+  public:
+    bool operator()(mc::McIntegratingHit *left, mc::McIntegratingHit *right)
+    {return left->volumeID() < right->volumeID();}
+
+    };
 
 
 #endif // GlastEvent_McIntegratingHit_H
