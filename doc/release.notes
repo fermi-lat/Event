@@ -4,6 +4,7 @@
  * package manager:T.Burnett
  *
  *
+ * v9r13p1em2 01-Feb-05 default value of DigiEvent::fromMc = true
  * v9r13p1em0 17-Jan-05 branch for EM - apply fixes for shared lib 
  * v9r13p1gr4 11-Jan-05 reorder inits to shut unix up
  * v9r13p1gr3 10-Jan-05 LSR try again!
