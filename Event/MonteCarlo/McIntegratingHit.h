@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.19 2002/08/08 03:25:02 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.20 2002/09/09 23:00:52 heather Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -28,7 +28,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.19 2002/08/08 03:25:02 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.20 2002/09/09 23:00:52 heather Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -52,8 +52,9 @@ class McIntegratingHit : virtual public ContainedObject {
   /// McParticleID -> deposited energy map
   typedef std::vector< std::pair<McParticle::StdHepId, double> > energyDepositMapId;
 
-    McIntegratingHit() : m_packedFlags(0),m_totalEnergy(0),m_moment1seed(0),
-        m_moment2seed(0){m_energyArray[0]=m_energyArray[1]=m_energyArray[2]=0;}
+    McIntegratingHit() : m_totalEnergy(0),m_moment1seed(0),
+        m_moment2seed(0),m_packedFlags(0)
+    {m_energyArray[0]=m_energyArray[1]=m_energyArray[2]=0;}
 
     ~McIntegratingHit(){}
 
