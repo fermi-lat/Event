@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Sep 10 08:05:15 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+fix brief versus detailed comments
+    *
+------------------------------------------------------------
 User: heather  Mon Sep  9 17:26:37 PDT 2002
 Event/cmt
 
