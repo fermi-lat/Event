@@ -1,4 +1,24 @@
 ------------------------------------------------------------
+User: igable  Wed Apr 18 12:07:24 PDT 2001
+GlastEvent/GlastEvent/Digi AcdDigi.h TkrDigi.h
+
+Modified Files:
+	AcdDigi.h TkrDigi.h 
+Log Message:
+This is the first attempt to move over to Gaudi v7
+
+Main Changes are
+
+#include "Gaudi/Kernel...
+
+to:
+#include "GaudiKernel
+
+Also changed includes to use the version of ObjectVector and ObjectList
+which are now in the GaudiKernel Package and not in GlastEvent anymore.
+
+    *
+------------------------------------------------------------
 User: tlindner  Tue Apr 17 16:48:27 PDT 2001
 GlastEvent/mgr requirements
 
