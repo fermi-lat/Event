@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Apr  2 14:31:12 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+fix spelling of initial, add access methods for structure
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr  2 10:35:06 PST 2002
 GlastEvent/src/MonteCarlo
 
