@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.22 2002/03/04 19:03:23 usher Exp $
+// $Id: EventModel.h,v 1.23 2002/03/15 21:02:06 heather Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -42,8 +42,8 @@
             _EXTERN_ std::string Event;
             _EXTERN_ std::string McVertexCol;
             _EXTERN_ std::string McParticleCol;
-            _EXTERN_ std::string McPositionHits;
-            _EXTERN_ std::string McIntegratingHits;
+            _EXTERN_ std::string McPositionHitCol;
+            _EXTERN_ std::string McIntegratingHitCol;
         }
 
         namespace Digi {
