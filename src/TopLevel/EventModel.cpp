@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.47 2002/05/13 23:17:43 chehtman Exp $
+// $Id: EventModel.cpp,v 1.48 2002/07/18 08:33:23 riccardo Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.47 2002/05/13 23:17:43 chehtman Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.48 2002/07/18 08:33:23 riccardo Exp $
  */
 class EvModel {
         
@@ -27,6 +27,7 @@ public:
 
         EventModel::MC::McPositionHitCol     = EventModel::MC::Event  + "/PositionHitsCol";
         EventModel::MC::McIntegratingHitCol  = EventModel::MC::Event  + "/IntegratingHitsCol";
+        EventModel::MC::McTkrStripCol        = EventModel::MC::Event  + "/StripCol";
 
         // Digi event
         EventModel::Digi::Event              = EventModel::EventHeader + "/Digi";
