@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Fri Sep 13 13:52:55 PDT 2002
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h 
+Log Message:
+Fixed Relational Tables implementation bugs. Now they should work. 
+
+    *
+------------------------------------------------------------
 User: burnett  Fri Sep 13 09:04:50 PDT 2002
 Event/doc
 
