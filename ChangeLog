@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Thu Mar  1 16:42:45 PST 2001
+GlastEvent/GlastEvent/Digi TkrDigi.h
+
+Added Files:
+	TkrDigi.h 
+Log Message:
+Initial version of TKR digitization class
+
+    *
+------------------------------------------------------------
 User: burnett  Wed Feb 28 14:28:48 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
