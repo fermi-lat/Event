@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Aug  9 01:59:30 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	TimeStamp.h 
+Log Message:
+TimeStamp altered to include input and output for date/time format, as well as a "mission start date" for reference.  Test function added to display.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Aug  8 14:18:24 PDT 2002
 Event/src/test
 
