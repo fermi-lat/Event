@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: riccardo  Tue Sep 24 09:56:49 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+Small changes to the McParticle interface
+    *
+------------------------------------------------------------
 User: lsrea  Sun Sep 22 12:22:14 PDT 2002
 Event/src/Recon/TkrRecon
 
