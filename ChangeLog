@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Mon Feb  7 12:35:21 PST 2005
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrVertex.cxx 
+Log Message:
+redo TkrCluster, fix tabs
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon Feb  7 12:35:21 PST 2005
 Event/doc
 
 Modified Files:
