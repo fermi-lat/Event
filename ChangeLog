@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Dec  4 12:18:49 PST 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+explicitly include ObjectVector.. so JJ doesn't pull out all his hair
+    *
+------------------------------------------------------------
 User: heather  Wed Dec  4 12:17:52 PST 2002
 Event/doc
 
