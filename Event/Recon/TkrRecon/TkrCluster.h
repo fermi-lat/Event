@@ -22,8 +22,10 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.3 2002/10/08 22:20:14 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.4 2003/02/27 06:58:01 lsrea Exp $
 */
+
+extern const CLID& CLID_TkrCluster;
 
 namespace Event { //Namespace
 
@@ -58,7 +60,12 @@ public:
     TkrCluster(int id, int ilayer, int v, 
         int istrip0, int istripf, Point position, double ToT, int tower = 0);
     virtual ~TkrCluster() {}
-    
+
+    //! Retrieve pointer to class defininition structure
+   virtual const CLID& clID() const   { return TkrCluster::classID(); }
+   static const CLID& classID()       { return CLID_TkrCluster; }
+
+
     
     // set methods
     /// sets the flag of a cluster
