@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Sep  5 05:29:34 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+simple fixes to gcc warnings
+    *
+------------------------------------------------------------
 User: cohen  Thu Sep  5 05:29:32 PDT 2002
 Event/Event/Recon/CalRecon
 
