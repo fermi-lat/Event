@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Sep 13 08:59:58 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	MCEvent.h 
+Log Message:
+add sequence number
+    *
+------------------------------------------------------------
 User: frailis  Thu Sep 12 21:51:23 PDT 2002
 Event/src/test
 
