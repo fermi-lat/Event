@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.7 2000/12/12 21:31:56 heather Exp $
+// $Id: EventModel.h,v 1.8 2000/12/15 20:35:13 igable Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -22,6 +22,10 @@
 
         namespace MC {
             _EXTERN_ std::string Event;
+            _EXTERN_ std::string McParticle;
+            _EXTERN_ std::string McIntegratingHit;
+            _EXTERN_ std::string McVertex;
+
         };
 
         namespace Irf {
