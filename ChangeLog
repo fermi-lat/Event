@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sat Sep  7 16:59:42 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+replace confusing methods, ready for tag v9r0
+    *
+------------------------------------------------------------
 User: richard  Fri Sep  6 15:24:25 PDT 2002
 Event/Event/Digi
 
