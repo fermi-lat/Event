@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: cohen  Fri May 31 09:57:22 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVertex.h 
+Removed Files:
+	TkrVertexCol.h 
+Log Message:
+first migration to STL convention: TkrVertexCol class removed and TkrVertex modified to inherit from ContainedObject and define TkrVertexCol as an ObjectVector type
+    *
+------------------------------------------------------------
 User: chehtman  Tue May 28 13:37:21 PDT 2002
 Event/src/Recon/CalRecon
 
