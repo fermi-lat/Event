@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.11 2002/04/08 20:02:47 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.12 2002/05/09 16:36:15 burnett Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -212,27 +212,27 @@ inline std::ostream& mc::McPositionHit::fillStream( std::ostream& s ) const
     << "    base class McPositionHit :"
     << "\n        Volume ID             = " << m_volumeID.name()
     << "\n        Entry point (x, y, z) = ( "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_entry.x() << ", "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_entry.y() << ", "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_entry.z() << " )"
     << "\n        Deposited Energy      = "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_depositedEnergy
     << "\n        Particle Energy       = "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_particleEnergy
     << "\n        Time of flight        = "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_timeOfFlight
     << "\n        Exit point (x, y, z)  = ( "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_exit.x() << ", "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_exit.y() << ", "
-    << EventFloatFormat( Event::width, Event::precision )
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_exit.z() << " )"
     << "\n        McParticle            = " << m_mcParticle(this)
     << "\n        ancestor McParticle   = " << m_originMcParticle(this);

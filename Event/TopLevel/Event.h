@@ -1,12 +1,12 @@
-#ifndef GLASTEVENT_EVENT_H
-#define GLASTEVENT_EVENT_H 1
+#ifndef Event_EVENT_H
+#define Event_EVENT_H 1
 
 #include <iostream>
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/DataObject.h"
-#include "GlastEvent/Utilities/TimeStamp.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/TimeStamp.h"
+#include "Event/TopLevel/Definitions.h"
 
 extern const CLID& CLID_Event;
 
@@ -19,9 +19,9 @@ extern const CLID& CLID_Event;
 * - event number
 * - time stamp
 *
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.5 2002/03/15 21:02:06 heather Exp $
 */
-
+namespace Event{
 class Event : public DataObject                                                {
     
 public:
@@ -104,13 +104,12 @@ inline std::ostream& Event::fillStream( std::ostream& s ) const                {
     return s
         << "class Event :"
         << "\n    Event number = "
-        << GlastEventField( GlastEvent::field12 )
+        << EventField( EventFormat::field12 )
         << m_event
         << "\n    Run number   = "
-        << GlastEventField( GlastEvent::field12 )
+        << EventField( EventFormat::field12 )
         << m_run
         << "\n    Time         = " << m_time;
 }
-
-
-#endif    // GLASTEVENT_EVENT_H
+} // namespace Event
+#endif    // Event_EVENT_H

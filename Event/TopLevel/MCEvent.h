@@ -7,8 +7,8 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/StreamBuffer.h"
-#include "GlastEvent/TopLevel/SubMCEvent.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+//#include "GlastEvent/TopLevel/SubMCEvent.h"
+#include "Event/TopLevel/Definitions.h"
 
 extern const CLID& CLID_McEvent;
 
@@ -19,7 +19,7 @@ extern const CLID& CLID_McEvent;
 * It contains:
 * - source ID
 * 
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.8 2002/03/15 21:02:06 heather Exp $
 */
 
 class MCEvent : public DataObject                                              {
@@ -94,7 +94,7 @@ inline StreamBuffer& MCEvent::serialize( StreamBuffer& s )                     {
 inline std::ostream& MCEvent::fillStream( std::ostream& s ) const              {
     s << "class MCEvent :\n"
         << "    Source Id = "
-        << GlastEventField( GlastEvent::field12 )
+        << EventField( EventFormat::field12 )
         << m_sourceId;
     return s;
 }

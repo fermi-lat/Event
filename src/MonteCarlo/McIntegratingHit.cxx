@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McIntegratingHit.cxx,v 1.8 2002/04/30 21:40:47 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McIntegratingHit.cxx,v 1.9 2002/05/09 16:36:17 burnett Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
@@ -11,7 +11,7 @@
 // phase to the namespace `Event'.
 // After the transition is completed, it should be removed and each
 // function definition should have the namespace identifier.
-using namespace Event;
+//using namespace Event;
 
 namespace mc{
 
