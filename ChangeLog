@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Wed Apr  3 17:52:22 PST 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+bug corrected: filling of m_rangeM in constructor
+    *
+------------------------------------------------------------
 User: burnett  Tue Apr  2 20:21:57 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
