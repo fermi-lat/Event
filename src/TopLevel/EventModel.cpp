@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.15 2001/01/30 11:53:09 ozaki Exp $
+// $Id: EventModel.cpp,v 1.16 2001/02/05 10:01:14 ozaki Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -38,6 +38,7 @@ public:
         EventModel::Irf::IrfTkrHits = EventModel::Irf::Event + "/IrfTkrHits";
 
         EventModel::Raw::Event = EventModel::Event + "/Raw";
+        EventModel::Raw::AcdDigi = EventModel::Raw::Event + "/AcdDigi";
         EventModel::Raw::TdCsIDatas = EventModel::Raw::Event + "/TdCsIDatas";
         EventModel::Raw::TdSiDatas = EventModel::Raw::Event + "/TdSiDatas";
     }
@@ -77,4 +78,7 @@ public:
     const CLID& CLID_McIntegratingHit   = 2101;
     const CLID& CLID_McVertex           = 2102;
     const CLID& CLID_McPositionHit      = 2103;
+
+    // Digitization class IDs
+    const CLID& CLID_AcdDigi            = 2201;
         
