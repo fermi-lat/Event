@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jan 17 12:47:10 PST 2005
+Event/src/TopLevel
+
+Modified Files:
+      Tag: EngineeringModel-v3r0407p1
+	EventModel.cpp 
+Log Message:
+fix up string definitions like at HEAD
+    *
+------------------------------------------------------------
 User: heather  Mon Jan 17 12:46:58 PST 2005
 Event/Event/TopLevel
 
