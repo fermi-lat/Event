@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Thu Mar  7 08:28:45 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McPositionHit.h 
+Log Message:
+Added GlastEvent/utility/IDStreams.h for streaming with VOlumeIdentifier objects
+
+    *
+------------------------------------------------------------
 User: burnett  Mon Mar  4 13:56:41 PST 2002
 GlastEvent/mgr
 
