@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: atwood  Tue Nov 23 11:24:34 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h 
+Log Message:
+TkrTrack status bits now implemented and set
+
+    *
+------------------------------------------------------------
 User: usher  Mon Nov 15 13:10:25 PST 2004
 Event/src/Recon/TkrRecon
 
