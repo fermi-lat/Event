@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: frailis  Fri Jul  5 06:12:25 PDT 2002
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h 
+Log Message:
+In RelTable , access methods have been changed to const
+
+    *
+------------------------------------------------------------
 User: burnett  Thu Jul  4 20:13:49 PDT 2002
 Event/doc
 
