@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: cohen  Fri May 31 16:24:51 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrVertex.cxx 
+Removed Files:
+	TkrFitTrackCol.cxx 
+Log Message:
+STL Compliance of TkrFitTrackCol
+    *
+------------------------------------------------------------
 User: cohen  Fri May 31 16:24:50 PDT 2002
 Event/Event/Recon/TkrRecon
 
