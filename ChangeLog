@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: burnett  Sat Jun  1 10:30:30 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+
+patch to save time properly as a double
+tagging v8r6p1
+    *
+------------------------------------------------------------
+User: burnett  Sat Jun  1 10:30:30 PDT 2002
 Event/Event/Utilities
 
 Modified Files:
