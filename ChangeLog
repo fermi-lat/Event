@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun 23 11:26:33 PDT 2004
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+update to AcdDigi for LDF support
+    *
+------------------------------------------------------------
 User: berthon  Fri May  7 05:51:44 PDT 2004
 Event/src/TopLevel
 
