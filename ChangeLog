@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: riccardo  Fri Apr  5 08:22:45 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+Added two methods to McParticle, initialize and finalize; these two methods cover the functionalities
+of the previous method init (that it is still there for transition purpouses, but will disappear)
+
+    *
+------------------------------------------------------------
 User: riccardo  Thu Apr  4 04:32:14 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
