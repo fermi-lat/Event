@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Id: EventModel.h,v 1.2 2000/10/24 21:16:41 heather Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -23,7 +23,7 @@
 
         namespace MC {
             _EXTERN_ std::string Event;
-            _EXTERN_ std::string MCTrackerHits;
+            _EXTERN_ std::string MCTKRHits;
             _EXTERN_ std::string MCCalorimeterHits;
             _EXTERN_ std::string MCACDHits;
         };
