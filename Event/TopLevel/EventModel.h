@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.15 2001/03/02 01:15:08 lsrea Exp $
+// $Id: EventModel.h,v 1.16 2001/03/03 03:30:10 igable Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -41,8 +41,8 @@
 
         namespace MC {
             _EXTERN_ std::string Event;
-            _EXTERN_ std::string McVertices;
-            _EXTERN_ std::string McParticles;
+            _EXTERN_ std::string McVertexCol;
+            _EXTERN_ std::string McParticleCol;
             _EXTERN_ std::string McPositionHits;
             _EXTERN_ std::string McIntegratingHits;
         }
