@@ -1,6 +1,6 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.3 2002/05/10 01:17:36 burnett Exp $
-#ifndef LHCBEVENT_TIMESTAMP_H
-#define LHCBEVENT_TIMESTAMP_H 1
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TimeStamp.h,v 1.4 2002/05/31 19:11:28 burnett Exp $
+#ifndef EVENT_TIMESTAMP_H
+#define EVENT_TIMESTAMP_H 1
 
 
 // Include files
@@ -8,18 +8,11 @@
 #include "GaudiKernel/StreamBuffer.h"
 #include "Event/TopLevel/Definitions.h"
 
-
-//------------------------------------------------------------------------------
-//
-// ClassName:   TimeStamp
-//  
-// Description: Placeholder for the time stamp
-//              (decision about precision and range has to be made)
-//
-// Author:      Pavel Binko
-// Changes:     P.Binko 19/10/1999 : Formating of ASCII output
-//
-//------------------------------------------------------------------------------
+/*! \class TimeStamp
+\brief encapsulate the time.
+Elapsed? absolute? Currently a double, in units of seconds.
+one event. 
+*/
 
 
 class TimeStamp                                                                {
@@ -29,7 +22,7 @@ public:
   /// Constructors
   TimeStamp()
     : m_time(0)                                                              { }
-  TimeStamp( long t )
+  TimeStamp( double t )
     : m_time(t)                                                              { }
   /// Destructor
   ~TimeStamp()                                                               { }
