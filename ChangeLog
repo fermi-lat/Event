@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Jun  3 12:25:03 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.h 
+Log Message:
+Modifications to make new collection definition to get TkrRecon to compile again
+
+    *
+------------------------------------------------------------
 User: riccardo  Mon Jun  3 09:20:36 PDT 2002
 Event/Event/MonteCarlo
 
