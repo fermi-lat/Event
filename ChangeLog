@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Aug  7 20:26:01 PDT 2002
+Event/src/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.cxx 
+Log Message:
+set and get methods for energyArray and to set totE and moments
+when using PDS
+    *
+------------------------------------------------------------
 User: heather  Wed Aug  7 20:25:02 PDT 2002
 Event/Event/MonteCarlo
 
