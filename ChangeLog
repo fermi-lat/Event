@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Thu Mar  1 17:15:09 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Added TkrDigis to the event model
+
+    *
+------------------------------------------------------------
+User: lsrea  Thu Mar  1 17:15:09 PST 2001
 GlastEvent/mgr requirements
 
 Modified Files:
