@@ -8,3 +8,13 @@ Log Message:
 New quick wrapper for the TdSiData and TdCsIData objects
 
     *
+------------------------------------------------------------
+User: igable  Mon Dec 18 12:29:56 PST 2000
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Added the CLID for TdGlastData
+
+    *
