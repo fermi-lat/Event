@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.64 2004/03/12 17:18:50 berthon Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.65 2004/05/07 11:37:14 berthon Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.64 2004/03/12 17:18:50 berthon Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.65 2004/05/07 11:37:14 berthon Exp $
  */
 class EvModel {
         
@@ -178,15 +178,15 @@ public:
     const CLID& CLID_TkrCluster         = 3102;  // Is this really Layers, Clusters, RecObjs
     const CLID& CLID_TkrClusterCol      = CLID_TkrCluster + CLID_ObjectVector;
     const CLID& CLID_TkrPatCand         = 3103;
-    const CLID& CLID_TkrPatCandCol      = CLID_TkrPatCand + CLID_ObjectVector;  // Is this really Layers, Clusters, RecObjs
+    const CLID& CLID_TkrPatCandCol      = CLID_TkrPatCand + CLID_ObjectVector; 
     const CLID& CLID_SiRecObjs          = 3104;  // or rather Layer, Cluster, RecObj objects?
     const CLID& CLID_TkrFitTrack        = 3105;
- // or rather Layer, Cluster, RecObj objects?
     const CLID& CLID_TkrVertex          = 3106;  
     const CLID& CLID_TkrVertexCol       = CLID_TkrVertex+CLID_ObjectVector;// CLID_TkrVertexCol is ObjectVector of TkrVertices
     const CLID& CLID_TkrFitTrackBase    = 3107;
     const CLID& CLID_TkrFitTrackBaseCol = CLID_TkrFitTrackBase + CLID_ObjectVector;
     const CLID& CLID_TkrFitTrackCol     = CLID_TkrFitTrackBaseCol; //for converters to correct inconsistency in class definitions
+    const CLID& CLID_TkrPatCandHit      = 3108;
     const CLID& CLID_TkrPatCandHitCol   = CLID_TkrPatCandHit + CLID_ObjectVector;
 
     const CLID& CLID_TkrTrackTabCol   = 3109;
