@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Tue May 28 13:34:50 PDT 2002
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+CalClusterCol modified to become a std::vector
+    *
+------------------------------------------------------------
 User: heather  Wed May 22 17:37:55 PDT 2002
 Event/Event/Digi
 
