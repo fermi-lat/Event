@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: berthon  Thu Mar 11 08:45:33 PST 2004
+Event/Event/Recon/CalRecon
+
+Added Files:
+	CalRecon.h 
+Log Message:
+add CalRecon and TkrRecon TDS classes, necessary for converters
+
+    *
+------------------------------------------------------------
 User: heather  Wed Mar 10 21:20:28 PST 2004
 Event/src/TopLevel
 
