@@ -17,10 +17,10 @@ extern const CLID& CLID_TkrClusterCol;
 *
 * @brief TDS Object for TkrCluster vector, and array of vectors.
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.1 2002/05/07 20:55:08 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
 */
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrClusterCol : public DataObject
 {
