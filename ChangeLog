@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Tue Jun  4 16:07:48 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.cxx TkrVertex.cxx 
+Log Message:
+TkrFitTrack: Sign change on direction of track, follow old convention
+TkrVertex:   Checks that vertex direction vector is a unit vector
+
+    *
+------------------------------------------------------------
 User: heather  Tue Jun  4 15:10:27 PDT 2002
 Event/Event/Digi
 
