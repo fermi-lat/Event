@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Mon Jan 17 11:12:29 PST 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h 
+Log Message:
+Fixed bug in TKrTrack::getNumFitHits()
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r1p2, operation: add
 Package: Event
