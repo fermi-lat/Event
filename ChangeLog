@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: riccardo  Thu Apr  4 04:32:14 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+Small changes in the constructor of McIntegratingHit to set initial value for m_totalEnergy 
+
+    *
+------------------------------------------------------------
 User: chehtman  Wed Apr  3 17:52:22 PST 2002
 GlastEvent/GlastEvent/Digi
 
