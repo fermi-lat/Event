@@ -1,11 +1,11 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.13 2002/05/01 23:32:13 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.14 2002/05/09 16:36:17 burnett Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
 #include "Event/Utilities/CLHEPStreams.h"
 
 
-namespace mc {
+namespace Event {
 
 /// Retrieve particle property
 McParticle::StdHepId McParticle::particleProperty() const

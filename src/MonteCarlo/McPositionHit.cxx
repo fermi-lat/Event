@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.6 2002/04/08 20:02:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.7 2002/05/09 16:36:17 burnett Exp $
 
 #include <iostream>
 #include <math.h>
@@ -6,7 +6,7 @@
 #include "Event/Utilities/CLHEPStreams.h"
 
 
-namespace mc{
+namespace Event{
 
 /// Retrieve hit's direction cosine
 double McPositionHit::directionCosine() const
