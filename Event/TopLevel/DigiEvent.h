@@ -7,7 +7,7 @@
 #include "GaudiKernel/DataObject.h"
 #include "Event/TopLevel/Definitions.h"
 
-extern const CLID& CLID_DigiEvent;
+static const CLID& CLID_DigiEvent = InterfaceID("DigiEvent", 1, 0);
 
 /** @class DigiEvent
 * @brief Defines the top level object for digitization data.
@@ -16,7 +16,7 @@ extern const CLID& CLID_DigiEvent;
 * It contains:
 * - m_fromMc, if coming from Monte Carlo
 * 
-* $Header$
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/DigiEvent.h,v 1.10 2002/09/06 21:51:56 heather Exp $
 */
 namespace Event {  // NameSpace
 

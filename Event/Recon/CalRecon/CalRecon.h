@@ -6,14 +6,16 @@
 #include "GaudiKernel/DataObject.h"
 #include "Event/TopLevel/Definitions.h"
 
-extern const CLID& CLID_CalRecon;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_CalRecon = InterfaceID("CalRecon", 1, 0);
 
 /** @class CalRecon
 * @brief Defines the top level object for digitization data.
 * It can be identified by "/Event/CalRecon" on the TDS
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/CalRecon.h,v 1.10 2002/09/06 21:51:56 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalRecon.h,v 1.1 2004/03/11 16:45:33 berthon Exp $
 */
 namespace Event {  // NameSpace
 

@@ -7,7 +7,7 @@
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/MsgStream.h"
 
-extern const CLID& CLID_CalClusterCol;
+static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 
 /**
 *  @class CalCluster
@@ -21,7 +21,7 @@ extern const CLID& CLID_CalClusterCol;
 *  \author Regis Terrier
 *  \author Jose Angel Hernando
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.11 2002/09/09 23:02:27 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.12 2003/02/24 02:27:56 richard Exp $
 */
 
 namespace Event 

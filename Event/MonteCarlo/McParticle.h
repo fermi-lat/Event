@@ -34,9 +34,11 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.30 2003/07/22 15:48:44 riccardo Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.31 2003/07/25 16:35:15 usher Exp $
  */
-extern const CLID& CLID_McParticle;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_McParticle = InterfaceID("McParticle", 1, 0);
 
 namespace Event {  // NameSpace
 

@@ -14,7 +14,9 @@
 #include "Event/TopLevel/Definitions.h"
 #include "geometry/Point.h"
 
-extern const CLID& CLID_CalXtalRecData;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_CalXtalRecData = InterfaceID("CalXtalRecData", 1, 0);
 
 /**
 * @class   CalXtalRecData        
@@ -37,7 +39,7 @@ extern const CLID& CLID_CalXtalRecData;
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.9 2002/09/13 23:40:20 chehtman Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.10 2003/12/08 12:57:25 berthon Exp $
 */
 namespace Event 
 {

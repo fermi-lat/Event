@@ -12,6 +12,7 @@
 #include "idents/VolumeIdentifier.h"
 #include "Event/Utilities/CLHEPStreams.h"
 #include "Event/Utilities/IDStreams.h"
+#include "Event/MonteCarlo/McParticle.h"
 // Include all Glast container types here
 //   to simplify inlude statements in algorithms
 #include "GaudiKernel/ObjectVector.h"
@@ -23,12 +24,12 @@
  *
  * @author:      R.Giannitrapani 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.1 2002/07/18 08:33:21 riccardo Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.2 2003/07/04 22:14:12 burnett Exp $
  */
 
-#include "Event/MonteCarlo/McParticle.h"
+#include "GaudiKernel/IInterface.h"
 
-extern const CLID& CLID_McTrajectory;
+static const CLID& CLID_McTrajectory = InterfaceID("McTrajectory", 1, 0);
 
 namespace Event {  // NameSpace
 

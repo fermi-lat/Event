@@ -11,8 +11,9 @@
 // to simplify inlude statements in algorithms
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ObjectList.h"
+#include "GaudiKernel/IInterface.h"
 
-extern const CLID& CLID_D2Entry;
+static const CLID& CLID_D2Entry = InterfaceID("D2Entry", 1, 0);
 
 namespace Event { //Namespace
     
@@ -21,7 +22,7 @@ namespace Event { //Namespace
 *
 * @author Sean Robinson
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.1 2002/08/22 16:22:17 srobinsn Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.2 2002/09/06 21:44:54 heather Exp $
 */
     class D2Entry : virtual public ContainedObject//public DataObject
     {
