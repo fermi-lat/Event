@@ -37,7 +37,7 @@ extern const CLID& CLID_CalXtalRecData;
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.6 2002/09/06 21:46:49 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.7 2002/09/09 23:02:27 heather Exp $
 */
 namespace Event 
 {
@@ -68,11 +68,11 @@ namespace Event
                             double eneP,
                             char rangeM,
                             double eneM) :
-                  m_rangeP(rangeP), 
                   m_eneP(eneP), 
-                  m_rangeM(rangeM), 
                   m_eneM(eneM),
                   m_pos(Point(0.,0.,0.))
+                  m_rangeP(rangeP), 
+                  m_rangeM(rangeM), 
               {};
               
               ~CalRangeRecData() {};
@@ -147,7 +147,7 @@ namespace Event
         inline char getRange(short readoutIndex,
                              idents::CalXtalId::XtalFace face) const
         {
-            return (readoutIndex < m_recData.size()) ? 
+            return (readoutIndex < int(m_recData.size())) ? 
                    ((m_recData[readoutIndex])).getRange(face) : (char)-1;
         }
         
@@ -156,7 +156,7 @@ namespace Event
         inline double getEnergy(short readoutIndex,
                                 idents::CalXtalId::XtalFace face) const
         {
-            return (readoutIndex < m_recData.size()) ? 
+            return (readoutIndex < int(m_recData.size())) ? 
                    ((m_recData[readoutIndex])).getEnergy(face) : (short)-1;
         }
         
@@ -191,7 +191,7 @@ namespace Event
         /// Retrieve reconstructed data from both ends of selected readout
         inline CalRangeRecData* getRangeRecData(short readoutIndex)
         {
-            if ( readoutIndex < m_recData.size() )
+            if ( readoutIndex < int(m_recData.size()) )
                 return &(m_recData[readoutIndex]);
             else
                 return 0;
@@ -201,7 +201,7 @@ namespace Event
         /// (for const objects)
         inline const CalRangeRecData* getRangeRecData(short readoutIndex) const
         {
-            if ( readoutIndex < m_recData.size() )
+            if ( readoutIndex < int(m_recData.size()) )
                 return &(m_recData[readoutIndex]);
             else
                 return 0;
