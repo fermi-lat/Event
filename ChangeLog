@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: burnett  Fri May 10 21:27:38 PDT 2002
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+remove obsolete entries, fix names according to convention
+    *
+------------------------------------------------------------
+User: burnett  Fri May 10 21:27:38 PDT 2002
 Event/Event/TopLevel
 
 Modified Files:
