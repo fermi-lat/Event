@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sun Oct  6 12:06:48 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.cxx 
+Log Message:
+quick fix to the id problem
+    *
+------------------------------------------------------------
 User: lsrea  Sun Oct  6 12:06:47 PDT 2002
 Event/Event/Recon/TkrRecon
 
