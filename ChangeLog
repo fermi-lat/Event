@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Sat Jan 13 04:27:31 PST 2001
+GlastEvent/src/MonteCarlo McIntegratingHit.cxx
+
+Modified Files:
+	McIntegratingHit.cxx 
+Log Message:
+removing origin/endMcVertex and adding mcVertex
+    *
+------------------------------------------------------------
 User: ozaki  Sat Jan 13 04:26:04 PST 2001
 GlastEvent/src/MonteCarlo McVertex.cxx
 
