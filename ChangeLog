@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: riccardo  Thu Jul 18 01:33:22 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h McParticle.h McPositionHit.h 
+Added Files:
+	McTkrStrip.h McTrajectory.h 
+Log Message:
+Added two new classes, McTrajectory for storing a montecarlo trajectory, and McTkrStrip, used as an intermediate step from hits to digits
+    *
+------------------------------------------------------------
 User: burnett  Tue Jul 16 10:54:45 PDT 2002
 Event/src/Recon/TkrRecon
 
