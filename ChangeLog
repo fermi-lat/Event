@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Mon Jul 22 05:18:51 PDT 2002
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+add new TDS class McTkrStrip and ...Col
+tag v8r13
+    *
+------------------------------------------------------------
+User: burnett  Mon Jul 22 05:18:51 PDT 2002
 Event/doc
 
 Modified Files:
