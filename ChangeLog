@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May 22 17:37:55 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+add in method to retrieve lastController0Strip for ROOT writing
+    *
+------------------------------------------------------------
 User: chehtman  Thu May 16 12:47:13 PDT 2002
 Event/Event/Recon/CalRecon
 
