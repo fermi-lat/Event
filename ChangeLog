@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: usher  Mon May 13 11:39:05 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrFitTrack.cxx TkrFitTrackCol.cxx TkrPatCand.cxx 
+	TkrVertex.cxx TkrVertexCol.cxx 
+Log Message:
+Final (?) modifications according to DSTF review
+1) get/set method names
+2) Consistent naming for iterator returning methods
+
+    *
+------------------------------------------------------------
 User: usher  Mon May 13 11:39:04 PDT 2002
 Event/Event/Recon/TkrRecon
 
