@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: srobinsn  Thu Aug  8 14:18:24 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+SkyDir class added to hold absolute directions in multiple reference frames.  test function amended to test it.
+
+    *
+------------------------------------------------------------
+User: srobinsn  Thu Aug  8 14:18:24 PDT 2002
 Event/Event/Utilities
 
 Added Files:
