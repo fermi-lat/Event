@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Thu May  9 18:56:21 PDT 2002
+Event/src/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx 
+Log Message:
+change mc namespace to Event
+    *
+------------------------------------------------------------
 User: richard  Thu May  9 18:55:50 PDT 2002
 Event/Event/MonteCarlo
 
