@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: riccardo  Mon Mar 11 09:22:30 PST 2002
+GlastEvent/GlastEvent/Utilities
+
+Modified Files:
+	ParticleID.h 
+Log Message:
+Added idents::VolumeIdentifier to McIntegratingHit
+
+    *
+------------------------------------------------------------
 User: riccardo  Mon Mar 11 09:22:28 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
