@@ -1,10 +1,9 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.8 2002/05/10 01:56:21 richard Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.9 2002/07/26 16:22:19 riccardo Exp $
 
 #include <iostream>
 #include <math.h>
 #include "Event/MonteCarlo/McPositionHit.h"
 #include "Event/Utilities/CLHEPStreams.h"
-
 
 namespace Event{
 

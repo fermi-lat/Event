@@ -19,8 +19,9 @@
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/Recon/TkrRecon/TkrRecInfo.h"
-#include "Event/Recon/TkrRecon/TkrFitTrackBase.h"
+#include "Event/Recon/TkrRecon/TkrTrack.h"
 /** 
 * @class TkrVertex
 *
@@ -28,9 +29,10 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.11 2002/12/19 20:53:42 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/users/TkrGroup/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.2 2004/09/08 15:10:45 usher Exp $
 */
-extern const CLID& CLID_TkrVertex;
+
+static const CLID& CLID_TkrVertex = InterfaceID("TkrVertex", 1, 0);
 
 namespace Event { //Namespace
   
@@ -38,6 +40,7 @@ class TkrVertex : public TkrRecInfo, virtual public ContainedObject
   {    
 public:
     
+    TkrVertex() {}
     TkrVertex( int layer, int tower, double energy, double quality, const Ray& testRay);
    ~TkrVertex() {}
 
@@ -60,14 +63,14 @@ public:
     bool          empty(int numHits)                 const; 
 
     // Add tracks to the list
-    void addTrack(TkrFitTrackBase* pTrack) {m_tracks.push_back(pTrack);}
+    void addTrack(TkrTrack* pTrack) {m_tracks.push_back(pTrack);}
     
     // How many tracks in the vertex?
     int  getNumTracks() const {return m_tracks.size();}
 
     // Pointers to track info
-    SmartRefVector<TkrFitTrackBase>::const_iterator getTrackIterBegin() const {return m_tracks.begin();}
-    SmartRefVector<TkrFitTrackBase>::const_iterator getTrackIterEnd()   const {return m_tracks.end();}
+    SmartRefVector<TkrTrack>::const_iterator getTrackIterBegin() const {return m_tracks.begin();}
+    SmartRefVector<TkrTrack>::const_iterator getTrackIterEnd()   const {return m_tracks.end();}
 
     /// Utilities 
     void writeOut(MsgStream& log) const; 
@@ -82,7 +85,7 @@ private:
     int            m_firstLayer;
     int            m_itower; 
     
-    SmartRefVector<TkrFitTrackBase> m_tracks;
+    SmartRefVector<TkrTrack> m_tracks;
 };
 
 //typedef for the Container

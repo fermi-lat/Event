@@ -9,7 +9,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.12 2003/08/06 16:37:37 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.13 2004/03/11 05:15:13 heather Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
@@ -18,7 +18,9 @@
 #include "Event/Recon/TkrRecon/TkrRecInfo.h"
 #include "Event/Recon/TkrRecon/TkrPatCandHit.h"
 
-extern const CLID& CLID_TkrPatCand;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_TkrPatCand = InterfaceID("TkrPatCand", 1, 0);
 
 namespace Event { //Namespace
 
@@ -26,6 +28,7 @@ class TkrPatCand: public TkrRecInfo, virtual public ContainedObject
 {    
 public:
     
+    TkrPatCand() {}
     TkrPatCand(int layer, int tower, double energy, double energyErr, double quality, const Ray& testRay);
     TkrPatCand(int layer, int tower, double energy, double quality, const Ray& testRay) 
                     {TkrPatCand(layer,tower,energy,1.,quality,testRay);}

@@ -8,8 +8,9 @@
 // to simplify inlude statements in algorithms
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/ObjectList.h"
+#include "GaudiKernel/IInterface.h"
 
-extern const CLID& CLID_Exposure;
+static const CLID& CLID_Exposure = InterfaceID("Exposure", 1, 0);
 
 namespace Event { //Namespace
     
@@ -18,7 +19,7 @@ namespace Event { //Namespace
 *
 * @author Sean Robinson
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/Exposure.h,v 1.2 2002/09/06 21:44:54 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/Exposure.h,v 1.1 2003/07/11 23:06:45 burnett Exp $
 */
     class Exposure : virtual public ContainedObject
     {

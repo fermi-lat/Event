@@ -14,10 +14,12 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.6 2003/08/06 16:37:37 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.7 2004/03/11 05:15:13 heather Exp $
 */
 
-extern const CLID& CLID_TkrPatCandHit;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_TkrPatCandHit = InterfaceID("TkrPatCandHit", 1, 0);
 
 namespace Event { //Namespace
 
@@ -25,6 +27,7 @@ class TkrPatCandHit : virtual public ContainedObject
 {    
 public:
     
+    TkrPatCandHit() {}
     TkrPatCandHit(TkrCluster* pCluster);
     TkrPatCandHit(unsigned int hitId, const Point& pos, unsigned int tower, 
         unsigned int layer, TkrCluster::view v);

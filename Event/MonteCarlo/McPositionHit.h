@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.18 2002/07/26 16:22:18 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.19 2002/09/09 23:00:52 heather Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -18,10 +18,7 @@
 
 #include "idents/VolumeIdentifier.h"
 
-
 #include "Event/MonteCarlo/McParticle.h"
-
-class McParticle;
 
 
 /** @class McPositionHit
@@ -43,7 +40,9 @@ class McParticle;
  * $Header
  */
 
-extern const CLID& CLID_McPositionHit;
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_McPositionHit = InterfaceID("McPositionHit", 1, 0);
 
 namespace Event { // NameSpace
 

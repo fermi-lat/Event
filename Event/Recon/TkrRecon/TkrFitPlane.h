@@ -11,7 +11,7 @@
 #ifndef _TkrFitPlane_H
 #define _TkrFitPlane_H 1
 
-#include "Event/Recon/TkrRecon/TkrClusterCol.h"
+#include "Event/Recon/TkrRecon/TkrCluster.h"
 #include "Event/Recon/TkrRecon/TkrFitHit.h"
 
 /** 
@@ -24,7 +24,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.13 2003/03/20 18:44:04 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.14 2004/03/23 23:07:47 usher Exp $
 */
 
 namespace Event { // Namespace
