@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Fri Jan  5 00:39:13 PST 2001
+GlastEvent/GlastEvent/MonteCarlo McVertex.cpp McVertex.h
+
+Added Files:
+	McVertex.cpp McVertex.h 
+Log Message:
+MCVertex -> McVertex
+    *
+------------------------------------------------------------
 User: ozaki  Fri Jan  5 00:38:48 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McParticle.cpp McParticle.h
 
