@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 15 11:56:34 PST 2002
+GlastEvent/GlastEvent
+
+Removed Files:
+	mainpage.h 
+Log Message:
+move mainpage to src
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 15 11:55:48 PST 2002
 GlastEvent/src
 
