@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.46 2002/05/11 04:27:38 burnett Exp $
+// $Id: EventModel.cpp,v 1.47 2002/05/13 23:17:43 chehtman Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.46 2002/05/11 04:27:38 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.47 2002/05/13 23:17:43 chehtman Exp $
  */
 class EvModel {
         
@@ -121,6 +121,8 @@ public:
     const CLID& CLID_McParticle         = 1102;
     const CLID& CLID_McPositionHit      = 1103;
     const CLID& CLID_McIntegratingHit   = 1104;
+    const CLID& CLID_McTrajectory       = 1105;
+    const CLID& CLID_McTkrStrip         = 1106;
 
     //! Raw event and Digi IDs
     const CLID& CLID_DigiEvent          = 1300; 
