@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Mar 15 12:54:58 PST 2002
+GlastEvent/GlastEvent/Irf
+
+Removed Files:
+	IrfAcdHit.h IrfCalHit.h IrfTkrHit.h IrfTkrLayer.h 
+Log Message:
+removing old IrfEvent classes
+    *
+------------------------------------------------------------
 User: heather  Fri Mar 15 11:56:34 PST 2002
 GlastEvent/GlastEvent
 
