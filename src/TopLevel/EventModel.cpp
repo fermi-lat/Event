@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.62 2004/02/18 19:02:27 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.63 2004/03/11 05:20:28 heather Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -12,7 +12,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.62 2004/02/18 19:02:27 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.63 2004/03/11 05:20:28 heather Exp $
  */
 class EvModel {
         
@@ -143,8 +143,10 @@ public:
     const CLID& CLID_McIntegratingHitCol= CLID_McIntegratingHit+CLID_ObjectVector;
     const CLID& CLID_McTrajectory       = 1105;
     const CLID& CLID_McTkrStrip         = 1106;
+    const CLID& CLID_McTkrStripCol      = CLID_McTkrStrip+CLID_ObjectVector;
     const CLID& CLID_D2Entry            = 1107;
     const CLID& CLID_Exposure           = 1108;
+    const CLID& CLID_ExposureCol        = CLID_Exposure+CLID_ObjectVector;
 
     //! Raw event and Digi IDs
     const CLID& CLID_DigiEvent          = 1300; 
@@ -186,6 +188,11 @@ public:
     const CLID& CLID_TkrFitTrackBaseCol = CLID_TkrFitTrackBase + CLID_ObjectVector;
     const CLID& CLID_TkrPatCandHit      = 3108;
     const CLID& CLID_TkrPatCandHitCol   = CLID_TkrPatCandHit + CLID_ObjectVector;
+
+    const CLID& CLID_TkrTrackTabCol   = 3109;
+    const CLID& CLID_TkrVertexTabCol   = 3110;
+    const CLID& CLID_TkrTrackTab   = 3119;
+    const CLID& CLID_TkrVertexTab   = 3111;
 
     //! Reconstruction: Cal class IDs
     const CLID& CLID_CalRecon           = 3200;
