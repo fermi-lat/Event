@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.24 2002/04/12 16:16:44 heather Exp $
+// $Id: EventModel.h,v 1.25 2002/05/07 21:04:06 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -63,7 +63,7 @@
         namespace TkrRecon {
             _EXTERN_ std::string Event;
             _EXTERN_ std::string SiLayers;
-            _EXTERN_ std::string TkrClusters;
+            _EXTERN_ std::string TkrClusterCol;
             _EXTERN_ std::string TkrPatCandCol;
             _EXTERN_ std::string SiRecObjs;
             _EXTERN_ std::string TkrFitTrackCol;
