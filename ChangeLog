@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Fri Aug  9 01:59:31 PDT 2002
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+TimeStamp altered to include input and output for date/time format, as well as a "mission start date" for reference.  Test function added to display.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Fri Aug  9 01:59:30 PDT 2002
 Event/Event/Utilities
 
