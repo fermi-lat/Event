@@ -7,6 +7,7 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/ObjectVector.h"
 
 #include "Event/TopLevel/Definitions.h"
 
@@ -31,7 +32,7 @@
 * the data members through the constructor.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.14 2002/09/06 21:43:53 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.15 2002/09/10 15:05:14 heather Exp $
 */
 
 extern const CLID& CLID_AcdDigi;
