@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat May 11 09:10:42 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+moved enum inside class
+
+    *
+------------------------------------------------------------
 User: burnett  Sat May 11 08:50:41 PDT 2002
 Event/Event/Digi
 
