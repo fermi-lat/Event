@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: tlindner  Wed Feb 14 14:06:01 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+removed old Raw/* files from library command
+    *
+------------------------------------------------------------
 User: heather  Wed Feb 14 11:37:49 PST 2001
 GlastEvent/GlastEvent/Digi AcdDigi.h
 
