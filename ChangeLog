@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Mon Mar  4 13:56:41 PST 2002
+GlastEvent/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+
+update to reflect new TkrVertexCol addition to the event model
+    *
+------------------------------------------------------------
 User: usher  Mon Mar  4 11:03:24 PST 2002
 GlastEvent/src/TopLevel
 
