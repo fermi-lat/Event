@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 16 10:54:45 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitMatrix.h TkrFitPar.h 
+Log Message:
+
+tagging v8r12 after more efficient classes. Documented at ucsc web site
+    *
+------------------------------------------------------------
 User: frailis  Fri Jul  5 06:12:26 PDT 2002
 Event/cmt
 
