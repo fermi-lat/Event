@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.12 2001/02/13 22:31:08 igable Exp $
+// $Id: EventModel.h,v 1.13 2001/02/16 15:13:23 hansl Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -47,6 +47,11 @@
             _EXTERN_ std::string McIntegratingHits;
         }
 
+        namespace Digi {
+            _EXTERN_ std::string Event;
+            _EXTERN_ std::string AcdDigis;
+        }
+
         namespace Irf {
             _EXTERN_ std::string Event;
             _EXTERN_ std::string IrfTkrHits;
@@ -58,7 +63,6 @@
             _EXTERN_ std::string Event;
             _EXTERN_ std::string TdSiDatas;
             _EXTERN_ std::string TdCsIDatas;
-            _EXTERN_ std::string AcdDigis;
         }
 
         namespace TkrRecon {
