@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug  7 20:15:27 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+add member functions to set and get energyArray
+    *
+------------------------------------------------------------
 User: frailis  Wed Aug  7 08:16:33 PDT 2002
 Event/Event/Utilities
 
