@@ -21,7 +21,7 @@ extern const CLID& CLID_CalClusterCol;
 *  \author Regis Terrier
 *  \author Jose Angel Hernando
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.10 2002/09/06 21:46:49 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.11 2002/09/09 23:02:27 heather Exp $
 */
 
 namespace Event 
@@ -93,7 +93,7 @@ namespace Event
             m_start  = fit_start;
         }
         
-            
+        void setEnergyCorrected(double energy) {m_energyCorrected = energy;}
         
         /// get energy sum
         double getEnergySum()        const {return m_energySum;}
