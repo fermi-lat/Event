@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include "idents/AcdId.h"
+#include "idents/VolumeIdentifier.h"
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/ContainedObject.h"
@@ -27,7 +28,7 @@
 *             
 * There are no set methods in this class, users are expected to fill
 * the data members through the constructor.
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.10 2002/06/04 22:10:27 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.11 2002/06/05 13:24:43 heather Exp $
 */
 
 extern const CLID& CLID_AcdDigi;
@@ -42,7 +43,8 @@ namespace Event {
             B = 1
         } PmtId;
                 
-        AcdDigi(const idents::AcdId &id, double energy, unsigned short *pha, 
+        AcdDigi(const idents::AcdId &id, const idents::VolumeIdentifier &volId,
+            double energy, unsigned short *pha, 
             bool *veto, bool *lowThresh, bool *highThresh) 
             : m_id(id), m_energy(energy)
         {  
@@ -60,6 +62,7 @@ namespace Event {
         
         /// Retrieve ACD identifier
         inline const idents::AcdId getId() const { return m_id; };
+        inline const idents::VolumeIdentifier getVolId() const { return m_volId; };
         
         inline double getEnergy() const { return m_energy; };
 
@@ -91,6 +94,8 @@ namespace Event {
         
         /// Acd ID
         idents::AcdId        m_id;
+        /// Allow one to retrieve dimensions of this volume
+        idents::VolumeIdentifier m_volId;
         /// energy MeV - storing as a check on pulseHeight
         double               m_energy;
         /// pulse height
