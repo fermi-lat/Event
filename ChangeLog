@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Thu Apr 18 11:27:22 PDT 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+Revised TkrDigi, after Data Structures review
+
+    *
+------------------------------------------------------------
 User: heather  Fri Apr 12 09:16:44 PDT 2002
 GlastEvent/GlastEvent/TopLevel
 
