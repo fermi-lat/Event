@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Sat Jan 13 04:25:08 PST 2001
+GlastEvent/GlastEvent/Utilities VolumeID.h
+
+Modified Files:
+	VolumeID.h 
+Log Message:
+adding a constructor
+    *
+------------------------------------------------------------
 User: ozaki  Sat Jan 13 04:24:32 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McVertex.h
 
