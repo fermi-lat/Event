@@ -20,10 +20,10 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrCluster.h,v 1.7 2002/04/30 23:18:07 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.1 2002/05/07 20:55:08 usher Exp $
 */
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrCluster
 {

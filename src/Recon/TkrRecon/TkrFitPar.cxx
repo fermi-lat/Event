@@ -1,5 +1,5 @@
 
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrFitPar.cxx,v 1.1 2002/05/07 20:58:15 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrFitPar.cxx,v 1.2 2002/05/09 16:36:17 burnett Exp $
 
 //----------------------------------------------------------------------
 //    
@@ -14,7 +14,7 @@
 #include "Event/Recon/TkrRecon/TkrFitPar.h"
 #include "geometry/Ray.h"
 
-using namespace TkrRecon;
+using namespace Event;
 
 TkrFitPar::TkrFitPar(const Ray &ray) : HepVector(4)
 {

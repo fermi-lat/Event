@@ -25,13 +25,13 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertexCol.h,v 1.1 2002/05/07 20:55:10 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertexCol.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
 */
 
 
 extern const CLID& CLID_TkrVertexCol;
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrVertexCol : public DataObject
 {

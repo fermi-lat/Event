@@ -18,10 +18,10 @@ extern const CLID& CLID_TkrFitTrackCol;
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrackCol.h,v 1.2 2002/05/07 22:40:01 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrackCol.h,v 1.3 2002/05/09 16:36:15 burnett Exp $
 */
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrFitTrackCol : public DataObject
 {

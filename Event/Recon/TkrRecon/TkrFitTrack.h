@@ -21,9 +21,9 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.1 2002/05/07 20:55:09 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
 */
-namespace TkrRecon {  // NameSpace
+namespace Event {  // NameSpace
 
 class TkrFitTrack: public TkrRecInfo
 {    

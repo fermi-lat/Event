@@ -9,14 +9,14 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.1 2002/05/07 20:55:10 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.2 2002/05/09 16:36:15 burnett Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
 #include "Event/Recon/TkrRecon/TkrRecInfo.h"
 #include "Event/Recon/TkrRecon/TkrPatCandHit.h"
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrPatCand: public TkrRecInfo
 {    

@@ -7,7 +7,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandCol.h,v 1.2 2002/05/07 22:40:01 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandCol.h,v 1.3 2002/05/09 16:36:15 burnett Exp $
 */
 
 #include <vector>
@@ -17,7 +17,7 @@
 
 extern const CLID& CLID_TkrPatCandCol;
 
-namespace TkrRecon { //Namespace
+namespace Event { //Namespace
 
 class TkrPatCandCol : public DataObject
 {
