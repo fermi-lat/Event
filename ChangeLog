@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Tue Feb 13 14:31:11 PST 2001
+GlastEvent/src/Factories MCInstanciation.cpp
+
+Modified Files:
+	MCInstanciation.cpp 
+Log Message:
+Changes to EventModel for Jose's Gaudi Modified TB Recon classes. Comments
+on CLID new CLID rules also added to EventModel
+
+    *
+------------------------------------------------------------
 User: igable  Tue Feb 13 14:31:10 PST 2001
 GlastEvent/GlastEvent/data TdCsIData.h
 
