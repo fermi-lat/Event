@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Thu Sep  5 23:58:55 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+add xxx(index), which will replace xxx(view,index) in next tag
+    *
+------------------------------------------------------------
 User: heather  Thu Sep  5 13:08:06 PDT 2002
 Event/Event/Recon/AcdRecon
 
