@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ozaki  Fri Jan 26 02:20:04 PST 2001
+GlastEvent/GlastEvent/TopLevel ObjectList.h
+
+Modified Files:
+	ObjectList.h 
+Log Message:
+a quick hack to compile with GCC2.95.2/Linux: maybe incorrect
+    *
+------------------------------------------------------------
 User: heather  Thu Jan 25 08:50:09 PST 2001
 GlastEvent/src/Digi AcdDigi.cpp
 
