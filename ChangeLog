@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Fri Jun 15 12:34:25 PDT 2001
+GlastEvent/GlastEvent/Recon AcdRecon.h
+
+Added Files:
+	AcdRecon.h 
+Log Message:
+new class for the AcdRecon data
+    *
+------------------------------------------------------------
 User: heather  Fri Jun 15 12:33:45 PDT 2001
 GlastEvent/GlastEvent/Recon - New directory
 
