@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Mon Jul 22 05:18:50 PDT 2002
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+add new TDS class McTkrStrip and ...Col
+tag v8r13
+    *
+------------------------------------------------------------
+User: burnett  Mon Jul 22 05:18:50 PDT 2002
 Event/Event/TopLevel
 
 Modified Files:
