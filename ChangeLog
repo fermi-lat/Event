@@ -1,0 +1,10 @@
+------------------------------------------------------------
+User: igable  Mon Dec 18 12:23:07 PST 2000
+GlastEvent/GlastEvent/Raw TdGlastData.h
+
+Added Files:
+	TdGlastData.h 
+Log Message:
+New quick wrapper for the TdSiData and TdCsIData objects
+
+    *
