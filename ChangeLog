@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: berthon  Fri May  7 04:37:14 PDT 2004
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+set  CLID_TkrFitTrackCol=CLID_TkrFitTrackBaseCol
+    *
+------------------------------------------------------------
 User: hansl  Tue Apr 20 15:57:53 PDT 2004
 Event/cmt
 
