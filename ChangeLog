@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: lsrea  Tue Oct  8 15:20:13 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+mods for relational tables:
+TkrDigi:add methods
+McTkrStrip: add list of McHits
+TkrCluster:  inherit from ContainedObject
+EventModel:  add tables
+    *
+------------------------------------------------------------
 User: lsrea  Sun Oct  6 12:06:48 PDT 2002
 Event/src/Recon/TkrRecon
 
