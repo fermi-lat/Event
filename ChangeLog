@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri May 10 14:17:06 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+
+bunch of GlastEvent conversions.
+    *
+------------------------------------------------------------
 User: richard  Fri May 10 11:08:07 PDT 2002
 Event/Event/Utilities
 
