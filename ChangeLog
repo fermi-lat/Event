@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: usher  Wed Feb 18 10:54:28 PST 2004
+Event/Event/MonteCarlo
+
+Modified Files:
+	McEventStructure.h 
+Added Files:
+	McRelTableDefs.h 
+Removed Files:
+	McSiLayerHit.h 
+Log Message:
+Add the new McRelTableDefs.h file which defines the various Mc relational tables
+to be used for the extended Monte Carlo information. Remove the now unecessary 
+McSiLayerHit.h and update McEventStructure to reflect the changes
+
+    *
+------------------------------------------------------------
 User: berthon  Wed Feb  4 06:19:07 PST 2004
 Event/src/TopLevel
 
