@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Oct  4 19:01:54 PDT 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.h 
+Log Message:
+Mods to build on linux
+    *
+------------------------------------------------------------
 User: usher  Fri Oct  1 16:43:54 PDT 2004
 Event/src/Recon/TkrRecon
 
