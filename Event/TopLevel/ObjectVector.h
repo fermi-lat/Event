@@ -1,4 +1,4 @@
-// $Header: /cvs/cmt/GlastEvent/GlastEvent/TopLevel/ObjectVector.h,v 1.3 2000/08/26 19:15:22 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/ObjectVector.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
 #ifndef LHCBEVENT_OBJECTVECTOR_H
 #define LHCBEVENT_OBJECTVECTOR_H 1
 
@@ -8,8 +8,8 @@
 #include "Gaudi/Kernel/Kernel.h"
 #include "Gaudi/Kernel/StreamBuffer.h"
 #include "Gaudi/Kernel/ObjectContainerBase.h"
-#include "GlastEvent/Utilities/ProcessingVersion.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/ProcessingVersion.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 // Externals 

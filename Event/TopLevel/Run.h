@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/Run.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Run.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_RUN_H
 #define LHCBEVENT_RUN_H 1
 
@@ -8,9 +8,9 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/DataObject.h"
-#include "GlastEvent/Utilities/TriggerPattern.h"
-#include "GlastEvent/Utilities/RandomNumberSeed.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/TriggerPattern.h"
+#include "Event/Utilities/RandomNumberSeed.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 // Externals 
@@ -230,7 +230,7 @@ inline std::ostream& Run::fillStream( std::ostream& s ) const                  {
     << GlastEventField( GlastEvent::field12 )
     << m_enabledDetectorMask
     << "\n    Luminosity           = "
-    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << EventFloatFormat( GlastEvent::width, GlastEvent::precision )
     << m_luminosity
     << "\n    Fill number          = "
     << GlastEventField( GlastEvent::field12 )

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/ObjectList.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/ObjectList.h,v 1.3 2001/02/14 22:19:42 tlindner Exp $
 #ifndef LHCBEVENT_OBJECTLIST_H
 #define LHCBEVENT_OBJECTLIST_H 1
 
@@ -8,8 +8,8 @@
 #include "Gaudi/Kernel/Kernel.h"
 #include "Gaudi/Kernel/StreamBuffer.h"
 #include "Gaudi/Kernel/ObjectContainerBase.h"
-#include "GlastEvent/Utilities/ProcessingVersion.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "tEvent/Utilities/ProcessingVersion.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 // Externals 

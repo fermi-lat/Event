@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.21 2002/05/10 01:17:35 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.22 2002/05/10 01:55:49 richard Exp $
 */
 #ifndef Event_McParticle_H
 #define Event_McParticle_H 1
@@ -177,8 +177,9 @@ inline StreamBuffer& McParticle::serialize( StreamBuffer& s ) const
     << m_subEvtID
     << m_statusFlags
     << m_mcVertex(this)
-#endif
+#endif   
     ;
+
 }
 
 
@@ -201,7 +202,6 @@ inline StreamBuffer& McParticle::serialize( StreamBuffer& s )
 /// Fill the ASCII output stream
 inline std::ostream& McParticle::fillStream( std::ostream& s ) const
 {
-//#if 0
   return s << "class McParticle"
     << " :"
     << "\n    Particle ID                = " << m_particleID
@@ -233,12 +233,10 @@ inline std::ostream& McParticle::fillStream( std::ostream& s ) const
     << m_finalFourMomentum.t() << " )";
     
     //<< "\n    Mother                     = " << m_mother;
-//#endif
-  //return s;
 }
 
 
-} // NameSpace mc
+} // NameSpace Event
 
 
 #endif    // Event_McParticle_H

@@ -19,22 +19,21 @@ extern const CLID& CLID_Event;
 * - event number
 * - time stamp
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.6 2002/05/10 01:17:35 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.7 2002/05/10 15:14:12 burnett Exp $
 */
-//THB: temporarily disable this: not possible to have class, and namespace the same name? 
-//  namespace Event{
+namespace Event{
 
-class Event : public DataObject                                                {
+class EventHeader : public DataObject                                                {
     
 public:
     
-    Event()
+    EventHeader()
         : DataObject() { }
     
-    virtual ~Event() { }
+    virtual ~EventHeader() { }
     
     /// Retrieve reference to class definition structure
-    virtual const CLID& clID() const { return Event::classID(); }
+    virtual const CLID& clID() const { return EventHeader::classID(); }
     static const CLID& classID() { return CLID_Event; }
     
     /// Retrieve event number
@@ -58,7 +57,7 @@ public:
     virtual StreamBuffer& serialize( StreamBuffer& s );
     
     /// Output operator (ASCII)
-    friend std::ostream& operator<< ( std::ostream& s, const Event& obj )        {
+    friend std::ostream& operator<< ( std::ostream& s, const EventHeader& obj )        {
         return obj.fillStream(s);
     }
     /// Fill the output stream (ASCII)
@@ -80,7 +79,7 @@ private:
 
 
 /// Serialize the object for writing
-inline StreamBuffer& Event::serialize( StreamBuffer& s ) const                 {
+inline StreamBuffer& EventHeader::serialize( StreamBuffer& s ) const                 {
     DataObject::serialize(s);
     // HMK The member variables are not filled yet
     return s;
@@ -91,7 +90,7 @@ inline StreamBuffer& Event::serialize( StreamBuffer& s ) const                 {
 
 
 /// Serialize the object for reading
-inline StreamBuffer& Event::serialize( StreamBuffer& s )                       {
+inline StreamBuffer& EventHeader::serialize( StreamBuffer& s )                       {
     DataObject::serialize(s);
     // HMK The member variables are not filled yet
     return s;
@@ -102,7 +101,7 @@ inline StreamBuffer& Event::serialize( StreamBuffer& s )                       {
 
 
 /// Fill the output stream (ASCII)
-inline std::ostream& Event::fillStream( std::ostream& s ) const                {
+inline std::ostream& EventHeader::fillStream( std::ostream& s ) const                {
     return s
         << "class Event :"
         << "\n    Event number = "
@@ -113,5 +112,5 @@ inline std::ostream& Event::fillStream( std::ostream& s ) const                {
         << m_run
         << "\n    Time         = " << m_time;
 }
-//} // namespace Event
+} // namespace Event
 #endif    // Event_EVENT_H
