@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Fri May 31 12:11:29 PDT 2002
+Event/Event/Utilities
+
+Modified Files:
+	TimeStamp.h 
+Log Message:
+
+tagging v8r6 after EventHeader, TkrVertex changes
+    *
+------------------------------------------------------------
 User: burnett  Fri May 31 12:11:28 PDT 2002
 Event/Event/TopLevel
 
