@@ -34,7 +34,7 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.29 2002/09/24 16:56:48 riccardo Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.30 2003/07/22 15:48:44 riccardo Exp $
  */
 extern const CLID& CLID_McParticle;
 
@@ -124,6 +124,9 @@ class McParticle  : virtual public ContainedObject  {
 
     /// add a daugther particle to this particle
     void addDaughter(const SmartRef<McParticle> d){m_daughters.push_back(d);};
+
+    /// Used for pruning
+    void removeDaughter(const SmartRef<McParticle> mcPart);
 
     /// access the process name
     const std::string getProcess()const{return m_process;};
