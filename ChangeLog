@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Tue Oct  1 15:52:26 PDT 2002
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Add comment to reserve CLID's for calibration in range 6000 - 6999
+
+    *
+------------------------------------------------------------
 User: jrb  Tue Oct  1 15:51:13 PDT 2002
 Event/cmt
 
