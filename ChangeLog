@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: usher  Wed Mar 12 15:20:33 PST 2003
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrPatCand.h 
+Added Files:
+	TkrTrackTab.h TkrVertexTab.h 
+Log Message:
+1) Modified TkrPatCand.h to include estimated error on track energy
+2) Added two header files to declare Pat Track/Fit Track and Vertex/Fit Track
+   relational tables
+
+    *
+------------------------------------------------------------
 User: lsrea  Sat Mar  1 09:16:53 PST 2003
 Event/src/Recon/TkrRecon
 
