@@ -9,6 +9,7 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/IInterface.h"
 
 #include "geometry/Point.h"
 
@@ -22,10 +23,10 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5.2.2 2005/01/10 19:21:09 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.5.2.3 2005/01/11 17:01:15 lsrea Exp $
 */
 
-extern const CLID& CLID_TkrCluster;
+static const CLID& CLID_TkrCluster=InterfaceID("TkrCluster",1,0);
 
 namespace Event { //Namespace
 

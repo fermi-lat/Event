@@ -5,6 +5,7 @@
 #include "RelKey.h"
 #include "GaudiKernel/ClassID.h"
 #include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/IInterface.h"
 #include <vector>
 #include <string>
 #include <iostream>
@@ -22,10 +23,10 @@
  * @author Marco Frailis
  * @author Riccardo Giannitrapani
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.2 2002/08/09 10:25:43 frailis Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.3 2002/09/13 04:51:23 frailis Exp $
  */
 
-static const CLID CLID_Relation = 5100;
+static const CLID CLID_Relation = 5100; 
 
 
 namespace Event {

@@ -4,16 +4,17 @@
 #include <iostream>
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/TopLevel/Definitions.h"
 
-extern const CLID& CLID_TkrRecon;
+static const CLID& CLID_TkrRecon=InterfaceID("TkrRecon",1,0);
 
 /** @class TkrRecon
 * @brief Defines the top level object for digitization data.
 * It can be identified by "/Event/TkrRecon" on the TDS
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/TkrRecon.h,v 1.10 2002/09/06 21:51:56 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrRecon.h,v 1.1 2004/03/11 16:45:33 berthon Exp $
 */
 namespace Event {  // NameSpace
 

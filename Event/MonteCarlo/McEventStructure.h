@@ -13,7 +13,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.1 2004/01/09 20:13:05 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.2 2004/02/18 18:54:27 usher Exp $
  */
 
 #ifndef McEventStructure_h
@@ -23,9 +23,12 @@
 #include "GaudiKernel/IParticlePropertySvc.h"
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/MonteCarlo/McParticle.h"
 #include "Event/MonteCarlo/McPositionHit.h"
 #include "Event/RelTable/RelTable.h"
+
+static const CLID& CLID_McEventStructure=InterfaceID("McEventStructure",1,0);
 
 namespace Event {
 

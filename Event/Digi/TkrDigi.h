@@ -11,6 +11,7 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/IInterface.h"
 
 #include "Event/TopLevel/Definitions.h"
 #include "GaudiKernel/ObjectVector.h"
@@ -29,7 +30,7 @@
 * The digis are produced either from MC hit output or from the actual data
 */
 
-extern const CLID& CLID_TkrDigi;
+static const CLID& CLID_TkrDigi=InterfaceID("TkrDigi",1,0);
 
 namespace Event {
     class TkrDigi : virtual public ContainedObject {

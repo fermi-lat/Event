@@ -6,6 +6,7 @@
 #include "GaudiKernel/ContainedObject.h"
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/MsgStream.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/Recon/TkrRecon/TkrCluster.h"
 /** 
 * @class TkrPatCandHit
@@ -14,10 +15,10 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandHit.h,v 1.6 2003/08/06 16:37:37 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/Attic/TkrPatCandHit.h,v 1.7 2004/03/11 05:15:13 heather Exp $
 */
 
-extern const CLID& CLID_TkrPatCandHit;
+static const CLID& CLID_TkrPatCandHit=InterfaceID("TkrPatCandHit",1,0);
 
 namespace Event { //Namespace
 

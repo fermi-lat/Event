@@ -19,6 +19,7 @@
 #include "GaudiKernel/ObjectVector.h"
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/SmartRefVector.h"
+#include "GaudiKernel/IInterface.h"
 #include "Event/Recon/TkrRecon/TkrRecInfo.h"
 #include "Event/Recon/TkrRecon/TkrFitTrackBase.h"
 /** 
@@ -28,9 +29,9 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.11 2002/12/19 20:53:42 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.12 2004/03/11 05:15:13 heather Exp $
 */
-extern const CLID& CLID_TkrVertex;
+static const CLID& CLID_TkrVertex=InterfaceID("TkrVertex",1,0);
 
 namespace Event { //Namespace
   
