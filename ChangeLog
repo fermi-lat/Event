@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Tue May 14 09:07:35 PDT 2002
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+
+add initial position to the McParticle structure.
+    *
+------------------------------------------------------------
 User: burnett  Mon May 13 17:41:35 PDT 2002
 Event/doc
 
