@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header$
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.5 2002/06/12 00:16:44 chehtman Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -119,7 +119,7 @@ void CalClusterCol::writeOut(MsgStream& stream) const
     stream << " --- CalClusterCol  --- " << size() << endreq;
 
     // loop over all clusters
-    for (int i = 0; i < size();i++) {
+    for (unsigned int i = 0; i < size();i++) {
         
         // call the writeOut() method for each cluster
         (operator[](i))->writeOut(stream);
