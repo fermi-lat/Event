@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Tue Feb 27 15:17:45 PST 2001
+GlastEvent/src/Factories DigiInstantiation.cpp TopInstantiation.cpp RawInstantiation.cpp GlastEvent_load.cpp
+
+Modified Files:
+	TopInstantiation.cpp RawInstantiation.cpp GlastEvent_load.cpp 
+Added Files:
+	DigiInstantiation.cpp 
+Log Message:
+moving Digis to /Event/Digi branch
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 27 15:16:44 PST 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
