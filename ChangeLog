@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Feb 27 15:16:44 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+moving Digis to /Event/Digi branch
+    *
+------------------------------------------------------------
 User: heather  Tue Feb 27 15:10:31 PST 2001
 GlastEvent/GlastEvent/TopLevel DigiEvent.h EventModel.h
 
