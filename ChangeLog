@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: srobinsn  Thu Aug 22 09:22:18 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+structure D2Entry added, SkyDir reomved (moved to the astro package.)  test program cleaned up.
+
+    *
+------------------------------------------------------------
 User: srobinsn  Thu Aug 22 09:22:17 PDT 2002
 Event/Event/MonteCarlo
 
