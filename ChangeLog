@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Sun Oct  6 12:06:47 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrClusterCol.h 
+Log Message:
+quick fix to the id problem
+    *
+------------------------------------------------------------
 User: burnett  Thu Oct  3 00:56:19 PDT 2002
 Event/cmt
 
