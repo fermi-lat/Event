@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Jul  3 06:30:43 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.h TkrFitTrack.h TkrPatCandHit.h 
+Log Message:
+add additional initialize routines to be used when reading data from
+ROOT 
+    *
+------------------------------------------------------------
 User: heather  Wed Jul  3 06:29:20 PDT 2002
 Event/Event/Recon
 
