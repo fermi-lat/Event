@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.9 2002/03/12 17:24:23 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.10 2002/03/15 15:27:43 burnett Exp $
 #ifndef GlastEvent_McPositionHit_H
 #define GlastEvent_McPositionHit_H 1
 
@@ -22,7 +22,6 @@
 
 
 #include "GlastEvent/MonteCarlo/McParticle.h"
-#include "GlastEvent/MonteCarlo/McConstants.h"
 
 // Forward declarations
 class McParticle;

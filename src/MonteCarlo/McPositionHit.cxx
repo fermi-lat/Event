@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McPositionHit.cxx,v 1.4 2001/01/30 00:31:21 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McPositionHit.cxx,v 1.5 2002/03/01 01:13:03 riccardo Exp $
 
 #include <iostream>
 #include <math.h>
@@ -89,57 +89,6 @@ void McPositionHit::setParticleEnergy(double value)
 {
     m_particleEnergy = value;
 }
-
-/// Retrieve primary-origin flag
-bool McPositionHit::primaryOrigin() const
-{
-    using GlastEvent::McConstants::ORIGIN_PRIMARY;
-    return m_packedFlags & ORIGIN_PRIMARY;
-}
-/// Update primary-origin flag
-void McPositionHit::setPrimaryOrigin( bool value )
-{
-    using GlastEvent::McConstants::ORIGIN_PRIMARY;
-    if (value){
-        m_packedFlags |= ORIGIN_PRIMARY;
-    } else {
-        m_packedFlags &= ~ORIGIN_PRIMARY;
-    }
-}
-/// Retrieve calorimeter-shower-origin flag
-bool McPositionHit::caloShowerOrigin() const
-{
-    using GlastEvent::McConstants::ORIGIN_CALOSHOWER;
-    return m_packedFlags & ORIGIN_CALOSHOWER;
-}
-/// Update calorimeter-shower-origin flag
-void McPositionHit::setCaloShowerOrigin( bool value )
-{
-    using GlastEvent::McConstants::ORIGIN_CALOSHOWER;
-    if (value){
-        m_packedFlags |= ORIGIN_CALOSHOWER;
-    } else {
-        m_packedFlags &= ~ORIGIN_CALOSHOWER;
-    }
-}
-
-/// Retrieve whether this hit should be digitized
-bool McPositionHit::needDigi() const
-{
-    using GlastEvent::McConstants::NEED_DIGI;
-    return m_packedFlags & NEED_DIGI;
-}
-/// Update whether this hit should be digitized
-void McPositionHit::setNeedDigi( bool value )
-{
-    using GlastEvent::McConstants::NEED_DIGI;
-    if (value){
-        m_packedFlags |= NEED_DIGI;
-    } else {
-        m_packedFlags &= ~NEED_DIGI;
-    }
-}
-
 
 /// Retrieve member TOF
 double McPositionHit::timeOfFlight() const
