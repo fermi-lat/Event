@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Jan 25 08:49:55 PST 2001
+GlastEvent/GlastEvent/Digi AcdDigi.h
+
+Added Files:
+	AcdDigi.h 
+Log Message:
+initial version of ACD digitization class
+    *
+------------------------------------------------------------
 User: heather  Thu Jan 25 08:48:44 PST 2001
 GlastEvent/src/Digi - New directory
 
