@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Fri May 10 14:17:09 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	AnalEvent.h DigiEvent.h Event.h EventHits.h EventModel.h 
+	EventTag.h ObjectList.h ObjectVector.h RawEvent.h Run.h 
+	SubMCEvent.h 
+Log Message:
+
+bunch of GlastEvent conversions.
+    *
+------------------------------------------------------------
 User: burnett  Fri May 10 14:17:07 PDT 2002
 Event/Event/Recon
 
