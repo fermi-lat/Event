@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Wed Apr 10 15:02:09 PDT 2002
+GlastEvent/GlastEvent/Digi
+
+Modified Files:
+	CalDigi.h 
+Log Message:
+make CalLogReadout nested
+    *
+------------------------------------------------------------
 User: burnett  Mon Apr  8 13:02:48 PDT 2002
 GlastEvent/src/MonteCarlo
 
