@@ -24,7 +24,7 @@
  *
  * @author Brian Baughman
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.4 2004/02/04 04:10:30 lsrea Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPar.h,v 1.5 2004/03/26 04:45:49 cohen Exp $
  */
 
 class Ray; 
@@ -68,10 +68,10 @@ namespace Event { // Namespace
        
     // Access methods for individual fit parameters
     double getXPosition() const;
-    double TkrFitPar::getXSlope()    const;
+    double getXSlope()    const;
 	   
     double getYPosition() const;
-    double TkrFitPar::getYSlope()    const;
+    double getYSlope()    const;
 	       
 	       
     //operator overload for element access TkrFitPar(element)
