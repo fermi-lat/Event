@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: atwood  Wed Nov 10 14:42:56 PST 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackParams.cxx 
+Log Message:
+added missing constructor (takes 14 doubles)
+    *
+------------------------------------------------------------
 User: atwood  Wed Nov 10 14:41:07 PST 2004
 Event/src/Recon/TkrRecon
 
