@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chehtman  Thu Oct  4 16:37:20 PDT 2001
+GlastEvent/GlastEvent/Recon ICsIClusters.h
+
+Added Files:
+	ICsIClusters.h 
+Log Message:
+This is an abstract interface to CsIClusters 
+    *
+------------------------------------------------------------
 User: burnett  Sun Aug 26 21:29:29 PDT 2001
 GlastEvent/doc release.notes
 
