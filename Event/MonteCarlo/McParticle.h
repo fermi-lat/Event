@@ -2,7 +2,7 @@
 * @file McReconAlg.cxx
 * @brief Declaration and definition of the TDS object McParticle.
 *
-*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.23 2002/05/10 21:17:06 burnett Exp $
+*  $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.24 2002/05/14 16:07:35 burnett Exp $
 */
 #ifndef Event_McParticle_H
 #define Event_McParticle_H 1
@@ -210,6 +210,13 @@ inline std::ostream& McParticle::fillStream( std::ostream& s ) const
     << " :"
     << "\n    Particle ID                = " << m_particleID
     << "\n    Status Flags               = " << m_statusFlags
+    << "\n    Initial position (x, y, z) = ( "
+    << EventFloatFormat (EventFormat::width, EventFormat::precision )
+    << m_initialPosition.x() << ","
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
+    << m_initialPosition.y() << ","
+    << EventFloatFormat( EventFormat::width, EventFormat::precision )
+    << m_initialPosition.z() << " ) "
     << "\n    Final position (x, y, z) = ( "
     << EventFloatFormat( EventFormat::width, EventFormat::precision )
     << m_finalPosition.x() << ","
