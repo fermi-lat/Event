@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Sun Aug 26 21:09:35 PDT 2001
+GlastEvent/GlastEvent/Utilities ParticleID.h
+
+Modified Files:
+	ParticleID.h 
+Log Message:
+
+Implement Bill Atwood's excelent suggestion that a particle id object should not have to be explicitly
+asked for a particle ID!!!!!
+Remove CLID for McVertexGen. Follow more sensible pattern of using CLID_McVertex
+    *
+------------------------------------------------------------
 User: burnett  Wed Aug 22 23:03:43 PDT 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
