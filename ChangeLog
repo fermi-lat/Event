@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Thu Mar  1 17:15:09 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+Added TkrDigis to the event model
+
+    *
+------------------------------------------------------------
 User: lsrea  Thu Mar  1 17:15:08 PST 2001
 GlastEvent/GlastEvent/TopLevel EventModel.h
 
