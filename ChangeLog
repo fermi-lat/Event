@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Mar  4 11:03:23 PST 2002
+GlastEvent/GlastEvent/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Add Tkr vertexing container class to EventModel
+    *
+------------------------------------------------------------
 User: riccardo  Thu Feb 28 17:13:03 PST 2002
 GlastEvent/src/MonteCarlo
 
