@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Wed Feb 28 14:28:48 PST 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+
+fix duplication in EventModel; disable the shareable that we don't use
+    *
+------------------------------------------------------------
+User: burnett  Wed Feb 28 14:28:48 PST 2001
 GlastEvent/GlastEvent/MonteCarlo McConstants.h
 
 Modified Files:
