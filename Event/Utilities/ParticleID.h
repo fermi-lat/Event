@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.2 2001/04/18 19:07:26 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.3 2001/08/27 04:09:35 burnett Exp $
 #ifndef LHCBEVENT_PARTICLEID_H
 #define LHCBEVENT_PARTICLEID_H 1
 
@@ -62,7 +62,7 @@ public:
   /// Fill the output stream (ASCII)
   std::ostream& fillStream( std::ostream& s ) const                            {
     return s << "class ParticleID : "
-      << GlastEventField( GlastEvent::field4 )
+	     << GlastEventField( GlastEvent::field4 )
       << m_id;
   }
 
