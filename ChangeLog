@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Nov 15 13:10:24 PST 2004
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.h TkrTrackParams.h 
+Log Message:
+Enumerate the options for accessing track parameters
+    *
+------------------------------------------------------------
 User: atwood  Wed Nov 10 14:48:27 PST 2004
 Event/Event/Recon/TkrRecon
 
