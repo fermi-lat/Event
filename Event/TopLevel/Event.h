@@ -20,7 +20,7 @@ extern const CLID& CLID_Event;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.8 2002/05/10 21:17:08 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.9 2002/05/31 19:11:28 burnett Exp $
 */
 namespace Event{
 
@@ -29,7 +29,7 @@ class EventHeader : public DataObject                                           
 public:
     
     EventHeader()
-        : DataObject() { }
+        : DataObject(), m_event(-1), m_run(-1) { }
     
     virtual ~EventHeader() { }
     
