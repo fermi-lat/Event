@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: igable  Mon Jan 29 16:31:21 PST 2001
+GlastEvent/src/MonteCarlo McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx
+
+Modified Files:
+	McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx 
+Log Message:
+Added CLID for the MC Classes. Updated the Event Model. Made the 
+serialize methods inline.
+
+    *
+------------------------------------------------------------
 User: igable  Mon Jan 29 16:31:20 PST 2001
 GlastEvent/GlastEvent/TopLevel EventModel.h
 
