@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Oct  1 16:43:54 PDT 2004
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackParams.cxx 
+Log Message:
+Fix Linux compile warnings
+    *
+------------------------------------------------------------
 User: usher  Fri Oct  1 16:33:48 PDT 2004
 Event/src/Recon/TkrRecon
 
