@@ -1,4 +1,22 @@
 ------------------------------------------------------------
+User: usher  Thu Dec 19 12:53:42 PST 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrFitPlane.h TkrFitTrack.h TkrVertex.h 
+Added Files:
+	TkrFitTrackBase.h TkrKalFitTrack.h 
+Log Message:
+Added:
+   TkrFitTrackBase.h - new base class definition for fit tracks only
+   TkrKalFitTrack.h  - new fit track TDS class
+   TkrKalFitTrack.cxx - goes with above
+   TkrFitPlane.h - to work with TkrFitTrackBase
+   TkrFitTrack.h - ditto
+   TkrVertex.h   - ditto
+
+    *
+------------------------------------------------------------
 User: heather  Wed Dec  4 12:18:49 PST 2002
 Event/Event/Digi
 
