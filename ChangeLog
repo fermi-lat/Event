@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Mar 12 06:57:01 PST 2001
+GlastEvent/GlastEvent/Digi AcdDigi.h
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+Renaming ScintillatorId to AcdId
+    *
+------------------------------------------------------------
 User: tlindner  Fri Mar  2 20:00:09 PST 2001
 GlastEvent/mgr requirements
 
