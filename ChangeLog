@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: burnett  Thu Apr 19 10:35:03 PDT 2001
+GlastEvent/mgr requirements
+
+Modified Files:
+	requirements 
+Log Message:
+slight clean up -- needs a lot more
+
+    *
+------------------------------------------------------------
+User: burnett  Thu Apr 19 10:35:03 PDT 2001
 GlastEvent/GlastEvent/TopLevel Event.h
 
 Modified Files:
