@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Feb 22 07:08:14 PST 2001
+GlastEvent/GlastEvent/TopLevel RawEvent.h
+
+Modified Files:
+	RawEvent.h 
+Log Message:
+comment out RawEvent's member variables from the serialize method.
+should determine what, if any, variables we do want in this class.
+    *
+------------------------------------------------------------
 User: heather  Thu Feb 22 07:06:48 PST 2001
 GlastEvent/GlastEvent/Irf IrfTkrLayer.h
 
