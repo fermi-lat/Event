@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Utilities/ParticleID.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_PARTICLEID_H
 #define LHCBEVENT_PARTICLEID_H 1
 
@@ -38,6 +38,9 @@ public:
   long id () const                                                             {
     return m_id;
   }
+  /// Retrieve particle identifiaction
+  operator long()const{return m_id;}
+
   /// Update particle identifiaction
   void setID (long value)                                                      {
     m_id = value;

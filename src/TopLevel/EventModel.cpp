@@ -1,4 +1,4 @@
-// $Id: EventModel.cpp,v 1.28 2001/06/15 19:36:25 heather Exp $
+// $Id: EventModel.cpp,v 1.29 2001/08/23 06:03:42 burnett Exp $
 
 #define _GlastEvent_EventModel_CPP_
 
@@ -121,7 +121,6 @@ public:
     const CLID& CLID_McParticle         = 1102;
     const CLID& CLID_McPositionHit      = 1103;
     const CLID& CLID_McIntegratingHit   = 1104;
-    const CLID& CLID_McVertexCnv        = 1105;
 
     //! Irf class IDs
     const CLID& CLID_IrfEvent           = 1200;
