@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: frailis  Tue Jul 30 09:42:26 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Added in EventModel a path to store relations between CalDigi and McIntegratingHit
+    *
+------------------------------------------------------------
 User: riccardo  Fri Jul 26 09:22:19 PDT 2002
 Event/src/MonteCarlo
 
