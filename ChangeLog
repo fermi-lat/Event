@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Wed Mar 12 15:21:43 PST 2003
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+1) Modified EventModel to include new TkrRecon relational tables
+2) Modified TkrPatCand for change to class def
+
+    *
+------------------------------------------------------------
 User: usher  Wed Mar 12 15:20:33 PST 2003
 Event/Event/Recon/TkrRecon
 
