@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: berthon  Wed Feb  4 06:19:07 PST 2004
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+add correct CLID for TkrVertexCol
+    *
+------------------------------------------------------------
 User: berthon  Wed Feb  4 05:48:46 PST 2004
 Event/src/TopLevel
 
