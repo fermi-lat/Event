@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: richard  Sun Feb 23 18:27:56 PST 2003
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+add set method for m_energyCorrected
+    *
+------------------------------------------------------------
 User: lsrea  Mon Feb  3 14:48:28 PST 2003
 Event/doc
 
