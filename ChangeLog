@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: burnett  Thu Apr 19 10:35:03 PDT 2001
+GlastEvent/GlastEvent/TopLevel Event.h
+
+Modified Files:
+	Event.h 
+Log Message:
+slight clean up -- needs a lot more
+
+    *
+------------------------------------------------------------
 User: igable  Wed Apr 18 12:07:27 PDT 2001
 GlastEvent/src/TopLevel EventModel.cpp
 
