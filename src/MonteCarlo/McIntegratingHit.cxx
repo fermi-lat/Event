@@ -1,17 +1,17 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/MonteCarlo/McIntegratingHit.cxx,v 1.7 2002/04/08 20:02:48 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McIntegratingHit.cxx,v 1.8 2002/04/30 21:40:47 heather Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
-#include "GlastEvent/MonteCarlo/McIntegratingHit.h"
-#include "GlastEvent/Utilities/CLHEPStreams.h"
+#include "Event/MonteCarlo/McIntegratingHit.h"
+#include "Event/Utilities/CLHEPStreams.h"
 
 
 // FIXME!!:
 // The next `using' directive is an ad-hoc declaration for the transition
-// phase to the namespace `GlastEvent'.
+// phase to the namespace `Event'.
 // After the transition is completed, it should be removed and each
 // function definition should have the namespace identifier.
-using namespace GlastEvent;
+using namespace Event;
 
 namespace mc{
 

@@ -2,8 +2,8 @@
 #ifndef _TkrFitHit_H
 #define _TkrFitHit_H 1
 
-#include "GlastEvent/Recon/TkrRecon/TkrFitPar.h"
-#include "GlastEvent/Recon/TkrRecon/TkrFitMatrix.h"
+#include "Event/Recon/TkrRecon/TkrFitPar.h"
+#include "Event/Recon/TkrRecon/TkrFitMatrix.h"
 
 /** 
 * @class TkrFitHit
@@ -12,7 +12,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitHit.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitHit.h,v 1.1 2002/05/07 20:55:08 usher Exp $
 */
 
 namespace TkrRecon { //Namespace

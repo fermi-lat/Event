@@ -7,12 +7,12 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrPatCandCol.h,v 1.1 2002/05/07 20:55:10 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCandCol.h,v 1.2 2002/05/07 22:40:01 usher Exp $
 */
 
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
-#include "GlastEvent/Recon/TkrRecon/TkrPatCand.h"
+#include "Event/Recon/TkrRecon/TkrPatCand.h"
 #include "GaudiKernel/DataObject.h"
 
 extern const CLID& CLID_TkrPatCandCol;

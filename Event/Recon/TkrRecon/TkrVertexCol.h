@@ -17,7 +17,7 @@
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/DataObject.h"
-#include "GlastEvent/Recon/TkrRecon/TkrVertex.h"
+#include "Event/Recon/TkrRecon/TkrVertex.h"
 /** 
 * @class TkrVertexCol
 *
@@ -25,7 +25,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrVertexCol.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertexCol.h,v 1.1 2002/05/07 20:55:10 usher Exp $
 */
 
 

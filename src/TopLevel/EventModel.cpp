@@ -1,9 +1,9 @@
-// $Id: EventModel.cpp,v 1.42 2002/05/08 22:44:00 heather Exp $
+// $Id: EventModel.cpp,v 1.43 2002/05/08 22:46:40 chehtman Exp $
 
-#define _GlastEvent_EventModel_CPP_
+#define _Event_EventModel_CPP_
 
 
-#include "GlastEvent/TopLevel/EventModel.h"
+#include "Event/TopLevel/EventModel.h"
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/ClassID.h"
 
@@ -11,7 +11,7 @@
 /** @class EvModel
  *  @brief Event Model: Definition of logical paths and class identifiers
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/TopLevel/EventModel.cpp,v 1.42 2002/05/08 22:44:00 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.43 2002/05/08 22:46:40 chehtman Exp $
  */
 class EvModel {
         

@@ -10,8 +10,8 @@
 #ifndef _TkrFitPlane_H
 #define _TkrFitPlane_H 1
 
-#include "GlastEvent/Recon/TkrRecon/TkrClusterCol.h"
-#include "GlastEvent/Recon/TkrRecon/TkrFitHit.h"
+#include "Event/Recon/TkrRecon/TkrClusterCol.h"
+#include "Event/Recon/TkrRecon/TkrFitHit.h"
 
 /** 
 * @class TkrFitPlane
@@ -23,7 +23,7 @@
 *
 * @author Bill Atwood
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitPlane.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitPlane.h,v 1.1 2002/05/07 20:55:09 usher Exp $
 */
 
 namespace TkrRecon { // Namespace

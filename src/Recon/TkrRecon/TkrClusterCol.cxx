@@ -1,4 +1,4 @@
-//      $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.10 2002/04/30 23:18:08 lsrea Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.1 2002/05/07 20:58:15 usher Exp $
 //
 // Description:
 //      TkrClusterCol is a container for Tkr clusters, and has the methods
@@ -10,7 +10,7 @@
 
 
 
-#include "GlastEvent/Recon/TkrRecon/TkrClusterCol.h"
+#include "Event/Recon/TkrRecon/TkrClusterCol.h"
 
 using namespace TkrRecon;
 

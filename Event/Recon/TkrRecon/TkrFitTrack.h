@@ -4,9 +4,9 @@
 
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
-#include "GlastEvent/Recon/TkrRecon/TkrRecInfo.h"
-#include "GlastEvent/Recon/TkrRecon/TkrFitPlane.h"
-#include "GlastEvent/Recon/TkrRecon/TkrCluster.h"
+#include "Event/Recon/TkrRecon/TkrRecInfo.h"
+#include "Event/Recon/TkrRecon/TkrFitPlane.h"
+#include "Event/Recon/TkrRecon/TkrCluster.h"
 
 /** 
 * @class TkrFitTrack
@@ -21,7 +21,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrFitTrack.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFitTrack.h,v 1.1 2002/05/07 20:55:09 usher Exp $
 */
 namespace TkrRecon {  // NameSpace
 

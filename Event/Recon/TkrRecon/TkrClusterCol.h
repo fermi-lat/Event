@@ -5,7 +5,7 @@
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/DataObject.h"
 #include "geometry/Point.h"
-#include "GlastEvent/Recon/TkrRecon/TkrCluster.h"
+#include "Event/Recon/TkrRecon/TkrCluster.h"
 
 /// constants for the array of cluster lists
 enum {NVIEWS=2, NPLANES=18};
@@ -17,7 +17,7 @@ extern const CLID& CLID_TkrClusterCol;
 *
 * @brief TDS Object for TkrCluster vector, and array of vectors.
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/Recon/TkrRecon/TkrClusterCol.h,v 1.10 2002/04/30 23:30:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrClusterCol.h,v 1.1 2002/05/07 20:55:08 usher Exp $
 */
 
 namespace TkrRecon { //Namespace
