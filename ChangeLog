@@ -1,5 +1,19 @@
 ------------------------------------------------------------
 User: frailis  Wed Oct  9 07:45:24 PDT 2002
+Event/src/test
+
+Modified Files:
+	test_RelTabs.cxx 
+Log Message:
+-Fixed a bug into getRelByFirst and getRelBySecond methods of the RelTable
+ class.
+-Added method addNoDupRel to RelTable class: this method  add a Relation to
+ the table if it doesn't contain a relation between the same two objects, 
+ otherwise it appends the infos vector to the exsisting relation
+
+    *
+------------------------------------------------------------
+User: frailis  Wed Oct  9 07:45:24 PDT 2002
 Event/Event/RelTable
 
 Modified Files:
