@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/RawEvent.h,v 1.2 2001/02/22 15:08:14 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/RawEvent.h,v 1.3 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_RAWEVENT_H
 #define LHCBEVENT_RAWEVENT_H 1
 
@@ -8,8 +8,8 @@
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/DataObject.h"
-#include "GlastEvent/Utilities/TriggerPattern.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/TriggerPattern.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 // Externals 
@@ -165,10 +165,10 @@ inline std::ostream& RawEvent::fillStream( std::ostream& s ) const             {
     s << "false";
   }
   s << "\n    Error status      = "
-    << GlastEventField( GlastEvent::field12 )
+    << EventField( GlastEvent::field12 )
     << m_errorStatus
     << "\n    High voltage mask = "
-    << GlastEventField( GlastEvent::field12 )
+    << EventField( GlastEvent::field12 )
     << m_highVoltageMask
     << "\n    Present triggers  = " << m_triggerPattern;
   return s;

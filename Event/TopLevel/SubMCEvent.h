@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/SubMCEvent.h,v 1.1.1.1 2000/09/27 18:56:14 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/SubMCEvent.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_SUBMCEVENT_H
 #define LHCBEVENT_SUBMCEVENT_H 1
 
@@ -8,11 +8,11 @@
 #include <vector>
 #include "GaudiKernel/Kernel.h"
 #include "GaudiKernel/StreamBuffer.h"
-#include "GlastEvent/Utilities/RandomNumberSeed.h"
-#include "GlastEvent/Utilities/ProcessingVersion.h"
+#include "Event/Utilities/RandomNumberSeed.h"
+#include "Event/Utilities/ProcessingVersion.h"
 #include "CLHEP/Geometry/Point3D.h"
-#include "GlastEvent/Utilities/CLHEPStreams.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/CLHEPStreams.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 //------------------------------------------------------------------------------
@@ -168,17 +168,17 @@ inline std::ostream& SubMCEvent::fillStream( std::ostream& s ) const           {
   return s
     << "class SubMCEvent :\n"
     << "\n    Detector characteristics = "
-    << GlastEventField( GlastEvent::field12 )
+    << EventField( Event::field12 )
     << m_detectorCharacteristics
     << "\n    Primary vertex location  = ( "
-    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << EventFloatFormat( Event::width, Event::precision )
     << m_primaryVertex.x() << ", "
-    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << EventFloatFormat( Event::width, Event::precision )
     << m_primaryVertex.y() << ", "
-    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << EventFloatFormat( Event::width, Event::precision )
     << m_primaryVertex.z() << " )"
     << "\n    Monte Carlo event weight = "
-    << GlastEventFloatFormat( GlastEvent::width, GlastEvent::precision )
+    << EventFloatFormat( Event::width, Event::precision )
     << m_weight
     << "\n    Random number seed       = " << m_randomNumberSeed
     << "\n    Processing version       = " << m_processingVersion;

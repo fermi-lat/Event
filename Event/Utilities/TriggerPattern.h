@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TriggerPattern.h,v 1.2 2001/04/18 19:07:26 igable Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Utilities/TriggerPattern.h,v 1.3 2002/05/10 18:08:07 richard Exp $
 #ifndef LHCBEVENT_TRIGGERPATTERN_H
 #define LHCBEVENT_TRIGGERPATTERN_H 1
 
@@ -71,7 +71,7 @@ public:
   /// Fill the output stream (ASCII)
   std::ostream& fillStream( std::ostream& s ) const                            {
     return s << "class TriggerPattern : "
-      << GlastEventField( EventFormat::field12 )
+      << EventField( EventFormat::field12 )
       << m_pattern;
   }
 

@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.27 2002/05/08 22:40:55 heather Exp $
+// $Id: EventModel.h,v 1.28 2002/05/10 01:50:28 burnett Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -36,7 +36,7 @@
  *    AcdDigi       becomes   AcdDigis
  */  
     namespace EventModel {
-        _EXTERN_ std::string   Event;
+        _EXTERN_ std::string   EventHeader;
 
         namespace MC {
             _EXTERN_ std::string Event;

@@ -1,4 +1,4 @@
-// $Id: EventHits.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Id: EventHits.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 //
 //  Original Author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -11,7 +11,7 @@
 #include "GaudiKernel/DataObject.h"
 #include "GlastEvent/Hits/GlastHits.h"
 
-namespace GlastEvent { // declare the namespace for the glast raw event
+namespace Event { // declare the namespace for the glast raw event
 
     // declare the GAUDI class-id for this class
     extern const CLID&   CLID_EventHits;

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/TopLevel/EventTag.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/EventTag.h,v 1.2 2001/04/18 19:07:26 igable Exp $
 #ifndef LHCBEVENT_EVENTTAG_H
 #define LHCBEVENT_EVENTTAG_H 1
 
@@ -9,9 +9,9 @@
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/StreamBuffer.h"
 #include "GaudiKernel/SmartRef.h"
-#include "GlastEvent/Utilities/TriggerPattern.h"
-#include "GlastEvent/Utilities/Classification.h"
-#include "GlastEvent/TopLevel/Definitions.h"
+#include "Event/Utilities/TriggerPattern.h"
+#include "Event/Utilities/Classification.h"
+#include "Event/TopLevel/Definitions.h"
 
 
 // Forward declarations
