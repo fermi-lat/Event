@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: burnett  Mon Apr  8 13:02:47 PDT 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McParticle.h McPositionHit.h 
+Removed Files:
+	McConstants.h 
+Log Message:
+remove McConstants.h, bit fields in McPositionHit, McIntegratingHit, tag v6r3
+
+    *
+------------------------------------------------------------
 User: riccardo  Fri Apr  5 08:22:45 PST 2002
 GlastEvent/src/MonteCarlo
 
