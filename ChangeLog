@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Wed Nov  7 22:08:34 PST 2001
+GlastEvent/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Modified EventModel to change SiClusters references to TkrClusters
+    *
+------------------------------------------------------------
+User: usher  Wed Nov  7 22:08:34 PST 2001
 GlastEvent/GlastEvent/TopLevel
 
 Modified Files:
