@@ -8,6 +8,8 @@
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
 #include "GaudiKernel/DataObject.h"
+#include "GaudiKernel/ContainedObject.h"
+
 #include "geometry/Point.h"
 
 /** 
@@ -20,12 +22,12 @@
 *
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.1 2002/05/07 20:55:08 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.2 2002/05/11 14:17:02 burnett Exp $
 */
 
 namespace Event { //Namespace
 
-class TkrCluster
+    class TkrCluster : virtual public ContainedObject
 {
 public:
     
@@ -36,6 +38,7 @@ public:
             Y, /**< cluster measures Y */ 
             XY /**< not valid for clusters */
     };
+    enum {NPLANES=18};
     
     friend class TkrClusters;
     
