@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: burnett  Fri Jul 18 14:10:26 PDT 2003
-Event/Event/TopLevel
-
-Modified Files:
-	EventModel.h 
-Log Message:
-add exposure TDS collection
-    *
-------------------------------------------------------------
 User: burnett  Fri Jul 11 16:06:45 PDT 2003
 Event/Event/MonteCarlo
 
