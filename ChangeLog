@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 22 06:46:23 PDT 2002
+GlastEvent/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+fix name of TDS path for McIntegratingHitsCol and McPositionHitsCol
+    *
+------------------------------------------------------------
 User: burnett  Sat Apr 20 19:18:08 PDT 2002
 GlastEvent/mgr
 
