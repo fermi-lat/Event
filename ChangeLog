@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Thu Sep  5 00:24:16 PDT 2002
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrRecInfo.h 
+Log Message:
+to get rid of the warning about the virtual destructor in TkrPatCand
+    *
+------------------------------------------------------------
 User: lsrea  Wed Sep  4 21:17:34 PDT 2002
 Event/Event/Digi
 
