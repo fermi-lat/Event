@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.7 2002/05/09 16:36:17 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.8 2002/05/10 01:56:21 richard Exp $
 
 #include <iostream>
 #include <math.h>
@@ -62,6 +62,42 @@ HepPoint3D& McPositionHit::exitPoint()
 void McPositionHit::setExitPoint( const HepPoint3D& value )
 {
     m_exit = value;
+}
+
+
+/// Retrieve entry member in global coordinates
+const HepPoint3D& McPositionHit::globalEntryPoint() const
+{
+    return m_globalEntry;
+}
+HepPoint3D& McPositionHit::globalEntryPoint()
+{
+    return m_globalEntry;
+}
+
+
+/// Update Entry member in global coordinates
+void McPositionHit::setGlobalEntryPoint( const HepPoint3D& value )
+{
+    m_globalEntry = value;
+}
+
+
+/// Retrieve exit point in global coordinates
+const HepPoint3D& McPositionHit::globalExitPoint() const
+{
+    return m_globalExit;
+}
+HepPoint3D& McPositionHit::globalExitPoint()
+{
+    return m_globalExit;
+}
+
+
+/// Update exit point in global coordinates
+void McPositionHit::setGlobalExitPoint( const HepPoint3D& value )
+{
+    m_globalExit = value;
 }
 
 
