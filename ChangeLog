@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Wed Oct  9 16:39:41 PDT 2002
+Event/src/Recon/TkrRecon
+
+Removed Files:
+	TkrPatCandCol.cxx 
+Log Message:
+Remove now useless TkrPatCandCol.cxx file
+
+    *
+------------------------------------------------------------
 User: usher  Wed Oct  9 16:38:27 PDT 2002
 Event/Event/Recon/TkrRecon
 
