@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Jun  4 15:10:27 PDT 2002
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+store 2 PMT per ACD digi
+    *
+------------------------------------------------------------
 User: usher  Tue Jun  4 12:41:36 PDT 2002
 Event/Event/Recon/TkrRecon
 
