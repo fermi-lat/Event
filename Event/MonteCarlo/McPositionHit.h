@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.7 2002/03/01 01:13:03 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastEvent/GlastEvent/MonteCarlo/McPositionHit.h,v 1.8 2002/03/07 16:28:45 frailis Exp $
 #ifndef GlastEvent_McPositionHit_H
 #define GlastEvent_McPositionHit_H 1
 
@@ -26,7 +26,6 @@
 
 // Forward declarations
 class McParticle;
-
 
 
 /*!
@@ -232,6 +231,15 @@ inline std::ostream& mc::McPositionHit::fillStream( std::ostream& s ) const
 
 typedef ObjectVector<mc::McPositionHit> McPositionHitVector;
 typedef ObjectList<mc::McPositionHit>   McPositionHitList;
+
+/*! A small class to use the sort algorithm */
+class ComparePosHits {
+  public:
+    bool operator()(mc::McPositionHit *left, mc::McPositionHit *right)
+    {return left->volumeID() < right->volumeID();}
+
+    };
+
 
 #endif    // GlastEvent_McPositionHit_H
 
