@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Feb  7 09:56:59 PST 2001
+GlastEvent/GlastEvent/Digi AcdDigi.h
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+move inlines into header
+    *
+------------------------------------------------------------
 User: igable  Tue Feb  6 11:51:52 PST 2001
 GlastEvent/src/data TdCsIData.cpp TdSiData.cpp
 
