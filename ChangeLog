@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lsrea  Wed Sep  4 17:01:54 PDT 2002
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.cxx TkrFitMatrix.cxx TkrFitPlane.cxx TkrPatCand.cxx 
+Log Message:
+a few more...
+    *
+------------------------------------------------------------
 User: lsrea  Wed Sep  4 17:01:53 PDT 2002
 Event/Event/Recon/TkrRecon
 
