@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: igable  Tue Feb 13 14:31:11 PST 2001
+GlastEvent/src/TopLevel EventModel.cpp
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Changes to EventModel for Jose's Gaudi Modified TB Recon classes. Comments
+on CLID new CLID rules also added to EventModel
+
+    *
+------------------------------------------------------------
+User: igable  Tue Feb 13 14:31:11 PST 2001
 GlastEvent/src/Factories MCInstanciation.cpp
 
 Modified Files:
