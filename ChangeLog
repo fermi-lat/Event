@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: igable  Mon Feb  5 17:39:45 PST 2001
+GlastEvent/GlastEvent/data TdCsIData.h TdGlastData.h TdSiData.h
+
+Added Files:
+	TdCsIData.h TdGlastData.h TdSiData.h 
+Log Message:
+moved from Raw folder
+
+    *
+------------------------------------------------------------
 User: igable  Mon Feb  5 17:38:20 PST 2001
 GlastEvent/GlastEvent/Raw TdCsIData.h TdGlastData.h TdSiData.h
 
