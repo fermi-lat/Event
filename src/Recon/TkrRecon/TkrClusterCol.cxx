@@ -1,4 +1,4 @@
-//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.4 2002/06/27 18:43:11 usher Exp $
+//      $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrClusterCol.cxx,v 1.5 2002/09/22 19:22:14 lsrea Exp $
 //
 // Description:
 //      TkrClusterCol is a container for Tkr clusters, and has the methods
@@ -73,6 +73,23 @@ int TkrClusterCol::nHits(TkrCluster::view v, int iplane) const
         return 0;
     }
 }
+
+TkrCluster* TkrClusterCol::getHit(int i) const 
+{
+    // this used to just return the ith cluster...
+    // now it really checks the id's, but tries the ith cluster first 
+    //   (which will be the one, unless someone sorts the list of pointers)
+    TkrCluster* ptr = 0;
+    if (i==m_clustersList[i]->id()) {
+        ptr = m_clustersList[i];
+    } else {
+        for (int j = 0; j< m_clustersList.size(); j++) {
+            if (m_clustersList[j]->id()==i) ptr = m_clustersList[j];
+        }
+    }
+    return ptr;
+}
+
 
 void TkrClusterCol::writeOut(MsgStream& log) const
 {
