@@ -9,7 +9,7 @@
 *
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.6 2002/09/05 00:01:53 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrPatCand.h,v 1.7 2002/09/05 01:21:06 lsrea Exp $
 */
 #include <vector>
 #include "GaudiKernel/MsgStream.h"
@@ -26,7 +26,8 @@ public:
     ~TkrPatCand();
 
     /// Define the TkrRecInfo routines
-    double        getQuality()                       const ;
+
+    double        getQuality()                       const {return m_quality;};
     double        getEnergy(TrackEnd end = Start)    const ;
     int           getLayer(TrackEnd end = Start)     const ;
     int           getTower(TrackEnd end = Start)     const ;
