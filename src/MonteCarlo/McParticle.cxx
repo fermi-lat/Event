@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.17 2002/07/18 08:33:23 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.18 2002/09/24 16:56:50 riccardo Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -87,6 +87,21 @@ unsigned int McParticle::statusFlags()const{
 const McParticle& McParticle::mother()const
 {
     return *m_mother;
+}
+
+/// Remove daughters when in prune mode
+void McParticle::removeDaughter(const SmartRef<McParticle> mcPart)
+{
+    SmartRefVector<Event::McParticle>::iterator daughtIter;
+    for(daughtIter = m_daughters.begin();daughtIter != m_daughters.end();daughtIter++)
+    {
+        if (mcPart == *daughtIter)
+        {
+            m_daughters.erase(daughtIter);
+            break;
+        }
+    }
+    return;
 }
 
 
