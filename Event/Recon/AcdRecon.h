@@ -14,7 +14,7 @@
 
 /** @class   AcdRecon        
 * @brief Reconstruction data for ACD                                
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon.h,v 1.3 2002/06/07 21:59:42 heather Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon.h,v 1.4 2002/06/12 07:50:21 heather Exp $          
 */
 
 extern const CLID& CLID_AcdRecon;
@@ -32,8 +32,8 @@ namespace Event {
         {};
         
         AcdRecon(double e, int count, double gDoca, double doca, double actDist,
-            idents::AcdId &minDocaId, std::vector<double> &rowDoca, 
-            std::map<idents::AcdId,double> &energies)       
+            const idents::AcdId &minDocaId, const std::vector<double> &rowDoca, 
+            const std::map<idents::AcdId,double> &energies)       
             : m_totEnergy(e),
             m_tileCount(count),
             m_gammaDoca(gDoca),
@@ -48,8 +48,8 @@ namespace Event {
         virtual ~AcdRecon() { };
 
         void initialize (double e, int count, double gDoca, double doca, double actDist,
-            idents::AcdId minDocaId, std::vector<double> &rowDoca,
-            std::map<idents::AcdId, double> &energyCol) {
+            const idents::AcdId minDocaId, const std::vector<double> &rowDoca,
+            const std::map<idents::AcdId, double> &energyCol) {
             m_totEnergy = e;
             m_tileCount = count;
             m_gammaDoca = gDoca;
