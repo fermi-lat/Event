@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Mon Jun 10 11:55:46 PDT 2002
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+initialize run, event to -1 to flag not set
+    *
+------------------------------------------------------------
 User: richard  Mon Jun 10 09:21:48 PDT 2002
 Event/Event/Digi
 
