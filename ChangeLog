@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed May  8 15:44:01 PDT 2002
+GlastEvent/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+add CalDigiCol to EventModel
+    *
+------------------------------------------------------------
 User: heather  Wed May  8 15:42:22 PDT 2002
 GlastEvent/doc
 
