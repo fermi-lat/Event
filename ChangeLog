@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Fri Mar 15 07:27:43 PST 2002
+GlastEvent/GlastEvent/MonteCarlo
+
+Modified Files:
+	McPositionHit.h 
+Log Message:
+add convenient init function to combine 4 sets
+    *
+------------------------------------------------------------
 User: riccardo  Tue Mar 12 09:24:23 PST 2002
 GlastEvent/GlastEvent/MonteCarlo
 
