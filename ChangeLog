@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 25 17:52:37 PDT 2005
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+set m_eventId as unsigned for 32 bit LDF event sequence
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r3p1, operation: add
 Package: Event
