@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Apr 25 17:53:01 PDT 2005
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+set m_eventId as unsigned for 32 bit LDF event sequence
+    *
+------------------------------------------------------------
 User: heather  Mon Apr 25 17:52:44 PDT 2005
 Event/cmt
 
