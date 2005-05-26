@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: usher  Thu May 26 13:19:37 PDT 2005
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalCluster.cxx 
+Added Files:
+	CalParams.cxx 
+Log Message:
+Three things: 1) Initial checkin of primary set of new CalRecon TDS classes, 2) Update of McParticle and McPositionHit to include more information, 3) Introduce a "diagnostics" class for TkrRecon
+    *
+------------------------------------------------------------
+User: usher  Thu May 26 13:19:37 PDT 2005
 Event/src/MonteCarlo
 
 Modified Files:
