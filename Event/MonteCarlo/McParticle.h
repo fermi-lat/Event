@@ -34,7 +34,7 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.31 2003/07/25 16:35:15 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.32 2004/09/18 18:16:57 usher Exp $
  */
 #include "GaudiKernel/IInterface.h"
 
@@ -120,6 +120,7 @@ class McParticle  : virtual public ContainedObject  {
 
     /// access to the mother particle
     const McParticle& mother()const; 
+    const SmartRef<McParticle> getMother() const {return m_mother;}
 
     /// set the mother particle
     void setMother(const SmartRef<McParticle> m);
