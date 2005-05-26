@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.9 2002/07/26 16:22:19 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.10 2004/09/18 18:16:59 usher Exp $
 
 #include <iostream>
 #include <math.h>
@@ -116,13 +116,29 @@ void McPositionHit::setDepositedEnergy( double value )
 /// Retrieve depositing particle's energy
 double McPositionHit::particleEnergy() const
 {
-    return m_particleEnergy;
+    return m_particleFourMomentum.e();
+}
+
+/// Retrieve depositing particle's momentum
+Hep3Vector McPositionHit::particleMomentum() const
+{
+    return m_particleFourMomentum.vect();
+}
+
+/// Retrieve depositing particle's four momentum
+HepLorentzVector McPositionHit::particleFourMomentum() const
+{
+    return m_particleFourMomentum;
 }
 
 /// Set depositing particle's energy
-void McPositionHit::setParticleEnergy(double value)
+//void McPositionHit::setParticleEnergy(double value)
+//{
+//    m_particleEnergy = value;
+//}
+void McPositionHit::setParticle4Momentum( const HepLorentzVector& fourMom)
 {
-    m_particleEnergy = value;
+    m_particleFourMomentum = fourMom;
 }
 
 /// Retrieve member TOF
