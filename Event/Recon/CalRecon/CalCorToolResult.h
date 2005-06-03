@@ -19,7 +19,7 @@ static const CLID& CLID_CalCorToolResult = InterfaceID("CalCorToolResult", 1, 0)
 *  
 *  \author CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCorToolResult.h,v 1.13 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCorToolResult.h,v 1.1 2005/05/26 20:19:36 usher Exp $
 */
 
 namespace Event 
@@ -68,7 +68,7 @@ public:
 
     /// 
     /// Start here the methods for setting the information 
-    /// setParams for setting energy parameters
+    /// setCorrectionName for setting the corrector name
     /// @param name : the name (identifier) of the correction tool used
     inline void setCorrectionName(const std::string& name) {m_correctionName = name;}
     /// setParams for setting energy parameters
