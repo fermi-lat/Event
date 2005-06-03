@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Fri Jun  3 05:13:02 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCorToolResult.h 
+Log Message:
+correct a comment
+    *
+------------------------------------------------------------
 User: usher  Thu May 26 13:19:39 PDT 2005
 Event/Event/Recon/TkrRecon
 
