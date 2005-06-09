@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Jun  8 21:07:28 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCorToolResult.h 
+Log Message:
+include items to compile when used in non CalRecon classes
+    *
+------------------------------------------------------------
 User: chamont  Fri Jun  3 05:13:02 PDT 2005
 Event/Event/Recon/CalRecon
 
