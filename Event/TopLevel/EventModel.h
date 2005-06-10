@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.41 2004/12/15 23:29:25 usher Exp $
+// $Id: EventModel.h,v 1.42 2005/05/26 20:19:37 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -101,6 +101,7 @@ public:
         static std::string TkrTrackHitCol;
         static std::string TkrVertexCol;
         static std::string TkrDiagnostics;
+        static std::string TkrEventParams;
     };
 
 
@@ -113,6 +114,7 @@ public:
        static std::string Event;
        static std::string CalXtalRecCol;
        static std::string CalMIPsCol;
+       static std::string CalMipTrackCol;
        static std::string CalClusterCol;
        static std::string CalEventEnergy;
        static std::string CalClusterHitTab;
