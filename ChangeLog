@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jun  9 21:23:05 PDT 2005
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Adding current set of MIP finding classes, add new Tracker class for future filter stage
+    *
+------------------------------------------------------------
 User: usher  Wed Jun  8 21:07:28 PDT 2005
 Event/Event/Recon/CalRecon
 
