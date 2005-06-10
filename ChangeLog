@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Thu Jun  9 21:23:05 PDT 2005
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Adding current set of MIP finding classes, add new Tracker class for future filter stage
+    *
+------------------------------------------------------------
+User: usher  Thu Jun  9 21:23:05 PDT 2005
 Event/Event/TopLevel
 
 Modified Files:
