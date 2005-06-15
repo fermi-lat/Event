@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Wed Jun 15 06:44:29 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+tiny writeout bug fix
+    *
+------------------------------------------------------------
 User: usher  Tue Jun 14 20:44:22 PDT 2005
 Event/Event/Recon/CalRecon
 
