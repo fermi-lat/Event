@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jun 14 20:44:22 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+importing Bill's changes to CalCluster to include status bits
+    *
+------------------------------------------------------------
 User: usher  Thu Jun  9 21:23:06 PDT 2005
 Event/src/Recon/CalRecon
 
