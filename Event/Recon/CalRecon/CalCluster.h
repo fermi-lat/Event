@@ -34,7 +34,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.14 2005/05/26 20:19:36 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.15 2005/06/15 03:44:22 usher Exp $
 */
 
 namespace Event 
@@ -197,7 +197,7 @@ inline void CalCluster::writeOut(MsgStream& stream) const
 //        stream - Gaudi message stream
 {
     stream << "Energy " << m_params.getEnergy();
-	stream << "No.Trunc Xtals " << m_numTruncXtals;
+	stream << " No.Trunc Xtals " << m_numTruncXtals;
     stream << " " << getPosition().x() 
            << " " << getPosition().y() 
            << " " << getPosition().z();
