@@ -1,7 +1,14 @@
+/** @file GltDigi.h
+    @brief Definition and implementation of GltDigi
+
+    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.2 2004/09/18 18:16:57 usher Exp $
+
+
+*/
 #ifndef Event_GltDigi_H
 #define Event_GltDigi_H 1
 
-#include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/IInterface.h"
 #include <vector>
 
@@ -12,23 +19,22 @@
 * \brief TDS class for Glt data
 * TDS Trigger class for interface to filter algorithms
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.1 2002/12/02 20:51:19 cohen Exp $
 */
 
 static const CLID& CLID_GltDigi = InterfaceID("GltDigi", 1, 0);
 
 namespace Event {
 
-class GltDigi : virtual public ContainedObject {
+class GltDigi : virtual public DataObject {
    
  public:
   GltDigi(){;}
 
   virtual ~GltDigi() {;}  
 
-  inline std::vector<bool> getTkrThreeInRow(){return m_TKR_threeinRow;}
-  inline std::vector<bool> getCAL_LO(){return m_CAL_LO;}
-  inline std::vector<bool> getCAL_HI(){return m_CAL_HI;}
+  inline std::vector<bool> getTkrThreeInRow()const{return m_TKR_threeinRow;}
+  inline const std::vector<bool>& getCAL_LO()const{return m_CAL_LO;}
+  inline const std::vector<bool>& getCAL_HI()const{return m_CAL_HI;}
 
   inline void setTkrThreeInRow(std::vector<bool> value)
     {m_TKR_threeinRow = value;}
