@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Jun 22 14:31:28 PDT 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrEventParams.h 
+Log Message:
+Modifications to MIP finding classes mostly, add more bit definitions to TkrEventParams
+    *
+------------------------------------------------------------
 User: usher  Wed Jun 22 14:31:27 PDT 2005
 Event/Event/Recon/CalRecon
 
