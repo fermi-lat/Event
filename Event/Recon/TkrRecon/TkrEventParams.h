@@ -15,7 +15,7 @@ static const CLID& CLID_TkrEventParams = InterfaceID("TkrEventParams", 1, 0);
 * @brief Defines the output of the TkrFilterAlg
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.2 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.1 2005/06/10 04:23:05 usher Exp $
 */
 namespace Event {  // NameSpace
 
@@ -44,8 +44,10 @@ public:
     /// Status word bits organized like:
     ///        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
     ///         <               > <               > <               >  <              >
-    enum StatusBits {CALPARAMS = 0x0001,  //Set if using Calorimeter parameters
-                     TKRPARAMS = 0x0002}; //Set if using Tracker parameters
+    enum StatusBits {CALPARAMS  = 0x0001,  //Set if using Calorimeter parameters
+                     TKRPARAMS  = 0x0002,  //Set if using Tracker parameters
+                     FIRSTPASS  = 0x1000,  //Set if first pass numbers
+                     SECONDPASS = 0x2000}; //Set if second pass numbers used
 
     /// Access data members
     unsigned int getStatusBits()    const {return m_statusBits;}
