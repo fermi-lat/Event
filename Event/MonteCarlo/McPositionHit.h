@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.20 2004/09/18 18:16:57 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.21 2005/05/26 20:19:36 usher Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -139,12 +139,12 @@ class McPositionHit : virtual public ContainedObject {
     void setMcParticle( SmartRef<McParticle> value );
 
     /// Retrieve particle ID
-    McParticle::StdHepId getMcParticleId(){return m_mcParticleId;};
+    McParticle::StdHepId getMcParticleId()const{return m_mcParticleId;};
     /// Set the particle ID
     void setMcParticleId(McParticle::StdHepId id){m_mcParticleId = id;};
 
     /// Retrieve ancestor particle ID
-    McParticle::StdHepId getOriginMcParticleId(){return m_originMcParticleId;};
+    McParticle::StdHepId getOriginMcParticleId()const{return m_originMcParticleId;};
     /// Set the ancestor particle ID
     void setOriginMcParticleId(McParticle::StdHepId id){m_originMcParticleId = id;};
 
