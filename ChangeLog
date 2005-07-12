@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Jul 12 08:09:20 PDT 2005
+Event/Event/MonteCarlo
+
+Modified Files:
+	McPositionHit.h 
+Log Message:
+added required "const" to get methods.
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r0p0, operation: add
 Package: Event
