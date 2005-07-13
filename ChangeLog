@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Wed Jul 13 08:42:29 PDT 2005
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalParams.cxx 
+Log Message:
+review TDS Event/CalRecon/* usage of const and status bits, plus few details
+    *
+------------------------------------------------------------
 User: chamont  Wed Jul 13 08:42:28 PDT 2005
 Event/Event/Recon/CalRecon
 
