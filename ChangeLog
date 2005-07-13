@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Wed Jul 13 08:42:28 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h CalCorToolResult.h CalEventEnergy.h CalParams.h 
+Log Message:
+review TDS Event/CalRecon/* usage of const and status bits, plus few details
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r0p1, operation: add
 Package: Event
