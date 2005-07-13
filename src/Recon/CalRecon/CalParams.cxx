@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 0.1 2002/09/13 23:31:19 chehtman Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.1 2005/05/26 20:19:37 usher Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -89,7 +89,7 @@ void Event::CalParams::setAxisErrs(const HepMatrix& errs)
     m_axiszz = errs(3,3);
 }
 
-const HepMatrix Event::CalParams::getCentroidErrs() const
+HepMatrix Event::CalParams::getCentroidErrs() const
 {
     HepMatrix errs(3,3,0);
 
@@ -103,7 +103,7 @@ const HepMatrix Event::CalParams::getCentroidErrs() const
     return errs;
 }
 
-const HepMatrix Event::CalParams::getAxisErrs() const
+HepMatrix Event::CalParams::getAxisErrs() const
 {
     HepMatrix errs(3,3,0);
 
