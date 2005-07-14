@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: piron  Thu Jul 14 00:32:54 PDT 2005
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+modified classes for StdMipFindingTool
+
+    *
+------------------------------------------------------------
+User: piron  Thu Jul 14 00:32:54 PDT 2005
 Event/Event/Recon/CalRecon
 
 Modified Files:
