@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: piron  Thu Jul 14 00:32:54 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalMipClasses.h 
+Log Message:
+modified classes for StdMipFindingTool
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r0p2, operation: add
 Package: Event
