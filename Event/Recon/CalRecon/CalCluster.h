@@ -34,7 +34,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.16 2005/06/15 13:44:29 chamont Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.17 2005/07/13 15:42:28 chamont Exp $
 */
 
 namespace Event 
@@ -53,9 +53,9 @@ public:
 
     ~CalClusterLayerData() {}
 
-    double getEnergy()    const {return m_energy;}
-    const Point & getPosition()  const {return m_position;}
-    const Vector &getRmsSpread() const {return m_rmsSpread;}
+    double         getEnergy()    const {return m_energy;}
+    const  Point&  getPosition()  const {return m_position;}
+    const  Vector& getRmsSpread() const {return m_rmsSpread;}
 private:
     double m_energy;         // Energy deposition in crystals in this cluster and layer
     Point  m_position;       // Average position in this layer
@@ -133,8 +133,8 @@ public:
     void setNumXtals(int numXtals)             {m_numTruncXtals = numXtals;}
 
 	   /// setStatusBit and ClearStatusBit for setting and clearing bits
-    inline void setStatusBit(StatusBits bitToSet)        {m_statusBits |=  bitToSet;}
-    inline void clearStatusBit(StatusBits bitToClear)      {m_statusBits &= ~bitToClear;}
+    inline void setStatusBit(StatusBits bitToSet)     {m_statusBits |=  bitToSet;}
+    inline void clearStatusBit(StatusBits bitToClear) {m_statusBits &= ~bitToClear;}
 
     /*
      * Provide access to the data
