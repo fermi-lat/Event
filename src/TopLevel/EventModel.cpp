@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.69 2005/05/26 20:19:38 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.70 2005/06/10 04:23:05 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -57,12 +57,16 @@ std::string EventModel::TkrRecon::TkrEventParams      = EventModel::TkrRecon::Ev
 //reconstructed Cal data
 std::string EventModel::CalRecon::Event               = EventModel::EventHeader + "/CalRecon";
 std::string EventModel::CalRecon::CalXtalRecCol       = EventModel::CalRecon::Event + "/CalXtalRecCol";
-std::string EventModel::CalRecon::CalMIPsCol          = EventModel::CalRecon::Event + "/CalMIPsCol";
+//@@@FP 07/09/05
+//std::string EventModel::CalRecon::CalMIPsCol          = EventModel::CalRecon::Event + "/CalMIPsCol";
+//@@@FP 07/09/05
 std::string EventModel::CalRecon::CalMipTrackCol      = EventModel::CalRecon::Event + "/CalMipTrackCol";
 std::string EventModel::CalRecon::CalClusterCol       = EventModel::CalRecon::Event + "/CalClusterCol";
 std::string EventModel::CalRecon::CalEventEnergy      = EventModel::CalRecon::Event + "/CalEventEnergy";
 std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Event + "/CalClusterHitTab";
-std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";
+//@@@FP 07/09/05
+//std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";
+//@@@FP 07/09/05
 
 // reconstructed ACD data
 std::string EventModel::AcdRecon::Event               = EventModel::EventHeader + "/AcdRecon";
