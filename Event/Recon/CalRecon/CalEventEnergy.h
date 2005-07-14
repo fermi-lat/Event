@@ -27,7 +27,7 @@ static const CLID& CLID_CalEventEnergy = InterfaceID("CalEventEnergy", 1, 0);
 *  
 *  \author CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalEventEnergy.h,v 1.1 2005/05/26 20:19:36 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalEventEnergy.h,v 1.2 2005/07/13 15:42:28 chamont Exp $
 */
 
 namespace Event 
@@ -55,25 +55,25 @@ public:
 
     /// Access the status bits to determine details of the hit
     inline unsigned int getStatusBits() const {return m_statusBits;}
-    inline void setStatusBits( unsigned int statusBits ) { m_statusBits = statusBits ; }
 
     /// Answer quick questions based on status bits
-    inline bool validPassOne() const {return (m_statusBits & PASS_ONE)  == PASS_ONE;}
-    inline bool validPassTwo() const {return (m_statusBits & PASS_TWO)  == PASS_TWO;}
+    inline bool         validPassOne()  const {return (m_statusBits & PASS_ONE)  == PASS_ONE;}
+    inline bool         validPassTwo()  const {return (m_statusBits & PASS_TWO)  == PASS_TWO;}
 
     /// Access to "the" energy and parameters
-    const CalParams & getParams()    const {return m_params;}
-    double getEnergy()    const {return m_params.getEnergy();}
-    const Point & getCentroid()  const {return m_params.getCentroid();}
-    const Vector & getDirection() const {return m_params.getAxis();}
+    const CalParams&    getParams()     const {return m_params;}
+    double              getEnergy()     const {return m_params.getEnergy();}
+    const Point&        getCentroid()   const {return m_params.getCentroid();}
+    const Vector&       getDirection()  const {return m_params.getAxis();}
 
     ///
     /// Set methods for this class
     /// @param energy the corrected energy
-    inline void setParams(const CalParams& params)    {m_params = params;}
+    inline void setParams(const CalParams& params)       {m_params = params;}
 
-    inline void setStatusBit(StatusBits bitToSet)   {m_statusBits |=  bitToSet;}
-    inline void clearStatusBit(StatusBits bitToClear) {m_statusBits &= ~bitToClear;}
+    inline void setStatusBits( unsigned int statusBits ) {m_statusBits  = statusBits ; }
+    inline void setStatusBit(StatusBits bitToSet)        {m_statusBits |=  bitToSet;}
+    inline void clearStatusBit(StatusBits bitToClear)    {m_statusBits &= ~bitToClear;}
         
 private:
     unsigned int m_statusBits;
