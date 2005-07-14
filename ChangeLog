@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jul 14 15:38:25 PDT 2005
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h CalCorToolResult.h CalEventEnergy.h CalParams.h 
+Log Message:
+Slight formatting modifications
+    *
+------------------------------------------------------------
 User: piron  Thu Jul 14 00:32:54 PDT 2005
 Event/src/TopLevel
 
