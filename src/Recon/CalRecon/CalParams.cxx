@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.1 2005/05/26 20:19:37 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.2 2005/07/13 15:42:28 chamont Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -54,19 +54,22 @@ void Event::CalParams::initDataMembers()
     m_clusterCentroid = Point(0.,0.,0.);
     m_clusterAxis     = Vector(0.,0.,0.);
 
-    m_cenxx  = 0.;
-    m_cenxy  = 0.;
-    m_cenxz  = 0.;
-    m_cenyy  = 0.;
-    m_cenyz  = 0.;
-    m_cenzz  = 0.;
+    m_cenxx    = 0.;
+    m_cenxy    = 0.;
+    m_cenxz    = 0.;
+    m_cenyy    = 0.;
+    m_cenyz    = 0.;
+    m_cenzz    = 0.;
 
-    m_axisxx = 0.;
-    m_axisxy = 0.;
-    m_axisxz = 0.;
-    m_axisyy = 0.;
-    m_axisyz = 0.;
-    m_axiszz = 0.;
+    m_axisxx   = 0.;
+    m_axisxy   = 0.;
+    m_axisxz   = 0.;
+    m_axisyy   = 0.;
+    m_axisyz   = 0.;
+    m_axiszz   = 0.;
+
+    m_energy   = 0.;
+    m_eneError = 0.;
 }
 
 void Event::CalParams::setCentroidErrs(const HepMatrix& errs)
