@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jul 26 10:14:45 PDT 2005
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalParams.cxx 
+Log Message:
+Initialize energy and energy error
+    *
+------------------------------------------------------------
 User: golpa  Fri Jul 15 15:28:51 PDT 2005
 Event/cmt
 
