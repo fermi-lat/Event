@@ -33,7 +33,7 @@
 * the data members through the constructor.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.17 2004/06/23 18:26:33 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.18 2004/09/18 18:16:57 usher Exp $
 */
 
 static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 0);
@@ -81,6 +81,7 @@ namespace Event {
             m_tileNumber = tileNumber;
             m_range[0] = rangeVals[0]; m_range[1] = rangeVals[1];
             m_error[0] = errorVals[0]; m_error[1] = errorVals[1];
+            m_error[2] = errorVals[2]; m_error[3] = errorVals[3];
         }
         
         /// Retrieve reference to class definition structure
@@ -101,14 +102,19 @@ namespace Event {
         inline unsigned short getPulseHeight(PmtId id) const { return m_pulseHeight[id]; };
         
         inline bool getVeto(PmtId id) const { return m_veto[id]; };
+        inline bool getHitMapBit(PmtId id) const { return m_veto[id]; };
         
         inline bool getLowDiscrim(PmtId id) const { return m_low[id]; };
+        inline bool getAcceptMapBit(PmtId id) const { return m_low[id]; };
         
         inline bool getHighDiscrim(PmtId id) const { return m_high[id]; };
+        inline bool getCno(PmtId id) const { return m_high[id]; };
         
         inline Range getRange(PmtId id) const { return m_range[id]; };
 
         inline ParityError getParityError(PmtId id) const { return m_error[id]; };
+        inline ParityError getOddParityError(PmtId id) const { return m_error[id]; };
+        inline ParityError getHeaderParityError(PmtId id) const { return m_error[id+2]; };
 
         /// Serialize the object for writing
         virtual StreamBuffer& serialize( StreamBuffer& s ) const;
@@ -136,18 +142,26 @@ namespace Event {
         idents::VolumeIdentifier m_volId;
         /// Monte Carlo energy MeV - storing as a check on pulseHeight
         double               m_energy;
-        /// pulse height
+        /// pulse height PHA
         unsigned short       m_pulseHeight[2];
         /// nominal Acd veto signal
         bool                 m_veto[2];
         /// 1 bit Low threshold discriminator - enables the PHA
+        /// Now more properly called the accept map bits and sometimes
+        // referred to as the zero suppression bits
         bool                 m_low[2];
-        /// 1 bit High threshold discriminator - used for calibration of the CAL
+        /// 1 bit High thresholdi CNO discriminator 
+        /// used for calibration of the CAL
+        /// This really should not be stored here any longer.. we only set
+        /// CNO per FREE board..so not so easy to know which PMT caused it
         bool                 m_high[2];
         /// Range setting either LOW (0) or HIGH (1)
         Range                m_range[2];
-        /// Stores the parity error bit from LDF:  NOERROR (0), ERROR (1)
-        ParityError          m_error[2];
+        /// Stores the parity error bits from LDF:  NOERROR (0), ERROR (1)
+        /// 0,1 correspond to odd parity for each PMT and 2,3 is the header
+        /// parity found in the AEM header which corresponds to CMD/Data Error
+        // in ACD ICD.  Each FREE board should have its own header parity bit
+        ParityError          m_error[4];
     };
     
     
@@ -185,21 +199,28 @@ namespace Event {
             << "    base class AcdDigi :"
             << "\n        id = ( "
             << EventFloatFormat( EventFormat::width, EventFormat::precision )
-            << m_id << ", "
+            << m_id << ", " << m_tileName << "   "
             << "\n     PMT A pulse height    = "
             << EventFloatFormat( EventFormat::width, EventFormat::precision )
             << m_pulseHeight[0] << ", "
-            << "      PMT A Discriminators (low, veto, high)   = ( "
+            << "      PMT A Discriminators (accept, veto, cno)   = ( "
             << m_low[0]   << " , "
             << m_veto[0] << " , "
             << m_high[0] << " )"
+            << "\n     PMT A Range: " << m_range[0]
+            << "\n     Odd Parity: " << m_error[0]
+            << "\n     Header Parity: " << m_error[2]
             << "\n     PMT B pulse height  = "
             << EventFloatFormat( EventFormat::width, EventFormat::precision )
             << m_pulseHeight[1] << ", "
-            << "      PMT B Discriminators (low, veto, high)   = ( "
+            << "      PMT B Discriminators (accept, veto, cno)   = ( "
             << m_low[1]   << " , "
             << m_veto[1] << " , "
-            << m_high[1] << " )\n";
+            << m_high[1] << " )\n"
+            << "      PMT B Range: " << m_range[0]
+            << "\n     Odd Parity: " << m_error[1]
+            << "\n     Header Parity: " << m_error[3];
+    ;
         
     }
     
