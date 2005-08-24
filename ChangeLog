@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 24 12:38:51 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+      Tag: GlastRelease-v6r8
+	AcdDigi.h 
+Log Message:
+handle ACD header parity in AcdDigi
+    *
+------------------------------------------------------------
 User: heather  Wed Aug 24 12:38:08 PDT 2005
 Event/cmt
 
