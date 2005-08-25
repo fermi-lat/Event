@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Aug 25 11:35:48 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+merge ACD updates from branch
+    *
+------------------------------------------------------------
 TAG
 Tag name: v10r3p2em0, operation: add
 Package: Event
