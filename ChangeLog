@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: golpa  Thu Aug 25 22:22:54 PDT 2005
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Typo in AcdDig.h. Tagging v11r1p0
+    *
+------------------------------------------------------------
+User: golpa  Thu Aug 25 22:22:54 PDT 2005
 Event/Event/Digi
 
 Modified Files:
