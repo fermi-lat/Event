@@ -33,7 +33,7 @@
 * the data members through the constructor.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.18 2004/09/18 18:16:57 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.19 2005/08/25 18:35:48 heather Exp $
 */
 
 static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 0);
@@ -102,7 +102,7 @@ namespace Event {
         inline unsigned short getPulseHeight(PmtId id) const { return m_pulseHeight[id]; };
         
         inline bool getVeto(PmtId id) const { return m_veto[id]; };
-        inline bool getHitMapBit(PmtId id) const [ return m_veto[id]; };
+        inline bool getHitMapBit(PmtId id) const { return m_veto[id]; };
         
         inline bool getLowDiscrim(PmtId id) const { return m_low[id]; };
         inline bool getAcceptMapBit(PmtId id) const { return m_low[id]; };
