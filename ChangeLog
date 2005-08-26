@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: golpa  Thu Aug 25 22:22:54 PDT 2005
-Event/Event/Digi
-
-Modified Files:
-	AcdDigi.h 
-Log Message:
-Typo in AcdDig.h. Tagging v11r1p0
-    *
-------------------------------------------------------------
 TAG
 Tag name: v11r1, operation: add
 Package: Event
