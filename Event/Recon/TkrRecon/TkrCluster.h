@@ -1,7 +1,9 @@
-//  associated with Tracker for all the evt Status
-//
-//---------------------------------------------------
+/** @file TkrCluster.h
+* @author Tracy Usher, Leon Rochester
+*
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.12 2005/02/07 20:35:20 lsrea Exp $
 
+*/
 #ifndef TKRCLUSTER_H
 #define TKRCLUSTER_H 1
 
@@ -17,6 +19,13 @@
 #include "idents/TowerId.h"
 #include "geometry/Point.h"
 
+
+#include "GaudiKernel/IInterface.h"
+
+static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 4, 0);
+
+namespace Event {
+
 /** 
 * @class TkrCluster
 *
@@ -25,16 +34,7 @@
 *
 * Adapted from SiCluster of Jose Hernando
 *
-* @author Tracy Usher, Leon Rochester
-*
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.11 2005/01/25 18:34:25 lsrea Exp $
 */
-
-#include "GaudiKernel/IInterface.h"
-
-static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 4, 0);
-
-namespace Event {
 
     class TkrCluster : virtual public ContainedObject
     {
@@ -75,8 +75,11 @@ namespace Event {
         * @param tkrId TKR Volume ID of cluster
         * @param istrip0  first strip
         * @param istripf  last strip
+        * @param nBad number of bad strips in the cluster
         * @param position global position of cluster center
+        * @param rawToT raw ToT from TkrDigi
         * @param ToT corrected ToT
+        * @param status word containting various useful info
         */
         TkrCluster(idents::TkrId tkrId, int istrip0, int istripf, 
             Point position, int rawToT, float ToT, unsigned int status, int nBad)

@@ -1,6 +1,22 @@
+/** file TkrTrach.h
+* @author The Tracking Software Group
+*
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.7 2005/02/07 20:35:20 lsrea Exp $
 
+*/
 #ifndef TkrTrack_H
 #define TkrTrack_H 
+
+
+#include "GaudiKernel/ObjectVector.h"
+#include "GaudiKernel/ContainedObject.h"
+#include "GaudiKernel/IInterface.h"
+#include "Event/Recon/TkrRecon/TkrTrackHit.h"
+
+// Declare Gaudi object interface ID
+static const CLID& CLID_TkrTrack = InterfaceID("TkrTrack",  1, 0);
+
+namespace Event {  // NameSpace
 
 /** 
 * @class TkrTrack
@@ -21,20 +37,7 @@
 *    (TkrTrackHit), including the resulting track parameters and 
 *    covariance matrices (TkrTrackParams)
 *
-* @author The Tracking Software Group
-*
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.6 2005/01/17 19:12:29 lsrea Exp $
 */
-
-#include "GaudiKernel/ObjectVector.h"
-#include "GaudiKernel/ContainedObject.h"
-#include "GaudiKernel/IInterface.h"
-#include "Event/Recon/TkrRecon/TkrTrackHit.h"
-
-// Declare Gaudi object interface ID
-static const CLID& CLID_TkrTrack = InterfaceID("TkrTrack",  1, 0);
-
-namespace Event {  // NameSpace
 
 class TkrTrack: public TkrTrackHitVec, virtual public ContainedObject
 {    
@@ -47,9 +50,9 @@ public:
    virtual const CLID& clID() const   { return TkrTrack::classID(); }
    static const CLID& classID()       { return CLID_TkrTrack; }
 
-    /// Status word bits organized like:
-    ///        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
-    ///         < Pat Rec Info  > <Pass > < E-Loss> < Track Energy >  <Track Fit Status>
+    // Status word bits organized like:
+    //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
+    //         [ Pat Rec Info  ] [Pass ] [ E-Loss] [ Track Energy ]  [Track Fit Status]
     enum StatusBits {FOUND    = 0x0001,  //Set if track has been "found" by pat rec
                      FILTERED = 0x0002,  //Set if track fit filter stage has been run
                      SMOOTHED = 0x0004,  //Set if track fit smoother has been run

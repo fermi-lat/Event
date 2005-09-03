@@ -1,3 +1,10 @@
+/** @file TkrDiagnostics.h
+*
+* @author Bill Atwood, Leon Rochester, Johann Cohen-Tanugi, Tracy Usher
+*
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrDiagnostics.h,v 1.1 2005/05/26 20:19:39 usher Exp $
+*
+*/
 
 #ifndef TkrDiagnostics_H
 #define TkrDiagnostics_H
@@ -7,19 +14,16 @@
 
 #include "idents/TkrId.h"
 
+static const CLID& CLID_TkrDiagnostics = InterfaceID("TkrDiagnostics",  1, 1);
+
+namespace Event { // Namespace
+
 /** 
 * @class TkrDiagnostics
 *
 * @brief Diagnostics output class
 *
-* @author Bill Atwood, Leon Rochester, Johann Cohen-Tanugi, Tracy Usher
-*
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrDiagnostics.h,v 1.10 2005/03/01 00:52:11 lsrea Exp $
 */
-
-static const CLID& CLID_TkrDiagnostics = InterfaceID("TkrDiagnostics",  1, 1);
-
-namespace Event { // Namespace
 
 class TkrDiagnostics : virtual public DataObject
 {

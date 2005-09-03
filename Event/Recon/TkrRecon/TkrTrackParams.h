@@ -1,6 +1,17 @@
+/** @file TkrTrackParams.h
+*
+* @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
+*
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.3 2004/11/15 21:10:24 usher Exp $
 
+*/
 #ifndef TkrTrackParams_H
 #define TkrTrackParams_H
+
+
+#include <iostream>
+
+namespace Event { //Namespace Event
 
 /** 
 * @class TkrTrackParams
@@ -10,15 +21,7 @@
 *        methods provided in the TkrFitPlane class which owns it.
 * 
 *        This updates the old TkrFitHit class.
-*
-* @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
-*
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.2 2004/11/03 22:05:17 usher Exp $
 */
-
-#include <iostream>
-
-namespace Event { //Namespace Event
 
 // An interface class to be used for filling and retrieving data by "special" helper classes
 class TkrTrackParams;
