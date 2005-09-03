@@ -1,3 +1,9 @@
+/** @file TkrEventParams.h
+*
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.2 2005/06/22 21:31:28 usher Exp $
+*
+*/
+
 #ifndef TkrEventParams_h
 #define TkrEventParams_h
 
@@ -11,13 +17,13 @@
 
 static const CLID& CLID_TkrEventParams = InterfaceID("TkrEventParams", 1, 0);
 
+namespace Event {  // NameSpace
+
 /** @class TkrEventParams
 * @brief Defines the output of the TkrFilterAlg
 * 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.1 2005/06/10 04:23:05 usher Exp $
 */
-namespace Event {  // NameSpace
 
 class TkrEventParams : public DataObject 
 {    

@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.43 2005/06/10 04:23:05 usher Exp $
+// $Id: EventModel.h,v 1.44 2005/07/14 07:32:54 piron Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -102,6 +102,8 @@ public:
         static std::string TkrVertexCol;
         static std::string TkrDiagnostics;
         static std::string TkrEventParams;
+        static std::string TkrTruncatedPlane;
+        static std::string TkrTruncationInfo;
     };
 
 
