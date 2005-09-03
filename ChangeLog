@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Fri Sep  2 19:02:19 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+	TkrDigi.h 
+Log Message:
+* New classes TkrTruncatedPlane and TkrTruncationInfo, and associated changes
+* cleanup of doxygen
+
+    *
+------------------------------------------------------------
 User: golpa  Thu Aug 25 22:22:54 PDT 2005
 Event/cmt
 
