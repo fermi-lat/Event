@@ -1,4 +1,18 @@
 ------------------------------------------------------------
+User: lsrea  Fri Sep  2 19:02:20 PDT 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrDiagnostics.h TkrEventParams.h TkrRecon.h 
+	TkrTrack.h TkrTrackHit.h TkrTrackParams.h TkrVertex.h 
+Added Files:
+	TkrTruncatedPlane.h TkrTruncationInfo.h 
+Log Message:
+* New classes TkrTruncatedPlane and TkrTruncationInfo, and associated changes
+* cleanup of doxygen
+
+    *
+------------------------------------------------------------
 User: lsrea  Fri Sep  2 19:02:19 PDT 2005
 Event/Event/Digi
 
