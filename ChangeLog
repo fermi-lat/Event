@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Fri Sep  2 19:02:21 PDT 2005
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+* New classes TkrTruncatedPlane and TkrTruncationInfo, and associated changes
+* cleanup of doxygen
+
+    *
+------------------------------------------------------------
 User: lsrea  Fri Sep  2 19:02:20 PDT 2005
 Event/doc
 
