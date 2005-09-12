@@ -18,25 +18,24 @@
 * An entity could be an ACD tile or a fiber.  Each of which would contain 
 * 2 PMTs.  There are PHA and discriminator values for each PMT.
 * Thus, there each member variable is an array of two entries.
-* - Low Discriminator enables the PHA value
-* - Veto Discriminator nominal ACD veto signal
-* - High Discriminator is for CAL calibration - CNO
+* - Low Discriminator (Accept Map bit == zero suppression) enables the PHA value
+* - Veto Discriminator (Hit Map bit) nominal ACD veto signal
+* - High (CNO) Discriminator is for CAL calibration
 * So the AcdDigi is comprised of:
 * - AcdId
 * - Energy in MeV - as a check on the pha values
 * - 2 Pulse Height values
-* - 2 Low discriminators
-* - 2 Veto discriminators
-* - 2 High discriminators
+* - 2 Low discriminators (Accept Map)
+* - 2 Veto discriminators (Hit Map)
+* - 2 High (CNO) discriminators, really only used for MC, real data has CNO
+*   stored in GEM.  AcdDigi alg needs to be updated so MC behaves the same
 *             
-* There are no set methods in this class, users are expected to fill
-* the data members through the constructor.
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.18 2004/09/18 18:16:57 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.18.2.1 2005/08/24 19:38:51 heather Exp $
 */
 
-static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 0);
+static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 1);
 
 namespace Event {
     class AcdDigi : virtual public ContainedObject  { 
@@ -92,28 +91,42 @@ namespace Event {
         inline const idents::AcdId getId() const { return m_id; };
         inline const idents::VolumeIdentifier getVolId() const { return m_volId; };
 
+        /// Retrieve string name of the ACD detector as reported by LDF
+        /// Corresponds to the ACD ids we are familiar with
         inline const char* getTileName() const { return m_tileName; };
 
+        /// Retrieve tile number as reported by LDF, which may not correspond
+        /// to accepted ACD ids
         inline int getTileNumber() const { return m_tileNumber; };
         
+        /// Returns MC energy (MeV) deposited in the detector
+        /// strictly here as a check on MC digitization algorithm
         inline double getEnergy() const { return m_energy; };
 
         /// Retrieve pulse height from one PMT
         inline unsigned short getPulseHeight(PmtId id) const { return m_pulseHeight[id]; };
         
+        /// deprecated method name, see getHitMapBit
         inline bool getVeto(PmtId id) const { return m_veto[id]; };
+        /// Denotes that the PMT was above hit (veto) threshold
         inline bool getHitMapBit(PmtId id) const { return m_veto[id]; };
         
+        /// deprecated method name, see getAcceptMapBit
         inline bool getLowDiscrim(PmtId id) const { return m_low[id]; };
+        /// Denotes that the PMT's PHA was read out 
         inline bool getAcceptMapBit(PmtId id) const { return m_low[id]; };
         
+        /// Only useful for MC data for now
         inline bool getHighDiscrim(PmtId id) const { return m_high[id]; };
+        /// Only useful for MC data for now
         inline bool getCno(PmtId id) const { return m_high[id]; };
         
         inline Range getRange(PmtId id) const { return m_range[id]; };
 
-        inline ParityError getParityError(PmtId id) const { return m_error[id]; };
+        //inline ParityError getParityError(PmtId id) const { return m_error[id]; };
+        /// Error bit associated with PHA
         inline ParityError getOddParityError(PmtId id) const { return m_error[id]; };
+        /// Error bit stored in AEM header
         inline ParityError getHeaderParityError(PmtId id) const { return m_error[id+2]; };
 
         /// Serialize the object for writing
@@ -135,7 +148,7 @@ namespace Event {
         /// Acd ID
         idents::AcdId        m_id;
         /// Tile name in char* form, matches idents::AcdId
-        const char*                m_tileName;
+        const char*          m_tileName;
         /// Tile Number as reported from LDF
         int                  m_tileNumber;
         /// Allow one to retrieve dimensions of this volume
@@ -150,10 +163,10 @@ namespace Event {
         /// Now more properly called the accept map bits and sometimes
         // referred to as the zero suppression bits
         bool                 m_low[2];
-        /// 1 bit High thresholdi CNO discriminator 
+        /// 1 bit High threshold CNO discriminator 
         /// used for calibration of the CAL
         /// This really should not be stored here any longer.. we only set
-        /// CNO per FREE board..so not so easy to know which PMT caused it
+        /// CNO per FREE board.  This data member remains for the MC.
         bool                 m_high[2];
         /// Range setting either LOW (0) or HIGH (1)
         Range                m_range[2];
