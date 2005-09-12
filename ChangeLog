@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 12 09:48:34 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+      Tag: GlastRelease-v6r8
+	AcdDigi.h 
+Log Message:
+general clean up after talking to Alex at collaboration meeting
+    *
+------------------------------------------------------------
 User: lsrea  Fri Sep  2 19:02:21 PDT 2005
 Event/src/TopLevel
 
