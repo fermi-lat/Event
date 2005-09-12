@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 12 13:35:53 PDT 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-v6r8
+	AcdRecon.h 
+Log Message:
+store id associated with ActiveDistance
+    *
+------------------------------------------------------------
 User: heather  Mon Sep 12 09:48:34 PDT 2005
 Event/Event/Digi
 
