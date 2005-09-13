@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Sep 12 23:21:03 PDT 2005
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+store AcdId for ActiveDistance
+    *
+------------------------------------------------------------
 User: heather  Mon Sep 12 23:17:17 PDT 2005
 Event/doc
 
