@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.44 2005/07/14 07:32:54 piron Exp $
+// $Id: EventModel.h,v 1.45 2005/09/03 02:02:20 lsrea Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -58,6 +58,7 @@ public:
         static std::string McParticleCol;
         static std::string McPositionHitCol;
         static std::string McIntegratingHitCol;
+        static std::string McTrajectoryCol;
         static std::string McTkrStripCol;
         static std::string D2EntryCol;
         static std::string ExposureCol;

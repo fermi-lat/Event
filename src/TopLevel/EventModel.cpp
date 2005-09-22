@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.71 2005/07/14 07:32:54 piron Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.72 2005/09/03 02:02:21 lsrea Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -20,6 +20,7 @@ std::string EventModel::MC::McParticleCol             = EventModel::MC::Event  +
 
 std::string EventModel::MC::McPositionHitCol          = EventModel::MC::Event  + "/PositionHitsCol";
 std::string EventModel::MC::McIntegratingHitCol       = EventModel::MC::Event  + "/IntegratingHitsCol";
+std::string EventModel::MC::McTrajectoryCol           = EventModel::MC::Event  + "/TrajectoryCol";
 std::string EventModel::MC::McTkrStripCol             = EventModel::MC::Event  + "/StripCol";
 std::string EventModel::MC::D2EntryCol                = EventModel::MC::Event  + "/D2EntryCol";
 std::string EventModel::MC::ExposureCol               = EventModel::MC::Event  + "/ExposureCol";
