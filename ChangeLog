@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Sep 22 12:33:41 PDT 2005
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrEventParams.h 
+Log Message:
+Modifications necessary to support root io of McTrajectory
+    *
+------------------------------------------------------------
 User: usher  Thu Sep 22 12:33:40 PDT 2005
 Event/Event/MonteCarlo
 
