@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Sep 22 12:33:43 PDT 2005
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Modifications necessary to support root io of McTrajectory
+    *
+------------------------------------------------------------
 User: usher  Thu Sep 22 12:33:41 PDT 2005
 Event/Event/Recon/TkrRecon
 
