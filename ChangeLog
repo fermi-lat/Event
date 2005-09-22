@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Sep 22 12:33:40 PDT 2005
+Event/Event/MonteCarlo
+
+Modified Files:
+	McTrajectory.h 
+Log Message:
+Modifications necessary to support root io of McTrajectory
+    *
+------------------------------------------------------------
 User: heather  Thu Sep 22 01:26:43 PDT 2005
 Event/doc
 
