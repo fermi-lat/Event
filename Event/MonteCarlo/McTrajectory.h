@@ -24,7 +24,7 @@
  *
  * @author:      R.Giannitrapani 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.2 2003/07/04 22:14:12 burnett Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.3 2004/09/18 18:16:57 usher Exp $
  */
 
 #include "GaudiKernel/IInterface.h"
@@ -52,7 +52,7 @@ class McTrajectory : virtual public ContainedObject {
     McParticle* getMcParticle();
 
     /// Get the 3d points
-    std::vector<Hep3Vector>& getPoints(){return m_points;}
+    const std::vector<Hep3Vector>& getPoints() const {return m_points;}
 
     /// get, set charge
     int getCharge() const { return m_charge; }
