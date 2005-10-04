@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: burnett  Tue Oct  4 11:41:29 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+	GltDigi.h 
+Log Message:
+add access functions to return OR of CAL trigger bits
+    *
+------------------------------------------------------------
 User: usher  Sat Sep 24 10:53:00 PDT 2005
 Event/doc
 
