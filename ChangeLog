@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: fewtrell  Tue Oct  4 17:17:34 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+	GltDigi.h 
+Log Message:
+Cal trigger info now stored by xtal-face instead of simply by tower.
+Created Event::GltDigi::CalTriggerMap typdef for this.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Oct  4 11:41:30 PDT 2005
 Event/doc
 
