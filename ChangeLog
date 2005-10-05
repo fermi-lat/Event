@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: fewtrell  Wed Oct  5 12:29:27 PDT 2005
+Event/Event/Digi
+
+Modified Files:
+	GltDigi.h 
+Log Message:
+updated internal storage of Cal trigger info from map to set.
+interface now is independent of implementation.
+
+    *
+------------------------------------------------------------
 User: burnett  Tue Oct  4 18:21:27 PDT 2005
 Event/Event/Digi
 
