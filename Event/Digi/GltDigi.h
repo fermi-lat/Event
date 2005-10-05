@@ -1,7 +1,7 @@
 /** @file GltDigi.h
     @brief Definition and implementation of GltDigi
 
-    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.4 2005/10/04 18:41:29 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.5 2005/10/05 00:17:34 fewtrell Exp $
 
 
 */
@@ -22,7 +22,7 @@
  * 
  */
 
-static const CLID& CLID_GltDigi = InterfaceID("GltDigi", 1, 0);
+static const CLID& CLID_GltDigi = InterfaceID("GltDigi", 2, 0);
 
 namespace Event {
 
