@@ -1,13 +1,14 @@
 /** @file GltDigi.h
     @brief Definition and implementation of GltDigi
 
-    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.6 2005/10/05 01:21:27 burnett Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.7 2005/10/05 19:29:27 fewtrell Exp $
 
 
 */
 #ifndef Event_GltDigi_H
 #define Event_GltDigi_H 1
 
+#include "idents/CalXtalId.h"
 #include "GaudiKernel/DataObject.h"
 #include "GaudiKernel/IInterface.h"
 #include <vector>
