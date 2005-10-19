@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Oct 19 12:03:49 PDT 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-HEAD1654
+	AcdRecon.h 
+Log Message:
+temp update to AcdRecon to store new active dist
+    *
+------------------------------------------------------------
 User: burnett  Wed Oct  5 17:31:42 PDT 2005
 Event/doc
 
