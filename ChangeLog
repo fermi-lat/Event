@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Oct 20 22:01:48 PDT 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-HEAD1654
+	AcdRecon.h 
+Log Message:
+fixes up AnalysisNtuple unit test by initializing rowActDist3DCol to have content
+    *
+------------------------------------------------------------
 User: heather  Wed Oct 19 12:05:30 PDT 2005
 Event/doc
 
