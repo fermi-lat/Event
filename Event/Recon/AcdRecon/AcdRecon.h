@@ -33,7 +33,7 @@ static const CLID& CLID_AcdRecon = InterfaceID("AcdRecon", 2, 0);
 
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.11 2005/09/22 08:24:24 heather Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.11.2.1 2005/10/19 19:03:49 heather Exp $          
 */
 
 namespace Event {
@@ -73,7 +73,10 @@ namespace Event {
 	    m_energyCol(energyCol),            
             m_ribbon_actDist(-2000.0),
 	    m_ribbon_actDist_id(idents::AcdId(0,0))            
-        {};
+        {
+            m_actDist3D = -2000.0;
+            m_rowActDist3DCol.resize(4, -2000.0);
+        };
 
 
         AcdRecon(double e, double ribbonE, int count, int ribbonCount, 

@@ -4,7 +4,9 @@
  * package manager:T.Burnett
  *
  *
- * v11r5p1g0 19-oct-05 HMK Temporary update to AcdRecon to store new ActDist
+ * v11r5p1gr1 20-oct-05 HMK patch that initializes row act dist col to have 
+                            content - makes test_AnalysisNtuple.exe work
+ * v11r5p1gr0 19-oct-05 HMK Temporary update to AcdRecon to store new ActDist
  * v11r5p1 05-oct-05 THB (from Zach) update GLTDigi for more complete information on CAL
  * v11r5   04-oct-05 THB add access function to GLTDigi to return OR of tower bits
  * v11r4p1 24-Sep-05 TU  Minor changes to support I/O of McTrajectory's
