@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: echarles  Wed Nov  2 16:19:29 PST 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-v7r2
+	AcdRecon.h 
+Added Files:
+      Tag: GlastRelease-v7r2
+	AcdTkrIntersection.h 
+Log Message:
+
+Added AcdTkrIntersection to AcdRecon to store the data about extrapolation of Tracks to the Acd.
+
+
+    *
+------------------------------------------------------------
 User: echarles  Wed Nov  2 16:17:39 PST 2005
 Event/src/Recon/AcdRecon
 
