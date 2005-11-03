@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Wed Nov  2 18:14:53 PST 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-v7r2
+	AcdRecon.h 
+Log Message:
+fix signature of Event::AcdRecon::init() to put optional arguments last
+    *
+------------------------------------------------------------
 User: echarles  Wed Nov  2 16:20:07 PST 2005
 Event/src/Recon/AcdRecon
 
