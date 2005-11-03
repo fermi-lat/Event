@@ -34,7 +34,7 @@ static const CLID& CLID_AcdRecon = InterfaceID("AcdRecon", 2, 0);
 
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.11 2005/09/22 08:24:24 heather Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdRecon.h,v 1.11.4.1 2005/11/03 00:19:29 echarles Exp $          
 */
 
 namespace Event {
@@ -119,9 +119,9 @@ namespace Event {
             const std::vector<double>&  rowActDist,
             const std::vector<idents::AcdId>& idCol, 
             const std::vector<double>&  energyCol,
+	    const std::vector<AcdTkrIntersection*>& acdTkrIntersections,
             double ribbonActDist=2000.0, 
-	    const idents::AcdId &ribActDistId=idents::AcdId(0,0),
-	    const std::vector<AcdTkrIntersection*>& acdTkrIntersections);
+	    const idents::AcdId &ribActDistId=idents::AcdId(0,0)) ;
 
         void clear();
 
