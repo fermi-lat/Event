@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Nov  3 11:05:15 PST 2005
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastRelease-v7r2
+	AcdRecon.h 
+Log Message:
+gobble up the 3D ActDist
+    *
+------------------------------------------------------------
 User: echarles  Wed Nov  2 18:14:53 PST 2005
 Event/Event/Recon/AcdRecon
 
