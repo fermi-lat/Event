@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Nov  8 17:11:10 PST 2005
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+handle new corner gaps and merge new AcdIntersect into main
+    *
+------------------------------------------------------------
 User: heather  Tue Nov  8 17:11:09 PST 2005
 Event/cmt
 
