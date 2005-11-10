@@ -25,7 +25,7 @@ static const CLID& CLID_CalDigi = InterfaceID("CalDigi", 1, 0);
  *
  * @author E. Grove
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.18 2003/12/08 12:57:25 berthon Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/CalDigi.h,v 1.19 2004/09/18 18:16:57 usher Exp $
 */
 
 namespace Event {
@@ -143,7 +143,7 @@ public:
     }
     
     /// Retrieve ranges and pulse heights from both ends of selected readout
-    inline const CalXtalReadout* getXtalReadout(short readoutIndex)
+    inline const CalXtalReadout* getXtalReadout(short readoutIndex) const
     {
         if ( readoutIndex < (short)m_readout.size() )
             return &(m_readout[readoutIndex]);
