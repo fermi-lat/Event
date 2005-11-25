@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.72 2005/09/03 02:02:21 lsrea Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.73 2005/09/22 19:33:44 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -65,7 +65,7 @@ std::string EventModel::CalRecon::CalXtalRecCol       = EventModel::CalRecon::Ev
 //@@@FP 07/09/05
 std::string EventModel::CalRecon::CalMipTrackCol      = EventModel::CalRecon::Event + "/CalMipTrackCol";
 std::string EventModel::CalRecon::CalClusterCol       = EventModel::CalRecon::Event + "/CalClusterCol";
-std::string EventModel::CalRecon::CalEventEnergy      = EventModel::CalRecon::Event + "/CalEventEnergy";
+std::string EventModel::CalRecon::CalEventEnergyCol   = EventModel::CalRecon::Event + "/CalEventEnergyCol";
 std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Event + "/CalClusterHitTab";
 //@@@FP 07/09/05
 //std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";

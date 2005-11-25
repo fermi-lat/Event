@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.2 2005/07/13 15:42:28 chamont Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.3 2005/07/26 17:14:45 usher Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -49,7 +49,7 @@ Event::CalParams::CalParams(double energy, double eneError,
     m_clusterAxis     = Vector(xAxis,yAxis,zAxis);
     return;
 }
-void Event::CalParams::initDataMembers()
+void Event::CalParams::clear()
 {
     m_clusterCentroid = Point(0.,0.,0.);
     m_clusterAxis     = Vector(0.,0.,0.);
