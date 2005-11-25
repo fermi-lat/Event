@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: chamont  Fri Nov 25 08:33:56 PST 2005
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+review CalRecon status bits, and replace CalEventEnergy singleton with CalEventEnergyCol collection
+    *
+------------------------------------------------------------
+User: chamont  Fri Nov 25 08:33:56 PST 2005
 Event/src/Recon/CalRecon
 
 Modified Files:
