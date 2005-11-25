@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.45 2005/09/03 02:02:20 lsrea Exp $
+// $Id: EventModel.h,v 1.46 2005/09/22 19:33:43 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -122,7 +122,7 @@ public:
        //@@@FP 07/09/05
        static std::string CalMipTrackCol;
        static std::string CalClusterCol;
-       static std::string CalEventEnergy;
+       static std::string CalEventEnergyCol;
        static std::string CalClusterHitTab;
        //@@@FP 07/09/05
        // idem

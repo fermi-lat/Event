@@ -14,7 +14,7 @@
 * 
 * @author Bill Atwood, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.2 2005/07/13 15:42:28 chamont Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.3 2005/07/14 22:38:25 usher Exp $
 */
 
 #include <iostream>
@@ -26,8 +26,11 @@ class CalParams
 {
 public:
     /// Default constructor
-    CalParams() {initDataMembers();}
+    CalParams() { clear() ; }
 
+    /// reset method
+    void clear() ;
+  
     /// Constructor given Points, Vectors and matrices
     CalParams(double energy, double eneError,
               const Point&  centroid, const HepMatrix& centroidErr,
@@ -120,9 +123,7 @@ public:
     }
 
 private:
-    /// Private intialization method
-    void initDataMembers();
-  
+
     /// Energy and associated error
     double m_energy;
     double m_eneError;
