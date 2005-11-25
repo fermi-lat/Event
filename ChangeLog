@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: chamont  Fri Nov 25 08:33:55 PST 2005
-Event/doc
-
-Modified Files:
-	release.notes 
-Log Message:
-review CalRecon status bits, and replace CalEventEnergy singleton with CalEventEnergyCol collection
-    *
-------------------------------------------------------------
-User: chamont  Fri Nov 25 08:33:55 PST 2005
-Event/Event/TopLevel
-
-Modified Files:
-	EventModel.h 
-Log Message:
-review CalRecon status bits, and replace CalEventEnergy singleton with CalEventEnergyCol collection
-    *
-------------------------------------------------------------
-User: chamont  Fri Nov 25 08:33:55 PST 2005
-Event/Event/Recon/CalRecon
-
-Modified Files:
-	CalCluster.h CalCorToolResult.h CalEventEnergy.h CalParams.h 
-Log Message:
-review CalRecon status bits, and replace CalEventEnergy singleton with CalEventEnergyCol collection
-    *
-------------------------------------------------------------
 User: heather  Thu Nov 10 09:23:35 PST 2005
 Event/cmt
 
