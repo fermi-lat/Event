@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Jan  4 17:58:26 PST 2006
+Event/src/Recon/AcdRecon
+
+Added Files:
+	AcdHit.cxx AcdPocaMap.cxx AcdTkrPoca.cxx 
+Log Message:
+added missing cxx file for AcdRecon stuff
+    *
+------------------------------------------------------------
+User: echarles  Wed Jan  4 17:58:26 PST 2006
 Event/doc
 
 Modified Files:
