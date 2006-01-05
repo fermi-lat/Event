@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Jan  4 16:54:59 PST 2006
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Added AcdHit AcdPocaMap AcdTkrPoca to AcdRecon to store Acd -> Track correlations
+    *
+------------------------------------------------------------
+User: echarles  Wed Jan  4 16:54:59 PST 2006
 Event/Event/Recon/AcdRecon
 
 Modified Files:
