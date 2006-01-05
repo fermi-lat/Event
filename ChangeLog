@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Jan  4 17:58:26 PST 2006
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+added missing cxx file for AcdRecon stuff
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r10, operation: add
 Package: Event
