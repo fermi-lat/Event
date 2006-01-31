@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McTrajectory.cxx,v 1.8 2002/05/10 01:56:21 richard Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McTrajectory.cxx,v 1.1 2002/07/18 08:33:23 riccardo Exp $
 
 #include <iostream>
 #include <math.h>
@@ -30,7 +30,7 @@ void McTrajectory::setMcParticle( SmartRef<McParticle> value )
 }
 
 
-void McTrajectory::addPoints(std::vector<Hep3Vector>& points)
+void McTrajectory::addPoints(std::vector<CLHEP::Hep3Vector>& points)
 {
   m_points = points;
 }

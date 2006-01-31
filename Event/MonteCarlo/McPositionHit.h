@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.21 2005/05/26 20:19:36 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.22 2005/07/12 15:09:20 burnett Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -103,11 +103,11 @@ class McPositionHit : virtual public ContainedObject {
     void setDepositedEnergy( double value );
     /// Retrieve depositing particle's energy
     double particleEnergy() const;
-    Hep3Vector particleMomentum() const;
-    HepLorentzVector particleFourMomentum() const;
+    CLHEP::Hep3Vector particleMomentum() const;
+    CLHEP::HepLorentzVector particleFourMomentum() const;
     /// Update depositing particle's energy
     ///void setParticleEnergy( double value );
-    void setParticle4Momentum( const HepLorentzVector& fourMom);
+    void setParticle4Momentum( const CLHEP::HepLorentzVector& fourMom);
 
     /// Retrieve primary-origin flag
     bool primaryOrigin() const;
@@ -166,18 +166,18 @@ class McPositionHit : virtual public ContainedObject {
     /// Volume ID
     idents::VolumeIdentifier m_volumeID;
     /// Local coordinates entry point
-    HepPoint3D              m_entry;
+    HepPoint3D               m_entry;
     /// Local coordinates exit point
-    HepPoint3D              m_exit;
+    HepPoint3D               m_exit;
     /// Global coordinates entry point
-    HepPoint3D              m_globalEntry;
+    HepPoint3D               m_globalEntry;
     /// Global coordinates exit point
-    HepPoint3D              m_globalExit;
+    HepPoint3D               m_globalExit;
     /// Deposited energy
-    double                  m_depositedEnergy;
+    double                   m_depositedEnergy;
     /// Depositing particle's energy
-    double                  m_particleEnergy;
-    HepLorentzVector        m_particleFourMomentum;
+    double                   m_particleEnergy;
+    CLHEP::HepLorentzVector  m_particleFourMomentum;
     /// Time of flight
     double                  m_timeOfFlight;
     /// ID of the McParticle causing the hit
