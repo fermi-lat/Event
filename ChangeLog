@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan 31 13:37:05 PST 2006
+Event/Event/MonteCarlo
+
+Modified Files:
+      Tag: GR-v7r3p20-newext
+	McIntegratingHit.h McParticle.h McPositionHit.h McTrajectory.h 
+Log Message:
+    *
+------------------------------------------------------------
 User: usher  Tue Jan 31 13:37:02 PST 2006
 Event
 
