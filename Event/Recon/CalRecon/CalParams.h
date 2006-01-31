@@ -14,7 +14,7 @@
 * 
 * @author Bill Atwood, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.2 2005/07/13 15:42:28 chamont Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.3 2005/07/14 22:38:25 usher Exp $
 */
 
 #include <iostream>
@@ -30,8 +30,8 @@ public:
 
     /// Constructor given Points, Vectors and matrices
     CalParams(double energy, double eneError,
-              const Point&  centroid, const HepMatrix& centroidErr,
-              const Vector& axis,     const HepMatrix& axisErr);
+              const Point&  centroid, const CLHEP::HepMatrix& centroidErr,
+              const Vector& axis,     const CLHEP::HepMatrix& axisErr);
 
     /// Direct construction from all the elements (the old fashioned way)
     CalParams(double energy, double eneError,
@@ -53,7 +53,7 @@ public:
     inline const Point&  getCentroid()     const {return m_clusterCentroid;}
 
     /// Errors in a HepMatrix
-    HepMatrix            getCentroidErrs() const ;
+    CLHEP::HepMatrix     getCentroidErrs() const ;
 
     /// Direct access to errors
     inline double        getxPosxPos()     const {return m_cenxx; }
@@ -67,7 +67,7 @@ public:
     inline const Vector& getAxis()         const {return m_clusterAxis;}
 
     /// Errors in a HepMatrix
-    HepMatrix            getAxisErrs()     const ;
+    CLHEP::HepMatrix     getAxisErrs()     const ;
 
     /// Direct access to errors
     inline double        getxDirxDir()     const {return m_axisxx; }
@@ -90,7 +90,7 @@ public:
     /// Set parameters for centroid
     inline void setCentroid(const Point& pos)   {m_clusterCentroid = pos; }
 
-    void        setCentroidErrs(const HepMatrix& errs);
+    void        setCentroidErrs(const CLHEP::HepMatrix& errs);
 
     /// Set errors
     inline void setxDirxDir(double val)         {m_cenxx = val; }
@@ -103,7 +103,7 @@ public:
     /// Set parameters for axis
     inline void setAxis(const Vector& axis)     {m_clusterAxis = axis; }
 
-    void        setAxisErrs(const HepMatrix& errs);
+    void        setAxisErrs(const CLHEP::HepMatrix& errs);
 
     /// Set errors
     inline void setxPosxPos(double val)         {m_axisxx = val; }
