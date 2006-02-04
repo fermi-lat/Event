@@ -39,7 +39,7 @@ static const CLID& CLID_CalXtalRecData = InterfaceID("CalXtalRecData", 1, 0);
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.11 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.12 2005/11/10 17:22:22 heather Exp $
 */
 namespace Event 
 {
@@ -132,10 +132,10 @@ namespace Event
         
         virtual ~CalXtalRecData() { };
         
-        /// function initializing crystal identification and readout mode
+        /// function initializing crystal identification, readout mode, and clearing rec data
         void initialize (idents::CalXtalId::CalTrigMode m,
                          idents::CalXtalId id)
-        {m_mode = m; m_xtalId = id; }
+        {m_mode = m; m_xtalId = id; m_recData.clear() ; }
         
         /// Retrieve readout mode
         inline const idents::CalXtalId::CalTrigMode getMode() const
