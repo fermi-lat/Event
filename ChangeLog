@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: chamont  Sat Feb  4 02:48:13 PST 2006
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Small fix in CalXtalRecData::initialize()
+    *
+------------------------------------------------------------
 User: chamont  Sat Feb  4 02:48:12 PST 2006
 Event/Event/Recon/CalRecon
 
