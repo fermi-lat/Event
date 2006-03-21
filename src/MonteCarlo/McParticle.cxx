@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.18 2002/09/24 16:56:50 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.19 2003/07/25 16:34:48 usher Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -21,13 +21,13 @@ bool McParticle::primaryParticle() const
 }
 
 void McParticle::init( McParticle* mother,         
-                      StdHepId id, 
-        unsigned int flags,
-        const HepLorentzVector& initialMomentum,
-        const HepLorentzVector& finalMomentum,
-        const HepPoint3D& initialPosition,
-        const HepPoint3D& finalPosition, 
-        const std::string process)
+                       StdHepId id, 
+                       unsigned int flags,
+                       const CLHEP::HepLorentzVector& initialMomentum,
+                       const CLHEP::HepLorentzVector& finalMomentum,
+                       const HepPoint3D& initialPosition,
+                       const HepPoint3D& finalPosition, 
+                       const std::string process)
 {
     initialize(mother, id, flags, initialMomentum, initialPosition,process);
     finalize(finalMomentum, finalPosition);
@@ -36,7 +36,7 @@ void McParticle::init( McParticle* mother,
 void McParticle::initialize( McParticle* mother,         
                       StdHepId id, 
         unsigned int flags,
-        const HepLorentzVector& initialMomentum,
+        const CLHEP::HepLorentzVector& initialMomentum,
         const HepPoint3D& initialPosition, const std::string process)
 {
     m_mother = mother;
@@ -48,7 +48,7 @@ void McParticle::initialize( McParticle* mother,
     if( mother != this) mother->m_daughters.push_back(this);
 }
 
-void McParticle::finalize(const HepLorentzVector& finalMomentum,
+void McParticle::finalize(const CLHEP::HepLorentzVector& finalMomentum,
         const HepPoint3D& finalPosition)
 {
     m_finalFourMomentum = finalMomentum;
@@ -69,11 +69,11 @@ const HepPoint3D& McParticle::finalPosition()const
 {
     return m_finalPosition;
 }
-const HepLorentzVector&  McParticle::initialFourMomentum()const
+const CLHEP::HepLorentzVector&  McParticle::initialFourMomentum()const
 {
     return m_initialFourMomentum;
 }
-const HepLorentzVector&  McParticle::finalFourMomentum()const
+const CLHEP::HepLorentzVector&  McParticle::finalFourMomentum()const
 {
     return m_finalFourMomentum;
 }

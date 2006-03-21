@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/Attic/AcdTkrIntersection.cxx,v 1.1.2.1 2005/11/03 00:20:07 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.2 2005/11/09 01:11:10 heather Exp $
 //
 //  Implementation file of AcdTkrIntersection and AcdTkrIntersectionCol classes
 //  
@@ -8,7 +8,6 @@
 //    Eric Charles
 //
 //
-
 #include "Event/Recon/AcdRecon/AcdTkrIntersection.h"
 
 #include "GaudiKernel/MsgStream.h"
@@ -19,7 +18,7 @@ using namespace Event;
 
 AcdTkrIntersection::AcdTkrIntersection(const idents::AcdId& acdId, int trackIndex,
 				       const Point& globalPosition, 
-				       const double localPosition[2], const HepMatrix& localCovMatrix,
+				       const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
 				       double arcLengthToIntersection, double pathLengthInTile,
 				       unsigned char tileHit) {
   

@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McIntegratingHit.cxx,v 1.12 2002/07/18 08:33:23 riccardo Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McIntegratingHit.cxx,v 1.13 2002/08/08 03:26:01 heather Exp $
 
 #include <iostream>
 #include "CLHEP/Geometry/Point3D.h"
@@ -128,8 +128,8 @@ void McIntegratingHit::addEnergyItem(double energy, Particle p, const HepPoint3D
 
     m_energyArray[p] += energy;
 
-    HepPoint3D        position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
-    m_totalEnergy      += energy;
+    HepPoint3D position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
+    m_totalEnergy += energy;
     m_moment1seed += energy * position;
     m_moment2seed += energy * position2;
 }
@@ -142,7 +142,7 @@ void McIntegratingHit::addEnergyItem(const double& energy, Event::McParticle* t,
 
     m_energyItem.push_back( std::pair<Event::McParticle*, double>(t, energy));
 
-    HepPoint3D        position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
+    HepPoint3D position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
     m_totalEnergy      += energy;
     m_moment1seed += energy * position;
     m_moment2seed += energy * position2;
@@ -155,7 +155,7 @@ void McIntegratingHit::addEnergyItem(const double& energy, SmartRef<Event::McPar
     //    Update the total energy and moments.
 
     m_energyItem.push_back( std::pair<Event::McParticle*, double>(t, energy));
-    HepPoint3D        position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
+    HepPoint3D position2 = HepPoint3D(position.x()*position.x(), position.y()*position.y(), position.z()*position.z());
     m_totalEnergy      += energy;
     m_moment1seed += energy * position;
     m_moment2seed += energy * position2;
