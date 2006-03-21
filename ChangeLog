@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Mar 20 17:29:45 PST 2006
+Event/src/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.cxx McParticle.cxx McPositionHit.cxx 
+	McTrajectory.cxx 
+Log Message:
+    *
+------------------------------------------------------------
 User: usher  Mon Mar 20 17:29:44 PST 2006
 Event/Event/Utilities
 
