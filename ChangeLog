@@ -1,5 +1,13 @@
 ------------------------------------------------------------
 User: usher  Mon Mar 20 17:29:45 PST 2006
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrIntersection.cxx 
+Log Message:
+    *
+------------------------------------------------------------
+User: usher  Mon Mar 20 17:29:45 PST 2006
 Event/src/MonteCarlo
 
 Modified Files:
