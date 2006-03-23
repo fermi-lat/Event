@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Mar 22 22:26:52 PST 2006
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+use v3 CLHEP
+    *
+------------------------------------------------------------
 User: usher  Mon Mar 20 17:29:45 PST 2006
 Event/src/Recon/CalRecon
 
