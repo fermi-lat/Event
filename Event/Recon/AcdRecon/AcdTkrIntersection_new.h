@@ -34,33 +34,29 @@ namespace Event
   
   class AcdTkrIntersection 
   {
-    
-  public:
 
-    AcdTkrIntersection();
+  public:
     
-    AcdTkrIntersection(const idents::AcdId& acdId, int trackIndex, 
-		       const Point& globalPosition, 
-		       const double localPosition[2], const HepMatrix& localCovMatrix,
-		       double arcLengthToIntersection, double pathLengthInTile,
-		       unsigned char tileHit, double cosTheta);
+    AcdTkrIntersection(int trackIndex, 
+		       const Point& globalPosition, 		       
+		       double arcLength,
+		       const Event::AcdTkrLocalCoords& local,
+		       unsigned char tileHit);
 
     virtual ~AcdTkrIntersection() {};
     
     /// Direct access to parameters
 
-    /// Which tile should be hit
-    inline const idents::AcdId& getTileId()      const {return m_tileId; };
     /// Which track did the hitting
-    inline int     getTrackIndex()          const {return m_trackIndex; };
+    inline int          getTrackIndex()          const {return m_trackIndex; };
 
     /// Location of hit in global coordinates
     inline const Point& getGlobalPosition()      const {return m_location;    };
     inline Point&       getGlobalPosition()            {return m_location;    };
     
     /// Location (and errors) of hit in tile coordinates
-    inline double  getLocalX()              const {return m_localX; };
-    inline double  getLocalY()              const {return m_localY; };
+    inline double  getActiveX()             const {return m_activeX; };
+    inline double  getActiveY()             const {return m_activeY; };
     inline double  getLocalXXCov()          const {return m_localXXCov; };
     inline double  getLocalYYCov()          const {return m_localYYCov; };
     inline double  getLocalXYCov()          const {return m_localXYCov; };
@@ -69,18 +65,33 @@ namespace Event
     inline double  getArcLengthToIntersection() const { return m_arcLengthToIntersection; } ;
     /// Path length of track through tile
     inline double  getPathLengthInTile()    const { return m_pathlengthInTile; } ;
-    /// Angle of track w.r.t. detector element
-    inline double getCosTheta() const { return m_cosTheta; }
 
     /// mask to say if the tile was hit
     inline unsigned char tileHit() const { return m_tileHit; };
-    
+
     /// set everything at once
     void set(const idents::AcdId& acdId, int trackIndex, 
 	     const Point& globalPosition, 
 	     const double localPosition[2], const HepMatrix& localCovMatrix,
 	     double arcLengthToIntersection, double pathLengthInTile,
-	     unsigned char tileHit, double cosTheta);
+	     unsigned char tileHit);
+        
+    // set the individual values (uncomment as needed)
+    //inline void setAcdId(const idents::AcdId& val) { m_tileId = val; };
+    //inline void setTrackIndex(int val) { m_trackIndex = val; };
+    //inline void setGlobalPosition(const Point& val) { m_location = val; };
+    //inline void setLocalPosition(const double localPosition[2]) {
+    //  m_localX = localPosition[0];
+    //  m_localY = localPosition[1];
+    //};
+    inline void setCovTerms(double XX, double YY, double XY) {
+      m_localXXCov = XX;
+      m_localYYCov = YY;
+      m_localXYCov = XY;      
+    }
+    //inline void setArcLength(double val) { m_arcLengthToIntersection = val; };
+    inline void setPathLength(double val) { m_pathlengthInTile = val; };
+    inline void setTileHit(unsigned char val) { m_tileHit = val; };
 
     virtual void writeOut(MsgStream& stream) const;
     
@@ -117,9 +128,6 @@ namespace Event
     ///  Mask to store tile hit
     unsigned char m_tileHit;
 
-    /// Angle of track w.r.t. detector element
-    double    m_cosTheta;
-
   };
 
    
@@ -141,7 +149,7 @@ namespace Event
    *       changes in AcdTrkIntersectionAlg
    */
     
-    
+
   class AcdTkrIntersectionCol : public DataObject, public std::vector<AcdTkrIntersection*> 
   {
   public:
@@ -181,7 +189,7 @@ namespace Event
     virtual void ini();
         
   };
-    
-};
+
+}
 
 #endif
