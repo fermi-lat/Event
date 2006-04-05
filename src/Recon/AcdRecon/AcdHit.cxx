@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/Acdhit.cxx,v 1.2 2005/11/09 01:11:10 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.1 2006/01/05 01:58:26 echarles Exp $
 //
 //  Implementation file of AcdHit and AcdHitCol classes
 //  
@@ -34,12 +34,17 @@ AcdHit::AcdHit(const Event::AcdDigi& digi, float mipsPmtA, float mipsPmtB) {
 
 /// Constructor for use in persistent -> transient conversion, 
 /// Takes arguements as they are stored in ROOT
-AcdHit::AcdHit(const idents::AcdId& id, 
-	       unsigned short flagsA, unsigned short flagsB, 
+AcdHit::AcdHit(const idents::AcdId& id, unsigned short flagsA, unsigned short flagsB, 
 	       unsigned short phaA, unsigned short phaB,
 	       float mipsPmtA, float mipsPmtB) {
-  //ini();
-  
+  set(id,flagsA,flagsB,phaA,phaB,mipsPmtA,mipsPmtB);
+}
+
+
+void AcdHit::set(const idents::AcdId& id, 
+		 unsigned short flagsA, unsigned short flagsB, 
+		 unsigned short phaA, unsigned short phaB,
+		 float mipsPmtA, float mipsPmtB) {
   // just copy everything
   m_acdId = id;
   m_flags[A] = flagsA;
@@ -49,8 +54,6 @@ AcdHit::AcdHit(const idents::AcdId& id,
   m_mipsPmt[A] = mipsPmtA;
   m_mipsPmt[B] = mipsPmtB;
 }
-
-
 
 void AcdHit::writeOut(MsgStream& stream) const
 // Purpose: provide ascii output of some data members for

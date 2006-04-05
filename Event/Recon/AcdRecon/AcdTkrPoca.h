@@ -28,7 +28,7 @@ static const CLID& CLID_AcdTkrPocaCol = InterfaceID("AcdTkrPocaCol", 1, 0);
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoca.h,v 1.2 2005/11/09 01:11:09 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoca.h,v 1.1 2006/01/05 00:54:59 echarles Exp $
 */
 
 namespace Event
@@ -67,6 +67,14 @@ namespace Event
 
     /// Destructor is trivial
     virtual ~AcdTkrPoca() {;}
+
+    /// set all the values
+    void set(const idents::AcdId& acdId, int trackIndex,
+	     double doca, double docaErr, unsigned docaRegion,
+	     const Point& poca, const Event::TkrTrackParams& paramsAtPoca);
+
+    /// set only some of the values
+    inline void setDocaErr(double val) { m_docaErr = val; };
 
     /// Return the AcdId of the hit tile or ribbon
     inline const idents::AcdId& acdId() const {

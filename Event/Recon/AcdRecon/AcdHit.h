@@ -24,7 +24,7 @@ static const CLID& CLID_AcdHitCol = InterfaceID("AcdHitCol", 1, 0);
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.2 2005/11/09 01:11:09 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.1 2006/01/05 00:54:59 echarles Exp $
 */
 
 namespace Event
@@ -92,6 +92,11 @@ namespace Event
     virtual ~AcdHit() {};
     
     /// Direct access to parameters
+
+    /// set everything at oncer
+    void set(const idents::AcdId&, unsigned short flagsA, unsigned short flagsB, 
+	     unsigned short phaA, unsigned short phaB,
+	     float mipsPmtA, float mipsPmtB);
 
     /// Returns the id of the tile or ribbon
     inline const idents::AcdId& getAcdId() const { return m_acdId; };
