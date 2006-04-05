@@ -1,4 +1,20 @@
 ------------------------------------------------------------
+User: echarles  Tue Apr  4 19:17:48 PDT 2006
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	AcdHit.h AcdPocaMap.h AcdRecon.h AcdTkrIntersection.h 
+	AcdTkrPoca.h 
+Added Files:
+      Tag: EM-v6r070329p0
+	AcdPocaData.h AcdTkrGapPoca.h AcdTkrHitPoca.h 
+	AcdTkrIntersection_new.h AcdTkrLocalData.h AcdTkrPocaGap.h 
+	AcdTkrPoint.h 
+Log Message:
+added various AcdTkr data class
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r11, operation: add
 Package: Event
