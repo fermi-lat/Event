@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Apr  6 00:18:25 PDT 2006
+Event/Event/Recon/CalRecon
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	CalXtalRecData.h 
+Log Message:
+will need this patch to CalXtalRecData::initialize
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r8em1, operation: add
 Package: Event
