@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Thu Apr  6 00:15:10 PDT 2006
+Event/Event/Recon/CalRecon
+
+Modified Files:
+      Tag: hmk-04052006
+	CalXtalRecData.h 
+Log Message:
+pick up fix for CalXtalRecData::initialize
+    *
+------------------------------------------------------------
 User: echarles  Tue Apr  4 19:17:49 PDT 2006
 Event/src/Recon/AcdRecon
 
