@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.2 2005/11/09 01:11:10 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.2.6.1 2006/04/05 02:17:49 echarles Exp $
 //
 //  Implementation file of AcdTkrIntersection and AcdTkrIntersectionCol classes
 //  
@@ -67,7 +67,7 @@ void AcdTkrIntersection::writeOut(MsgStream& stream) const
   double correl =  m_localXYCov / ( localXErr * localYErr );
 
   stream << MSG::DEBUG
-	 << "Tile: " << m_tileId.id()
+	 << "AcdTkrIntersection.  Tile: " << m_tileId.id()
 	 << ".  Track: " << m_trackIndex
 	 << ".  Global: (" << m_location.getX() << ',' << m_location.getY() << ',' << m_location.getZ()
 	 << ").  Local: [" << m_localX << ',' << m_localY

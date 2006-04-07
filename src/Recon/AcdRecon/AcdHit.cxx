@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.1 2006/01/05 01:58:26 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.1.2.1 2006/04/05 02:17:48 echarles Exp $
 //
 //  Implementation file of AcdHit and AcdHitCol classes
 //  
@@ -63,7 +63,11 @@ void AcdHit::writeOut(MsgStream& stream) const
 {
 
   stream << MSG::DEBUG
-	 << "Tile: " << m_acdId.id()	
+	 << "Tile: " << m_acdId.id()
+	 << "Phas: (" << m_pha[A] << ',' << m_pha[B] 
+	 << "). Flags: (" << m_flags[A] << ',' << m_flags[B] 
+	 << "). Mips: (" << m_mipsPmt[A] << ',' <<  m_mipsPmt[B]
+	 << ")."
 	 << endreq;
 }
 

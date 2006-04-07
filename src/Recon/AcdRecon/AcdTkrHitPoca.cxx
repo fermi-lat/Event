@@ -61,9 +61,13 @@ namespace Event {
   /// Print out this structure
   void AcdTkrHitPoca::writeOut(MsgStream& stream) const 
   {
-    stream << (int)m_id.id() << ' ' << (int)m_trackIndex;
+    stream << MSG::DEBUG
+	   << "AcdTkrHitPoca.  Tile: " << m_id.id() 
+	   << ".  Track: " << (int)m_trackIndex
+	   << ".  ";
     AcdTkrLocalCoords::writeOut(stream);
     AcdPocaData::writeOut(stream);
+    stream << endreq;
   }
 
   /// Copy c'tor

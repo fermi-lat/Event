@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoca.cxx,v 1.1 2006/01/05 01:58:26 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/Attic/AcdPocaData.cxx,v 1.1.2.1 2006/04/05 02:17:48 echarles Exp $
 //
 //  Implementation file of AcdTkrPoca and AcdTkrPocaCol classes
 //  
@@ -48,13 +48,17 @@ namespace Event {
     set(other.m_arcLength,other.m_doca,other.m_docaErr,other.m_poca,other.m_pocaVector);
   }
   
-  void AcdPocaData::writeOut(MsgStream& /* stream */ ) const
+  void AcdPocaData::writeOut(MsgStream& stream ) const
     // Purpose: provide ascii output of some data members for
     //          debugging purposes
     // Input:
     //        stream - Gaudi message stream
   {
-    
+    stream << "Arc: " << m_arcLength
+	   << ".  Doca: " << m_doca << " +- " << m_docaErr
+	   << ".  Poca: (" << m_poca.x() << ',' << m_poca.y() << ',' << m_poca.z()
+	   << ".  PocaDir: (" << m_pocaVector.x() << ',' << m_pocaVector.y() << ',' << m_pocaVector.z()
+	   << ").  ";
   }
 
   
