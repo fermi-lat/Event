@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Fri Apr  7 09:38:24 PDT 2006
+Event/cmt
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	requirements 
+Log Message:
+update writeOut methods in AcdTkr data classes
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r8em2, operation: add
 Package: Event
