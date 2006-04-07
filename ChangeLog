@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Fri Apr  7 09:38:25 PDT 2006
+Event/doc
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	release.notes 
+Log Message:
+update writeOut methods in AcdTkr data classes
+    *
+------------------------------------------------------------
 User: echarles  Fri Apr  7 09:38:24 PDT 2006
 Event/cmt
 
