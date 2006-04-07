@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoca.cxx,v 1.1 2006/01/05 01:58:26 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/Attic/AcdTkrLocalData.cxx,v 1.1.2.1 2006/04/05 02:17:49 echarles Exp $
 //
 //  Implementation file of AcdTkrPoca and AcdTkrPocaCol classes
 //  
@@ -66,13 +66,22 @@ void AcdTkrLocalCoords::copy(const AcdTkrLocalCoords& other) {
 }
 
 
-void AcdTkrLocalCoords::writeOut(MsgStream& /* stream */ ) const
+void AcdTkrLocalCoords::writeOut(MsgStream& stream ) const
 // Purpose: provide ascii output of some data members for
 //          debugging purposes
 // Input:
 //        stream - Gaudi message stream
 {
-  
+
+  double localXErr = sqrt(m_localXXCov);
+  double localYErr = sqrt(m_localYYCov);
+  double correl =  m_localXYCov / ( localXErr * localYErr );
+  stream << "Active: [" << m_activeX << ',' << m_activeY 
+	 << "].  Cov: {" << localXErr << ',' << localYErr << ',' << correl 
+	 << "}.  Path: " << m_pathLength 
+	 << ".  Normal: " << m_cosTheta
+	 << ".  Region: " << m_region
+	 << ".  ";
 }
 
 

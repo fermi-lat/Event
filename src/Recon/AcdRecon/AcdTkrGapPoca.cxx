@@ -61,9 +61,13 @@ namespace Event {
   /// Print out this structure
   void AcdTkrGapPoca::writeOut(MsgStream& stream) const 
   {
-    stream << (int)m_id.asShort() << ' ' << (int)m_trackIndex;
+    stream << MSG::DEBUG
+	   << "AcdTrkGapPoca.  Gap: " << (int)m_id.asShort()
+	   << ".  Track: " << (int)m_trackIndex
+	   << ".  ";
     AcdTkrLocalCoords::writeOut(stream);
     AcdPocaData::writeOut(stream);
+    stream << endreq;
   }
 
   /// Copy c'tor
