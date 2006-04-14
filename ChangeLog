@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: echarles  Thu Apr 13 17:39:36 PDT 2006
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdHit.cxx AcdPocaMap.cxx AcdTkrIntersection.cxx 
+	AcdTkrPoca.cxx 
+Added Files:
+	AcdPocaData.cxx AcdTkrGapPoca.cxx AcdTkrHitPoca.cxx 
+	AcdTkrLocalData.cxx AcdTkrPoint.cxx 
+Log Message:
+Merge in Acd stuff from branch EM-v6r070329p0, tag v11r8em3
+    *
+------------------------------------------------------------
+User: echarles  Thu Apr 13 17:39:36 PDT 2006
 Event/doc
 
 Modified Files:
