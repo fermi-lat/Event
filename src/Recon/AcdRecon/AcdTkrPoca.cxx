@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoca.cxx,v 1.2 2005/11/09 01:11:10 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoca.cxx,v 1.1.2.1 2006/04/05 02:17:49 echarles Exp $
 //
 //  Implementation file of AcdTkrPoca and AcdTkrPocaCol classes
 //  
@@ -23,14 +23,7 @@ AcdTkrPoca::AcdTkrPoca() {
 AcdTkrPoca::AcdTkrPoca(const idents::AcdId& acdId, int trackIndex,
 		       double doca, double docaErr, unsigned docaRegion,
 		       const Point& poca, const Event::TkrTrackParams& paramsAtPoca) {
-  m_acdId = acdId;
-  m_trackIdx = trackIndex;
-  m_doca = doca;
-  m_docaErr = docaErr;
-  m_docaRegion = docaRegion;
-  
-  m_poca = poca;
-  m_paramsAtPoca = paramsAtPoca;
+  set(acdId,trackIndex,doca,docaErr,docaRegion,poca,paramsAtPoca);
 }
 
 void AcdTkrPoca::writeOut(MsgStream& /* stream */ ) const
@@ -42,6 +35,21 @@ void AcdTkrPoca::writeOut(MsgStream& /* stream */ ) const
 
 }
 
+void AcdTkrPoca::set(const idents::AcdId& acdId, int trackIndex,
+		     double doca, double docaErr, unsigned docaRegion,
+		     const Point& poca, const Event::TkrTrackParams& paramsAtPoca)
+// Purpose: set all data members at once
+//
+{
+  m_acdId = acdId;
+  m_trackIdx = trackIndex;
+  m_doca = doca;
+  m_docaErr = docaErr;
+  m_docaRegion = docaRegion;
+  
+  m_poca = poca;
+  m_paramsAtPoca = paramsAtPoca;
+}
 
 
 void AcdTkrPoca::ini()
