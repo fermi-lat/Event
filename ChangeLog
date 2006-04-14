@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Thu Apr 13 17:39:35 PDT 2006
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Merge in Acd stuff from branch EM-v6r070329p0, tag v11r8em3
+    *
+------------------------------------------------------------
+User: echarles  Thu Apr 13 17:39:35 PDT 2006
 Event/Event/Recon/AcdRecon
 
 Modified Files:
