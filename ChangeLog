@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Sun May 14 20:45:57 PDT 2006
+Event/doc
+
+Modified Files:
+      Tag: EM-v6r070329p0
+	release.notes 
+Log Message:
+Fix c'tor bug in AcdHit.cxx
+    *
+------------------------------------------------------------
+User: echarles  Sun May 14 20:45:57 PDT 2006
 Event/cmt
 
 Modified Files:
