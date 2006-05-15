@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.1.2.1 2006/04/05 02:17:48 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.1.2.2 2006/04/07 16:38:25 echarles Exp $
 //
 //  Implementation file of AcdHit and AcdHitCol classes
 //  
@@ -88,6 +88,7 @@ void AcdHit::setFlags(const Event::AcdDigi& digi)
 // Purpose: to pull various flags out of the digis into the hits
 //
 {
+  m_acdId = digi.getId();
   m_flags[A] = 0; m_flags[B] = 0;
 
   // FIXME  -> Do all the flags
