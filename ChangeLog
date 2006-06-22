@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Wed Jun 21 17:56:15 PDT 2006
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdRecon.h 
+Added Files:
+	AcdSplashVars.h 
+Log Message:
+Added AcdSplashVars
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r8em4, operation: add
 Package: Event
