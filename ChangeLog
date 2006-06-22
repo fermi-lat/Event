@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Jun 22 00:58:50 PDT 2006
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Added AcdSplashVars, tag v11r13
+    *
+------------------------------------------------------------
 User: echarles  Wed Jun 21 17:56:15 PDT 2006
 Event/src/Recon/AcdRecon
 
