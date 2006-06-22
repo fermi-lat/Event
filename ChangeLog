@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Wed Jun 21 17:56:15 PDT 2006
+Event/src/Recon/AcdRecon
+
+Added Files:
+	AcdSplashVars.cxx 
+Log Message:
+Added AcdSplashVars
+    *
+------------------------------------------------------------
+User: echarles  Wed Jun 21 17:56:15 PDT 2006
 Event/Event/Recon/AcdRecon
 
 Modified Files:
