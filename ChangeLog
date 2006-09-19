@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Sep 19 16:56:19 PDT 2006
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+Added AcdDigi::setRanges() to Event/Digi/AcdDigi.h to be able to use high range in simulated data
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r13, operation: add
 Package: Event
