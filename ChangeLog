@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Sep 28 09:18:46 PDT 2006
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+prepare to tag Eric's update to AcdDigi adding AcdDigi::setRanges
+    *
+------------------------------------------------------------
 User: heather  Thu Sep 28 09:18:45 PDT 2006
 Event/cmt
 
