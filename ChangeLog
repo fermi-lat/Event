@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu Oct 19 14:20:11 PDT 2006
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+include downward as well as upward tracks in ActDist3D
+    *
+------------------------------------------------------------
 User: heather  Thu Oct 19 14:20:10 PDT 2006
 Event/cmt
 
