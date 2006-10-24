@@ -24,7 +24,7 @@ namespace Event {
 * - sequence number for keying random number generator
 * - source ID 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.11 2003/07/11 03:49:32 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.12 2004/09/18 18:16:58 usher Exp $
 */
 
 class MCEvent : public DataObject                                              {
@@ -47,10 +47,13 @@ public:
     int getSourceId() const { return m_sourceId; }
     int getRunNumber() const      { return m_run; }
     int getSequence() const { return m_sequence; }
+    const std::string& getSourceName()const{return m_sourceName;}
 
     /// initialize
-    void initialize(int run, int source, long int seq, TimeStamp time) {
-        m_run = run; m_sourceId = source; m_sequence = seq; m_time=time;}
+    void initialize(int run, int source, long int seq, TimeStamp time, std::string name="") {
+        m_run = run; m_sourceId = source; m_sequence = seq; m_time=time; m_sourceName = name;}
+
+    void setSourceName(const std::string& name){m_sourceName=name;}
 
     /// Retrieve reference to event time stamp
     const TimeStamp& time () const                              { return m_time; }
@@ -79,6 +82,8 @@ private:
     
     /// Time stamp: use special class to encapsulate type
     TimeStamp           m_time;
+
+    std::string m_sourceName; ///< "name for the source, hopefully unique"
 
 };
 
