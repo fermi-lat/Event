@@ -19,7 +19,7 @@ namespace Event { //Namespace
 *
 * @author Sean Robinson
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/Exposure.h,v 1.1 2003/07/11 23:06:45 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/Exposure.h,v 1.2 2004/09/18 18:16:57 usher Exp $
 */
     class Exposure : virtual public ContainedObject
     {
