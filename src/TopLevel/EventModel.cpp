@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.73 2005/09/22 19:33:44 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.74 2005/11/25 16:33:56 chamont Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -70,6 +70,14 @@ std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Ev
 //@@@FP 07/09/05
 //std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";
 //@@@FP 07/09/05
+//@@@CL 01/06/06 BEGIN:
+std::string EventModel::CalRecon::GcrXtalCol      = EventModel::CalRecon::Event + "/GcrXtalCol";
+//@@@CL 01/06/06 END
+//@@@CL 06/27/06 BEGIN:
+std::string EventModel::CalRecon::GcrSelectedXtalsCol      = EventModel::CalRecon::Event + "/GcrSelectedXtalsCol";
+//@@@CL 06/27/06 END
+std::string EventModel::CalRecon::GcrTrack      = EventModel::CalRecon::Event + "/GcrTrack";
+std::string EventModel::CalRecon::GcrSelectVals     = EventModel::CalRecon::Event + "/GcrSelectVals";
 
 // reconstructed ACD data
 std::string EventModel::AcdRecon::Event               = EventModel::EventHeader + "/AcdRecon";
