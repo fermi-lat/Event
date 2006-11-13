@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: claval  Mon Nov 13 01:44:20 PST 2006
+Event/Event/Recon/CalRecon
+
+Added Files:
+	GcrReconClasses.h GcrSelectClasses.h 
+Log Message:
+TDS objects added containing GCRCalib algorithms results
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r15p1, operation: add
 Package: Event
