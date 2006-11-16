@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Nov 16 10:04:35 PST 2006
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	GcrReconClasses.h GcrSelectClasses.h 
+Log Message:
+Add a few more "const" qualifiers to get compilation on windows
+    *
+------------------------------------------------------------
 User: claval  Tue Nov 14 14:24:23 PST 2006
 Event/Event/Recon/CalRecon
 
