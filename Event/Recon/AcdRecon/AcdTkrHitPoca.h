@@ -14,7 +14,7 @@
  * 
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/Attic/AcdTkrHitPoca.h,v 1.1.2.1 2006/04/05 02:17:48 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.2 2006/04/14 00:39:34 echarles Exp $
  */
 
 #include <vector>
@@ -107,11 +107,18 @@ namespace Event {
     /// destructor - deleting the hits pointed
     /// by the vector elements
     ~AcdTkrHitPocaCol() { delTkrHitPocas();}
-        
+
     
     // GAUDI members to be use by the converters
     static const CLID& classID() {return CLID_AcdTkrHitPocaCol;}
     virtual const CLID& clID() const {return classID();}
+
+    /// takes ownership of a vector AcdTkrHitPoca
+    void init(std::vector<AcdTkrHitPoca*>& acdhits) {
+      for ( std::vector<AcdTkrHitPoca*>::iterator itr = acdhits.begin(); itr != acdhits.end(); itr++ ) {
+	push_back(*itr);
+      }
+    }
     
     /// add new AcdTkrHitPoca
     void add(AcdTkrHitPoca* cl) {push_back(cl);}

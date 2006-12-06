@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.47 2005/11/25 16:33:55 chamont Exp $
+// $Id: EventModel.h,v 1.48 2006/11/13 09:44:21 claval Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -70,6 +70,8 @@ public:
         static std::string McPartToTkrPatCandTab;
         static std::string McPartToTkrTrackHitTab;
         static std::string McPartToTkrTrackTab;
+	static std::string McAcdTkrPointCol;
+	static std::string McAcdTkrHitPocaCol;
     };
 
     class DLL_EXPORT_EVT Digi

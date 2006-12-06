@@ -28,7 +28,7 @@ static const CLID& CLID_AcdTkrPointCol = InterfaceID("AcdTkrPointCol", 1, 0);
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/Attic/AcdTkrPoint.h,v 1.1.2.1 2006/04/05 02:17:48 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoint.h,v 1.2 2006/04/14 00:39:34 echarles Exp $
 */
 
 namespace Event
@@ -134,12 +134,19 @@ namespace Event
     /// destructor - deleting the hits pointed
     /// by the vector elements
     ~AcdTkrPointCol() { delTkrPoints();}
-        
+
     
     // GAUDI members to be use by the converters
     static const CLID& classID() {return CLID_AcdTkrPointCol;}
     virtual const CLID& clID() const {return classID();}
-    
+        
+    /// takes ownership of a vector AcdTkrPoint
+    void init(std::vector<AcdTkrPoint*>& acdhits) {
+      for ( std::vector<AcdTkrPoint*>::iterator itr = acdhits.begin(); itr != acdhits.end(); itr++ ) {
+	push_back(*itr);
+      }
+    }
+
     /// add new AcdTkrPoint
     void add(AcdTkrPoint* cl) {push_back(cl);}
     
