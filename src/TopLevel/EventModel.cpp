@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.74 2005/11/25 16:33:56 chamont Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.75 2006/11/13 09:44:21 claval Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -34,6 +34,10 @@ std::string EventModel::MC::McPartToTkrCandHitTab     = EventModel::MC::Event  +
 std::string EventModel::MC::McPartToTkrPatCandTab     = EventModel::MC::Event  + "/McPartToTkrPatCandTab";
 std::string EventModel::MC::McPartToTkrTrackHitTab    = EventModel::MC::Event  + "/McPartToTkrTrackHitTab";
 std::string EventModel::MC::McPartToTkrTrackTab       = EventModel::MC::Event  + "/McPartToTkrTrackTab";
+
+std::string EventModel::MC::McAcdTkrPointCol          = EventModel::MC::Event  + "/AcdTkrPointCol";
+std::string EventModel::MC::McAcdTkrHitPocaCol        = EventModel::MC::Event  + "/AcdTkrHitPocaCol";
+
 
 // Digi event
 std::string EventModel::Digi::Event                   = EventModel::EventHeader + "/Digi";
