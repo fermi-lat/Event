@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: echarles  Wed Dec  6 12:05:56 PST 2006
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrHitPoca.h AcdTkrPoint.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r16, operation: add
 Package: Event
