@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.22 2005/07/12 15:09:20 burnett Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.23 2006/03/21 01:29:44 usher Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -55,7 +55,8 @@ class McPositionHit : virtual public ContainedObject {
     /// Constructors
     McPositionHit()
       : m_depositedEnergy(0.),
-        m_timeOfFlight(0.)
+        m_timeOfFlight(0.),
+        m_packedFlags(0)
     {}
 
     virtual ~McPositionHit() { }
