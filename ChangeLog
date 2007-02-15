@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Thu Feb 15 11:17:14 PST 2007
+Event/Event/RelTable
+
+Modified Files:
+	RelKey.h RelTable.h Relation.h 
+Log Message:
+Changes to incorporate the output of McTrajectories in the root output files. Also, update relational tables to fix a bug with removing elements, change also removes need for related items to inherit from DataObject.
+    *
+------------------------------------------------------------
+User: usher  Thu Feb 15 11:17:14 PST 2007
 Event/Event/MonteCarlo
 
 Modified Files:
