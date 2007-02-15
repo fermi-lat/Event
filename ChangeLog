@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Feb 15 11:17:16 PST 2007
+Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx McTrajectory.cxx 
+Log Message:
+Changes to incorporate the output of McTrajectories in the root output files. Also, update relational tables to fix a bug with removing elements, change also removes need for related items to inherit from DataObject.
+    *
+------------------------------------------------------------
 User: usher  Thu Feb 15 11:17:14 PST 2007
 Event/Event/RelTable
 
