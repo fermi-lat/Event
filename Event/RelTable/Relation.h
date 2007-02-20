@@ -24,7 +24,7 @@
  * @author Riccardo Giannitrapani
  * @author Tracy Usher
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/TkrRecon/src/PatRec/VectorLinks/StdRelTable/Relation.h,v 1.1 2005/05/26 20:33:06 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.4 2007/02/15 19:17:14 usher Exp $
  */
 
 static const CLID CLID_Relation = 5100;
@@ -92,11 +92,11 @@ private:
 
 
 template <class T1, class T2> inline Relation<T1,T2>::Relation(T1* obj1, T2* obj2, std::string info): 
-  m_first(obj1,this), m_second(obj2,this), m_infos(1,info) {}
+  m_first(obj1), m_second(obj2), m_infos(1,info) {}
 
 
 template <class T1, class T2> inline Relation<T1,T2>::Relation(T1* obj1, T2* obj2, std::vector<std::string> infos): 
-  m_first(obj1,this), m_second(obj2,this), m_infos(infos) {}
+  m_first(obj1), m_second(obj2), m_infos(infos) {}
 
 
 
