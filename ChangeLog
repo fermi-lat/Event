@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Feb 20 10:16:26 PST 2007
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h Relation.h 
+Log Message:
+Repairs for Event relational table test program
+    *
+------------------------------------------------------------
 User: usher  Thu Feb 15 11:17:16 PST 2007
 Event/src/MonteCarlo
 
