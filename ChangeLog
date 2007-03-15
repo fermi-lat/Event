@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Mar 15 11:06:57 PDT 2007
+Event/Event/RelTable
+
+Modified Files:
+	RelKey.h RelTable.h Relation.h 
+Log Message:
+Fix relational table memory leak
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r18, operation: add
 Package: Event
