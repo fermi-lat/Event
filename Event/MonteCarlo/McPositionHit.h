@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.23 2006/03/21 01:29:44 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McPositionHit.h,v 1.24 2007/02/15 19:17:14 usher Exp $
 #ifndef Event_McPositionHit_H
 #define Event_McPositionHit_H 1
 
@@ -155,6 +155,10 @@ class McPositionHit : virtual public ContainedObject {
     /// Update pointer to McParticle (by a C++ pointer or a smart reference)
     void setOriginMcParticle( McParticle* value );
     void setOriginMcParticle( SmartRef<McParticle> value );
+
+    /// Provide access to setting/retrieving the "packed flags"
+    unsigned long getPackedFlags() const {return m_packedFlags;}
+    void setPackedFlags(unsigned long flags) {m_packedFlags = flags;}
 
     /// Serialize the object for writing
     virtual StreamBuffer& serialize( StreamBuffer& s ) const;

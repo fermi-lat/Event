@@ -6,7 +6,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McRelTableDefs.h,v 1.3 2004/12/15 23:24:34 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McRelTableDefs.h,v 1.4 2007/02/15 19:17:14 usher Exp $
  */
 
 #ifndef McRelTableDefs_h
@@ -28,6 +28,7 @@ class McPositionHit;
 class McIntegratingHit;
 
 // Forward declarations for recon information
+class TkrDigi;
 class TkrCluster;
 class TkrTrack;
 class TkrTrackHit;
@@ -61,6 +62,13 @@ typedef Event::RelTable<Event::McParticle, Event::McIntegratingHit>        McPar
 typedef Event::Relation<Event::McParticle, Event::McIntegratingHit>        McPartToIntHitRel;
 typedef ObjectList<McPartToIntHitRel>                                      McPartToIntHitTabList;
 typedef std::vector<Event::McPartToIntHitRel*>                             McPartToIntHitVec;
+
+// Below here relates MC to TkrDigi objects
+// typedefs for relating TkrClusters to McPositionHits 
+typedef Event::RelTable<Event::TkrDigi, Event::McPositionHit>              DigiMcPosHitTab;
+typedef Event::Relation<Event::TkrDigi, Event::McPositionHit>              DigiMcPosHitRel;
+typedef ObjectList<DigiMcPosHitRel>                                        DigiMcPosHitTabList;
+typedef std::vector<Event::DigiMcPosHitRel*>                               DigiMcPosHitVec;
 
 // Below here relatest MC to TkrRecon objects
 // typedefs for relating TkrClusters to McPositionHits 
