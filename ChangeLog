@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Mar 18 07:51:06 PDT 2007
+Event/Event/MonteCarlo
+
+Modified Files:
+	McPositionHit.h McRelTableDefs.h 
+Log Message:
+Add Get and Set methods to McPositionHits for the packed flags. Add some new defs for MC relational tables.
+    *
+------------------------------------------------------------
 User: usher  Thu Mar 15 11:06:57 PDT 2007
 Event/Event/RelTable
 
