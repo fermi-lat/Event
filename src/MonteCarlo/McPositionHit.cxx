@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.11 2005/05/26 20:19:37 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McPositionHit.cxx,v 1.12 2006/03/21 01:29:45 usher Exp $
 
 #include <iostream>
 #include <math.h>
@@ -139,6 +139,7 @@ CLHEP::HepLorentzVector McPositionHit::particleFourMomentum() const
 void McPositionHit::setParticle4Momentum( const CLHEP::HepLorentzVector& fourMom)
 {
     m_particleFourMomentum = fourMom;
+    m_particleEnergy       = fourMom.e();
 }
 
 /// Retrieve member TOF
