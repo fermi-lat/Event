@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Fri Mar 30 17:50:37 PDT 2007
+Event/Event/RelTable
+
+Modified Files:
+	RelTable.h 
+Log Message:
+Preface complicated declarations with 'typename' to make gcc34 happy
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r18p1, operation: add
 Package: Event
