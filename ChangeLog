@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Jun  1 16:42:25 PDT 2007
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix McEvent to initialize McSourceName to "_" ... needed to make Root happy
+
+    *
+------------------------------------------------------------
 User: lsrea  Fri Jun  1 16:42:24 PDT 2007
 Event/Event/TopLevel
 
