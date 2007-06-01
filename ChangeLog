@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Jun  1 16:42:24 PDT 2007
+Event/Event/TopLevel
+
+Modified Files:
+	MCEvent.h 
+Log Message:
+Fix McEvent to initialize McSourceName to "_" ... needed to make Root happy
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r18p2, operation: add
 Package: Event
