@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Mon Jun 11 13:57:43 PDT 2007
+Event/Event/TopLevel
+
+Modified Files:
+	MCEvent.h 
+Log Message:
+Cleanup of RM warnings
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon Jun 11 13:57:43 PDT 2007
 Event/Event/RelTable
 
 Modified Files:
