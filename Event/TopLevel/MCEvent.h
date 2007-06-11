@@ -11,7 +11,7 @@
 #include "Event/TopLevel/Definitions.h"
 #include "Event/Utilities/TimeStamp.h"
 
-static const CLID& CLID_McEvent = InterfaceID("McEvent", 1, 0);
+static const CLID& CLID_McEvent = InterfaceID("McEvent", 1, 1);
 
 namespace Event {
 
@@ -24,13 +24,13 @@ namespace Event {
 * - sequence number for keying random number generator
 * - source ID 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.13 2006/10/24 07:53:22 burnett Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.14 2007/06/01 23:42:24 lsrea Exp $
 */
 
 class MCEvent : public DataObject                                              {
     
 public:
-    MCEvent( ): m_run(0), m_sourceId(-1), m_sequence(0), m_sourceName("_") {}
+    MCEvent( ):  m_sourceId(-1), m_run(0), m_sequence(0), m_sourceName("_") {}
     
     virtual ~MCEvent()  { }
     
