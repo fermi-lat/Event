@@ -21,7 +21,7 @@ namespace Event { //Namespace
 *
 * @author Sean Robinson
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.3 2004/09/18 18:16:57 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/D2Entry.h,v 1.4 2004/12/15 23:24:33 usher Exp $
 */
     class D2Entry : virtual public ContainedObject//public DataObject
     {
