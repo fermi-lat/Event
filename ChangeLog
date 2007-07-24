@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Mon Jul 23 21:33:20 PDT 2007
+Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+Add method transform() to change onlys positions and momenta 
+   (for G4Generator::BeamTransform)
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon Jul 23 21:33:20 PDT 2007
 Event/Event/MonteCarlo
 
 Modified Files:
