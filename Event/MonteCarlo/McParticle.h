@@ -34,11 +34,11 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.33 2005/05/26 20:19:36 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.34 2006/03/21 01:29:44 usher Exp $
  */
 #include "GaudiKernel/IInterface.h"
 
-static const CLID& CLID_McParticle = InterfaceID("McParticle", 1, 0);
+static const CLID& CLID_McParticle = InterfaceID("McParticle", 2, 0);
 
 namespace Event {  // NameSpace
 
@@ -153,6 +153,12 @@ class McParticle  : virtual public ContainedObject  {
     /// Fill the ASCII output stream
     virtual std::ostream& fillStream( std::ostream& s ) const;
 
+    /// Modify the position and direction of a particle without changing anything else
+void transform(
+        const CLHEP::HepLorentzVector& initialMomentum,
+        const CLHEP::HepLorentzVector& finalMomentum,
+        const HepPoint3D& initialPosition,
+        const HepPoint3D& finalPosition);
 
   private:
 
