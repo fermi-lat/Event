@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.20 2006/03/21 01:29:45 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.21 2007/02/15 19:17:16 usher Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -53,6 +53,19 @@ void McParticle::finalize(const CLHEP::HepLorentzVector& finalMomentum,
 {
     m_finalFourMomentum = finalMomentum;
     m_finalPosition = finalPosition;
+}
+
+
+void McParticle::transform(
+        const CLHEP::HepLorentzVector& initialMomentum,
+        const CLHEP::HepLorentzVector& finalMomentum,
+        const HepPoint3D& initialPosition,
+        const HepPoint3D& finalPosition)
+{
+    m_initialFourMomentum = initialMomentum;
+    m_initialPosition     = initialPosition;
+    m_finalFourMomentum   = finalMomentum;
+    m_finalPosition       = finalPosition;
 }
 
 
