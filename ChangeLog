@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Fri Jul 27 12:23:02 PDT 2007
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+tag new set method for McParticle
+
+    *
+------------------------------------------------------------
 User: lsrea  Mon Jul 23 21:33:20 PDT 2007
 Event/src/MonteCarlo
 
