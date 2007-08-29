@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Aug 29 06:23:37 PDT 2007
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add a trigger word to event header for engines
+    *
+------------------------------------------------------------
+User: heather  Wed Aug 29 06:23:37 PDT 2007
 Event/cmt
 
 Modified Files:
