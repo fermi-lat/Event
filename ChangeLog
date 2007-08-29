@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Aug 29 06:23:37 PDT 2007
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+add a trigger word to event header for engines
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r20, operation: add
 Package: Event
