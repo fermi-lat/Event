@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Wed Sep  5 11:11:45 PDT 2007
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVertex.h 
+Log Message:
+Up the CLID for EventHeader; add an enum to TkrVertex.h; prepare for new tag
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r21, operation: add
 Package: Event
