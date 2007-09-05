@@ -8,7 +8,7 @@
 #include "Event/Utilities/TimeStamp.h"
 #include "Event/TopLevel/Definitions.h"
 
-//static const CLID& CLID_Event = InterfaceID("Event", 1, 0);
+//static const CLID& CLID_Event = InterfaceID("Event", 2, 0);
 //The following number is currently hardwired into Gaudi (v12r0)!!
 static const CLID& CLID_Event = 110;
 
@@ -22,7 +22,7 @@ static const CLID& CLID_Event = 110;
 * - time stamp
 * - trigger word
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.15 2005/04/26 00:53:01 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.16 2007/08/29 13:23:37 heather Exp $
 */
 namespace Event{
 
