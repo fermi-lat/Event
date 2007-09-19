@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Sep 18 20:19:23 PDT 2007
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTruncatedPlane.h 
+Log Message:
+move intVec and floatVec into namespace
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r21p1, operation: add
 Package: Event
