@@ -1,7 +1,7 @@
 /** @file TkrTruncatedPlane.h
 * @author Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/TkrDigi/src/TkrTruncatedPlane.h,v 1.12 2005/08/16 22:00:26 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTruncatedPlane.h,v 1.1 2005/09/03 02:02:20 lsrea Exp $
 
 */
 
@@ -13,10 +13,14 @@
 static const CLID& CLID_TkrTruncatedPlane = InterfaceID("TkrTruncatedPlane",  0, 0);
 
 
+//typedef std::vector<int>   intVector;
+//typedef std::vector<float> floatVector;
+
+namespace Event {
+
 typedef std::vector<int>   intVector;
 typedef std::vector<float> floatVector;
 
-namespace Event {
 /**
 * @class TkrTruncatedPlane
 *
