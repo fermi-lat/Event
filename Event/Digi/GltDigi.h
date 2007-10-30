@@ -1,7 +1,7 @@
 /** @file GltDigi.h
     @brief Definition and implementation of GltDigi
 
-    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.7 2005/10/05 19:29:27 fewtrell Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.8 2005/10/06 00:31:41 burnett Exp $
 
 
 */
@@ -47,14 +47,14 @@ namespace Event {
     /** \brief return true if specified Cal FLE trigger bit was set
         \param xtalFaceId CalXtalId should include optional face information
      */
-    bool getCALLOtrigger(idents::CalXtalId xtalFaceId) const {
+    bool getCALLOtrigger(const idents::CalXtalId xtalFaceId) const {
       return (m_CAL_LO.find(xtalFaceId) != m_CAL_LO.end());
     }
 
     /** \brief return true if specified Cal FHE trigger bit was set
         \param xtalFaceId CalXtalId should include optional face information
      */
-    bool getCALHItrigger(idents::CalXtalId xtalFaceId) const {
+    bool getCALHItrigger(const idents::CalXtalId xtalFaceId) const {
       return (m_CAL_HI.find(xtalFaceId) != m_CAL_HI.end());
     }
 
@@ -62,13 +62,18 @@ namespace Event {
     /** \brief set specified Cal FLE trigger bit
         \param xtalFaceId CalXtalId should include optional face information
      */
-    void setCALLOtrigger(idents::CalXtalId xtalFaceId) {m_CAL_LO.insert(xtalFaceId);}
+    void setCALLOtrigger(const idents::CalXtalId xtalFaceId) {m_CAL_LO.insert(xtalFaceId);}
 
     /** \brief set specifiec Cal FHE trigger bit
         \param xtalFaceId CalXtalId should include optional face information
      */
-    void setCALHItrigger(idents::CalXtalId xtalFaceId) {m_CAL_HI.insert(xtalFaceId);}
+    void setCALHItrigger(const idents::CalXtalId xtalFaceId) {m_CAL_HI.insert(xtalFaceId);}
 
+    /// \brief return 16 bit trigger vector for FLE trigger, one bit per tower
+    unsigned short getCALLETriggerVector() const;
+
+    /// \brief return 16 bit trigger vector for FLE trigger, one bit per tower
+    unsigned short getCALHETriggerVector() const;
 
   private:
 
@@ -78,7 +83,9 @@ namespace Event {
         \note CalXtalId should include optional face information
     */
     typedef std::set<idents::CalXtalId> CalTriggerSet;
+    /// store all crystals with FLE trigger raised.
     CalTriggerSet m_CAL_LO;
+    /// store all crystals with FHE trigger raised.
     CalTriggerSet m_CAL_HI;
   };
   
