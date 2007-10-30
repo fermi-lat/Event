@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: fewtrell  Tue Oct 30 11:55:42 PDT 2007
+Event/Event/Digi
+
+Modified Files:
+	GltDigi.h 
+Log Message:
+added getCalTriggerVector methods to GltDigi class (per tower Cal trigger bits for LE & HE)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r22, operation: add
 Package: Event
