@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: fewtrell  Tue Oct 30 11:55:43 PDT 2007
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+added getCalTriggerVector methods to GltDigi class (per tower Cal trigger bits for LE & HE)
+
+    *
+------------------------------------------------------------
+User: fewtrell  Tue Oct 30 11:55:43 PDT 2007
 Event/doc
 
 Modified Files:
