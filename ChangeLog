@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: fewtrell  Tue Nov  6 13:08:28 PST 2007
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalXtalRecData.h 
+Log Message:
+added a getEnergy() const acessor method to CalXtalRecData - 'constified' a few methods that needed it - all changes w/in CalXtalRecData
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r23p1, operation: add
 Package: Event
