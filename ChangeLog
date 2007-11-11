@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Sun Nov 11 10:21:27 PST 2007
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+remove inline from AcdPocaData for rhel4_gcc34opt build
+    *
+------------------------------------------------------------
+User: heather  Sun Nov 11 10:21:27 PST 2007
 Event/cmt
 
 Modified Files:
