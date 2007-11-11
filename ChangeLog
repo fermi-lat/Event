@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Sun Nov 11 10:21:27 PST 2007
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdPocaData.h 
+Log Message:
+remove inline from AcdPocaData for rhel4_gcc34opt build
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r23p2, operation: add
 Package: Event
