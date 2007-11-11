@@ -12,7 +12,7 @@
  * 
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaData.h,v 1.2 2006/04/14 00:39:34 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaData.h,v 1.3 2007/11/11 18:21:27 heather Exp $
  */
 
 #include "geometry/Vector.h"
@@ -74,7 +74,7 @@ namespace Event {
     
     
     /// set all the values
-    inline void set(float arcLength, float doca, float docaErr, 
+    void set(float arcLength, float doca, float docaErr, 
 		    const Point& poca, const Vector& pocaVector);
     
     void set(const AcdPocaData& other);
