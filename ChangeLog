@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Dec  6 12:28:44 PST 2007
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdHit.cxx 
+Log Message:
+Fix AcdHit::getFlags() bits
+    *
+------------------------------------------------------------
 User: echarles  Thu Dec  6 12:28:43 PST 2007
 Event/doc
 
