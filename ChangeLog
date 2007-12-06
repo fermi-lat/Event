@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Dec  6 12:28:42 PST 2007
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdHit.h 
+Log Message:
+Fix AcdHit::getFlags() bits
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r23p4, operation: add
 Package: Event
