@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: echarles  Fri Dec 21 14:29:08 PST 2007
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+Fix AcdDigi::m_error init on MC
+    *
+------------------------------------------------------------
+User: echarles  Fri Dec 21 14:29:08 PST 2007
 Event/Event/Digi
 
 Modified Files:
