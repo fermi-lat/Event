@@ -32,7 +32,7 @@
 *             
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.21 2005/09/13 06:15:23 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.22 2006/09/19 23:56:19 echarles Exp $
 */
 
 static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 1);
@@ -71,6 +71,7 @@ namespace Event {
             m_high[0] = highThresh[0]; m_high[1] = highThresh[1];
             m_range[0] = LOW; m_range[1] = LOW;
             m_error[0] = NOERROR; m_error[1] = NOERROR;
+	    m_error[2] = NOERROR; m_error[3] = NOERROR;
         };
         
         virtual ~AcdDigi() { };
