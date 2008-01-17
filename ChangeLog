@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kocian  Wed Jan 16 16:34:44 PST 2008
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+added prescale info to event header
+    *
+------------------------------------------------------------
 User: kocian  Wed Jan 16 16:34:43 PST 2008
 Event/Event/TopLevel
 
