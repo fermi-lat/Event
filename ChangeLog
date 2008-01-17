@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: kocian  Wed Jan 16 16:34:43 PST 2008
-Event/Event/TopLevel
-
-Modified Files:
-	Event.h 
-Log Message:
-added prescale info to event header
-    *
-------------------------------------------------------------
 TAG
 Tag name: v11r23p6, operation: add
 Package: Event
