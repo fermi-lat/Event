@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: fewtrell  Tue Jan 22 13:19:55 PST 2008
+Event/src/test
+
+Modified Files:
+	testmain.cxx 
+Log Message:
+updates to GltDigi
+
+    *
+------------------------------------------------------------
+User: fewtrell  Tue Jan 22 13:19:55 PST 2008
 Event/src/Digi
 
 Modified Files:
