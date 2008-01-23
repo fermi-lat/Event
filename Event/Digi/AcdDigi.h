@@ -12,7 +12,7 @@
 
 #include "Event/TopLevel/Definitions.h"
 
-/** @class AcdDigi        
+/** @class Event::AcdDigi        
 * @brief AcdDigi represents the digitization output from one ACD entity.  
 *
 * An entity could be an ACD tile or a fiber.  Each of which would contain 
@@ -32,7 +32,7 @@
 *             
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.22 2006/09/19 23:56:19 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.23 2007/12/21 22:29:08 echarles Exp $
 */
 
 static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 1);
