@@ -24,7 +24,7 @@
  * @author Riccardo Giannitrapani
  * @author Tracy Usher
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.5 2007/02/20 18:16:26 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.6 2007/03/15 18:06:57 usher Exp $
  */
 
 static const CLID CLID_Relation = 5100;
@@ -56,6 +56,9 @@ public:
     /// Add additional information (as a string) to the relation
     void addInfo(std::string inf);
     std::vector<std::string> getInfos() const;
+
+    /// Comparison operator for searching for duplicate entries
+    const bool operator==(const Relation<T1,T2>& relation) const;
 
     /// Fill the ASCII output stream
     std::ostream& fillStream( std::ostream& s ) const;
@@ -141,6 +144,11 @@ template <class T1, class T2> void Relation<T1,T2>::removeFromList(RelationList<
     return;
 }     
 
+template <class T1, class T2> const bool Relation<T1,T2>::operator==(const Relation<T1,T2>& relation) const
+{
+    if (m_first == relation.m_first && m_second == relation.m_second) return true;
+    return false;
+}
 
 template <class T1, class T2> inline std::ostream& Relation<T1,T2>::fillStream( std::ostream& s ) const 
 {

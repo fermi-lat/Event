@@ -22,7 +22,7 @@
  * @author Marco Frailis 
  * @author Riccardo Giannitrapani
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelKey.h,v 1.3 2007/02/15 19:17:14 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelKey.h,v 1.4 2007/03/15 18:06:57 usher Exp $
  */
 namespace Event
 {
@@ -55,6 +55,8 @@ public:
     void setData(T1* obj) {m_data = obj;}  
     const T1* getData() const { return m_data;}
     T1* getData() {return m_data;}
+
+    const bool operator==(const RelKey<T1,T2,T3>& key) const;
 
     /// Fill the ASCII output stream
     void toStream(std::ostream& s) const;
@@ -98,6 +100,13 @@ inline void RelKey<T1,T2,T3>::removeFromMap(RelKeyMultiMap<T1,T2,T3>* map)
 {
     map->erase(m_iterator);
     m_iterator = 0;
+}
+
+template <class T1, class T2, class T3> 
+const bool RelKey<T1,T2,T3>::operator==(const RelKey<T1,T2,T3>& key) const
+{
+    if (m_data == key.m_data) return true;
+    return false;
 }
 
 template <class T1, class T2, class T3>
