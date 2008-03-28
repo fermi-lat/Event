@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.48 2006/11/13 09:44:21 claval Exp $
+// $Id: EventModel.h,v 1.49 2006/12/06 20:05:56 echarles Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -132,6 +132,7 @@ public:
     //@@@FP 07/09/05
            //@@@CL 06/01/06 BEGIN:
        static std::string GcrXtalCol;
+       static std::string GcrReconVals;
        //@@@CL 06/01/06 END
        //@@@CL 26/27/06 BEGIN:
        static std::string GcrSelectedXtalsCol;
