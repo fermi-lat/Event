@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: claval  Fri Mar 28 14:36:41 PDT 2008
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+GcrReconVals containing gcrOBFStatusWord added to TDS
+
+    *
+------------------------------------------------------------
+User: claval  Fri Mar 28 14:36:41 PDT 2008
 Event/Event/TopLevel
 
 Modified Files:
