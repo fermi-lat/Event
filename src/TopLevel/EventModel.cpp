@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.75 2006/11/13 09:44:21 claval Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.76 2006/12/06 20:05:57 echarles Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -76,6 +76,7 @@ std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Ev
 //@@@FP 07/09/05
 //@@@CL 01/06/06 BEGIN:
 std::string EventModel::CalRecon::GcrXtalCol      = EventModel::CalRecon::Event + "/GcrXtalCol";
+std::string EventModel::CalRecon::GcrReconVals     = EventModel::CalRecon::Event + "/GcrReconVals";
 //@@@CL 01/06/06 END
 //@@@CL 06/27/06 BEGIN:
 std::string EventModel::CalRecon::GcrSelectedXtalsCol      = EventModel::CalRecon::Event + "/GcrSelectedXtalsCol";
