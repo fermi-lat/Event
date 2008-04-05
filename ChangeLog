@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: claval  Sat Apr  5 15:01:01 PDT 2008
+Event/src/Recon/CalRecon
+
+Modified Files:
+	GcrSelectClasses.cxx 
+Log Message:
+include gcrOBFStatusWord in TDS
+
+    *
+------------------------------------------------------------
 User: claval  Sat Apr  5 15:01:00 PDT 2008
 Event/Event/Recon/CalRecon
 
