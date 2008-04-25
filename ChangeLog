@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri Apr 25 08:37:07 PDT 2008
+Event/Event/Digi
+
+Modified Files:
+      Tag: GlastReleasev14r2
+	AcdDigi.h 
+Log Message:
+check this in and do work on laptop
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-11-26-00, operation: add
 Package: Event
