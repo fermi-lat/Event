@@ -32,7 +32,7 @@
 *             
 *
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.24 2008/01/23 23:43:33 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/AcdDigi.h,v 1.24.4.1 2008/04/25 15:37:07 heather Exp $
 */
 
 static const CLID& CLID_AcdDigi = InterfaceID("AcdDigi", 1, 1);
@@ -60,9 +60,9 @@ namespace Event {
         // This keeps Gaudi happy
         AcdDigi() {}
                 
-        AcdDigi(const idents::AcdId &id, const idents::VolumeIdentifier &volId)
-        : m_id(id), m_tileName(""), m_tileNumber(-1), m_volId(volId),
-          m_energy(0.0f), m_shadow(false), m_gem(false) {
+        AcdDigi(const idents::AcdId &id, const idents::VolumeIdentifier &volId, const char *tileName="")
+        : m_id(id), m_tileName(tileName), m_tileNumber(-1), m_volId(volId),
+          m_energy(0.0f), m_ninja(false), m_gem(false) {
             m_pulseHeight[0] = 0; m_pulseHeight[1] = 0;
             m_veto[0] = false; m_veto[1] = false;
             m_low[0] = false; m_low[1] = false;
@@ -76,7 +76,7 @@ namespace Event {
         AcdDigi(const idents::AcdId &id, const idents::VolumeIdentifier &volId,
             double energy, unsigned short *pha, 
             bool *veto, bool *lowThresh, bool *highThresh) 
-            : m_id(id), m_tileName(""), m_tileNumber(-1), m_volId(volId), m_energy(energy), m_shadow(false), m_gem(false)
+            : m_id(id), m_tileName(""), m_tileNumber(-1), m_volId(volId), m_energy(energy), m_ninja(false), m_gem(false)
         {  
             m_pulseHeight[0] = pha[0]; m_pulseHeight[1] = pha[1];
             m_veto[0] = veto[0]; m_veto[1] = veto[1];
@@ -89,6 +89,13 @@ namespace Event {
         
         virtual ~AcdDigi() { };
 
+        void init(unsigned short* pha, bool *veto, bool* lowThresh, bool* highThresh) {
+            m_pulseHeight[0] = pha[0]; m_pulseHeight[1] = pha[1];
+            m_veto[0] = veto[0]; m_veto[1] = veto[1];
+            m_low[0] = lowThresh[0]; m_low[1] = lowThresh[1];
+            m_high[0] = highThresh[0]; m_high[1] = highThresh[1];
+        }
+
         void initLdfParameters(const char* tileName, int tileNumber, Range *rangeVals, ParityError *errorVals) {
             m_tileName = tileName;
             m_tileNumber = tileNumber;
@@ -97,7 +104,12 @@ namespace Event {
             m_error[2] = errorVals[2]; m_error[3] = errorVals[3];
         }
 
-        void setShadow(bool val=true) { m_shadow = val; }
+        void initGem(bool ninja, bool gem) {
+            setNinja(ninja);
+            setGem(gem);
+        }
+
+        void setNinja(bool val=true) { m_ninja = val; }
 
         void setGem(bool val=true) { m_gem = val; }
 
@@ -155,7 +167,7 @@ namespace Event {
 
         /// true if this AcdDigi was solely created due to GEM TileList bit for this detector
         /// being set
-        inline bool getShadow() const { return m_shadow; }
+        inline bool isNinja() const { return m_ninja; }
 
         /// true if GEM TileList bit for this detector is set
         inline bool getGemFlag() const { return m_gem; }
@@ -173,7 +185,7 @@ namespace Event {
         /// Fill the ASCII output stream
         virtual std::ostream& fillStream( std::ostream& s ) const;
         
-        
+
     private:
         
         /// Acd ID
@@ -208,7 +220,7 @@ namespace Event {
         ParityError          m_error[4];
         /// Flag denoting that this AcdDigi was generated solely due to the
         /// GEM bit in GemTileList for this detector
-        bool m_shadow;
+        bool m_ninja;
         /// Denotes that the bit corresponding to this detector in GemTileList
         /// is on.  Note that the GEM bits are detector level (not PMT specific)
         bool m_gem;
