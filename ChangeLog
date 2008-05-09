@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Thu May  8 19:31:15 PDT 2008
+Event/Event/Digi
+
+Modified Files:
+	AcdDigi.h 
+Log Message:
+put ACD-10 changes into HEAD
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r25p2gr1, operation: add
 Package: Event
