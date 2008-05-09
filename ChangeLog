@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Thu May  8 19:31:15 PDT 2008
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+put ACD-10 changes into HEAD
+    *
+------------------------------------------------------------
+User: heather  Thu May  8 19:31:15 PDT 2008
 Event/Event/Digi
 
 Modified Files:
