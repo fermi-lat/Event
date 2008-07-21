@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Jul 21 14:01:19 PDT 2008
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+move to 64 bit event Id
+    *
+------------------------------------------------------------
 User: glastrm  Wed Jul  9 14:13:41 PDT 2008
 GlastRelease-scons/Event
 
