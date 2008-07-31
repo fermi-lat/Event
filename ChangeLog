@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: cohen  Thu Jul 31 11:41:13 PDT 2008
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+remove GltDigi
+    *
+------------------------------------------------------------
+User: cohen  Thu Jul 31 11:41:13 PDT 2008
 Event/cmt
 
 Modified Files:
