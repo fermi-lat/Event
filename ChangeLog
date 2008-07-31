@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: cohen  Thu Jul 31 12:20:02 PDT 2008
+Event/cmt
+
+Modified Files:
+	requirements 
+Log Message:
+forgot the test main
+    *
+------------------------------------------------------------
 TAG
 Tag name: v12r1, operation: add
 Package: Event
