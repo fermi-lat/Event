@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: cohen  Thu Jul 31 11:41:12 PDT 2008
+Event/src/Digi
+
+Removed Files:
+      Tag: v11r27
+	GltDigi.cxx 
+Log Message:
+remove GltDigi
+    *
+------------------------------------------------------------
+User: cohen  Thu Jul 31 11:41:12 PDT 2008
 Event/Event/Digi
 
 Removed Files:
