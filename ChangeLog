@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 TAG
+Tag name: v11r27, operation: add
+Package: Event
+User: cohen  Thu Jul 31 15:03:53 2008
+Files:
+  Event/Event/Digi/GltDigi.h  1.10
+  Event/src/Digi/GltDigi.cxx  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: Event-12-01-01, operation: add
 Package: Event
 User: glastrm  Thu Jul 31 12:30:22 2008
