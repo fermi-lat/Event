@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Mon Aug  4 21:55:53 PDT 2008
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+add GleamEventFlags
+    *
+------------------------------------------------------------
 TAG
 Tag name: v11r27, operation: add
 Package: Event
