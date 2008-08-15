@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Thu Aug 14 21:47:50 PDT 2008
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add set/get methods for gleamEventFlags::ANALYSISNTUPLE
+recast other enums to hex, for readability
+
+    *
+------------------------------------------------------------
+User: lsrea  Thu Aug 14 21:47:50 PDT 2008
 Event/cmt
 
 Modified Files:
