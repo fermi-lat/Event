@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Thu Aug 14 21:47:49 PDT 2008
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+add set/get methods for gleamEventFlags::ANALYSISNTUPLE
+recast other enums to hex, for readability
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-00-00, operation: add
 Package: Event
