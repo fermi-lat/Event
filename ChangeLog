@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: ecephas  Tue Sep 30 10:11:57 PDT 2008
+GlastRelease-scons/Event
+
+Modified Files:
+	EventLib.py 
+Log Message:
+Added gaudi and clhep libraries via:
+
+env.Tool('addLibrary', library = env['clhepLibs'])
+env.Tool('addLibrary', library = env['gaudiLibs'])
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-01-01, operation: add
 Package: Event
