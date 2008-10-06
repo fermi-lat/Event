@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/Event/SConscript,v 1.6 2008/08/15 21:22:40 ecephas Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/Event/SConscript,v 1.7 2008/09/13 17:30:05 glastrm Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>
-# Version: Event-13-01-01
+# Version: Event-13-02-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
