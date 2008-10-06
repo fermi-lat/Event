@@ -1,5 +1,16 @@
 ------------------------------------------------------------
 User: lsrea  Mon Oct  6 12:06:11 PDT 2008
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Small mods to access methods for status bits of TkrCluster and TkrTrack
+
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon Oct  6 12:06:11 PDT 2008
 Event/cmt
 
 Modified Files:
