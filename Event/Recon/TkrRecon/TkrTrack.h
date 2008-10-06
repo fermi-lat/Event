@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.7 2005/02/07 20:35:20 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.8 2005/09/03 02:02:19 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -50,9 +50,13 @@ public:
    virtual const CLID& clID() const   { return TkrTrack::classID(); }
    static const CLID& classID()       { return CLID_TkrTrack; }
 
-    // Status word bits organized like:
+    // Status word bits organized like: low bits:
     //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
     //         [ Pat Rec Info  ] [Pass ] [ E-Loss] [ Track Energy ]  [Track Fit Status]
+   // High bits:
+    //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   1   |
+    //                                                                       [Ghost Track]
+
     enum StatusBits {FOUND    = 0x0001,  //Set if track has been "found" by pat rec
                      FILTERED = 0x0002,  //Set if track fit filter stage has been run
                      SMOOTHED = 0x0004,  //Set if track fit smoother has been run
@@ -68,7 +72,9 @@ public:
                      PRCALSRCH= 0x1000,  //Set if Pat. Rec. used Cal Energy Centroid
                      PRBLNSRCH= 0x2000,  //Set if Pat. Rec. used only Track info.
                      TOP      = 0x4000,  //Set if track traj. intercepts top tracker plane
-                     BOTTOM   = 0x8000}; //Set if track traj. intercepts first Cal layer
+                     BOTTOM   = 0x8000, //Set if track traj. intercepts first Cal layer
+
+                     GHOST    = 0x10000}; // set if track contains ghost clusters
     
     /// Utility 
     std::ostream& fillStream( std::ostream& s ) const;
@@ -133,7 +139,8 @@ public:
     inline void   setNumYHits(int i)                  {m_nyHits            = i;}
     inline void   setTkrCalRadLen(double x)           {m_TkrCal_radlen     = x;}
     inline void   setStatusBit(unsigned int status)   {m_statusBits       |= status;}
-    inline void   clearStatusBits()                   {m_statusBits        = 0;}
+    inline void   clearStatusBits(unsigned int bits= 0xffffffff)            
+                                                      {m_statusBits       &= ~bits;}
     inline void   clearEnergyStatusBits()             {m_statusBits       &= 0xff0f;}
 
 private:    
