@@ -39,7 +39,7 @@ static const CLID& CLID_CalXtalRecData = InterfaceID("CalXtalRecData", 1, 0);
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.13 2006/02/04 10:48:12 chamont Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.14 2007/11/06 21:08:28 fewtrell Exp $
 */
 namespace Event 
 {
