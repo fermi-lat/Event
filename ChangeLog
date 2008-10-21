@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: usher  Tue Oct 21 12:30:53 PDT 2008
+Event/Event/Digi
+
+Modified Files:
+	CalDigi.h TkrDigi.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-02-00, operation: add
 Package: Event
