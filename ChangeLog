@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 TAG
+Tag name: v13r4, operation: mov
+Package: Event
+User: glast  Wed Dec  3 12:59:39 2008
+Files:
+  Event/SConscript  1.11
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: v13r4, operation: add
 Package: Event
 User: ecephas  Wed Dec  3 12:27:27 2008
