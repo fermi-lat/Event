@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Wed Dec  3 09:22:51 PST 2008
+GlastRelease-scons/Event
+
+Modified Files:
+	SConscript 
+Log Message:
+Changed the version number for which this SConscript refers to.
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-04-00, operation: add
 Package: Event
