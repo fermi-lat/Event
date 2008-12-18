@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec 18 15:32:33 PST 2008
+Event/Event/TopLevel
+
+Modified Files:
+	Event.h 
+Log Message:
+Minor update to Event to get rid of some windows compiler warnings, modify TriggerInfo to make handling the TileList easier
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-04-01, operation: add
 Package: Event
