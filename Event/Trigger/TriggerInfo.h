@@ -10,7 +10,7 @@
 #include "Event/TopLevel/EventModel.h"
 
 #include <iostream>
-#include <vector>
+#include <map>
 
 /**
 * @class TriggerInfo
@@ -22,13 +22,13 @@ namespace Event {
 
 /** @class TriggerInfo
   * @brief Local storage of TriggerInfo data
-  * $Header: /nfs/slac/g/glast/ground/cvs/LdfEvent/LdfEvent/TriggerInfo.h,v 1.14 2008/11/12 18:54:28 lsrea Exp $
+  * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Trigger/TriggerInfo.h,v 1.1 2008/12/18 03:25:20 usher Exp $
 */
 class TriggerInfo : public DataObject
 {
 public:
-    /// Define the TileList vector
-    typedef std::vector<unsigned int> TileList;
+    /// Define the TileList map
+    typedef std::map<std::string, unsigned int> TileList;
 
     TriggerInfo() { clear(); };
     virtual ~TriggerInfo() { clear(); };
