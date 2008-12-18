@@ -26,7 +26,7 @@ static const CLID& CLID_Event = 110;
 * - trigger prescales
 * - flag if the prescale expired
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.20 2008/08/05 04:55:53 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/Event.h,v 1.21 2008/08/15 04:47:49 lsrea Exp $
 */
 namespace Event{
 
@@ -100,10 +100,10 @@ public:
     void setAnalysisNtupleError() { m_gleamEventFlags |= enums::Gleam::ANALYSISNTUPLE; }
     bool goodEvent() { return (m_gleamEventFlags == 0); }
     bool badEvent()  { return (m_gleamEventFlags != 0); }
-    bool badTkrRecon() { return (m_gleamEventFlags & enums::Gleam::TKRRECON); }
-    bool badAcdRecon() { return (m_gleamEventFlags & enums::Gleam::ACDRECON); }
-    bool badCalRecon() { return (m_gleamEventFlags & enums::Gleam::CALRECON); }
-    bool badAnalysisNtuple() { return (m_gleamEventFlags & enums::Gleam::ANALYSISNTUPLE); }
+    bool badTkrRecon() { return (m_gleamEventFlags & enums::Gleam::TKRRECON) != 0; }
+    bool badAcdRecon() { return (m_gleamEventFlags & enums::Gleam::ACDRECON) != 0; }
+    bool badCalRecon() { return (m_gleamEventFlags & enums::Gleam::CALRECON) != 0; }
+    bool badAnalysisNtuple() { return (m_gleamEventFlags & enums::Gleam::ANALYSISNTUPLE) != 0; }
  
     
     /// Serialize the object for writing
