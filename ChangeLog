@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec 18 15:32:34 PST 2008
+Event/Event/Trigger
+
+Modified Files:
+	TriggerInfo.h 
+Log Message:
+Minor update to Event to get rid of some windows compiler warnings, modify TriggerInfo to make handling the TileList easier
+    *
+------------------------------------------------------------
 User: usher  Thu Dec 18 15:32:33 PST 2008
 Event/Event/TopLevel
 
