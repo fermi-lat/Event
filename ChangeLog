@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Dec 17 19:25:20 PST 2008
+Event/Event/Trigger
+
+Added Files:
+	TriggerInfo.h 
+Log Message:
+Add class to hold the trigger primitives for TriggerAlg. This allows "merging" with the overlay
+    *
+------------------------------------------------------------
 User: usher  Wed Dec 17 19:22:31 PST 2008
 Event/Event/Trigger
 
