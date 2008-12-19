@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+TAG
+Tag name: v13r4p2, operation: mov
+Package: Event
+User: glastrm  Thu Dec 18 16:07:31 2008
+Files:
+  Event/SConscript  1.13
+
+    *
+------------------------------------------------------------
 User: glastrm  Thu Dec 18 16:07:25 PST 2008
 Event
 
