@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.21 2007/02/15 19:17:16 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.22 2007/07/24 04:33:20 lsrea Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -113,11 +113,6 @@ void McParticle::removeDaughter(const SmartRef<McParticle> mcPart)
         if (mcPart == *daughtIter)
         {
             SmartRefVector<Event::McParticle>::iterator forwardIter = (++daughtIter).base();
-            // but are they they same?
-            if (*daughtIter != *forwardIter)
-            {
-                int j = 0;
-            }
             m_daughters.erase(forwardIter);
             break;
         }
