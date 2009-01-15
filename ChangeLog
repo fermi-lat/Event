@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jan 15 09:59:33 PST 2009
+Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+Remove useless comparson between forward and reverse iterators that was a mistake anyway...
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-15-50-10, operation: del
 Package: Event
