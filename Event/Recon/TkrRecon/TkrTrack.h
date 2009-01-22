@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.8 2005/09/03 02:02:19 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.9 2008/10/06 19:06:10 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -54,8 +54,8 @@ public:
     //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
     //         [ Pat Rec Info  ] [Pass ] [ E-Loss] [ Track Energy ]  [Track Fit Status]
    // High bits:
-    //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   1   |
-    //                                                                       [Ghost Track]
+    //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
+    //                                                                        [Ghosts]
 
     enum StatusBits {FOUND    = 0x0001,  //Set if track has been "found" by pat rec
                      FILTERED = 0x0002,  //Set if track fit filter stage has been run
@@ -74,7 +74,9 @@ public:
                      TOP      = 0x4000,  //Set if track traj. intercepts top tracker plane
                      BOTTOM   = 0x8000, //Set if track traj. intercepts first Cal layer
 
-                     GHOST    = 0x10000}; // set if track contains ghost clusters
+                     GHOST      = 0x10000, // set if track contains ghost clusters
+                     DIAGNOSTIC = 0x20000  // set if track contains diagnostic ghost clusters
+    }; 
     
     /// Utility 
     std::ostream& fillStream( std::ostream& s ) const;
