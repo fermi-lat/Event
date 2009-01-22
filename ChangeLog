@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: lsrea  Wed Jan 21 18:21:55 PST 2009
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrTrack.h TkrVertex.h 
+Log Message:
+TkrVertex.h: add an enum to the status word; interface is unchanged
+TkrCluster.h, TkrTrack.h: cosmetic stuff
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-04-03, operation: add
 Package: Event
