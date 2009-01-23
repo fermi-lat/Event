@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+TAG
+Tag name: Event-13-02-00, operation: mov
+Package: Event
+User: glastrm  Thu Jan 22 16:31:24 2009
+Files:
+  Event/SConscript  1.16
+  Event/SConscript  1.16
+  Event/SConscript  1.16
+
+    *
+------------------------------------------------------------
 User: ecephas  Thu Jan 22 16:06:58 PST 2009
 GlastRelease-scons/Event
 
