@@ -1,7 +1,7 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/Event/SConscript,v 1.14 2009/01/15 18:30:08 glastrm Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/SConscript,v 1.8 2008/10/06 19:30:09 glastrm Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>
-# Version: Event-13-04-04
+# Version: Event-13-02-00
 Import('baseEnv')
 Import('listFiles')
 Import('packages')
@@ -21,6 +21,7 @@ test_TkrRecon = progEnv.Program('test_TkrRecon_Event', ['src/test/test_TkrRecon.
 
 progEnv.Tool('registerObjects', package = 'Event', libraries = [EventLib],
              testApps = [test_Event, test_Tables, test_TkrRecon], includes = listFiles(['Event/*'], recursive = 1))
+
 
 
 
