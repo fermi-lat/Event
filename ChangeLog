@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: ecephas  Thu Jan 22 16:06:58 PST 2009
+GlastRelease-scons/Event
+
+Modified Files:
+	SConscript 
+Log Message:
+Check in for GlastRelease-15-49-00
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-04-04, operation: add
 Package: Event
