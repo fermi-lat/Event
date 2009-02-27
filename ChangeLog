@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Thu Feb 26 16:31:41 PST 2009
+Event/Event/TopLevel
+
+Modified Files:
+      Tag: GlastReleasev17r5
+	EventModel.h 
+Log Message:
+Changes for new Acd reconstruction
+    *
+------------------------------------------------------------
+User: echarles  Thu Feb 26 16:31:41 PST 2009
 Event/Event/Recon/AcdRecon
 
 Modified Files:
