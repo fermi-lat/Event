@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 26 16:34:32 PST 2009
+Event/Event/Recon/AcdRecon
+
+Added Files:
+      Tag: GlastReleasev17r5
+	AcdEventTopology.h AcdReconV2.h AcdTkrAssoc.h 
+Log Message:
+Changes for new Acd reconstruction
+    *
+------------------------------------------------------------
 TAG
 Tag name: v14r0gr1, operation: add
 Package: Event
