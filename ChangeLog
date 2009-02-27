@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 26 16:31:42 PST 2009
+Event/src/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev17r5
+	AcdPocaData.cxx AcdTkrGapPoca.cxx AcdTkrHitPoca.cxx 
+	AcdTkrLocalData.cxx AcdTkrPoint.cxx 
+Log Message:
+Changes for new Acd reconstruction
+    *
+------------------------------------------------------------
 User: echarles  Thu Feb 26 16:31:41 PST 2009
 Event/Event/TopLevel
 
