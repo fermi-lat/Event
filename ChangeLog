@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 26 16:31:41 PST 2009
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev17r5
+	AcdHit.h AcdPocaData.h AcdTkrGapPoca.h AcdTkrHitPoca.h 
+	AcdTkrLocalData.h AcdTkrPoint.h 
+Log Message:
+Changes for new Acd reconstruction
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-05-00, operation: add
 Package: Event
