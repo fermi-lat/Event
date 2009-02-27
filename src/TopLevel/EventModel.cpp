@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.77 2008/03/28 21:36:41 claval Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.78 2008/10/21 19:32:27 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -37,6 +37,7 @@ std::string EventModel::MC::McPartToTkrTrackTab       = EventModel::MC::Event  +
 
 std::string EventModel::MC::McAcdTkrPointCol          = EventModel::MC::Event  + "/AcdTkrPointCol";
 std::string EventModel::MC::McAcdTkrHitPocaCol        = EventModel::MC::Event  + "/AcdTkrHitPocaCol";
+std::string EventModel::MC::McAcdTkrAssocCol          = EventModel::MC::Event  + "/AcdTkrAssocCol";
 
 
 // Digi event
@@ -108,4 +109,6 @@ std::string EventModel::CalRecon::GcrSelectVals     = EventModel::CalRecon::Even
 
 // reconstructed ACD data
 std::string EventModel::AcdRecon::Event               = EventModel::EventHeader + "/AcdRecon";
+
+std::string EventModel::AcdReconV2::Event             = EventModel::EventHeader + "/AcdReconV2";
 

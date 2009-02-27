@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.50 2008/03/28 21:36:41 claval Exp $
+// $Id: EventModel.h,v 1.51 2008/10/21 19:30:54 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -72,6 +72,7 @@ public:
         static std::string McPartToTkrTrackTab;
 	static std::string McAcdTkrPointCol;
 	static std::string McAcdTkrHitPocaCol;
+	static std::string McAcdTkrAssocCol;
     };
 
     class DLL_EXPORT_EVT Digi
@@ -176,6 +177,15 @@ public:
     public:
         AcdRecon() {}
        ~AcdRecon() {}
+
+        static std::string Event;
+    };
+
+    class DLL_EXPORT_EVT AcdReconV2
+    {
+    public:
+        AcdReconV2() {}
+       ~AcdReconV2() {}
 
         static std::string Event;
     };
