@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug  6 17:53:25 PDT 2009
+GlastRelease-scons/Event
+
+Modified Files:
+	.cvsignore SConscript 
+Log Message:
+SConscript:  use registerTargets
+.cvsignore:  add SCons derived stuff
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-00-01-gr1, operation: add
 Package: Event
