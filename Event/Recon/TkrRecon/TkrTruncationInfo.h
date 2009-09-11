@@ -49,7 +49,7 @@ namespace Event {
 *
 * @author Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/TkrDigi/src/TkrTruncationInfo.h,v 1.2 2004/07/20 14:14:05 kuss Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTruncationInfo.h,v 1.1 2005/09/03 02:02:20 lsrea Exp $
 */
     class TkrTruncationInfo : public DataObject {
 
@@ -61,7 +61,7 @@ namespace Event {
             m_truncationMap.clear();
         }
 
-        TkrTruncationInfo::~TkrTruncationInfo() {
+        virtual ~TkrTruncationInfo() {
             m_truncationMap.clear();
         }
 

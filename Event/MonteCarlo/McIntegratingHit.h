@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.23 2006/03/21 01:29:43 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.24 2008/12/02 02:53:48 usher Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -28,7 +28,7 @@
  *                                   Formating of ASCII output
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.23 2006/03/21 01:29:43 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.24 2008/12/02 02:53:48 usher Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -68,7 +68,7 @@ public:
         m_energyArray[0]=m_energyArray[1]=m_energyArray[2]=m_energyArray[3]=0;
     }
 
-    ~McIntegratingHit(){}
+    virtual ~McIntegratingHit(){}
 
     /// Retrieve cell identifier
     const idents::VolumeIdentifier volumeID() const;

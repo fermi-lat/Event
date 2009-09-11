@@ -15,7 +15,7 @@ static const CLID& CLID_CalMipTrackVecCol = InterfaceID("CalMipTrackVecCol", 1, 
 /**   
 * @class StdMipFindingTool
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalMipClasses.h,v 1.2 2005/06/22 21:31:27 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalMipClasses.h,v 1.3 2005/07/14 07:32:54 piron Exp $
 */
 
 //-----------------------------------------------------------------------------------------------------------------
@@ -38,7 +38,7 @@ public:
     CalMipXtal(Event::CalXtalRecData* xtalData, double d2C, bool free, bool freeC0, double ecor) : 
                 m_xtalData(xtalData), m_d2C(d2C), m_free(free), m_freeC0(freeC0), m_ecor(ecor) {};
 
-    ~CalMipXtal() {};
+    virtual ~CalMipXtal() {};
 
     void                   initialize(Event::CalXtalRecData* xtalData, double d2C, bool free, bool freC0, double ecor);
 
