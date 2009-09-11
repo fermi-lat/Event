@@ -28,7 +28,7 @@
  *
  * @author:      R.Giannitrapani 
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.5 2006/03/21 01:29:44 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McTrajectory.h,v 1.6 2007/02/15 19:17:14 usher Exp $
  */
 
 #include "GaudiKernel/IInterface.h"
@@ -44,7 +44,7 @@ public:
     McTrajectoryPoint() : m_energy(0.), m_point(0.,0.,0.) {}
     McTrajectoryPoint(idents::VolumeIdentifier vId, float energy, CLHEP::Hep3Vector& point) :
         m_volumeID(vId), m_energy(energy), m_point(point) {}
-    ~McTrajectoryPoint() {}
+    virtual ~McTrajectoryPoint() {}
 
     /// Retrieve cell identifier
     idents::VolumeIdentifier getVolumeID() const {return m_volumeID;}

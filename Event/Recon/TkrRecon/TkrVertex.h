@@ -1,7 +1,7 @@
 /** @file TkrVertex.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.18 2007/09/05 18:11:45 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVertex.h,v 1.19 2009/01/22 02:21:55 lsrea Exp $
 */
 
 #ifndef __TkrVertex_H
@@ -50,7 +50,7 @@ namespace Event { //Namespace
         TkrVertex(idents::TkrId tkrID, double energy, double quality, double chisq, 
                    double rad_len, double doca, double s1, double s2, double z,
                    TkrTrackParams params);
-        ~TkrVertex() {}
+        virtual ~TkrVertex() {}
 
         //! Retrieve pointer to class defininition structure
         virtual const CLID& clID() const   { return TkrVertex::classID(); }

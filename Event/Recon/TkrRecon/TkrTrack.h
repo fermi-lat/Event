@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.9 2008/10/06 19:06:10 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.10 2009/01/22 02:21:55 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -44,16 +44,16 @@ class TkrTrack: public TkrTrackHitVec, virtual public ContainedObject
 public:
     /// Constructor/destructor for the class
     TkrTrack();
-   ~TkrTrack();
+    virtual ~TkrTrack();
 
     //! Retrieve pointer to class defininition structure
-   virtual const CLID& clID() const   { return TkrTrack::classID(); }
-   static const CLID& classID()       { return CLID_TkrTrack; }
+    virtual const CLID& clID() const   { return TkrTrack::classID(); }
+    static const CLID& classID()       { return CLID_TkrTrack; }
 
     // Status word bits organized like: low bits:
     //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
     //         [ Pat Rec Info  ] [Pass ] [ E-Loss] [ Track Energy ]  [Track Fit Status]
-   // High bits:
+    // High bits:
     //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
     //                                                                        [Ghosts]
 

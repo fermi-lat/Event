@@ -13,7 +13,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.4 2004/10/01 19:35:29 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McEventStructure.h,v 1.5 2005/03/02 17:53:20 usher Exp $
  */
 
 #ifndef McEventStructure_h
@@ -63,7 +63,7 @@ public:
     }
 
     //McEventStructure(Event::McParticle* mcPart, unsigned long classBits);
-   ~McEventStructure() {}
+   virtual ~McEventStructure() {}
 
     virtual const CLID& clID() const   { return McEventStructure::classID(); }
     static const CLID& classID()       { return CLID_McEventStructure; }
