@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: usher  Fri Sep 11 13:36:42 PDT 2009
+Event/Event/MonteCarlo
+
+Modified Files:
+	McEventStructure.h McIntegratingHit.h McTrajectory.h 
+Log Message:
+    *
+------------------------------------------------------------
 User: jrb  Thu Aug  6 17:53:25 PDT 2009
 GlastRelease-scons/Event
 
