@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sat Sep 12 09:09:38 PDT 2009
+Event
+
+Modified Files:
+	SConscript 
+Log Message:
+Preparing to tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-05-01, operation: add
 Package: Event
