@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: usher  Mon Oct  5 15:35:50 PDT 2009
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.cxx 
+Added Files:
+	TkrVecPoint.cxx 
+Log Message:
+Adding various updates to tracker classes, minor fixes to existing ones (e.g. initializing nDegreesOfFreedom in TkrTrack) and introducing some intermediate classes for Vector Links pattern recognition (which move from TkrRecon itself so they can be "displayed)
+    *
+------------------------------------------------------------
 User: usher  Mon Oct  5 15:35:49 PDT 2009
 Event/Event/TopLevel
 
