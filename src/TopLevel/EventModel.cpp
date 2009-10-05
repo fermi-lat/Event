@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.77 2008/03/28 21:36:41 claval Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.78 2008/10/21 19:32:27 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -82,6 +82,10 @@ std::string EventModel::TkrRecon::TkrDiagnostics      = EventModel::TkrRecon::Ev
 std::string EventModel::TkrRecon::TkrEventParams      = EventModel::TkrRecon::Event + "/TkrEventParams";
 std::string EventModel::TkrRecon::TkrTruncatedPlane   = EventModel::TkrRecon::Event + "/TkrTruncatedPlane";
 std::string EventModel::TkrRecon::TkrTruncationInfo   = EventModel::TkrRecon::Event + "/TkrTruncationInfo";
+std::string EventModel::TkrRecon::TkrVecPointCol          = EventModel::TkrRecon::Event + "/TkrVecPointCol";
+std::string EventModel::TkrRecon::TkrVecPointsLinkCol     = EventModel::TkrRecon::Event + "/TkrVecPointsLinkCol";
+std::string EventModel::TkrRecon::TkrTrackElementsCol     = EventModel::TkrRecon::Event + "/TkrTrackElementsCol";
+std::string EventModel::TkrRecon::TkrTrackElemsToLinksTab = EventModel::TkrRecon::Event + "/TkrTrackElemsToLinksTab";
 
 //reconstructed Cal data
 std::string EventModel::CalRecon::Event               = EventModel::EventHeader + "/CalRecon";
