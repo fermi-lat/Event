@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Oct  5 15:35:49 PDT 2009
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Adding various updates to tracker classes, minor fixes to existing ones (e.g. initializing nDegreesOfFreedom in TkrTrack) and introducing some intermediate classes for Vector Links pattern recognition (which move from TkrRecon itself so they can be "displayed)
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-13-05-01, operation: add
 Package: Event
