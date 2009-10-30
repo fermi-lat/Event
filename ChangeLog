@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Oct 30 08:55:49 PDT 2009
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackElements.h TkrVecPointsLink.h 
+Log Message:
+Small updates to vector links related TDS objects
+    *
+------------------------------------------------------------
 User: usher  Mon Oct  5 15:35:50 PDT 2009
 Event/Event/Recon/TkrRecon
 
