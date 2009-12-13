@@ -35,7 +35,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.18 2005/07/14 22:38:25 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.19 2005/11/25 16:33:55 chamont Exp $
 */
 
 namespace Event 
@@ -233,9 +233,9 @@ typedef CalClusterCol::iterator       CalClusterColItr;
 typedef CalClusterCol::const_iterator CalClusterColConItr;
 
 // Define the relational table taking us back to CalXtalRecData objects
-typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster>               CalClusterHitTab;
-typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster>               CalClusterHitRel;
-typedef ObjectList< Event::Relation<Event::CalXtalRecData, Event::CalCluster> > CalClusterHitTabList;
+typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster> CalClusterHitTab;
+typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster> CalClusterHitRel;
+typedef RelationList<CalXtalRecData, CalCluster>                  CalClusterHitTabList;
 
 }
 
