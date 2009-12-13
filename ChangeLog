@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Dec 13 15:07:58 PST 2009
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+Minor modification in relational table definition
+    *
+------------------------------------------------------------
 User: usher  Fri Oct 30 08:55:49 PDT 2009
 Event/Event/Recon/TkrRecon
 
