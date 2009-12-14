@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Dec 14 12:19:57 PST 2009
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalClusterTab.h 
+Log Message:
+Need to update the relational table defs... but this is being repeated so longer term we need to fix the definitions
+    *
+------------------------------------------------------------
 User: usher  Sun Dec 13 15:07:58 PST 2009
 Event/Event/Recon/CalRecon
 
