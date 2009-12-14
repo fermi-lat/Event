@@ -15,14 +15,14 @@
 *
 * @author(s) The CalRecon Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalClusterTab.h,v 1.0 2004/09/18 18:16:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalClusterTab.h,v 1.1 2005/05/26 20:19:36 usher Exp $
 */
 
 namespace Event
 {
-    typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster>               CalClusterHitTab;
-    typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster>               CalClusterHitRel;
-    typedef ObjectList< Event::Relation<Event::CalXtalRecData, Event::CalCluster> > CalClusterHitTabList;
+    typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster> CalClusterHitTab;
+    typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster> CalClusterHitRel;
+    typedef RelationList<Event::CalXtalRecData, Event::CalCluster>    CalClusterHitTabList;
 };
 
 #endif
