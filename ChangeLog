@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Tue Dec 15 19:42:44 PST 2009
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+merge in Eric's AcdRecon updates
+    *
+------------------------------------------------------------
+User: heather  Tue Dec 15 19:42:44 PST 2009
 Event/Event/Recon/AcdRecon
 
 Modified Files:
