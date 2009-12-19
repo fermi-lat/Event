@@ -1,34 +1,4 @@
 ------------------------------------------------------------
-User: echarles  Sat Dec 19 12:05:58 PST 2009
-Event/cmt
-
-Modified Files:
-	requirements 
-Log Message:
-commit for tag Event-14-01-02
-
-    *
-------------------------------------------------------------
-User: echarles  Sat Dec 19 12:05:24 PST 2009
-Event/Event/Recon/AcdRecon
-
-Modified Files:
-	AcdReconV2.h 
-Log Message:
-remove static self referencing data member in AcdReconV2
-
-    *
-------------------------------------------------------------
-User: echarles  Sat Dec 19 12:05:24 PST 2009
-Event/src/Recon/AcdRecon
-
-Modified Files:
-	AcdReconV2.cxx 
-Log Message:
-remove static self referencing data member in AcdReconV2
-
-    *
-------------------------------------------------------------
 User: echarles  Sat Dec 19 07:39:29 PST 2009
 Event/Event/Recon/AcdRecon
 
