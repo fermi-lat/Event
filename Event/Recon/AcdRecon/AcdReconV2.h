@@ -25,17 +25,13 @@ static const CLID& CLID_AcdReconV2 = InterfaceID("AcdReconV2", 1, 0);
 *
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.19 2008/01/23 23:43:33 echarles Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.1.2.1 2009/02/27 00:34:31 echarles Exp $          
 */
 
 namespace Event {
     
   class AcdReconV2 : virtual public DataObject  { 
-    
-  public:
-    
-    static AcdReconV2* s_theAcdReconV2Ptr;
-    
+        
   public:
 
     AcdReconV2(){};
