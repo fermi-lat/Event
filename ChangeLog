@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: echarles  Sat Dec 19 07:39:29 PST 2009
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev17r31p2
+	AcdReconV2.h 
+Log Message:
+remove static self referencing data member in AcdReconV2
+
+    *
+------------------------------------------------------------
 User: echarles  Sat Dec 19 07:39:28 PST 2009
 Event/src/Recon/AcdRecon
 
