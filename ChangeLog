@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: echarles  Sat Dec 19 12:05:24 PST 2009
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdReconV2.h 
+Log Message:
+remove static self referencing data member in AcdReconV2
+
+    *
+------------------------------------------------------------
+User: echarles  Sat Dec 19 12:05:24 PST 2009
 Event/src/Recon/AcdRecon
 
 Modified Files:
