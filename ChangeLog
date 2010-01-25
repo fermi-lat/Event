@@ -1,15 +1,4 @@
 ------------------------------------------------------------
-User: usher  Mon Jan 25 09:28:11 PST 2010
-Event/Event/Recon/CalRecon
-
-Modified Files:
-	CalCluster.h 
-Added Files:
-	CalFitParams.h 
-Log Message:
-Modify format of CalCluster to separate out the "Fit" params from the "Moments" params.
-    *
-------------------------------------------------------------
 TAG
 Tag name: Event-14-01-02, operation: add
 Package: Event
