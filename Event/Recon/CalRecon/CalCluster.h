@@ -36,7 +36,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.20 2009/12/13 23:07:58 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.21 2010/01/25 17:28:11 usher Exp $
 */
 
 namespace Event 
@@ -126,6 +126,7 @@ public:
                     double              rms_long,
                     double              rms_trans,
 					double              long_asym,
+		    double              skew_long,
                     int                 numSaturatedXtals,
 					int                 numTruncXtals)
     {
@@ -134,6 +135,7 @@ public:
         m_rmslong           = rms_long;
         m_rmstrans          = rms_trans;
 		m_rmslongAsym       = long_asym;
+	m_skewnessLong      = skew_long; 	
         m_numSaturatedXtals = numSaturatedXtals;
 		m_numTruncXtals     = numTruncXtals;
     }
@@ -145,6 +147,7 @@ public:
     void setCalParams(const CalParams& params)    {m_params            = params;  }
     void setRmsLong(double rmsLong)               {m_rmslong           = rmsLong; }
 	void setRmsLongAsym(double rmsLongAsym)       {m_rmslongAsym       = rmsLongAsym;}
+    void setSkewnessLong(double skewLong)         {m_skewnessLong      = skewLong;}
     void setRmsTrans(double rmsTrans)             {m_rmstrans          = rmsTrans;}
     void setNumSaturatedXtals(int nSat)           {m_numSaturatedXtals = nSat;}
     void setNumXtals(int numXtals)                {m_numTruncXtals     = numXtals;}
@@ -162,6 +165,8 @@ public:
 	double getRmsLongAsym()            const {return m_rmslongAsym;} 
     /// get RMS of transverse position measurements
     double getRmsTrans()	           const {return m_rmstrans;}
+    /// get the longitudinal skewness
+    double getSkewnessLong()           const {return m_skewnessLong;}
     /// get number of saturated Xtals in Cluster
     int getNumSaturatedXtals()         const {return m_numSaturatedXtals;}
 	/// get Number of Truncated Xtals in Cluster
@@ -205,6 +210,8 @@ private:
     double m_rmslongAsym;
     //! RMS of transverse position measurement
     double m_rmstrans;
+    //! longitudinal skewness
+    double m_skewnessLong;
 	//! number of "saturated" Xtals
 	int m_numSaturatedXtals;
 	//! number of Xtals with > 1% Total Cluster Energy
@@ -221,6 +228,7 @@ inline void CalCluster::iniCluster()
     m_rmslong           = 0.;
 	m_rmslongAsym       = 0.;
     m_rmstrans          = 0.;
+    m_skewnessLong      = -9999.;
 	m_statusBits        = 0;
     m_numSaturatedXtals = 0;
 	m_numTruncXtals     = 0; 
