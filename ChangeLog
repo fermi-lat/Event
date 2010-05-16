@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Sun May 16 11:51:20 PDT 2010
-Event
-
-Modified Files:
-	SConscript 
-Log Message:
-Tagging to get TkrTrack cosmic bit, also add Luca's Cal skewness
-    *
-------------------------------------------------------------
 User: lbaldini  Thu Apr 22 02:13:52 PDT 2010
 Event/Event/Recon/CalRecon
 
