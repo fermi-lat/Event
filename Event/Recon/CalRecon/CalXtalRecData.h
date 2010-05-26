@@ -39,7 +39,7 @@ static const CLID& CLID_CalXtalRecData = InterfaceID("CalXtalRecData", 1, 0);
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.14 2007/11/06 21:08:28 fewtrell Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.15 2008/10/21 19:31:38 usher Exp $
 */
 namespace Event 
 {
@@ -179,8 +179,8 @@ namespace Event
         /// Retrieve average energy of two faces for the best range
         inline double getEnergy() const
         {
-            return (getEnergy(0,idents::CalXtalId::POS)
-                   +getEnergy(0,idents::CalXtalId::NEG))/2;
+            return (sqrt(getEnergy(0,idents::CalXtalId::POS)*
+                         getEnergy(0,idents::CalXtalId::NEG)));
         }
         
         /// Retrieve the position for the best range (for const objects)
