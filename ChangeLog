@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed May 26 07:05:54 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalXtalRecData.h 
+Log Message:
+Return the geometric mean from the ends of the two crystals
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-03-00, operation: add
 Package: Event
