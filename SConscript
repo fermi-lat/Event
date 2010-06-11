@@ -1,5 +1,5 @@
 # -*- python -*-
-# $Header: /nfs/slac/g/glast/ground/cvs/Event/SConscript,v 1.23 2010/05/16 18:51:20 usher Exp $
+# $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/SConscript,v 1.24 2010/06/04 21:14:09 burnett Exp $
 # Authors: T.Burnett <tburnett@u.washington.edu>
 # Version: Event-14-04-00
 Import('baseEnv')
@@ -8,7 +8,7 @@ Import('packages')
 progEnv = baseEnv.Clone()
 libEnv = baseEnv.Clone()
 
-libEnv.Tool('EventLib', depsOnly = 1)
+libEnv.Tool('addLinkDeps', package='Event', toBuild='shared')
 EventLib = libEnv.SharedLibrary('Event',
                                 listFiles(['src/MonteCarlo/*.cxx',
                                            'src/Recon/TkrRecon/*.cxx',
