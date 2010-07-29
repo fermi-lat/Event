@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Jul 29 15:17:29 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalXtalRecData.h 
+Log Message:
+Adding a status bit word so we can flag crystals with various problems
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-04-01, operation: add
 Package: Event
