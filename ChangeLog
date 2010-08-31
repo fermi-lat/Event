@@ -1,4 +1,15 @@
 ------------------------------------------------------------
+User: heather  Mon Aug 30 19:23:49 PDT 2010
+Event/Event/TopLevel
+
+Modified Files:
+      Tag: GlastReleasev18r6p1
+	MCEvent.h 
+Log Message:
+move to Gaudi v21r7
+
+    *
+------------------------------------------------------------
 User: usher  Thu Jul 29 15:17:29 PDT 2010
 Event/Event/Recon/CalRecon
 
