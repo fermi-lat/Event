@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bregeon  Wed Sep  1 16:49:26 PDT 2010
+Event/src/Recon/CalRecon
+
+Added Files:
+	CalMSTreeParams.cxx 
+Log Message:
+new container for the parameters of the CalRecon/Clustering/CalMSTClusteringTool::MSTTree to be added to the CalCluster
+    *
+------------------------------------------------------------
 User: bregeon  Wed Sep  1 16:49:25 PDT 2010
 Event/Event/Recon/CalRecon
 
