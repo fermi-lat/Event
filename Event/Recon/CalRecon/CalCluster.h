@@ -12,7 +12,6 @@
 #include "Event/Recon/CalRecon/CalFitParams.h"
 #include "Event/Recon/CalRecon/CalParams.h"
 #include "Event/Recon/CalRecon/CalXtalRecData.h"
-#include "Event/Recon/CalRecon/CalMSTreeParams.h"
 
 #define NUMCALLAYERS 8
 
@@ -37,7 +36,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.22 2010/04/22 09:13:52 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.21 2010/01/25 17:28:11 usher Exp $
 */
 
 namespace Event 
@@ -110,8 +109,6 @@ public:
 // DC: not used ?
 //	/// @param MIPFIT Bit set means a MIP like track was fitted
 //	                 MIPFIT          = 0x00000800
-	/// @param MSTTREE Bit set means a Minimum Spanning Tree information is available
-	              MSTTREE          = 0x0001000
 	};
 
     /**
@@ -146,7 +143,6 @@ public:
     /*
      *   Define individual set methods here for all variables
      */
-    void setMSTreeParams(const CalMSTreeParams& params) {m_mstreeParams      = params;}
     void setFitParams(const CalFitParams& params) {m_fitParams         = params;}
     void setCalParams(const CalParams& params)    {m_params            = params;  }
     void setRmsLong(double rmsLong)               {m_rmslong           = rmsLong; }
@@ -159,8 +155,6 @@ public:
     /*
      * Provide access to the data
      */
-    /// Direct access to the CalMSTreeParams
-    const CalMSTreeParams& getMSTreeParams() const {return m_mstreeParams;}
     /// Direct access to the CalFitParams
     const CalFitParams& getFitParams() const {return m_fitParams;}
     /// Direct access to the CalParams
@@ -181,8 +175,6 @@ public:
     const Point & getPosition()        const {return m_params.getCentroid();}
     /// get reconstructed direction
     const Vector & getDirection()      const {return m_params.getAxis();}
-    /// get number of edges in the tree
-    int getMSTreeNumEdges()                  const {return m_mstreeParams.getNumberOfEdges();}
 
 	/// Access individual status bits
     inline void setStatusBit( StatusBits bitToSet ) { m_statusBits |=  bitToSet ; }
@@ -208,8 +200,6 @@ private:
         
     //! name of the producer
     std::string m_producerName;
-    //! Parameters of the "Minimum Spanning Tree"
-    CalMSTreeParams m_mstreeParams;
     //! Results of the "fit" to the cluster parameters
     CalFitParams m_fitParams;
     //! Cal Parameters
@@ -233,7 +223,6 @@ private:
 
 inline void CalCluster::iniCluster()
 {
-    m_mstreeParams      = CalMSTreeParams();
     m_fitParams         = CalFitParams();
     m_params            = CalParams();
     m_rmslong           = 0.;
