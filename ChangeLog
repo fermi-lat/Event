@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bregeon  Mon Sep  6 06:05:25 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+add CalMSTreeParams memeber to CalCluster, through a set method, not from the constructor
+    *
+------------------------------------------------------------
 User: bregeon  Wed Sep  1 16:49:26 PDT 2010
 Event/src/Recon/CalRecon
 
