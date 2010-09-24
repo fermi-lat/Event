@@ -20,7 +20,7 @@
 * @author Marco Frailis
 * @author Riccardo Giannitrapani
 *   
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelTable.h,v 1.15 2008/03/13 17:50:40 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelTable.h,v 1.16 2009/09/11 20:36:43 usher Exp $
 */
 namespace Event 
 {
@@ -340,19 +340,13 @@ template <class T1,class T2>
   
 template <class T1,class T2> void RelTable<T1,T2>::clear() 
 {
-    // Purpose: This method remove the given relation from the table
+    // Purpose: This method removes all relations from the table
 
     m_firstMMap->clear();
     m_secondMMap->clear();
 
-    // Gaudi "owns" the relations so it will delete them
-    //for(typename RelationList<T1,T2>::RelationListIter 
-    //      relIter = m_relations->begin(); 
-    //    relIter != m_relations->end(); relIter++)
-    //{
-    //    delete *relIter;
-    //}
-
+    // Note that this calls ObjectList's clear which will delete
+    // the relations... 
     m_relations->clear();
 
     return;
