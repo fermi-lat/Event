@@ -10,6 +10,7 @@
 //#include "GlastEvent/TopLevel/SubMCEvent.h"
 #include "Event/TopLevel/Definitions.h"
 #include "Event/Utilities/TimeStamp.h"
+#include "GaudiKernel/IInterface.h"
 
 static const CLID& CLID_McEvent = InterfaceID("McEvent", 1, 1);
 
@@ -24,7 +25,7 @@ namespace Event {
 * - sequence number for keying random number generator
 * - source ID 
 * 
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.14 2007/06/01 23:42:24 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/TopLevel/MCEvent.h,v 1.15.544.1 2010/08/31 02:23:49 heather Exp $
 */
 
 class MCEvent : public DataObject                                              {
