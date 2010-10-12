@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bregeon  Tue Oct 12 08:52:44 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+new argument CalMSTreeParams added to initialize
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-04-02-gr01, operation: add
 Package: Event
