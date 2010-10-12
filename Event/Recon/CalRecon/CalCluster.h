@@ -37,7 +37,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.22 2010/04/22 09:13:52 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.23 2010/09/06 13:05:25 bregeon Exp $
 */
 
 namespace Event 
@@ -124,23 +124,25 @@ public:
     *   @param rms_long RMS of longitudinal position measurements 
     *   @param rms_trans RMS of transversal position measurements 
     */
-    void initialize(const CalFitParams& fitParams,
-                    const CalParams&    params,
-                    double              rms_long,
-                    double              rms_trans,
-					double              long_asym,
-		    double              skew_long,
-                    int                 numSaturatedXtals,
-					int                 numTruncXtals)
+    void initialize(const CalMSTreeParams& treeParams,
+                    const CalFitParams&    fitParams,
+                    const CalParams&       params,
+                    double                 rms_long,
+                    double                 rms_trans,
+                    double                 long_asym,
+		    double                 skew_long,
+                    int                    numSaturatedXtals,
+                    int                    numTruncXtals)
     {
+        m_mstreeParams      = treeParams;
         m_fitParams         = fitParams;
         m_params            = params;
         m_rmslong           = rms_long;
         m_rmstrans          = rms_trans;
-		m_rmslongAsym       = long_asym;
+        m_rmslongAsym       = long_asym;
 	m_skewnessLong      = skew_long; 	
         m_numSaturatedXtals = numSaturatedXtals;
-		m_numTruncXtals     = numTruncXtals;
+        m_numTruncXtals     = numTruncXtals;
     }
 
     /*
