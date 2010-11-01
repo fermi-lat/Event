@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Nov  1 09:47:29 PDT 2010
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecPointsLink.h 
+Log Message:
+Add "verified" bit
+    *
+------------------------------------------------------------
 User: bregeon  Thu Oct 14 05:21:53 PDT 2010
 Event/Event/Recon/CalRecon
 
