@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bregeon  Tue Nov  2 09:07:05 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+add a new member that is a std::map<std string, double> to store the probabilities from the classification
+    *
+------------------------------------------------------------
 User: usher  Mon Nov  1 09:47:29 PDT 2010
 Event/Event/Recon/TkrRecon
 
