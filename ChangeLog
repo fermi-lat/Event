@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bregeon  Thu Nov  4 10:24:36 PDT 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+add getTopologyProb(std::string) that return -1 if the topology does not exist, update getGamProb, initialize correctly classesProb
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-05-00, operation: add
 Package: Event
