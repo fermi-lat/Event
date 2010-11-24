@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.1 2010/09/24 15:40:16 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.2 2010/11/05 15:17:26 usher Exp $
  */
 
 #ifndef TkrTree_h
@@ -29,7 +29,7 @@ static const CLID& CLID_TkrTree = InterfaceID("TkrTree",  1, 0);
 namespace Event {  // NameSpace
 
 // Typedef for the map of siblings at each layer
-typedef std::map<int, std::vector<TkrVecNode*> > TkrNodeSiblingMap;
+typedef std::map<int, std::vector<const TkrVecNode*> > TkrNodeSiblingMap;
 typedef std::vector<Event::TkrTrack*>            TkrTrackVec;
 
 class TkrTree: virtual public ContainedObject, public TkrTrackVec
