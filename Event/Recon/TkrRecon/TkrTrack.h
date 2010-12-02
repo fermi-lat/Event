@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.11 2009/09/11 20:36:43 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.13 2010/09/24 15:40:15 usher Exp $
 
 */
 #ifndef TkrTrack_H
@@ -77,8 +77,10 @@ public:
                      GHOST      = 0x010000, // set if track contains ghost clusters
                      DIAGNOSTIC = 0x020000, // set if track contains diagnostic ghost clusters
                      COSMICRAY  = 0x040000, // set if the track was found by the cosmic-ray finder (don't use these for gamma-ray analysis!)
+                     TREEBASED  = 0x080000, // set if the track was found using the Tree Based pattern recognition
 
-                     COMPOSITE  = 0x100000  // set if "hits" are composite positions instead of clusters
+                     COMPOSITE  = 0x100000, // set if "hits" are composite positions instead of clusters
+                     HASKINKS   = 0x200000  // set if the track has kinks in it
     }; 
     
     /// Utility 
