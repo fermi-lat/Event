@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Dec 16 12:41:58 PST 2010
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Add new strings for handling new Tkr Filter related TDS objects
+    *
+------------------------------------------------------------
 User: usher  Thu Dec 16 12:41:57 PST 2010
 Event/Event/TopLevel
 
