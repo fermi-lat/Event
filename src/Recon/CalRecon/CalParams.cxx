@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.4 2005/11/25 16:33:56 chamont Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalParams.cxx,v 1.5 2006/03/21 01:29:45 usher Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -122,15 +122,20 @@ CLHEP::HepMatrix Event::CalParams::getAxisErrs() const
 
 std::ostream& Event::CalParams::fillStream( std::ostream& s ) const
 {
-    s << m_energy << " " << m_eneError << "\n"
-      << m_clusterCentroid.x() << " " << m_clusterCentroid.y() << " " << m_clusterCentroid.z() << "\n"
-      << m_cenxx  << " " << m_cenxy << " " << m_cenxz << "\n"
-      << m_cenxy  << " " << m_cenyy << " " << m_cenyz << "\n"
-      << m_cenxz  << " " << m_cenyz << " " << m_cenzz << "\n"
-      << m_clusterAxis.x() << " " << m_clusterAxis.y() << " " << m_clusterAxis.z() << "\n"
-      << m_axisxx  << " " << m_axisxy << " " << m_axisxz << "\n"
-      << m_axisxy  << " " << m_axisyy << " " << m_axisyz << "\n"
-      << m_axisxz  << " " << m_axisyz << " " << m_axiszz;
+  s <<
+    "Energy = " << m_energy << " +- " << m_eneError << " MeV\n" <<
+    "Centroid = (" << m_clusterCentroid.x() << ", " << m_clusterCentroid.y() << ", "
+		  << m_clusterCentroid.z() << ") mm\n" <<
+    "Centroid covariance matrix:\n" <<
+    "| " << m_cenxx  << "  " << m_cenxy << "  " << m_cenxz << " |\n" <<
+    "| " << m_cenxy  << "  " << m_cenyy << "  " << m_cenyz << " |\n" <<
+    "| " << m_cenxz  << "  " << m_cenyz << "  " << m_cenzz << " |\n" <<
+    "Axis = (" << m_clusterAxis.x() << ", " << m_clusterAxis.y() << ", "
+		  << m_clusterAxis.z() << ")\n" <<
+    "Axis covariance matrix:\n" <<
+    "| " << m_axisxx  << "  " << m_axisxy << "  " << m_axisxz << " |\n" <<
+    "| " << m_axisxy  << "  " << m_axisyy << "  " << m_axisyz << " |\n" <<
+    "| " << m_axisxz  << "  " << m_axisyz << "  " << m_axiszz << " |";
 
     return s; 
 }
