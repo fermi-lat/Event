@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Sat Dec 18 09:07:54 PST 2010
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalMomParams.cxx 
+Log Message:
+More members and overloaded constructirs added.
+    *
+------------------------------------------------------------
 User: lbaldini  Sat Dec 18 09:07:53 PST 2010
 Event/Event/Recon/CalRecon
 
