@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lbaldini  Sun Dec 19 07:55:55 PST 2010
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalMomParams.cxx 
+Log Message:
+One more constructor added, initialization values changed.
+    *
+------------------------------------------------------------
+User: lbaldini  Sun Dec 19 07:55:55 PST 2010
 Event/Event/Recon/CalRecon
 
 Modified Files:
