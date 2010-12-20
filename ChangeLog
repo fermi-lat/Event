@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Mon Dec 20 09:25:43 PST 2010
+Event/Event/Recon/CalRecon
+
+Added Files:
+	CalClassParams.h CalNBCClassParams.h 
+Log Message:
+Initial import.
+    *
+------------------------------------------------------------
 User: lbaldini  Mon Dec 20 00:39:48 PST 2010
 Event/src/Recon/CalRecon
 
