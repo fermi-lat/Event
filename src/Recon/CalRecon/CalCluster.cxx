@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.9 2010/12/20 17:29:23 lbaldini Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.10 2010/12/21 07:58:45 lbaldini Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -69,6 +69,9 @@ std::ostream& Event::CalCluster::fillStream(std::ostream& s) const
     "----------------------------------------------------\n" <<
     "--------- Output from the moments analysis ---------\n" << 
     "----------------------------------------------------\n" << m_momParams << "\n" <<
+    "----------------------------------------------------\n" <<
+    "---------- Output from the classification ----------\n" << 
+    "----------------------------------------------------\n" << m_classParams <<
     "------------------------------------------------------";
   return s; 
 }
