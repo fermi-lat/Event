@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Tue Dec 21 01:57:47 PST 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalClassParams.h CalNBCClassParams.h 
+Log Message:
+Conversion functions for the new CalClassParams container fixed.
+    *
+------------------------------------------------------------
 User: lbaldini  Mon Dec 20 23:58:45 PST 2010
 Event/src/Recon/CalRecon
 
