@@ -40,7 +40,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.27 2010/12/19 17:30:32 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.28 2010/12/20 17:29:23 lbaldini Exp $
 */
 
 namespace Event { //Namespace Event
@@ -145,11 +145,6 @@ public:
     const CalMomParams& getParams()              const { return m_momParams; }
     const CalClassParams& getClassParams()       const { return m_classParams; }
 
-    /// Access to the moments analysis output.
-    //double getEnergy()                           const { return m_momParams.getEnergy(); }
-    //double getEnergyErr()                        const { return m_momParams.getEnergyErr(); }
-    //const Point & getCentroid()                  const { return m_momParams.getCentroid(); }
-    //const Vector & getAxis()                     const { return m_momParams.getAxis(); }
     // TBD Change names according to the CalMomParams class?
     double getRmsLong()	                         const { return m_momParams.getLongRms(); }
     double getRmsLongAsym()                      const { return m_momParams.getLongRmsAsym(); } 
@@ -186,7 +181,8 @@ public:
     inline void clearStatusBit( StatusBits bitToClear )    { m_statusBits &= ~bitToClear ; }
     inline bool checkStatusBit( StatusBits bitToCheck ) const { return ((m_statusBits&bitToCheck)!=ZERO) ; }
 
-    /// write some of CalCluster data to the ASCII output file for debugging purposes
+    /// Write some of CalCluster data to the ASCII output file for debugging purposes
+    /// Is this really needed?
     void writeOut(MsgStream& stream) const;
     /// Std output facility.
     std::ostream& fillStream(std::ostream& s) const;
