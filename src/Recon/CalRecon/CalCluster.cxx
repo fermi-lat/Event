@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.8 2010/12/19 17:30:33 lbaldini Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.9 2010/12/20 17:29:23 lbaldini Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -49,21 +49,26 @@ double Event::CalCluster::getGamProb() const
 
 void Event::CalCluster::writeOut(MsgStream& stream) const
 {
-  stream << "Energy " << m_momParams.getEnergy();
-  stream << " No.Trunc Xtals " << m_numTruncXtals;
-  stream << " Gam prob " << getGamProb();
-  stream << " " << getPosition().x() 
-	 << " " << getPosition().y() 
-	 << " " << getPosition().z();
-  stream << " " << getDirection().x() 
-	 << " " << getDirection().y() 
-	 << " " << getDirection().z();
-  stream << endreq;
+  std::stringstream s;
+  fillStream(s);
+  stream << s;
 }
 
 std::ostream& Event::CalCluster::fillStream(std::ostream& s) const
 {
   s <<
-    "--- Moments analysis output ---\n" << m_momParams << "\n";
+    "Cal cluster status bits: " << m_statusBits << "\n" <<
+    "Number of saturated xtals: " << m_numSaturatedXtals << "\n" <<
+    "Truncated number of xtals: " << m_numTruncXtals << "\n" <<
+    "----------------------------------------------------\n" <<
+    "---------- Output from the MST clustering ----------\n" << 
+    "----------------------------------------------------\n" << m_mstParams << "\n" <<
+    "----------------------------------------------------\n" <<
+    "----------- Output from the fitting tool -----------\n" << 
+    "----------------------------------------------------\n" << m_fitParams << "\n" <<
+    "----------------------------------------------------\n" <<
+    "--------- Output from the moments analysis ---------\n" << 
+    "----------------------------------------------------\n" << m_momParams << "\n" <<
+    "------------------------------------------------------";
   return s; 
 }
