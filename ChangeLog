@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Tue Dec 21 07:24:24 PST 2010
+Event/src/Recon/CalRecon
+
+Added Files:
+	CalFitParams.cxx 
+Log Message:
+Initial import.
+    *
+------------------------------------------------------------
 User: lbaldini  Tue Dec 21 01:57:48 PST 2010
 Event/src/Recon/CalRecon
 
