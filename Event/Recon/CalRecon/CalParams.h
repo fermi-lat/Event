@@ -22,7 +22,7 @@
 * 
 * @author Bill Atwood, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.7 2010/12/19 17:30:32 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.8 2010/12/20 08:39:48 lbaldini Exp $
 */
 
 #include <iostream>
@@ -30,9 +30,9 @@
 namespace Event { //Namespace Event
 
 
-class CalParams
-{
-public:
+  class CalParams
+  {
+  public:
     /// Default constructor
     CalParams() { clear() ; }
   
@@ -164,7 +164,7 @@ private:
     double m_axisyy;    // Cov(2,2) = dy * dy
     double m_axisyz;    // Cov(2,3) = Cov (3,2)= dy * dz
     double m_axiszz;    // Cov(3,3) = dz * dz
-};
+  };
  
 
 }; //Namespace Event
