@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Wed Dec 22 08:32:52 PST 2010
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalFitParams.h CalMomParams.h 
+Log Message:
+CalMomentsClusterInfo class refactored, more information in the new CAL cluster containers.
+    *
+------------------------------------------------------------
 User: lbaldini  Wed Dec 22 05:46:16 PST 2010
 Event/src/Recon/CalRecon
 
