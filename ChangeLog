@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lbaldini  Sun Dec 26 03:08:27 PST 2010
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalMomParams.cxx 
+Log Message:
+Initial cluster lebgth calculation in the CAL moments analysis.
+    *
+------------------------------------------------------------
+User: lbaldini  Sun Dec 26 03:08:27 PST 2010
 Event/Event/Recon/CalRecon
 
 Modified Files:
