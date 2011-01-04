@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan  4 14:35:21 PST 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrBoundBoxPoints.h TkrFilterParams.h 
+Log Message:
+Small change to CalCluster for windows compile error, updated versions of tracker filtering/MST stuff
+    *
+------------------------------------------------------------
 User: usher  Tue Jan  4 14:35:20 PST 2011
 Event/Event/Recon/CalRecon
 
