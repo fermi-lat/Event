@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jan  4 14:35:20 PST 2011
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalClassParams.h 
+Log Message:
+Small change to CalCluster for windows compile error, updated versions of tracker filtering/MST stuff
+    *
+------------------------------------------------------------
 User: lbaldini  Sun Dec 26 03:08:27 PST 2010
 Event/src/Recon/CalRecon
 
