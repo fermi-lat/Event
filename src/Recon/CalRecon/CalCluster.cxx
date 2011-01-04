@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.12 2010/12/22 12:39:56 lbaldini Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.13 2010/12/22 13:46:16 lbaldini Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -39,7 +39,7 @@ void Event::CalCluster::writeOut(MsgStream& stream) const
 {
   std::stringstream s;
   fillStream(s);
-  stream << s;
+  stream << s.str();
 }
 
 std::ostream& Event::CalCluster::fillStream(std::ostream& s) const

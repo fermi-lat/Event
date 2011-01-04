@@ -1,6 +1,6 @@
 /** @file TkrFilterParams.h
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.4 2005/09/22 19:33:41 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.1 2010/12/16 20:41:06 usher Exp $
 *
 */
 
@@ -115,21 +115,21 @@ private:
 };
 
 // Typedefs for gaudi container for these objects
-typedef ObjectList<TkrFilterParams>                      TkrFilterParamsCol;
-typedef TkrFilterParamsCol::iterator                     TkrFilterParamsColPtr;
-typedef TkrFilterParamsCol::const_iterator               TkrFilterParamsColConPtr;
+typedef ObjectList<TkrFilterParams>                     TkrFilterParamsCol;
+typedef TkrFilterParamsCol::iterator                    TkrFilterParamsColPtr;
+typedef TkrFilterParamsCol::const_iterator              TkrFilterParamsColConPtr;
 
 class TkrBoundBox;
 
-typedef RelTable<TkrFilterParams, TkrBoundBox>           TkrFilterParamsToBoxTab;
-typedef Relation<TkrFilterParams, TkrBoundBox>           TkrFilterParamsToBoxRel;
-typedef RelationList<TkrFilterParams, TkrBoundBox>       TkrFilterParamsToBoxTabList;
+typedef RelTable<TkrFilterParams, TkrBoundBox>          TkrFilterParamsToBoxTab;
+typedef Relation<TkrFilterParams, TkrBoundBox>          TkrFilterParamsToBoxRel;
+typedef RelationList<TkrFilterParams, TkrBoundBox>      TkrFilterParamsToBoxTabList;
 
-class TkrBoundBoxPoints;
+class TkrBoundBoxPoint;
 
-typedef RelTable<TkrFilterParams, TkrBoundBoxPoints>     TkrFilterParamsToPointsTab;
-typedef Relation<TkrFilterParams, TkrBoundBoxPoints>     TkrFilterParamsToPointsRel;
-typedef RelationList<TkrFilterParams, TkrBoundBoxPoints> TkrFilterParamsToPointsTabList;
+typedef RelTable<TkrFilterParams, TkrBoundBoxPoint>     TkrFilterParamsToPointsTab;
+typedef Relation<TkrFilterParams, TkrBoundBoxPoint>     TkrFilterParamsToPointsRel;
+typedef RelationList<TkrFilterParams, TkrBoundBoxPoint> TkrFilterParamsToPointsTabList;
 
 }
 
