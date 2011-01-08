@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sat Jan  8 12:36:59 PST 2011
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalNBCClassParams.cxx 
+Log Message:
+Make probMap iterator const, and make a local copy (for windows?)
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-06-00, operation: add
 Package: Event
