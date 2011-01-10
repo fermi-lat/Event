@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: jrb  Mon Jan 10 12:52:07 PST 2011
+GlastRelease-scons/Event/Event/RelTable
+
+Modified Files:
+      Tag: GlastReleasev18r7p1
+	Relation.h 
+Log Message:
+Make windows 9.0 compiler happy
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-06-01, operation: add
 Package: Event
