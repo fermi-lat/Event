@@ -24,7 +24,7 @@
  * @author Riccardo Giannitrapani
  * @author Tracy Usher
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/Relation.h,v 1.7 2008/03/13 17:50:40 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/Event/RelTable/Relation.h,v 1.8 2009/09/11 20:36:43 usher Exp $
  */
 
 static const CLID CLID_Relation = 5100;
@@ -136,7 +136,8 @@ template <class T1, class T2> void Relation<T1,T2>::removeFromList(RelationList<
 {
     this->setParent(0);
     list->erase(m_listIter);
-    m_listIter = 0;
+    //    m_listIter = 0;
+    m_listIter = list->end();
 
     return;
 }     
