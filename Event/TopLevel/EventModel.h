@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.53 2009/12/16 03:42:44 heather Exp $
+// $Id: EventModel.h,v 1.54 2010/12/16 20:41:57 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -136,10 +136,12 @@ public:
         static std::string TkrEventParams;
         static std::string TkrFilterParamsCol;
         static std::string TkrFilterParamsToBoxTab;
+        static std::string TkrFilterParamsToLinksTab;
         static std::string TkrFilterParamsToPointsTab;
         static std::string TkrTruncatedPlane;
         static std::string TkrTruncationInfo;
         static std::string TkrBoundBoxCol;
+        static std::string TkrBoundBoxLinksCol;
         static std::string TkrBoundBoxPointsCol;
         static std::string TkrBoundBoxPointsToBoxTab;
         static std::string TkrVecPointCol;
