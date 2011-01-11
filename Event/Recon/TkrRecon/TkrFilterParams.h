@@ -1,6 +1,6 @@
 /** @file TkrFilterParams.h
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.1 2010/12/16 20:41:06 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.2 2011/01/04 22:35:21 usher Exp $
 *
 */
 
@@ -118,6 +118,12 @@ private:
 typedef ObjectList<TkrFilterParams>                     TkrFilterParamsCol;
 typedef TkrFilterParamsCol::iterator                    TkrFilterParamsColPtr;
 typedef TkrFilterParamsCol::const_iterator              TkrFilterParamsColConPtr;
+
+class TkrBoundBoxLink;
+
+typedef RelTable<TkrFilterParams, TkrBoundBoxLink>     TkrFilterParamsToLinksTab;
+typedef Relation<TkrFilterParams, TkrBoundBoxLink>     TkrFilterParamsToLinksRel;
+typedef RelationList<TkrFilterParams, TkrBoundBoxLink> TkrFilterParamsToLinksTabList;
 
 class TkrBoundBox;
 
