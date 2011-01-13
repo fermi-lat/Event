@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Thu Jan 13 07:44:06 PST 2011
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalMomParams.h 
+Log Message:
+Minor change to get rid of a compiler warning.
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-06-03, operation: add
 Package: Event
