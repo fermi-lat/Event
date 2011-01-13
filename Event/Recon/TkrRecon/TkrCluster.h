@@ -1,7 +1,7 @@
 /** @file TkrCluster.h
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.16 2009/01/22 02:21:55 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.17 2011/01/12 00:22:26 lsrea Exp $
 
 */
 #ifndef TKRCLUSTER_H
@@ -118,7 +118,8 @@ namespace Event {
             maskSAMETRACKD  = fieldSAMETRACKD<<shiftSAMETRACKD,
             maskPLANEOFFSET = fieldPLANEOFFSET<<shiftPLANEOFFSET,
             maskLAYEROFFSET = fieldLAYEROFFSET<<shiftLAYEROFFSET,
-            maskZAPGHOSTS   = mask255|maskGHOST|maskSAMETRACK|maskDIAGNOSTIC|maskSAMETRACKD
+            maskZAPGHOSTS   = mask255|maskGHOST|maskSAMETRACK|maskDIAGNOSTIC|maskSAMETRACKD,
+            maskUSEDANY     = maskUSED|maskUSEDCR
         };
 
         TkrCluster(): m_tkrId(0,0,0,false) {}
@@ -179,7 +180,7 @@ namespace Event {
         // construct layer from Plane
         inline int getLayer() const { 
             return (getPlane() + getLayerOffset())/2 ; }
-        // cluster used on a track, legacy
+        // cluster used on a standard track, legacy
         inline bool hitFlagged()     const { return isSet(maskUSED); }
         // returns chip number, hardwired strips/chip = 64
         inline int    chip()  const { return m_strip0/64;}
@@ -210,12 +211,9 @@ namespace Event {
             m_status &= ~mask;
         }
 
-        /// move USED bit to USEDCR bit, to avoid interfering with subsequent finding
+        /// set USEDCR bit
         inline void setUSEDCRBit() {
-            if(m_status & maskUSED) {
-                m_status &= ~maskUSED;
-                m_status |= maskUSEDCR;
-            }
+            m_status |= maskUSEDCR;
         }
 
     private:
