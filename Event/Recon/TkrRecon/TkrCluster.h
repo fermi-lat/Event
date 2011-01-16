@@ -1,7 +1,7 @@
 /** @file TkrCluster.h
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.17 2011/01/12 00:22:26 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.18 2011/01/13 19:42:05 lsrea Exp $
 
 */
 #ifndef TKRCLUSTER_H
@@ -22,7 +22,7 @@
 
 #include "GaudiKernel/IInterface.h"
 
-static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 5, 0);
+static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 6, 0);
 
 namespace Event {
 
