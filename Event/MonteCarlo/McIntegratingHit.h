@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.25 2009/09/11 20:36:42 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.26 2010/06/02 20:31:04 usher Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -30,7 +30,7 @@
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
  *              T.Usher 2010-06-01 : Add ability to keep track of end responses
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.25 2009/09/11 20:36:42 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.26 2010/06/02 20:31:04 usher Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -77,6 +77,15 @@ public:
 
         // add energy/position for this diode
         void addEnergyItem(double totalEnergy, double directEnergy, const HepPoint3D& position);
+
+        // Initialization for reading and writing 
+        void initialize(double totalEnergy, double directEnergy, const HepPoint3D& mom1, const HepPoint3D& mom2)
+        {
+            m_totalEnergy  = totalEnergy;
+            m_directEnergy = directEnergy;
+            m_moment1seed  = mom1;
+            m_moment2seed  = mom2;
+        }
 
     private:
         /// total deposited energy: set automatically when m_energyInfo is modified.
