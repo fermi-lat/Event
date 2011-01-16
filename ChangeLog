@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sun Jan 16 14:30:04 PST 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+increment CLID
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-06-05, operation: add
 Package: Event
