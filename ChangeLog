@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sat Jan 15 19:32:29 PST 2011
+Event/Event/MonteCarlo
+
+Modified Files:
+	McIntegratingHit.h 
+Log Message:
+modifications to allow for root input/output
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-06-04, operation: add
 Package: Event
