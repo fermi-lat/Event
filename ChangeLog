@@ -1,4 +1,16 @@
 ------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:54 PST 2011
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdEventTopology.cxx AcdHit.cxx AcdPocaData.cxx 
+	AcdSplashVars.cxx AcdTkrAssoc.cxx AcdTkrGapPoca.cxx 
+	AcdTkrHitPoca.cxx AcdTkrIntersection.cxx AcdTkrLocalData.cxx 
+	AcdTkrPoca.cxx AcdTkrPoint.cxx 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:53 PST 2011
 Event/src/Hits
 
