@@ -25,7 +25,7 @@ static const CLID& CLID_AcdReconV2 = InterfaceID("AcdReconV2", 1, 0);
 *
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.2 2009/12/16 03:42:44 heather Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.3 2009/12/19 20:05:24 echarles Exp $          
 */
 
 namespace Event {
@@ -77,7 +77,7 @@ namespace Event {
     AcdEventTopology m_topology;
         
     /// the vector of calibrated ACD hits
-    AcdHitCol m_acdHits;	
+    AcdHitCol m_acdHits;        
     
     /// Track associations
     AcdTkrAssocCol m_acdTkrAssocs;

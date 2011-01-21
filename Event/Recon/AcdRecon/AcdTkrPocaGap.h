@@ -25,7 +25,7 @@ static const CLID& CLID_AcdTkrPocaGapCol = InterfaceID("AcdTkrPocaGapCol", 1, 0)
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPocaGap.h,v 1.2 2006/04/14 00:39:34 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPocaGap.h,v 1.3 2008/01/23 23:43:33 echarles Exp $
 */
 
 namespace Event
@@ -41,9 +41,9 @@ namespace Event
     /// Constructor for use in persistent -> transient conversion and reconstruction
     /// Takes arguements as they are stored in ROOT and caluclated by AcdPocaGapTool
     AcdTkrPocaGap(const idents::AcdId& acdId, int trackIndex,
-	       double m_doca, double m_docaErr,
-	       const Point& PocaGap, const Vector& PocaGapVector, 
-	       const Event::AcdTkrLocalCoords& local);
+               double m_doca, double m_docaErr,
+               const Point& PocaGap, const Vector& PocaGapVector, 
+               const Event::AcdTkrLocalCoords& local);
 
     /// Destructor is trivial
     virtual ~AcdTkrPocaGap() {;}
@@ -84,9 +84,9 @@ namespace Event
 
     /// set all the values at once
     void set(const idents::AcdId& acdId, int trackIndex,
-	     double m_doca, double m_docaErr,
-	     const Point& PocaGap, const Vector& PocaGapVector, 
-	     const Event::AcdTkrLocalCoords& local);
+             double m_doca, double m_docaErr,
+             const Point& PocaGap, const Vector& PocaGapVector, 
+             const Event::AcdTkrLocalCoords& local);
     
     // set the individual values (uncomment as needed)
  

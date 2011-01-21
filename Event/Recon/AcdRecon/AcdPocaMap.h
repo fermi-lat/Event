@@ -40,14 +40,14 @@ static const CLID& CLID_AcdPocaMap = InterfaceID("AcdPocaMap", 1, 0);
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaMap.h,v 1.2 2006/04/14 00:39:34 echarles Exp $ */
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaMap.h,v 1.3 2008/01/23 23:43:33 echarles Exp $ */
 
 namespace Event
 {
   
   /// This allows us to sort sets of AcdTkrHitPoca by the doca value
   struct AcdPocaMore {
-    bool operator()(const AcdTkrHitPoca* ptr1, const AcdTkrHitPoca* ptr2) const {	
+    bool operator()(const AcdTkrHitPoca* ptr1, const AcdTkrHitPoca* ptr2) const {        
       return ptr1->getDoca() > ptr2->getDoca();
     }
   };   

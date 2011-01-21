@@ -1,7 +1,7 @@
 /** @file GltDigi.h
     @brief Definition and implementation of GltDigi
 
-    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.9 2007/10/30 18:55:42 fewtrell Exp $
+    $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Digi/GltDigi.h,v 1.10 2008/01/22 21:19:55 fewtrell Exp $
 
 
 */
@@ -62,10 +62,10 @@ namespace Event {
     void setCALHITriggerVec(const CalTriggerVec trigVec) {m_CALHITriggerVec = trigVec;}
 
     /// \brief return 16 bit trigger vector for FLE trigger, one bit per tower
-	CalTriggerVec getCALLOTriggerVec() const {return m_CALLOTriggerVec;}
+        CalTriggerVec getCALLOTriggerVec() const {return m_CALLOTriggerVec;}
 
     /// \brief return 16 bit trigger vector for FLE trigger, one bit per tower
-	CalTriggerVec getCALHITriggerVec() const {return m_CALHITriggerVec;}
+        CalTriggerVec getCALHITriggerVec() const {return m_CALHITriggerVec;}
 
   private:
 

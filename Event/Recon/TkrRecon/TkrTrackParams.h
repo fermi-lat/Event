@@ -2,7 +2,7 @@
 *
 * @author Bill Atwood, Leon Rochester, Johann Cohen, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.3 2004/11/15 21:10:24 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrackParams.h,v 1.4 2005/09/03 02:02:20 lsrea Exp $
 
 */
 #ifndef TkrTrackParams_H
@@ -101,7 +101,7 @@ public:
     std::ostream& fillStream( std::ostream& s ) const;
     friend std::ostream& operator<< ( std::ostream& s, const TkrTrackParams& obj ) 
       {
-	return obj.fillStream(s);
+        return obj.fillStream(s);
       }
 
 private:

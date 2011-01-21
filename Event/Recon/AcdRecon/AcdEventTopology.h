@@ -24,7 +24,7 @@ static const CLID& CLID_AcdEventTopologyCol = InterfaceID("AcdEventTopologyCol",
  *  @brief
  *  \author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/Attic/AcdEventTopology.h,v 1.1.2.1 2009/02/27 00:34:31 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdEventTopology.h,v 1.2 2009/12/16 03:42:44 heather Exp $
  **/
 
 namespace Event
@@ -42,11 +42,11 @@ namespace Event
 
     /// Constructor for use in reconstruction, 
     AcdEventTopology(unsigned tileCount, unsigned ribbonCount, unsigned tileVeto,
-		     float tileEnergy, float ribbonEnergy,
-		     unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
-		     unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
-		     float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
-		     unsigned nSidesHit, unsigned nSidesVeto);
+                     float tileEnergy, float ribbonEnergy,
+                     unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
+                     unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
+                     float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
+                     unsigned nSidesHit, unsigned nSidesVeto);
 
     /// Destructor is trivial
     virtual ~AcdEventTopology() {};
@@ -89,11 +89,11 @@ namespace Event
 
     /// set everything at once
     void set(unsigned tileCount, unsigned ribbonCount, unsigned tileVeto,
-	     float tileEnergy, float ribbonEnergy,
-	     unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
-	     unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
-	     float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
-	     unsigned nSidesHit, unsigned nSidesVeto);
+             float tileEnergy, float ribbonEnergy,
+             unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
+             unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
+             float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
+             unsigned nSidesHit, unsigned nSidesVeto);
  
     /// Print out this structure on a stream
     virtual void writeOut(MsgStream& stream) const;

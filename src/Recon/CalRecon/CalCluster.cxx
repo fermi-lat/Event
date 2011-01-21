@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.13 2010/12/22 13:46:16 lbaldini Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/CalRecon/CalCluster.cxx,v 1.14 2011/01/04 22:35:21 usher Exp $
 //
 //  Implementation file of CalCluster and CalClusterCol classes
 //  
@@ -12,10 +12,10 @@
 #include "Event/Recon/CalRecon/CalCluster.h"
 
 void Event::CalCluster::initialize(const CalXtalsParams& xtalsParams,
-				   const CalMSTreeParams& mstParams,
-				   const CalFitParams& fitParams,
-				   const CalMomParams& momParams,
-				   const CalClassParams& classParams)
+                                   const CalMSTreeParams& mstParams,
+                                   const CalFitParams& fitParams,
+                                   const CalMomParams& momParams,
+                                   const CalClassParams& classParams)
 {
   m_xtalsParams = xtalsParams;
   m_mstParams   = mstParams;

@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.2.6.2 2006/04/07 16:38:25 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.4 2006/04/14 00:39:36 echarles Exp $
 //
 //  Implementation file of AcdTkrIntersection and AcdTkrIntersectionCol classes
 //  
@@ -21,20 +21,20 @@ AcdTkrIntersection::AcdTkrIntersection(){
 }
 
 AcdTkrIntersection::AcdTkrIntersection(const idents::AcdId& acdId, int trackIndex,
-				       const Point& globalPosition, 
-				       const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
-				       double arcLengthToIntersection, double pathLengthInTile,
-				       unsigned char tileHit, double cosTheta) {
+                                       const Point& globalPosition, 
+                                       const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
+                                       double arcLengthToIntersection, double pathLengthInTile,
+                                       unsigned char tileHit, double cosTheta) {
   set(acdId,trackIndex, 
       globalPosition,localPosition, localCovMatrix,
       arcLengthToIntersection, pathLengthInTile,tileHit,cosTheta);
 }
 
 void AcdTkrIntersection::set(const idents::AcdId& acdId, int trackIndex, 
-			     const Point& globalPosition, 
-			     const double localPosition[2], const HepMatrix& localCovMatrix,
-			     double arcLengthToIntersection, double pathLengthInTile,
-			     unsigned char tileHit, double cosTheta) {
+                             const Point& globalPosition, 
+                             const double localPosition[2], const HepMatrix& localCovMatrix,
+                             double arcLengthToIntersection, double pathLengthInTile,
+                             unsigned char tileHit, double cosTheta) {
   m_tileId = acdId;
   m_trackIndex = trackIndex;
   m_location = globalPosition;
@@ -66,15 +66,15 @@ void AcdTkrIntersection::writeOut(MsgStream& stream) const
   double correl =  m_localXYCov / ( localXErr * localYErr );
 
   stream << MSG::DEBUG
-	 << "AcdTkrIntersection.  Tile: " << m_tileId.id()
-	 << ".  Track: " << m_trackIndex
-	 << ".  Global: (" << m_location.getX() << ',' << m_location.getY() << ',' << m_location.getZ()
-	 << ").  Local: [" << m_localX << ',' << m_localY
-	 << "].  Cov: {" << localXErr << ',' << localYErr << ',' << correl 
-	 << "}.  Arc: " << m_arcLengthToIntersection
-	 << ".  Path: " << m_pathlengthInTile
-	 << ".  HitMask: " << (int)m_tileHit
-	 << endreq;
+         << "AcdTkrIntersection.  Tile: " << m_tileId.id()
+         << ".  Track: " << m_trackIndex
+         << ".  Global: (" << m_location.getX() << ',' << m_location.getY() << ',' << m_location.getZ()
+         << ").  Local: [" << m_localX << ',' << m_localY
+         << "].  Cov: {" << localXErr << ',' << localYErr << ',' << correl 
+         << "}.  Arc: " << m_arcLengthToIntersection
+         << ".  Path: " << m_pathlengthInTile
+         << ".  HitMask: " << (int)m_tileHit
+         << endreq;
 }
 
 
@@ -103,7 +103,7 @@ void AcdTkrIntersection::ini()
 
 AcdTkrIntersectionCol::AcdTkrIntersectionCol(const std::vector<AcdTkrIntersection*>& acdTkrIntersections) {
   for ( std::vector<AcdTkrIntersection*>::const_iterator itr = acdTkrIntersections.begin();
-	itr != acdTkrIntersections.end(); itr++ ) {
+        itr != acdTkrIntersections.end(); itr++ ) {
     AcdTkrIntersection* iSect = const_cast<AcdTkrIntersection*>(*itr);
     add(iSect);
   }

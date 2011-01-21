@@ -27,7 +27,7 @@ static const CLID& CLID_AcdTkrAssocCol = InterfaceID("AcdTkrAssocCol", 1, 0);
  *  @brief
  *  \author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/Attic/AcdTkrAssoc.h,v 1.1.2.1 2009/02/27 00:34:32 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrAssoc.h,v 1.2 2009/12/16 03:42:44 heather Exp $
  **/
 
 namespace Event
@@ -49,9 +49,9 @@ namespace Event
 
     /// Constructor for use in reconstruction, 
     AcdTkrAssoc(int index, bool up, float energy, 
-		const HepPoint3D& start, const HepVector3D& dir, float arcLength,
-		const HepSymMatrix& covStart, const HepSymMatrix& covEnd,
-		int tkrSSDVeto, float cornerDoca);
+                const HepPoint3D& start, const HepVector3D& dir, float arcLength,
+                const HepSymMatrix& covStart, const HepSymMatrix& covEnd,
+                int tkrSSDVeto, float cornerDoca);
     
     /// Destructor is trivial
     virtual ~AcdTkrAssoc() {};
@@ -89,9 +89,9 @@ namespace Event
 
     /// set everything at once
     void set(int index, bool up, float energy, 
-	     const HepPoint3D& start, const HepVector3D& dir, float arcLength,
-	     const HepSymMatrix& covStart, const HepSymMatrix& covEnd,
-	     int tkrSSDVeto, float cornerDoca);
+             const HepPoint3D& start, const HepVector3D& dir, float arcLength,
+             const HepSymMatrix& covStart, const HepSymMatrix& covEnd,
+             int tkrSSDVeto, float cornerDoca);
 
     /// add a hitPoca
     inline void addHitPoca(const AcdTkrHitPoca& poca) {
@@ -185,7 +185,7 @@ namespace Event
     /// takes ownership of a vector AcdTkrAssoc
     void init(std::vector<AcdTkrAssoc*>& other) {
       for ( std::vector<AcdTkrAssoc*>::iterator itr = other.begin(); itr != other.end(); itr++ ) {
-	push_back(*itr);
+        push_back(*itr);
       }
     }
    

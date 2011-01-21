@@ -25,7 +25,7 @@ static const CLID& CLID_AcdTkrPocaCol = InterfaceID("AcdTkrPocaCol", 1, 0);
 *
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoca.h,v 1.2 2006/04/14 00:39:34 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoca.h,v 1.3 2008/01/23 23:43:33 echarles Exp $
 */
 
 namespace Event
@@ -59,16 +59,16 @@ namespace Event
     /// Constructor for use in persistent -> transient conversion and reconstruction
     /// Takes arguements as they are stored in ROOT and caluclated by AcdPocaTool
     AcdTkrPoca(const idents::AcdId& acdId, int trackIndex,
-	       double m_doca, double m_docaErr, unsigned docaRegion,
-	       const Point& poca, const Event::TkrTrackParams& paramsAtPoca);
+               double m_doca, double m_docaErr, unsigned docaRegion,
+               const Point& poca, const Event::TkrTrackParams& paramsAtPoca);
 
     /// Destructor is trivial
     virtual ~AcdTkrPoca() {;}
 
     /// set all the values
     void set(const idents::AcdId& acdId, int trackIndex,
-	     double doca, double docaErr, unsigned docaRegion,
-	     const Point& poca, const Event::TkrTrackParams& paramsAtPoca);
+             double doca, double docaErr, unsigned docaRegion,
+             const Point& poca, const Event::TkrTrackParams& paramsAtPoca);
 
     /// set only some of the values
     inline void setDocaErr(double val) { m_docaErr = val; };

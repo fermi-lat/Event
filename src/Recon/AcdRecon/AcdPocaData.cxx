@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdPocaData.cxx,v 1.2.524.1 2009/02/27 00:31:42 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdPocaData.cxx,v 1.3 2009/12/16 03:42:45 heather Exp $
 //
 //  Implementation file of AcdTkrPoca and AcdTkrPocaCol classes
 //  
@@ -21,15 +21,15 @@ namespace Event {
   }
   
   AcdPocaData::AcdPocaData(int volume, int region, float arcLength, 
-			   float doca, float docaErrProj, float docaErrProp,
-			   const Point& poca, const Vector& voca) {
+                           float doca, float docaErrProj, float docaErrProp,
+                           const Point& poca, const Vector& voca) {
     setPocaData(volume,region,arcLength,doca,docaErrProj,docaErrProp,poca,voca);
   }
   
   AcdPocaData::AcdPocaData(const AcdPocaData& other) {
     setPocaData(other.m_volume,other.m_region,other.m_arcLength,
-		other.m_doca,other.m_docaErr_proj,other.m_docaErr_prop,
-		other.m_poca,other.m_voca);
+                other.m_doca,other.m_docaErr_proj,other.m_docaErr_prop,
+                other.m_poca,other.m_voca);
   }
   
   AcdPocaData& AcdPocaData::operator=(const AcdPocaData& other) {
@@ -38,8 +38,8 @@ namespace Event {
   }
 
   void AcdPocaData::setPocaData(int volume, int region, float arcLength, 
-				float doca, float docaErrProj, float docaErrProp,
-				const Point& poca, const Vector& pocaVector) {
+                                float doca, float docaErrProj, float docaErrProp,
+                                const Point& poca, const Vector& pocaVector) {
 
     m_volume = volume;
     m_region = region;
@@ -52,7 +52,7 @@ namespace Event {
   }
 
   void AcdPocaData::setPocaData(float arcLength, float doca, float docaErr, 
-				const Point& poca, const Vector& pocaVector) {
+                                const Point& poca, const Vector& pocaVector) {
     m_volume = -1;
     m_region = -1;
     m_arcLength = arcLength;
@@ -65,8 +65,8 @@ namespace Event {
   
   void AcdPocaData::setPocaData(const Event::AcdPocaData& other) {
     setPocaData(other.m_volume,other.m_region,other.m_arcLength,
-		other.m_doca,other.m_docaErr_proj,other.m_docaErr_prop,
-		other.m_poca,other.m_voca);
+                other.m_doca,other.m_docaErr_proj,other.m_docaErr_prop,
+                other.m_poca,other.m_voca);
   }
   
   void AcdPocaData::writeOut(MsgStream& stream ) const
@@ -76,13 +76,13 @@ namespace Event {
     //        stream - Gaudi message stream
   {
     stream << "Vol:     " << m_volume << ':' << m_region 
-	   << ".  Arc: " << m_arcLength
-	   << ".  Doca: " << m_doca 
-	   << " +- " << m_docaErr_proj << "(proj)"
-	   << " +- " << m_docaErr_prop << "(prop)"
-	   << ".  Poca: (" << m_poca.x() << ',' << m_poca.y() << ',' << m_poca.z()
-	   << ".  PocaDir: (" << m_voca.x() << ',' << m_voca.y() << ',' << m_voca.z()
-	   << ").  ";
+           << ".  Arc: " << m_arcLength
+           << ".  Doca: " << m_doca 
+           << " +- " << m_docaErr_proj << "(proj)"
+           << " +- " << m_docaErr_prop << "(prop)"
+           << ".  Poca: (" << m_poca.x() << ',' << m_poca.y() << ',' << m_poca.z()
+           << ".  PocaDir: (" << m_voca.x() << ',' << m_voca.y() << ',' << m_voca.z()
+           << ").  ";
   }
 
   
