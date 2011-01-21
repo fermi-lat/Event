@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:52 PST 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackParams.h 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:52 PST 2011
 Event/Event/Recon/CalRecon
 
 Modified Files:
