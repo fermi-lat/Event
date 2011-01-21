@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:51 PST 2011
+Event/Event/Factories
+
+Modified Files:
+	WrapperFactory.h 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:51 PST 2011
 Event/Event/Digi
 
 Modified Files:
