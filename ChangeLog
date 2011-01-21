@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:51 PST 2011
+Event/Event/Digi
+
+Modified Files:
+	GltDigi.h 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-07-00, operation: add
 Package: Event
