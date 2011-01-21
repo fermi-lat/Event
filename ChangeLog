@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:54 PST 2011
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.cxx TkrTrackHit.cxx TkrTrackParams.cxx 
+	TkrVecPoint.cxx 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:54 PST 2011
 Event/src/Recon/CalRecon
 
 Modified Files:
