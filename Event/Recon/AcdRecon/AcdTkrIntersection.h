@@ -57,7 +57,7 @@ static const CLID& CLID_AcdTkrIntersectionCol = InterfaceID("AcdTkrIntersectionC
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrIntersection.h,v 1.4 2006/04/14 00:39:34 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrIntersection.h,v 1.5 2008/01/23 23:43:33 echarles Exp $
 */
 
 namespace Event
@@ -71,10 +71,10 @@ namespace Event
     AcdTkrIntersection();
     
     AcdTkrIntersection(const idents::AcdId& acdId, int trackIndex, 
-		       const Point& globalPosition, 
+                       const Point& globalPosition, 
                const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
-		       double arcLengthToIntersection, double pathLengthInTile,
-		       unsigned char tileHit, double cosTheta);
+                       double arcLengthToIntersection, double pathLengthInTile,
+                       unsigned char tileHit, double cosTheta);
 
     virtual ~AcdTkrIntersection() {};
     
@@ -108,10 +108,10 @@ namespace Event
     
     /// set everything at once
     void set(const idents::AcdId& acdId, int trackIndex, 
-	     const Point& globalPosition, 
-	     const double localPosition[2], const HepMatrix& localCovMatrix,
-	     double arcLengthToIntersection, double pathLengthInTile,
-	     unsigned char tileHit, double cosTheta);
+             const Point& globalPosition, 
+             const double localPosition[2], const HepMatrix& localCovMatrix,
+             double arcLengthToIntersection, double pathLengthInTile,
+             unsigned char tileHit, double cosTheta);
 
     virtual void writeOut(MsgStream& stream) const;
     

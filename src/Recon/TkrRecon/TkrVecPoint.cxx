@@ -6,7 +6,7 @@
 *
 * @authors b. allgood, w. atwood and l. rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/TkrRecon/src/PatRec/VectorLinks/TkrVecPoint.cxx,v 1.1 2005/05/26 20:33:07 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/TkrRecon/TkrVecPoint.cxx,v 1.1 2009/10/05 22:35:50 usher Exp $
 */
 
 #include "Event/Recon/TkrRecon/TkrVecPoint.h"
@@ -15,7 +15,7 @@
 Ray Event::TkrVecPoint::getRayTo(const TkrVecPoint* point) const
 {   
     // returns a ray from myself to another point
-	// the origin is at my z
+        // the origin is at my z
 
     Vector dir = point->getPosition() - m_position;
 
@@ -23,7 +23,7 @@ Ray Event::TkrVecPoint::getRayTo(const TkrVecPoint* point) const
     
     return Ray(m_position, dir);
 /*
-	double x1 = m_pXCluster->position().x();
+        double x1 = m_pXCluster->position().x();
     double x2 = point->m_pXCluster->position().x();
     double z1x = m_pXCluster->position().z();
     double z2x = point->m_pXCluster->position().z();
@@ -36,17 +36,17 @@ Ray Event::TkrVecPoint::getRayTo(const TkrVecPoint* point) const
     double slopeY = (y1-y2)/(z1y-z2y);
 
     // move both coordinates to furthest Z
-	double z0;
-	if(z1x > z2x) { //Normal downwards direction
-		z0 = std::max(z1x,z1y);
-	    x1 += (z0 - z1x)*slopeX;
+        double z0;
+        if(z1x > z2x) { //Normal downwards direction
+                z0 = std::max(z1x,z1y);
+            x1 += (z0 - z1x)*slopeX;
         y1 += (z0 - z1y)*slopeY;
-	}
-	else { //Reverse direction
-		z0 = std::min(z1x,z1y);
-	    x1 += (z0 - z1x)*slopeX;
+        }
+        else { //Reverse direction
+                z0 = std::min(z1x,z1y);
+            x1 += (z0 - z1x)*slopeX;
         y1 += (z0 - z1y)*slopeY;
-	}
+        }
 
     Point origin(x1, y1, z0);
     Vector dir   = Vector(-slopeX, -slopeY, -1.);

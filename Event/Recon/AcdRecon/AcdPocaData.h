@@ -26,7 +26,7 @@
  *
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaData.h,v 1.5.224.1 2009/02/27 00:31:40 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdPocaData.h,v 1.6 2009/12/16 03:42:44 heather Exp $
  */
 
 #include "geometry/Vector.h"
@@ -46,8 +46,8 @@ namespace Event {
     /// Constructor for use in transient -> persistent conversion 
     /// Takes arguements as they are stored in ROOT
     AcdPocaData(int volume, int region, float arcLength, 
-		float doca, float docaErrProj, float docaErrProp,
-		const Point& poca, const Vector& voca);
+                float doca, float docaErrProj, float docaErrProp,
+                const Point& poca, const Vector& voca);
     
     /// Copy constructor
     AcdPocaData(const AcdPocaData& other);
@@ -111,12 +111,12 @@ namespace Event {
     
     /// set all the values
     void setPocaData(int volume, int region, float arcLength, 
-	     float doca, float docaErrProj, float docaErrProp,
-	     const Point& poca, const Vector& pocaVector);
+             float doca, float docaErrProj, float docaErrProp,
+             const Point& poca, const Vector& pocaVector);
 
     /// set all the values, old version
     void setPocaData(float arcLength, float doca, float docaErr, 
-	     const Point& poca, const Vector& pocaVector);
+             const Point& poca, const Vector& pocaVector);
     
     void setPocaData(const AcdPocaData& other);
     

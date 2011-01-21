@@ -19,9 +19,9 @@
    
    @author Luca Baldini (luca.baldini@pi.infn.it)
 
-   $Revision$
-   $Date$
-   $Header$
+   $Revision: 1.2 $
+   $Date: 2011/01/19 17:34:01 $
+   $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalsParams.h,v 1.2 2011/01/19 17:34:01 lbaldini Exp $
 */
 
 #include <iostream>
@@ -39,8 +39,8 @@ namespace Event { //Namespace Event
     
     /// Constructor from all members.
     CalXtalsParams(int numXtals, int numTruncXtals, int numSaturatedXtals,
-		   double xtalRawEneSum, double xtalCorrEneSum, double xtalEneMax,
-		   double xtalEneRms, double xtalEneSkewness, const Point& centroid);
+                   double xtalRawEneSum, double xtalCorrEneSum, double xtalEneMax,
+                   double xtalEneRms, double xtalEneSkewness, const Point& centroid);
 
     /// Convenience constructor from the two members originally in the CalCluster class.
     CalXtalsParams(int numTruncXtals, int numSaturatedXtals);

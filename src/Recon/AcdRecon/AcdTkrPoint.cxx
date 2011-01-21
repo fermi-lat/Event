@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoint.cxx,v 1.2.524.1 2009/02/27 00:31:42 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoint.cxx,v 1.3 2009/12/16 03:42:45 heather Exp $
 //
 //  Implementation file of AcdTkrPoint and AcdTkrPointCol classes
 //  
@@ -35,19 +35,19 @@ AcdTkrPoint::operator=(const Event::AcdTkrPoint& other) {
 }
 
 AcdTkrPoint::AcdTkrPoint( float arcLength, int volume,
-			  const HepPoint3D& global, const Event::TkrTrackParams& /* params */ )
+                          const HepPoint3D& global, const Event::TkrTrackParams& /* params */ )
   :AcdTkrLocalCoords(volume,arcLength,global),
    m_trackIndex(-1){
 }
 
 
 AcdTkrPoint::AcdTkrPoint(int trackIndex,
-			 int volumePlane, float arcLengthToPlane, float cosTheta, 
-			 const HepPoint3D& global, const float localPosition[2], 
-			 const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp)
+                         int volumePlane, float arcLengthToPlane, float cosTheta, 
+                         const HepPoint3D& global, const float localPosition[2], 
+                         const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp)
   :AcdTkrLocalCoords(volumePlane,arcLengthToPlane,cosTheta,
-		     global,localPosition,localPosition,
-		     localCovProj,localCovProp),
+                     global,localPosition,localPosition,
+                     localCovProj,localCovProp),
    m_trackIndex(trackIndex){
 }
 
@@ -65,7 +65,7 @@ void AcdTkrPoint::writeOut(MsgStream& stream) const
 {
 
   stream << MSG::DEBUG
-	 << "AcdTkrPoint:  " << m_trackIndex << std::endl;
+         << "AcdTkrPoint:  " << m_trackIndex << std::endl;
   AcdTkrLocalCoords::writeOut(stream);
   stream << endreq;
 }
@@ -82,7 +82,7 @@ void AcdTkrPoint::ini()
 
 AcdTkrPointCol::AcdTkrPointCol(const std::vector<AcdTkrPoint*>& acdTkrPoints) {
   for ( std::vector<AcdTkrPoint*>::const_iterator itr = acdTkrPoints.begin();
-	itr != acdTkrPoints.end(); itr++ ) {
+        itr != acdTkrPoints.end(); itr++ ) {
     AcdTkrPoint* iSect = const_cast<AcdTkrPoint*>(*itr);
     add(iSect);
   }

@@ -1,4 +1,4 @@
-// $Id: WrapperFactory.h,v 1.1.1.1 2000/09/27 18:56:13 burnett Exp $
+// $Id: WrapperFactory.h,v 1.2 2001/04/18 19:07:25 igable Exp $
 // 
 //  Original author: Sawyer Gillespie
 //                   hgillesp@u.washington.edu
@@ -36,14 +36,14 @@ public:
   }
   /// IInterface implementation: queryInterface
   virtual StatusCode queryInterface(const IID& riid, void** ppIF) {
-	  if ( IID_IContainedObjectFactory == riid ) {
+          if ( IID_IContainedObjectFactory == riid ) {
       *ppIF = (IContainedObjectFactory*) this;
     }
-	  else {
+          else {
       return ObjectFactoryBase::queryInterface(riid, ppIF);
     }
     addRef();
- 	  return StatusCode::SUCCESS;
+           return StatusCode::SUCCESS;
   }
 };
 
@@ -73,14 +73,14 @@ public:
   }
   /// IInterface implementation: queryInterface
   virtual StatusCode queryInterface(const IID& riid, void** ppIF) {
-	  if ( IID_IDataObjectFactory == riid ) {
+          if ( IID_IDataObjectFactory == riid ) {
       *ppIF = (IDataObjectFactory*) this;
     }
-	  else {
+          else {
       return ObjectFactoryBase::queryInterface(riid, ppIF);
     }
     addRef();
- 	  return StatusCode::SUCCESS;
+           return StatusCode::SUCCESS;
   }
 };
 
@@ -100,20 +100,20 @@ public:
   virtual ~ObjectFactory() { 
   }
   // Instantiate an instance of a Gaudi class
-	virtual IInterface* instantiate( IInterface *parent ) const {
+        virtual IInterface* instantiate( IInterface *parent ) const {
     T* obj = new T( parent ); 
     return obj;
-	}
+        }
   /// IInterface implementation: queryInterface
   virtual StatusCode queryInterface(const IID& riid, void** ppIF) {
-	  if ( IID_IObjectFactory == riid ) {
+          if ( IID_IObjectFactory == riid ) {
       *ppIF = (IFactory*) this;
     }
-	  else {
+          else {
       return ObjectFactoryBase::queryInterface(riid, ppIF);
     }
     addRef();
- 	  return StatusCode::SUCCESS;
+           return StatusCode::SUCCESS;
   }
 };
 

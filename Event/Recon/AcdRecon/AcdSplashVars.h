@@ -38,7 +38,7 @@ class MsgStream;
  * 
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdSplashVars.h,v 1.1 2006/06/22 00:56:15 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdSplashVars.h,v 1.2 2008/01/23 23:43:33 echarles Exp $
  */
 
 static const CLID& CLID_AcdSplashVarsCol = InterfaceID("AcdSplashVarsCol", 1, 0);
@@ -55,9 +55,9 @@ namespace Event {
     /// Constructor for use in transient -> persistent conversion 
     /// Takes arguements as they are stored in ROOT
     AcdSplashVars(const idents::AcdId& acdId, int trackIndex, 
-		const Point& calEntryPoint, const Vector& calEntryVector,
-		const float& tileSolidAngle, const float& weightedTrackAngle,
-		const float& weightedPathlength);
+                const Point& calEntryPoint, const Vector& calEntryVector,
+                const float& tileSolidAngle, const float& weightedTrackAngle,
+                const float& weightedPathlength);
     
     /// Copy constructor
     AcdSplashVars(const AcdSplashVars& params);
@@ -97,9 +97,9 @@ namespace Event {
     
     /// set all the values
     void set(const idents::AcdId& acdId, int trackIndex, 
-	     const Point& calEntryPoint, const Vector& calEntryVector,
-	     const float& tileSolidAngle, const float& weightedTrackAngle,
-	     const float& weightedPathlength);
+             const Point& calEntryPoint, const Vector& calEntryVector,
+             const float& tileSolidAngle, const float& weightedTrackAngle,
+             const float& weightedPathlength);
     
     /// reset all the values to their default
     virtual void ini();

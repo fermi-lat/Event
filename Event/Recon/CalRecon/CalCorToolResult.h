@@ -19,7 +19,7 @@
 *  
 *  \author CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCorToolResult.h,v 1.5 2005/07/14 22:38:25 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCorToolResult.h,v 1.6 2005/11/25 16:33:55 chamont Exp $
 */
 
 namespace Event 
@@ -80,7 +80,7 @@ public:
     /// @param chiSquare the chiSquare resulting from this correction 
     inline void setChiSquare(double chiSquare)             {m_chiSquare = chiSquare;}
 
-	/// Access individual status bits
+        /// Access individual status bits
     inline void setStatusBit( StatusBits bitToSet ) { m_statusBits |=  bitToSet ; }
     inline void clearStatusBit( StatusBits bitToClear ) { m_statusBits &= ~bitToClear ; }
     inline bool checkStatusBit( StatusBits bitToCheck ) const { return ((m_statusBits&bitToCheck)!=ZERO) ; }
@@ -110,7 +110,7 @@ typedef ObjectList< Event::Relation<Event::CalCluster, Event::CalCorToolResult> 
 
 }
 
-#endif	
+#endif        
 
 
 
