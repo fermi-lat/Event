@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:52 PST 2011
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h CalCorToolResult.h CalEventEnergy.h 
+	CalFitParams.h CalMSTreeParams.h CalMomParams.h CalParams.h 
+	CalXtalRecData.h CalXtalsParams.h GcrReconClasses.h 
+	GcrSelectClasses.h 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:52 PST 2011
 Event/Event/Recon/AcdRecon
 
 Modified Files:
