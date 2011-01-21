@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:55 PST 2011
+Event/src/test
+
+Modified Files:
+	test_RelTabs.cxx test_TkrRecon.cxx 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:54 PST 2011
 Event/src/Recon/TkrRecon
 
