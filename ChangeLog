@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:53 PST 2011
+Event/src/Hits
+
+Modified Files:
+	SiLayers.cpp 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:53 PST 2011
 Event/Event/Utilities
 
 Modified Files:
