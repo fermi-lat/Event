@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:53 PST 2011
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:52 PST 2011
 Event/Event/Recon/TkrRecon
 
