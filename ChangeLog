@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 User: lbaldini  Fri Jan 21 06:02:54 PST 2011
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalClassParams.cxx CalCluster.cxx CalFitParams.cxx 
+	CalMipClasses.cxx CalMomParams.cxx CalNBCClassParams.cxx 
+	CalParams.cxx CalXtalsParams.cxx GcrReconClasses.cxx 
+	GcrSelectClasses.cxx 
+Log Message:
+First medium-size untabification.
+    *
+------------------------------------------------------------
+User: lbaldini  Fri Jan 21 06:02:54 PST 2011
 Event/src/Recon/AcdRecon
 
 Modified Files:
