@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Tue Jan 25 13:05:50 PST 2011
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrHitPoca.cxx 
+Log Message:
+Improve how AcdTkrHitPoca handles vetoSigma2
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-07-01, operation: add
 Package: Event
