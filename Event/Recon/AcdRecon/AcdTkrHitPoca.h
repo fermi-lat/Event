@@ -19,7 +19,7 @@
  *
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.5 2009/12/16 03:42:44 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.6 2011/01/21 14:02:51 lbaldini Exp $
  */
 
 #include <vector>
@@ -93,9 +93,7 @@ namespace Event {
     }
 
     /// combine the sigma from the hit with the sigma from the track
-    inline float vetoSigma2() const {
-      return ((m_vetoSigmaHit*m_vetoSigmaHit) + (m_vetoSigmaProj*m_vetoSigmaProj));
-    }
+    float vetoSigma2() const;
 
     /// An estimator of the number of sigma needed for this track to be a true MIP signal
     inline float vetoSigmaHit() const {
