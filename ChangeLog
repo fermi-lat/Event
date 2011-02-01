@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Tue Feb  1 11:59:30 PST 2011
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Adding new string Event::TkrRecon::TkrCRTrackCol for cosmic ray track collection in TDS
+    *
+------------------------------------------------------------
+User: usher  Tue Feb  1 11:59:30 PST 2011
 Event/Event/TopLevel
 
 Modified Files:
