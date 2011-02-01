@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.81 2010/12/16 20:41:58 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.82 2011/01/11 21:36:42 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -77,6 +77,7 @@ std::string EventModel::TkrRecon::TkrClusterCol              = EventModel::TkrRe
 std::string EventModel::TkrRecon::TkrIdClusterMMap           = EventModel::TkrRecon::Event + "/TkrIdClusterMMap";
 std::string EventModel::TkrRecon::TkrIdClusterMap            = EventModel::TkrRecon::Event + "/TkrIdClusterMap";
 std::string EventModel::TkrRecon::TkrTrackCol                = EventModel::TkrRecon::Event + "/TkrTrackCol";
+std::string EventModel::TkrRecon::TkrCRTrackCol              = EventModel::TkrRecon::Event + "/TkrCRTrackCol";
 std::string EventModel::TkrRecon::TkrTrackHitCol             = EventModel::TkrRecon::Event + "/TkrTrackHitCol";
 std::string EventModel::TkrRecon::TkrVertexCol               = EventModel::TkrRecon::Event + "/TkrVertexCol";
 std::string EventModel::TkrRecon::TkrDiagnostics             = EventModel::TkrRecon::Event + "/TkrDiagnostics";
