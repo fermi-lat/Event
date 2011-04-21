@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Apr 21 11:26:56 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrBoundBox.h TkrFilterParams.h TkrTree.h 
+Log Message:
+Add more variables to tree output (using filter stuff)
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-07-03, operation: add
 Package: Event
