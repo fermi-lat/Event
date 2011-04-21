@@ -9,7 +9,7 @@
 *
 * @authors Tracker Folks
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrBoundBox.h,v 1.0 2010/09/24 15:40:15 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrBoundBox.h,v 1.1 2010/12/16 20:41:06 usher Exp $
 */
 
 #ifndef __TkrBoundBox_H
@@ -104,7 +104,7 @@ private:
     double m_rmsDist;          // The rms distance from the MST for TkrVecPoints in this box
 };
 
-const Point& TkrBoundBox::getBoxCenterPos()
+inline const Point& TkrBoundBox::getBoxCenterPos()
 {
     m_boxCenterPos  = m_lowCorner;
     m_boxCenterPos += m_highCorner;
