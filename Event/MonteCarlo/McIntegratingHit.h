@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.26 2010/06/02 20:31:04 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.27 2011/01/16 03:32:28 usher Exp $
 #ifndef Event_McIntegratingHit_H
 #define Event_McIntegratingHit_H 1
 
@@ -30,7 +30,7 @@
  *              M.Ozaki 2000-12-07 : Modified for GLAST
  *              M.Ozaki 2001-01-05 : MCIntegratingHits -> McIntegratingHit
  *              T.Usher 2010-06-01 : Add ability to keep track of end responses
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.26 2010/06/02 20:31:04 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McIntegratingHit.h,v 1.27 2011/01/16 03:32:28 usher Exp $
  */
 
 #include "Event/MonteCarlo/McParticle.h"
@@ -110,8 +110,8 @@ public:
 
     McIntegratingHit() : m_volumeID(),
                          m_totalEnergy(0),
-                         m_moment1seed(0.),
-                         m_moment2seed(0.),
+                         m_moment1seed(0.,0.,0.),
+                         m_moment2seed(0.,0.,0.),
                          m_packedFlags(simulation)
     {
         m_energyArray[0]=m_energyArray[1]=m_energyArray[2]=m_energyArray[3]=0;
