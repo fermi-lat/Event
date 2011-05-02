@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.1 2010/09/24 15:40:16 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.2 2010/11/24 16:35:47 usher Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -467,18 +467,15 @@ inline const bool TkrVecNodesComparator::operator()(const TkrVecNode* left, cons
     // Most number of bilayers wins (longest)
     if      (left->getBestNumBiLayers() > right->getBestNumBiLayers()) return true;
     else if (left->getBestNumBiLayers() < right->getBestNumBiLayers()) return false;
-    // Continue them... if rms is close then most number of actual points on best branch wins
-    //if (left->getBestRmsAngle() > 0.)
-    //{
-    //    double rmsAngFracDiff = fabs(left->getBestRmsAngle() - right->getBestRmsAngle()) / left->getBestRmsAngle();
 
-    //    if (rmsAngFracDiff < 0.10)
-    //    {
-    //        if (     left->getDepth() > right->getDepth()) return true;
-    //        else if (left->getDepth() < right->getDepth()) return false;
-    //    }
-    //}
-    // Nothing else left but straightest
+    // Check special case of stubs starting with skipping layer links
+    if (left->getNumAnglesInSum() == 2 || right->getNumAnglesInSum() == 2)
+    {
+        if      (left->getDepth() < right->getDepth()) return false;
+        else if (left->getDepth() > right->getDepth()) return true;
+    }
+
+    // Last check is to take the branch that is "straightest". 
     // Use the scaled rms angle to determine straightest...
     double leftRmsAngle  = left->getBestRmsAngle() * double(left->getNumBiLayers()) / double(left->getDepth());
     double rightRmsAngle = right->getBestRmsAngle() * double(right->getNumBiLayers()) / double(right->getDepth());
