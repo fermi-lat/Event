@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon May  2 15:39:20 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Add check in sort function to prevent stubs (with zero rms angle) from percolating to front of list
+    *
+------------------------------------------------------------
 User: flongo  Fri Apr 29 07:02:36 PDT 2011
 Event/Event/MonteCarlo
 
