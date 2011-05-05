@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu May  5 12:42:28 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Add some information bits for best and next best branches
+    *
+------------------------------------------------------------
 User: usher  Mon May  2 15:39:20 PDT 2011
 Event/Event/Recon/TkrRecon
 
