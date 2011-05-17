@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 17 15:29:55 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTree.h 
+Log Message:
+Adding best and second best branch leaf pointers to output (for ntuple output)
+    *
+------------------------------------------------------------
 User: usher  Thu May  5 12:42:28 PDT 2011
 Event/Event/Recon/TkrRecon
 
