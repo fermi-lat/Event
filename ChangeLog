@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Fri May 20 08:02:49 PDT 2011
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrAssoc.cxx AcdTkrGapPoca.cxx AcdTkrHitPoca.cxx 
+	AcdTkrIntersection.cxx AcdTkrLocalData.cxx AcdTkrPoint.cxx 
+Log Message:
+CLHEP 2.1.0.1
+    *
+------------------------------------------------------------
 User: heather  Fri May 20 08:02:48 PDT 2011
 Event/doc
 
