@@ -43,7 +43,7 @@ static const CLID& CLID_AcdTkrPointCol = InterfaceID("AcdTkrPointCol", 1, 0);
 *
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoint.h,v 1.5 2009/12/16 03:42:44 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrPoint.h,v 1.6 2011/01/21 14:02:52 lbaldini Exp $
 */
 
 namespace Event
@@ -64,7 +64,7 @@ namespace Event
     AcdTkrPoint( int trackIndex,
                  int volume, float arcLength, float cosTheta, 
                  const HepPoint3D& global, const float localPosition[2], 
-                 const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp);
+                 const CLHEP::HepSymMatrix& localCovProj, const CLHEP::HepSymMatrix& localCovProp);
 
     /// Old Constructor for backwards compatiblity
     AcdTkrPoint( float arcLength, int volume,
