@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.4 2006/04/14 00:39:36 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx,v 1.5 2011/01/21 14:02:53 lbaldini Exp $
 //
 //  Implementation file of AcdTkrIntersection and AcdTkrIntersectionCol classes
 //  
@@ -32,7 +32,7 @@ AcdTkrIntersection::AcdTkrIntersection(const idents::AcdId& acdId, int trackInde
 
 void AcdTkrIntersection::set(const idents::AcdId& acdId, int trackIndex, 
                              const Point& globalPosition, 
-                             const double localPosition[2], const HepMatrix& localCovMatrix,
+                             const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
                              double arcLengthToIntersection, double pathLengthInTile,
                              unsigned char tileHit, double cosTheta) {
   m_tileId = acdId;

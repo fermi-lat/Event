@@ -19,7 +19,7 @@
  *
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.6 2011/01/21 14:02:51 lbaldini Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.7 2011/01/25 21:05:51 echarles Exp $
  */
 
 #include <vector>
@@ -46,7 +46,7 @@ namespace Event {
                   float vetoSigmaHit, float vetoSigmaProj, float vetoSigmaProp,
                   int volumePlane, float arcLengthToPlane, float cosTheta, 
                   const HepPoint3D& global, const float localPosition[2], 
-                  const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp,
+                  const CLHEP::HepSymMatrix& localCovProj, const CLHEP::HepSymMatrix& localCovProp,
                   int volume, int region, float arcLength, 
                   float doca, float docaErrProj, float docaErrProp,
                   const Point& poca, const Vector& voca);

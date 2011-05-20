@@ -57,7 +57,7 @@ static const CLID& CLID_AcdTkrIntersectionCol = InterfaceID("AcdTkrIntersectionC
 *  
 *  \author Eric Charles
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrIntersection.h,v 1.5 2008/01/23 23:43:33 echarles Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrIntersection.h,v 1.6 2011/01/21 14:02:51 lbaldini Exp $
 */
 
 namespace Event
@@ -109,7 +109,7 @@ namespace Event
     /// set everything at once
     void set(const idents::AcdId& acdId, int trackIndex, 
              const Point& globalPosition, 
-             const double localPosition[2], const HepMatrix& localCovMatrix,
+             const double localPosition[2], const CLHEP::HepMatrix& localCovMatrix,
              double arcLengthToIntersection, double pathLengthInTile,
              unsigned char tileHit, double cosTheta);
 

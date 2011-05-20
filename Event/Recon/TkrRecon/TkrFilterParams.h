@@ -1,6 +1,6 @@
 /** @file TkrFilterParams.h
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.3 2011/01/11 21:36:41 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.4 2011/04/21 18:26:56 usher Exp $
 *
 */
 
@@ -87,7 +87,7 @@ public:
     double       getAverageDistance() const {return m_aveDist;}
     double       getTransRms()        const {return m_transRms;}
     double       getLongRms()         const {return m_longRms;}
-    double       getLongRmsAysm()     const {return m_longRmsAsym;}
+    double       getLongRmsAsym()     const {return m_longRmsAsym;}
 
     /// Modify data members
     void  setStatusBit(const unsigned int stat) {m_statusBits |= stat;}

@@ -28,12 +28,14 @@ static const CLID& CLID_AcdTkrGapPocaCol = InterfaceID("AcdTkrGapPocaCol", 1, 0)
  * 
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrGapPoca.h,v 1.4 2009/12/16 03:42:44 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrGapPoca.h,v 1.5 2011/01/21 14:02:51 lbaldini Exp $
  */
 
 namespace Event {
 
   class AcdTkrGapPoca : public Event::AcdTkrLocalCoords, public Event::AcdPocaData  {
+
+  typedef HepGeom::Point3D<double> HepPoint3D;
     
   public:
     
@@ -47,7 +49,7 @@ namespace Event {
                   float vetoSigmaHit, float vetoSigmaProj, float vetoSigmaProp,
                   int volumePlane, float arcLengthToPlane, float cosTheta, 
                   const HepPoint3D& global, const float localPosition[2], 
-                  const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp,
+                  const CLHEP::HepSymMatrix& localCovProj, const CLHEP::HepSymMatrix& localCovProp,
                   int volume, int region, float arcLength, 
                   float doca, float docaErrProj, float docaErrProp,
                   const Point& poca, const Vector& voca);

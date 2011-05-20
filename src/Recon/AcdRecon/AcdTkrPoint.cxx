@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoint.cxx,v 1.3 2009/12/16 03:42:45 heather Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrPoint.cxx,v 1.4 2011/01/21 14:02:54 lbaldini Exp $
 //
 //  Implementation file of AcdTkrPoint and AcdTkrPointCol classes
 //  
@@ -44,7 +44,7 @@ AcdTkrPoint::AcdTkrPoint( float arcLength, int volume,
 AcdTkrPoint::AcdTkrPoint(int trackIndex,
                          int volumePlane, float arcLengthToPlane, float cosTheta, 
                          const HepPoint3D& global, const float localPosition[2], 
-                         const HepSymMatrix& localCovProj, const HepSymMatrix& localCovProp)
+                         const CLHEP::HepSymMatrix& localCovProj, const CLHEP::HepSymMatrix& localCovProp)
   :AcdTkrLocalCoords(volumePlane,arcLengthToPlane,cosTheta,
                      global,localPosition,localPosition,
                      localCovProj,localCovProp),
