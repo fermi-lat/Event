@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: heather  Sat May 21 13:13:44 PDT 2011
-Event
-
-Modified Files:
-	SConscript 
-Log Message:
-use of CLHEP
-    *
-------------------------------------------------------------
 TAG
 Tag name: Event-14-08-00, operation: add
 Package: Event
