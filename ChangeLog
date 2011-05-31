@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 31 13:07:27 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+Add status bit definitions to TkrCluster, fix bug in returning direction for TkrTrackHit
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-00, operation: add
 Package: Event
