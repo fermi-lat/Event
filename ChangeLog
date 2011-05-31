@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: lsrea  Mon May 30 20:02:47 PDT 2011
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+First try at a "calibration" for diagnostic-enabled epoch
+
+    *
+------------------------------------------------------------
+User: lsrea  Mon May 30 20:02:47 PDT 2011
 Event/Event/TopLevel
 
 Modified Files:
