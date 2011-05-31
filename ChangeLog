@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 31 13:33:03 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+Add one more bit definition for Composite clusters
+    *
+------------------------------------------------------------
 User: usher  Tue May 31 13:07:28 PDT 2011
 Event/src/Recon/TkrRecon
 
