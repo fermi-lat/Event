@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 31 13:07:28 PDT 2011
+Event/src/Recon/TkrRecon
+
+Modified Files:
+	TkrTrackHit.cxx 
+Log Message:
+Add status bit definitions to TkrCluster, fix bug in returning direction for TkrTrackHit
+    *
+------------------------------------------------------------
 User: usher  Tue May 31 13:07:27 PDT 2011
 Event/Event/Recon/TkrRecon
 
