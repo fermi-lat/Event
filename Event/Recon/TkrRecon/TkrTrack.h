@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.13 2010/09/24 15:40:15 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.14 2010/12/02 20:52:25 usher Exp $
 
 */
 #ifndef TkrTrack_H
@@ -191,6 +191,25 @@ private:
 typedef ObjectVector<TkrTrack>      TkrTrackCol;
 typedef TkrTrackCol::iterator       TkrTrackColPtr;
 typedef TkrTrackCol::const_iterator TkrTrackColConPtr;
+
+static const CLID& CLID_TkrTrackMap = InterfaceID("TkrTrackMap",  1, 0);
+
+// typedef for overall container to reference everything in TDS
+// This defines a map, keys are the strings in EventModel.h which define the track collection
+// Currently: Event::TkrRecon::TkrTrackCol
+//            Event::TkrRecon::TkrCRTrackCol
+// The data are pointers to the track collections which are independently stored in the TDS
+// This is defined to be a DataObject in order to store in the TDS
+class TkrTrackMap : virtual public std::map<std::string, TkrTrackCol*>, virtual public DataObject
+{
+public:
+    TkrTrackMap() : DataObject() {clear();}
+    virtual ~TkrTrackMap() {};
+
+    /// Retrieve reference to class definition structure
+    virtual const CLID& clID() const  { return TkrTrackMap::classID(); }
+    static const CLID& classID() { return CLID_TkrTrackMap; }
+};
 
 }; //Namespace
 
