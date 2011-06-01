@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Jun  1 16:11:13 PDT 2011
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Create a TkrTrackMap which can be used to reference the various track collections that we store. The key for these collections will be the strings defined in the EventModel files
+    *
+------------------------------------------------------------
 User: usher  Wed Jun  1 16:11:12 PDT 2011
 Event/Event/TopLevel
 
