@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: kadrlica  Fri Jun  3 15:31:17 PDT 2011
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalMomParams.cxx 
+Log Message:
+Added member variable for storing ghost DOCA
+    *
+------------------------------------------------------------
+User: kadrlica  Fri Jun  3 15:31:17 PDT 2011
 Event/Event/Recon/CalRecon
 
 Modified Files:
