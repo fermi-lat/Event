@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: heather  Wed Jun  8 21:06:59 PDT 2011
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+add non-const access to CalMomParams
+    *
+------------------------------------------------------------
+User: heather  Wed Jun  8 21:06:59 PDT 2011
 Event/cmt
 
 Modified Files:
