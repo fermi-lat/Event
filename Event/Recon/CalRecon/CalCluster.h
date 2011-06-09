@@ -41,7 +41,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.32 2010/12/23 15:18:41 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.33 2011/01/21 14:02:52 lbaldini Exp $
 */
 
 namespace Event { //Namespace Event
@@ -158,6 +158,7 @@ namespace Event { //Namespace Event
     const CalClassParams& getClassParams()           const { return m_classParams; }
 
     /// Set methods.
+    CalMomParams& getMomParamsRef() { return m_momParams; }
     inline void setProducerName(const std::string & producerName)
       { m_producerName = producerName ; }
     inline void setStatusBits( unsigned int statusBits )   { m_statusBits = statusBits; }
