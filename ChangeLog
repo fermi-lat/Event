@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Wed Jun  8 21:06:58 PDT 2011
+Event
+
+Modified Files:
+	SConscript 
+Log Message:
+add non-const access to CalMomParams
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-01, operation: add
 Package: Event
