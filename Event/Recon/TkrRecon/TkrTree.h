@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.3 2010/11/24 16:35:47 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.5 2011/05/17 22:29:55 usher Exp $
  */
 
 #ifndef TkrTree_h
@@ -52,7 +52,7 @@ public:
             m_secondLeaf(secondLeaf), 
             m_siblingMap(nodeSiblingMap), 
             m_axisParams(axisParams)
-            {TkrTrackVec::clear(); push_back(track);}
+            {TkrTrackVec::clear(); if (track) push_back(track);}
 
     virtual ~TkrTree() 
     {
@@ -77,6 +77,14 @@ public:
     const TkrFilterParams*   getAxisParams() const {return m_axisParams;}
     // Return pointer to the track for this tree
     const TkrTrack*          getBestTrack()  const {return front();}
+
+    // Methods to set specific parameters. 
+    // It is required that the constructor be provided with some info that is unchangeable
+    // This allows setting of the best leaf
+    void setBestLeaf(TkrVecNode* bestLeaf)  {m_bestLeaf = bestLeaf;}
+
+    // This allows setting of the next best leaf
+    void setSecondLeaf(TkrVecNode* scndLeaf) {m_secondLeaf = scndLeaf;}
 
 private:
     // Pointer to the head node in the Tree
