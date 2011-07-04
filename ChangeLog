@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Jul  4 10:03:05 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecPointsLink.h 
+Log Message:
+Adding more status bit definitions for links that skip layers
+    *
+------------------------------------------------------------
 User: usher  Tue Jun 28 07:35:54 PDT 2011
 Event/Event/Recon/TkrRecon
 
