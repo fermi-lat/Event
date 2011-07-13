@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jul 12 21:07:35 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Adding a "setTreeStartLayer" method
+    *
+------------------------------------------------------------
 User: usher  Mon Jul  4 10:03:05 PDT 2011
 Event/Event/Recon/TkrRecon
 
