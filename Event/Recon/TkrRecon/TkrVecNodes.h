@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.3 2011/05/02 22:39:19 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.4 2011/05/05 19:42:28 usher Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -87,6 +87,7 @@ public:
     void setNodeCanBeShared()                    {m_statusBits |= NODE_CAN_BE_SHARED;}
     void setNodeOnBestBranch()                   {m_statusBits |= NODE_ON_BEST_BRANCH;}
     void setNodeOnNextBestBranch()               {m_statusBits |= NODE_ON_NEXT_BEST_BRANCH;}
+    void setTreeStartLayer(int startLayer);
     void setBiLyrs2MainBrch(int biLyrs);
 
     // Methods to return information
@@ -208,14 +209,13 @@ inline TkrVecNode::TkrVecNode(TkrVecNode* parent, const TkrVecPointsLink* associ
 
         if (parent->getTreeStartLayer())
         {
-            m_statusBits = (m_statusBits & ~START_BILAYER_BITS) 
-                         | (parent->getTreeStartLayer() & START_BILAYER_BITS);
+            setTreeStartLayer(parent->getTreeStartLayer());
         }
         else if (associatedLink)
         {
             int biLayer = associatedLink->getFirstVecPoint()->getLayer();
 
-            m_statusBits = (m_statusBits & START_BILAYER_BITS) | (biLayer & START_BILAYER_BITS);
+            setTreeStartLayer(biLayer);
         }
 
         setTreeId(parent->getTreeId());
@@ -277,6 +277,13 @@ inline TkrVecNode::~TkrVecNode()
     // Well, we can self-remove under new system either. hmmm
     if (m_parent) m_parent->removeDaughter(this);
 
+    return;
+}
+
+inline void TkrVecNode::setTreeStartLayer(int startLayer)
+{
+    m_statusBits = (m_statusBits & ~START_BILAYER_BITS) 
+                 | (startLayer & START_BILAYER_BITS);
     return;
 }
 
