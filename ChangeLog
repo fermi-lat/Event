@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Sun Jul 24 13:11:34 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h TkrTrack.h 
+Log Message:
+Documentation, and sorting out a collision of status bits
+
+    *
+------------------------------------------------------------
 User: usher  Tue Jul 12 21:07:35 PDT 2011
 Event/Event/Recon/TkrRecon
 
