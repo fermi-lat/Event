@@ -1,7 +1,7 @@
 /** @file TkrCluster.h
 * @author Tracy Usher, Leon Rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.19 2011/01/16 22:30:04 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrCluster.h,v 1.21 2011/05/31 20:33:03 usher Exp $
 
 */
 #ifndef TKRCLUSTER_H
@@ -22,7 +22,7 @@
 
 #include "GaudiKernel/IInterface.h"
 
-static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 6, 0);
+static const CLID& CLID_TkrCluster = InterfaceID("TkrCluster", 7, 0);
 
 namespace Event {
 
@@ -65,14 +65,14 @@ namespace Event {
         // High-order bits (16-31, right to left):
         //
         // |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
-        //                                                                  
-        //        L   P                                                     S   G
-        //        y   l                                                     m   h
-        //        r   n                                                     e   o
-        //        O   O                                                     T   s
-        //        f   f                                                     r   t
-        //        f   f                                                     k   D
-        //                                                                  D    
+        //                                                  
+        //        L   P                           C           G                 G
+        //        y   l                           o           d                 h
+        //        r   n                           m           T                 o
+        //        O   O                           p           r                 s
+        //        f   f                           o           e                 t
+        //        f   f                           s           e                 D
+        //                                      [Tree-based bits]               
                                                                             
         enum { 
             fieldUSED        =  1,    // tells whether cluster is used on a track
