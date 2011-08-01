@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Sun Jul 31 21:49:38 PDT 2011
+Event
+
+Modified Files:
+      Tag: GlastReleasev17r35p23
+	SConscript 
+Log Message:
+P7 branch
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-23-gr05, operation: add
 Package: Event
