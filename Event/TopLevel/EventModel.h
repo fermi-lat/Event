@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.58 2011/05/31 03:02:47 lsrea Exp $
+// $Id: EventModel.h,v 1.59 2011/06/01 23:11:12 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -118,6 +118,18 @@ public:
         static std::string TkrClusterHitTab;
     };
 
+
+    class DLL_EXPORT_EVT Recon
+    {
+    public:
+        Recon() {}
+       ~Recon() {}
+
+        static std::string Event;
+        static std::string TreeClusterRelationCol;
+        static std::string TreeToRelationMap;
+        static std::string ClusterToRelationMap;
+    };
 
     class DLL_EXPORT_EVT TkrRecon
     {
