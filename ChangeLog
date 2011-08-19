@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Aug 19 12:40:11 PDT 2011
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Adding TDS object to relate Trees to Cal Clusters
+    *
+------------------------------------------------------------
 User: usher  Fri Aug 19 12:40:10 PDT 2011
 Event/cmt
 
