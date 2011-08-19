@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.84 2011/05/31 03:02:47 lsrea Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.85 2011/06/01 23:11:13 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -70,6 +70,12 @@ std::string EventModel::Overlay::CalDigiCol           = EventModel::Overlay::Eve
 std::string EventModel::Overlay::CalDigiHitTab        = EventModel::Overlay::Event + "/CalDigiHitTab";
 std::string EventModel::Overlay::TkrDigiHitTab        = EventModel::Overlay::Event + "/TkrDigiHitTab";
 std::string EventModel::Overlay::TkrClusterHitTab     = EventModel::Overlay::Event + "/TkrClusterHitTab";
+      
+// reconstructed data (Overall)
+std::string EventModel::Recon::Event                         = EventModel::EventHeader + "/Recon";
+std::string EventModel::Recon::TreeClusterRelationCol        = EventModel::Recon::Event + "/TreeClusterRelationCol";
+std::string EventModel::Recon::TreeToRelationMap             = EventModel::Recon::Event + "/TreeToRelationMap";
+std::string EventModel::Recon::ClusterToRelationMap          = EventModel::Recon::Event + "/ClusterToRelationMap";
       
 // reconstructed data (Tracker)
 std::string EventModel::TkrRecon::Event                      = EventModel::EventHeader + "/TkrRecon";
