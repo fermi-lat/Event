@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Aug 25 15:07:08 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Do better job with rms angle for skipping layers
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-03-05, operation: add
 Package: Event
