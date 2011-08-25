@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.4 2011/05/05 19:42:28 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.5 2011/07/13 04:07:35 usher Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -226,19 +226,38 @@ inline TkrVecNode::TkrVecNode(TkrVecNode* parent, const TkrVecPointsLink* associ
     {
         TkrVecPointsLink* parentLink = const_cast<Event::TkrVecPointsLink*>(parent->getAssociatedLink());
 
+        // Get the angle between parent link and this link
         double linkAngle = parentLink->angleToNextLink(*associatedLink);
-//        double linkAngle = parentLink->distToNextLink(*associatedLink);
 
+        // Update the rms sum
         m_rmsAngleSum += linkAngle * linkAngle;
         m_numAnglesInSum++;
 
+        // If our link skips layers then we need to do something to augment the rms angle sum
+        // to account for the skipped layers
         if (associatedLink->skipsLayers())
         {
             m_rmsAngleSum += linkAngle * linkAngle;
 
-            if (associatedLink->skip2Layer())
+            // If we are skipping more than one layer then keep increasing...
+            if (!associatedLink->skip1Layer()) 
             {
                 m_rmsAngleSum += linkAngle * linkAngle;
+
+                if (!associatedLink->skip2Layer())
+                {
+                    m_rmsAngleSum += linkAngle * linkAngle;
+
+                    if (!associatedLink->skip3Layer())
+                    {
+                        m_rmsAngleSum += linkAngle * linkAngle;
+
+                        if (!associatedLink->skipNLayer())
+                        {
+                            m_rmsAngleSum += linkAngle * linkAngle;
+                        }
+                    }
+                }
             }
         }
     }
