@@ -1,6 +1,6 @@
 /** @file TkrEventParams.h
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.3 2005/09/03 02:02:19 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrEventParams.h,v 1.4 2005/09/22 19:33:41 usher Exp $
 *
 */
 
@@ -33,7 +33,7 @@ public:
                        m_statusBits(0),
                        m_EventEnergy(0.),
                        m_EventPosition(0.,0.,0.),
-                       m_EventAxis(0.,0.,0.),
+                       m_EventAxis(0.,0.,1.),
                        m_numBiLayers(0),
                        m_numIterations(0),
                        m_numHitsTotal(0),
