@@ -1,6 +1,6 @@
 /** @file TkrFilterParams.h
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.4 2011/04/21 18:26:56 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrFilterParams.h,v 1.5 2011/05/20 15:02:47 heather Exp $
 *
 */
 
@@ -33,7 +33,7 @@ public:
     TkrFilterParams() : m_statusBits(0),
                         m_EventEnergy(0.),
                         m_EventPosition(0.,0.,0.),
-                        m_EventAxis(0.,0.,0.),
+                        m_EventAxis(0.,0.,1.),
                         m_numBiLayers(0),
                         m_numIterations(0),
                         m_numHitsTotal(0),
