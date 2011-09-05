@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kadrlica  Mon Sep  5 16:28:18 PDT 2011
+Event/Event/Recon/AcdRecon
+
+Added Files:
+	AcdCalAssoc.h 
+Log Message:
+Added AcdCalAssoc for AcdReconV2. Pretty much a carbo copy of AcdTkrAssoc
+    *
+------------------------------------------------------------
 User: usher  Sun Sep  4 21:12:04 PDT 2011
 Event/Event/Recon/TkrRecon
 
