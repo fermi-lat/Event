@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: kadrlica  Mon Sep  5 16:29:05 PDT 2011
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdReconV2.h 
+Log Message:
+Add AcdCalAssoc to AcdReconV2
+    *
+------------------------------------------------------------
 User: kadrlica  Mon Sep  5 16:28:19 PDT 2011
 Event/src/Recon/AcdRecon
 
