@@ -1,4 +1,12 @@
 ------------------------------------------------------------
+User: usher  Sun Sep  4 21:12:04 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: Event
