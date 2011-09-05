@@ -9,6 +9,7 @@
 
 #include "Event/TopLevel/Definitions.h"
 #include "Event/Recon/AcdRecon/AcdTkrAssoc.h"
+#include "Event/Recon/AcdRecon/AcdCalAssoc.h"
 #include "Event/Recon/AcdRecon/AcdHit.h"
 #include "Event/Recon/AcdRecon/AcdEventTopology.h"
 
@@ -25,7 +26,7 @@ static const CLID& CLID_AcdReconV2 = InterfaceID("AcdReconV2", 1, 0);
 *
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.3 2009/12/19 20:05:24 echarles Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.4 2011/01/21 14:02:51 lbaldini Exp $          
 */
 
 namespace Event {
@@ -56,6 +57,9 @@ namespace Event {
     
     inline AcdTkrAssocCol& getTkrAssocCol() { return m_acdTkrAssocs; }
     inline const AcdTkrAssocCol& getTkrAssocCol() const { return m_acdTkrAssocs; }
+
+    inline AcdCalAssocCol& getCalAssocCol() { return m_acdCalAssocs; }
+    inline const AcdCalAssocCol& getCalAssocCol() const { return m_acdCalAssocs; }
     
     
     /// Serialize the object for writing
@@ -82,6 +86,9 @@ namespace Event {
     /// Track associations
     AcdTkrAssocCol m_acdTkrAssocs;
 
+    /// CAL cluster associations
+    AcdCalAssocCol m_acdCalAssocs;
+
   };
 
   inline void AcdReconV2::init() {
@@ -92,6 +99,7 @@ namespace Event {
     m_topology.ini();
     m_acdHits.clear();
     m_acdTkrAssocs.clear();    
+    m_acdCalAssocs.clear();    
   }
 
   
