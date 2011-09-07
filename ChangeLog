@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Sep  7 14:57:16 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Fix bug which was causing only longest to be considered
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr04, operation: add
 Package: Event
