@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Sep  6 20:21:25 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Tune sorting algorithm
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-03-07, operation: del
 Package: Event
