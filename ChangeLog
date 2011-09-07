@@ -2,6 +2,23 @@
 TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: Event
+User: heather  Wed Sep  7 10:24:32 2011
+Files:
+  Event/doc/.cvsignore  1.1.1.1
+  Event/doc/release.notes  1.166
+  Event/mgr/.cvsignore  1.1.1.1
+  Event/mgr/cleanup.csh  1.2
+  Event/mgr/requirements  1.46
+  Event/mgr/cleanup.sh  1.2
+  Event/mgr/Makefile  1.1.1.1
+  Event/src/mainpage.h  1.6
+  Event/src/Digi/GltDigi.cxx  1.2
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: Event
 User: heather  Wed Sep  7 10:24:27 2011
 Files:
   Event/.cvsignore  1.5
