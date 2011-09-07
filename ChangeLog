@@ -1,5 +1,23 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-gr04, operation: add
+Package: Event
+User: heather  Wed Sep  7 14:15:30 2011
+Files:
+  Event/.cvsignore  1.4
+  Event/ChangeLog  1.1213
+  Event/EventLib.py  1.2
+  Event/SConscript  1.17.116.1
+  Event/Event/Digi/AcdDigi.h  1.26
+  Event/Event/Digi/TkrDigi.h  1.18
+  Event/Event/Digi/CalDigi.h  1.21
+  Event/Event/Digi/GltDigi.h  1.10
+  Event/Event/Factories/WrapperFactory.h  1.2
+  Event/Event/Hits/SiLayers.h  1.2
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: Event
 User: heather  Wed Sep  7 10:24:38 2011
