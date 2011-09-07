@@ -2,6 +2,42 @@
 TAG
 Tag name: GlastRelease-19-03-07, operation: add
 Package: Event
+User: heather  Wed Sep  7 10:24:38 2011
+Files:
+  Event/src/Factories/HitInstanciation.cpp  1.5
+  Event/src/Factories/GlastEvent_load.cpp  1.7
+  Event/src/Factories/DigiInstantiation.cpp  1.2
+  Event/src/Factories/TopInstantiation.cpp  1.8
+  Event/src/Factories/MCInstanciation.cpp  1.8
+  Event/src/Factories/RawInstantiation.cpp  1.4
+  Event/src/Factories/GlastEvent_dll.cpp  1.3
+  Event/src/Factories/IrfInstantiation.cpp  1.3
+  Event/src/Hits/SiLayers.cpp  1.4
+  Event/src/MonteCarlo/D2Entry.cxx  1.1
+  Event/src/MonteCarlo/McPositionHit.cxx  1.13
+  Event/src/MonteCarlo/McParticle.cxx  1.23
+  Event/src/MonteCarlo/McEventStructure.cxx  1.3
+  Event/src/MonteCarlo/McIntegratingHit.cxx  1.15
+  Event/src/MonteCarlo/McTrajectory.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdTkrPoint.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx  1.6
+  Event/src/Recon/AcdRecon/AcdTkrPoca.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdTkrLocalData.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdPocaMap.cxx  1.2
+  Event/src/Recon/AcdRecon/AcdTkrGapPoca.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdReconV2.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdHit.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdPocaData.cxx  1.4
+  Event/src/Recon/AcdRecon/AcdSplashVars.cxx  1.2
+  Event/src/Recon/AcdRecon/AcdTkrHitPoca.cxx  1.6
+  Event/src/Recon/AcdRecon/AcdEventTopology.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdTkrAssoc.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-19-03-07, operation: add
+Package: Event
 User: heather  Wed Sep  7 10:24:32 2011
 Files:
   Event/doc/.cvsignore  1.1.1.1
