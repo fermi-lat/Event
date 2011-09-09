@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.5 2011/07/13 04:07:35 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.12 2011/09/08 22:23:51 usher Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -512,8 +512,8 @@ inline const bool TkrVecNodesComparator::operator()(const TkrVecNode* left, cons
     else if (left->getDepth() > right->getDepth()) return true;
 
     // If here then branches are the same depth, take the one spanning the most bilayers
-    if      (left->getBestNumBiLayers() < right->getBestNumBiLayers()) return false;
-    else if (left->getBestNumBiLayers() > right->getBestNumBiLayers()) return true;
+    //if      (left->getBestNumBiLayers() < right->getBestNumBiLayers()) return false;
+    //else if (left->getBestNumBiLayers() > right->getBestNumBiLayers()) return true;
 
     // Last check is to take the branch which is "straightest" 
     // Use the scaled rms angle to determine straightest...
