@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Sep 14 16:44:19 PDT 2011
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Small change to help fix an aribitration bug
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-07, operation: add
 Package: Event
