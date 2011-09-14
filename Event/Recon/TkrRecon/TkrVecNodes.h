@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.12 2011/09/08 22:23:51 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.5 2011/07/13 04:07:35 usher Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -189,7 +189,7 @@ inline TkrVecNode::TkrVecNode(TkrVecNode* parent, const TkrVecPointsLink* associ
                               m_parent(parent),
                               m_statusBits(0),
                               m_rmsAngleSum(0.),
-                              m_numAnglesInSum(1),
+                              m_numAnglesInSum(0),
                               m_leaves(0),
                               m_branches(0),
                               m_depth(1),
