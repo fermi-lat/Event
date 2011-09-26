@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Sep 26 12:16:16 PDT 2011
+Event
+
+Modified Files:
+	SConscript 
+Log Message:
+Preparing to tag Event-14-09-08
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr07, operation: add
 Package: Event
