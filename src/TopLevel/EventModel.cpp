@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.85 2011/06/01 23:11:13 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.86 2011/08/19 19:40:10 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -82,6 +82,7 @@ std::string EventModel::TkrRecon::Event                      = EventModel::Event
 std::string EventModel::TkrRecon::TkrClusterCol              = EventModel::TkrRecon::Event + "/TkrClusterCol";
 std::string EventModel::TkrRecon::TkrIdClusterMMap           = EventModel::TkrRecon::Event + "/TkrIdClusterMMap";
 std::string EventModel::TkrRecon::TkrIdClusterMap            = EventModel::TkrRecon::Event + "/TkrIdClusterMap";
+std::string EventModel::TkrRecon::TkrTreeCol                 = EventModel::TkrRecon::Event + "/TkrTreeCol";
 std::string EventModel::TkrRecon::TkrTrackCol                = EventModel::TkrRecon::Event + "/TkrTrackCol";
 std::string EventModel::TkrRecon::TkrCRTrackCol              = EventModel::TkrRecon::Event + "/TkrCRTrackCol";
 std::string EventModel::TkrRecon::TkrTrackMap                = EventModel::TkrRecon::Event + "/TkrTrackMap";
@@ -115,6 +116,7 @@ std::string EventModel::CalRecon::CalXtalRecCol       = EventModel::CalRecon::Ev
 std::string EventModel::CalRecon::CalMipTrackCol      = EventModel::CalRecon::Event + "/CalMipTrackCol";
 std::string EventModel::CalRecon::CalClusterCol       = EventModel::CalRecon::Event + "/CalClusterCol";
 std::string EventModel::CalRecon::CalEventEnergyCol   = EventModel::CalRecon::Event + "/CalEventEnergyCol";
+std::string EventModel::CalRecon::CalEventEnergyMap   = EventModel::CalRecon::Event + "/CalEventEnergyMap";
 std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Event + "/CalClusterHitTab";
 //@@@FP 07/09/05
 //std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";
