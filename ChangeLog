@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Oct  5 12:09:08 PDT 2011
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalEventEnergy.h 
+Log Message:
+Add new container for the CalEventEnergy objects which will allow association to individual Cal Clusters. Add relevant strings to EventModel to store/retrieve to/from the TDS
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-08, operation: add
 Package: Event
