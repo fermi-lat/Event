@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Wed Oct  5 12:09:09 PDT 2011
+Event/src/TopLevel
+
+Modified Files:
+	EventModel.cpp 
+Log Message:
+Add new container for the CalEventEnergy objects which will allow association to individual Cal Clusters. Add relevant strings to EventModel to store/retrieve to/from the TDS
+    *
+------------------------------------------------------------
+User: usher  Wed Oct  5 12:09:09 PDT 2011
 Event/Event/TopLevel
 
 Modified Files:
