@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Thu Nov 17 10:42:32 PST 2011
+Event/doc
+
+Modified Files:
+	release.notes 
+Log Message:
+Put right comment into release notes!
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-10-09-09, operation: add
 Package: Event
