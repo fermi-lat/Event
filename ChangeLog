@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Sun Dec  4 19:17:05 PST 2011
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Create an object to contain summary information for the TkrVecPointsLink objects in the TDS
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr15, operation: add
 Package: Event
