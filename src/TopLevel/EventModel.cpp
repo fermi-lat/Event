@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.86 2011/08/19 19:40:10 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.87 2011/10/05 19:09:09 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -103,6 +103,7 @@ std::string EventModel::TkrRecon::TkrBoundBoxPointsToBoxTab  = EventModel::TkrRe
 std::string EventModel::TkrRecon::TkrVecPointCol             = EventModel::TkrRecon::Event + "/TkrVecPointCol";
 std::string EventModel::TkrRecon::TkrVecPointInfo            = EventModel::TkrRecon::Event + "/TkrVecPointInfo";
 std::string EventModel::TkrRecon::TkrVecPointsLinkCol        = EventModel::TkrRecon::Event + "/TkrVecPointsLinkCol";
+std::string EventModel::TkrRecon::TkrVecPointsLinkInfo       = EventModel::TkrRecon::Event + "/TkrVecPointsLinkInfo";
 std::string EventModel::TkrRecon::TkrTrackElementsCol        = EventModel::TkrRecon::Event + "/TkrTrackElementsCol";
 std::string EventModel::TkrRecon::TkrTrackElemsToLinksTab    = EventModel::TkrRecon::Event + "/TkrTrackElemsToLinksTab";
 std::string EventModel::TkrRecon::TkrDiagnosticFlag          = EventModel::TkrRecon::Event + "/TkrDiagnosticFlag";
