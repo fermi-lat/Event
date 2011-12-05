@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: usher  Sun Dec  4 19:17:06 PST 2011
+Event/Event/Recon/TkrRecon
+
+Added Files:
+	TkrVecPointsLinkInfo.h 
+Log Message:
+Create an object to contain summary information for the TkrVecPointsLink objects in the TDS
+    *
+------------------------------------------------------------
+User: usher  Sun Dec  4 19:17:06 PST 2011
 Event/src/TopLevel
 
 Modified Files:
