@@ -1,31 +1,4 @@
 ------------------------------------------------------------
-User: heather  Mon Dec 12 12:14:10 PST 2011
-GlastRelease-scons/Event/Event/TopLevel
-
-Modified Files:
-	MCEvent.h 
-Log Message:
-new Gaudi v21r7
-    *
-------------------------------------------------------------
-User: heather  Mon Dec 12 12:14:10 PST 2011
-GlastRelease-scons/Event/Event/RelTable
-
-Modified Files:
-	RelKey.h Relation.h 
-Log Message:
-new Gaudi v21r7
-    *
-------------------------------------------------------------
-User: heather  Mon Dec 12 12:14:09 PST 2011
-GlastRelease-scons/Event
-
-Modified Files:
-	SConscript 
-Log Message:
-new Gaudi v21r7
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr16, operation: add
 Package: Event
