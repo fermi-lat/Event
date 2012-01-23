@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Jan 23 13:52:13 PST 2012
+Event/Event/RelTable
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	RelKey.h Relation.h 
+Log Message:
+Bring Guadi update branch over to this branch to test changes to relational table code
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-br01, operation: add
 Package: Event
