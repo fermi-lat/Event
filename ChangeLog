@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Jan 23 15:01:30 PST 2012
+Event/src/TopLevel
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	EventModel.cpp 
+Log Message:
+Facilitate TDS access to TkrVecPointsLinkInfo
+    *
+------------------------------------------------------------
 User: usher  Mon Jan 23 15:01:29 PST 2012
 Event/Event/TopLevel
 
