@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Wed Jan 25 19:49:33 PST 2012
+Event/cmt
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	requirements 
+Log Message:
+bring L1Proc gaudi upgrade
+    *
+------------------------------------------------------------
+User: heather  Wed Jan 25 19:49:33 PST 2012
 Event/Event/TopLevel
 
 Modified Files:
