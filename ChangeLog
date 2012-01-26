@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Jan 25 19:49:32 PST 2012
+Event
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+bring L1Proc gaudi upgrade
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-09-gr01, operation: add
 Package: Event
