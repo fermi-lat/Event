@@ -1,5 +1,5 @@
 package Event
-version v13r5p0gr01
+version v13r5p0gr02
 
 author T.Burnett <tburnett@u.washington.edu>
 
@@ -8,7 +8,7 @@ branches Event cmt doc src
 use geometry       v3r*
 use idents         v2r*
 use enums          v*
-use CLHEP          v3r* IExternal
+use CLHEP          v* IExternal
 use GaudiInterface v*   IExternal 
 
 apply_pattern shared_library
@@ -23,6 +23,7 @@ macro_append Event_headers "" WIN32 " \
         ../Event/Utilities/*.h \
         ../Event/MonteCarlo/*.h \
         ../Event/Digi/*.h \
+        ../Event/Recon/*.h \
         ../Event/Recon/AcdRecon/*.h \
         ../Event/Recon/TkrRecon/*.h\
         ../Event/Recon/CalRecon/*.h\

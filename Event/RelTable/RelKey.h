@@ -22,7 +22,7 @@
  * @author Marco Frailis 
  * @author Riccardo Giannitrapani
  *    
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelKey.h,v 1.4 2007/03/15 18:06:57 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/RelTable/RelKey.h,v 1.6 2011/12/12 20:14:10 heather Exp $
  */
 namespace Event
 {
@@ -99,7 +99,8 @@ template <class T1, class T2, class T3>
 inline void RelKey<T1,T2,T3>::removeFromMap(RelKeyMultiMap<T1,T2,T3>* map)
 {
     map->erase(m_iterator);
-    m_iterator = 0;
+    //m_iterator = 0;
+    m_iterator=map->end();
 }
 
 template <class T1, class T2, class T3> 
