@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Mon Jan 30 10:15:52 PST 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecPointsLinkInfo.h 
+Log Message:
+Added non-const access members to allow link building code to better operate.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-br02, operation: add
 Package: Event
