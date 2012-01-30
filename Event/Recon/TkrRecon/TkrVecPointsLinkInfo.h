@@ -10,7 +10,7 @@
 *
 * @authors Tracker Folks
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLinkInfo.h,v 1.1 2010/12/16 20:41:06 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLinkInfo.h,v 1.1 2011/12/05 03:17:06 usher Exp $
 */
 
 #ifndef __TkrVecPointsLinkInfo_H
@@ -55,10 +55,15 @@ public:
 
     /// @name Data access methods
     //@{
-    /// Recover a pointer to the collection of links
+    /// Recover a const pointer to the collection of links
     const Event::TkrVecPointsLinkCol*   getTkrVecPointsLinkCol()   const {return m_tkrVecPointsLinkCol;}
-    /// Recover a pointer to the link relations table
+    /// Recover a const pointer to the link relations table
     const Event::TkrVecPointToLinksTab* getTkrVecPointToLinksTab() const {return m_pointToLinksTab;}
+    /// For use by the builder methods
+    /// Recover a const pointer to the collection of links
+    Event::TkrVecPointsLinkCol*         getTkrVecPointsLinkCol()         {return m_tkrVecPointsLinkCol;}
+    /// Recover a const pointer to the link relations table
+    Event::TkrVecPointToLinksTab*       getTkrVecPointToLinksTab()       {return m_pointToLinksTab;}
     //@}
 
 private:
