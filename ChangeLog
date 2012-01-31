@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Tue Jan 31 10:08:52 PST 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	TkrVecPointsLinkInfo.h 
+Log Message:
+putting copy on the GlastReleasev19r4p1 branch (I think)
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr19, operation: add
 Package: Event
