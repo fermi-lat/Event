@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Feb  8 13:35:58 PST 2012
+Event
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	SConscript 
+Log Message:
+pick up most recent RelTable.h to fix mungo memory leak
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr21, operation: add
 Package: Event
