@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Wed Feb  8 13:35:59 PST 2012
+Event/cmt
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br01
+	requirements 
+Log Message:
+pick up most recent RelTable.h to fix mungo memory leak
+    *
+------------------------------------------------------------
+User: heather  Wed Feb  8 13:35:59 PST 2012
 Event/Event/RelTable
 
 Modified Files:
