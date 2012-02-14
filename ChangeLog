@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Tue Feb 14 08:34:05 PST 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	CalEventEnergy.h 
+Log Message:
+Include the name of the best energy correction algorithm which is used to determine the parameters
+    *
+------------------------------------------------------------
 User: usher  Mon Feb 13 20:27:50 PST 2012
 Event/Event/Recon/TkrRecon
 
