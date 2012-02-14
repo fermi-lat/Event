@@ -27,7 +27,7 @@ static const CLID& CLID_CalEventEnergyCol = InterfaceID("CalEventEnergyCol", 1, 
 *  
 *  \author CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalEventEnergy.h,v 1.5 2011/01/21 14:02:52 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalEventEnergy.h,v 1.6 2011/10/05 19:09:08 usher Exp $
 */
 
 namespace Event 
@@ -36,7 +36,7 @@ namespace Event
     {     
     public:
         
-        CalEventEnergy() : m_statusBits(0), m_params() {}
+        CalEventEnergy() : m_bestCorName(""), m_statusBits(0), m_params() {}
             
         virtual ~CalEventEnergy() { clear() ; }
 
@@ -70,19 +70,23 @@ namespace Event
         const CalCorToolResult * findLast( const std::string & correctionName ) const ;
         
         /// Access to "the" energy and parameters
-        const CalParams&    getParams()     const {return m_params;}
-        double              getEnergy()     const {return m_params.getEnergy();}
-        const Point&        getCentroid()   const {return m_params.getCentroid();}
-        const Vector&       getDirection()  const {return m_params.getAxis();}
+        const std::string&  getBestCorName() const {return m_bestCorName;}
+        const CalParams&    getParams()      const {return m_params;}
+        double              getEnergy()      const {return m_params.getEnergy();}
+        const Point&        getCentroid()    const {return m_params.getCentroid();}
+        const Vector&       getDirection()   const {return m_params.getAxis();}
 
         ///
         /// Set methods for this class
         /// @param energy the corrected energy
-        inline void setParams(const CalParams& params)       {m_params = params;}
+        inline void setParams(const CalParams& params)            {m_params       = params;}
+
+        /// Set the name of the best correction method
+        inline void setBestCorName(const std::string& name)       {m_bestCorName  = name;}
 
             /// Access individual status bits
-        inline void setStatusBit( StatusBits bitToSet ) { m_statusBits |=  bitToSet ; }
-        inline void clearStatusBit( StatusBits bitToClear ) { m_statusBits &= ~bitToClear ; }
+        inline void setStatusBit( StatusBits bitToSet )           { m_statusBits |=  bitToSet ; }
+        inline void clearStatusBit( StatusBits bitToClear )       { m_statusBits &= ~bitToClear ; }
         inline bool checkStatusBit( StatusBits bitToCheck ) const { return ((m_statusBits&bitToCheck)!=ZERO) ; }
 
         /// Access the status bits globally
@@ -91,6 +95,7 @@ namespace Event
 
         
     private:
+        std::string  m_bestCorName;
         unsigned int m_statusBits;
         CalParams    m_params;
     };
