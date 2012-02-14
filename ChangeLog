@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: usher  Mon Feb 13 20:27:50 PST 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	TkrVecPointsLink.h 
+Log Message:
+Add a clear bits function
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-04-01-gr12, operation: add
 Package: Event
