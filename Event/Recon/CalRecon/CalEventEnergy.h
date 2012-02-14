@@ -36,7 +36,7 @@ namespace Event
     {     
     public:
         
-        CalEventEnergy() : m_bestCorName(""), m_statusBits(0), m_params() {}
+        CalEventEnergy() : m_statusBits(0), m_params() {}
             
         virtual ~CalEventEnergy() { clear() ; }
 
@@ -70,7 +70,8 @@ namespace Event
         const CalCorToolResult * findLast( const std::string & correctionName ) const ;
         
         /// Access to "the" energy and parameters
-        const std::string&  getBestCorName() const {return m_bestCorName;}
+        /// Remove for now (TU 2/14/12)
+        ///const std::string&  getBestCorName() const {return m_bestCorName;}
         const CalParams&    getParams()      const {return m_params;}
         double              getEnergy()      const {return m_params.getEnergy();}
         const Point&        getCentroid()    const {return m_params.getCentroid();}
@@ -82,7 +83,8 @@ namespace Event
         inline void setParams(const CalParams& params)            {m_params       = params;}
 
         /// Set the name of the best correction method
-        inline void setBestCorName(const std::string& name)       {m_bestCorName  = name;}
+        /// Remove for now (TU 2/14/12)
+        ///inline void setBestCorName(const std::string& name)       {m_bestCorName  = name;}
 
             /// Access individual status bits
         inline void setStatusBit( StatusBits bitToSet )           { m_statusBits |=  bitToSet ; }
@@ -95,7 +97,7 @@ namespace Event
 
         
     private:
-        std::string  m_bestCorName;
+        ///std::string  m_bestCorName;
         unsigned int m_statusBits;
         CalParams    m_params;
     };
