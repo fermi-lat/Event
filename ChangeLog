@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 15 08:54:17 PST 2012
+Event
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br02
+	SConscript 
+Log Message:
+merge in relation table updates from HEAD to avoid mem leak
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-19-04-01-gr13, operation: add
 Package: Event
