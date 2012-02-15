@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Wed Feb 15 08:54:18 PST 2012
+Event/Event/RelTable
+
+Modified Files:
+      Tag: GlastRelease-17-35-24-br02
+	RelTable.h Relation.h 
+Log Message:
+merge in relation table updates from HEAD to avoid mem leak
+    *
+------------------------------------------------------------
 User: heather  Wed Feb 15 08:54:17 PST 2012
 Event
 
