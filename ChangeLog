@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: kadrlica  Fri Mar 16 13:49:01 PDT 2012
+Event/src/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	AcdTkrHitPoca.cxx 
+Log Message:
+Added ACD flags to the HitPoca
+    *
+------------------------------------------------------------
+User: kadrlica  Fri Mar 16 13:49:01 PDT 2012
 Event/Event/Recon/AcdRecon
 
 Modified Files:
