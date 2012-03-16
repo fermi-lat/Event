@@ -19,7 +19,7 @@
  *
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.7 2011/01/25 21:05:51 echarles Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.8 2011/05/20 15:02:47 heather Exp $
  */
 
 #include <vector>
@@ -49,7 +49,7 @@ namespace Event {
                   const CLHEP::HepSymMatrix& localCovProj, const CLHEP::HepSymMatrix& localCovProp,
                   int volume, int region, float arcLength, 
                   float doca, float docaErrProj, float docaErrProp,
-                  const Point& poca, const Vector& voca);
+                  const Point& poca, const Vector& voca, const unsigned short flags[2]);
 
     /// Old Constructor for backwards compatiblity
     AcdTkrHitPoca( const idents::AcdId& acdId, int trackIndex, 
@@ -88,8 +88,22 @@ namespace Event {
       return m_mips[1];
     }
 
+    /// Return the flags associated with PMT A
+    inline unsigned short flagsPmtA() const { 
+      return m_flags[0];
+    }
+
+    /// Return the flags associated with PMT B
+    inline unsigned short flagsPmtB() const { 
+      return m_flags[1];
+    }
+
     inline bool hasHit() const {
       return ( m_mips[0] > 0.001 || m_mips[1] > 0.001 );
+    }
+
+    inline bool hasTriggerVeto() const {
+      return ( ( (m_flags[0] >> 1) & 0x1 ) || ( (m_flags[0] >> 1) & 0x1 ) );
     }
 
     /// combine the sigma from the hit with the sigma from the track
@@ -113,7 +127,8 @@ namespace Event {
     /// set all the values
     void set(const idents::AcdId& acdId, int trackIndex,
              const float mips[2],
-             float vetoHit, float vetoProj, float vetoProp);                
+             float vetoHit, float vetoProj, float vetoProp,
+             const unsigned short flags[2]);                
 
     /// reset all the values to their default
     virtual void ini();
@@ -131,6 +146,9 @@ namespace Event {
        
     /// The mip values associated with the two pmts
     float m_mips[2];
+
+    /// The status bits from the ACD hit
+    unsigned short m_flags[2];
 
     ///  An estimator of the number of sigma needed for this hit to be a true MIP signal
     float m_vetoSigmaHit;
