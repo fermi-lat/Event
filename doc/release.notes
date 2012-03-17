@@ -4,6 +4,7 @@
  * package manager:T.Burnett
  * EOH *
 
+ Event-14-09-09-gr03 16-Mar-2012 kadrlica Add ACD flags to HitPoca
  Event-14-09-09-gr02 31-Jan-2012 TU Including small update to TkrVecPointsLinkInfo.h
  Event-14-09-09-gr01 24-Jan-2012 TU Heather tagging for Tracy
  Event-14-09-09 17-Nov-2011  TU Include Bill Atwood's new methods to the TkrVecNodes.h file
