@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kadrlica  Mon Mar 19 08:20:12 PDT 2012
+Event/src/Recon/AcdRecon
+
+Removed Files:
+      Tag: GlastReleasev19r4p1
+	AcdTkrAssoc.cxx AcdCalAssoc.cxx 
+Log Message:
+Removed Acd[Tkr|Cal]Assoc to replace with AcdAssoc
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-09-09-gr03, operation: add
 Package: Event
