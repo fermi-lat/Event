@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kadrlica  Mon Mar 19 08:28:27 PDT 2012
+Event/src/Recon/AcdRecon
+
+Added Files:
+      Tag: GlastReleasev19r4p1
+	AcdAssoc.cxx 
+Log Message:
+Replace Acd[Tkr|Cal]Assoc with AcdAssoc
+    *
+------------------------------------------------------------
 User: kadrlica  Mon Mar 19 08:27:53 PDT 2012
 Event/Event/Recon/AcdRecon
 
