@@ -8,8 +8,7 @@
 #include "GaudiKernel/DataObject.h"
 
 #include "Event/TopLevel/Definitions.h"
-#include "Event/Recon/AcdRecon/AcdTkrAssoc.h"
-#include "Event/Recon/AcdRecon/AcdCalAssoc.h"
+#include "Event/Recon/AcdRecon/AcdAssoc.h"
 #include "Event/Recon/AcdRecon/AcdHit.h"
 #include "Event/Recon/AcdRecon/AcdEventTopology.h"
 
@@ -26,7 +25,7 @@ static const CLID& CLID_AcdReconV2 = InterfaceID("AcdReconV2", 1, 0);
 *
 *                                 
 * @author Heather Kelly
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.4 2011/01/21 14:02:51 lbaldini Exp $          
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdReconV2.h,v 1.5 2011/09/05 23:29:04 kadrlica Exp $          
 */
 
 namespace Event {
