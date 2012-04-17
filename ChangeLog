@@ -1,5 +1,17 @@
 ------------------------------------------------------------
 TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: Event
+User: heather  Tue Apr 17 10:33:01 2012
+Files:
+  Event/.cvsignore  1.4
+  Event/ChangeLog  1.1213
+  Event/EventLib.py  1.2
+  Event/SConscript  1.17.116.1
+
+    *
+------------------------------------------------------------
+TAG
 Tag name: GlastRelease-17-35-24-gr25, operation: add
 Package: Event
 User: heather  Mon Apr 16 13:31:22 2012
