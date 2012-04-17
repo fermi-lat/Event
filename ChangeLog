@@ -4,6 +4,18 @@ Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: Event
 User: heather  Tue Apr 17 10:33:05 2012
 Files:
+  Event/src/Recon/TkrRecon/TkrVertex.cxx  1.12
+  Event/src/Recon/TkrRecon/TkrTrackHit.cxx  1.10
+  Event/src/Recon/TkrRecon/TkrTrack.cxx  1.2
+  Event/src/Recon/TkrRecon/TkrTrackParams.cxx  1.4
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: Event
+User: heather  Tue Apr 17 10:33:05 2012
+Files:
   Event/src/Recon/AcdRecon/AcdTkrPoint.cxx  1.2
   Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx  1.4
   Event/src/Recon/AcdRecon/AcdTkrPoca.cxx  1.2
