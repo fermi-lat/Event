@@ -4,6 +4,19 @@ Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: Event
 User: heather  Tue Apr 17 10:33:04 2012
 Files:
+  Event/mgr/.cvsignore  1.1.1.1
+  Event/mgr/cleanup.csh  1.2
+  Event/mgr/requirements  1.46
+  Event/mgr/cleanup.sh  1.2
+  Event/mgr/Makefile  1.1.1.1
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: Event
+User: heather  Tue Apr 17 10:33:04 2012
+Files:
   Event/Event/Utilities/TimeStamp.h  1.9
   Event/Event/Utilities/CLHEPStreams.h  1.4
   Event/Event/Utilities/ParticleID.h  1.6
