@@ -4,6 +4,23 @@ Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: Event
 User: heather  Tue Apr 17 10:33:02 2012
 Files:
+  Event/Event/MonteCarlo/McEventStructure.h  1.5
+  Event/Event/MonteCarlo/Exposure.h  1.3
+  Event/Event/MonteCarlo/McPositionHit.h  1.26
+  Event/Event/MonteCarlo/McTrajectory.h  1.6
+  Event/Event/MonteCarlo/McParticle.h  1.35
+  Event/Event/MonteCarlo/McTkrStrip.h  1.6
+  Event/Event/MonteCarlo/D2Entry.h  1.5
+  Event/Event/MonteCarlo/McRelTableDefs.h  1.5
+  Event/Event/MonteCarlo/McIntegratingHit.h  1.24
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: Event
+User: heather  Tue Apr 17 10:33:02 2012
+Files:
   Event/Event/Hits/SiLayers.h  1.2
 
     *
