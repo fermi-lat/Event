@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-rp05, operation: add
 Package: Event
+User: heather  Tue Apr 17 11:44:31 2012
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-rp05, operation: add
+Package: Event
 User: heather  Tue Apr 17 10:33:05 2012
 Files:
   Event/src/test/test_RelTabs.cxx  1.6
