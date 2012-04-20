@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kadrlica  Thu Apr 19 21:02:05 PDT 2012
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	AcdTkrHitPoca.h 
+Log Message:
+Removed trigger getter from AcdTkrHitPoca (safer to access directly from AcdHit)
+    *
+------------------------------------------------------------
 User: kadrlica  Thu Apr 19 21:01:16 PDT 2012
 Event/Event/Recon/AcdRecon
 
