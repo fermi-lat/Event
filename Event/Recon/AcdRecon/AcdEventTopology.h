@@ -24,7 +24,7 @@ static const CLID& CLID_AcdEventTopologyCol = InterfaceID("AcdEventTopologyCol",
  *  @brief
  *  \author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdEventTopology.h,v 1.2 2009/12/16 03:42:44 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdEventTopology.h,v 1.3 2011/01/21 14:02:51 lbaldini Exp $
  **/
 
 namespace Event
@@ -41,12 +41,13 @@ namespace Event
     AcdEventTopology(const AcdEventTopology& other);
 
     /// Constructor for use in reconstruction, 
-    AcdEventTopology(unsigned tileCount, unsigned ribbonCount, unsigned tileVeto,
-                     float tileEnergy, float ribbonEnergy,
-                     unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
-                     unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
-                     float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
-                     unsigned nSidesHit, unsigned nSidesVeto);
+    AcdEventTopology(unsigned tileCount, unsigned ribbonCount, unsigned vetoCount, unsigned tileVeto,                     
+                     float totalTileEnergy, float totalRibbonEnergy, float tileEnergy, float ribbonEnergy,                
+                     float ghostTileEnergy, float ghostRibbonEnergy, float triggerTileEnergy, float triggerRibbonEnergy,  
+                     unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],                           
+                     unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],                              
+                     float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],                       
+                     unsigned nSidesHit, unsigned nSidesVeto);                                                            
 
     /// Destructor is trivial
     virtual ~AcdEventTopology() {};
@@ -59,11 +60,25 @@ namespace Event
     
     inline unsigned getRibbonCount() const { return m_ribbonCount; }
 
+    inline unsigned getVetoCount() const { return m_vetoCount; }
+
     inline unsigned getTileVeto() const { return m_tileVeto; }
+
+    inline float getTotalTileEnergy() const { return m_totalTileEnergy; }
+
+    inline float getTotalRibbonEnergy() const { return m_totalRibbonEnergy; }
 
     inline float getTileEnergy() const { return m_tileEnergy; }
 
     inline float getRibbonEnergy() const { return m_ribbonEnergy; }
+
+    inline float getGhostTileEnergy() const { return m_ghostTileEnergy; }
+
+    inline float getGhostRibbonEnergy() const { return m_ghostRibbonEnergy; }
+
+    inline float getTriggerTileEnergy() const { return m_triggerTileEnergy; }
+
+    inline float getTriggerRibbonEnergy() const { return m_triggerRibbonEnergy; }
 
     inline unsigned getVetoCountTop() const { return m_nVetoTop; }
 
@@ -88,11 +103,12 @@ namespace Event
     inline unsigned getNSidesVeto() const { return m_nSidesVeto; }
 
     /// set everything at once
-    void set(unsigned tileCount, unsigned ribbonCount, unsigned tileVeto,
-             float tileEnergy, float ribbonEnergy,
+    void set(unsigned tileCount, unsigned ribbonCount, unsigned vetoCount, unsigned tileVeto,
+             float totalTileEnergy, float totalRibbonEnergy, float tileEnergy, float ribbonEnergy,
+             float ghostTileEnergy, float ghostRibbonEnergy, float triggerTileEnergy, float triggerRibbonEnergy,
              unsigned nTilesTop, unsigned nTilesSideRow[4], unsigned nTilesSideFace[4],
              unsigned nVetoTop, unsigned nVetoSideRow[4], unsigned nVetoSideFace[4],
-             float tilesEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
+             float tileEnergyTop, float tileEnergySideRow[4], float tileEnergySideFace[4],
              unsigned nSidesHit, unsigned nSidesVeto);
  
     /// Print out this structure on a stream
@@ -110,11 +126,25 @@ namespace Event
     
     unsigned m_ribbonCount;
 
+    unsigned m_vetoCount;
+
     unsigned m_tileVeto;
     
+    float m_totalTileEnergy;
+
+    float m_totalRibbonEnergy;
+
     float m_tileEnergy;
 
     float m_ribbonEnergy;
+
+    float m_ghostTileEnergy;
+
+    float m_ghostRibbonEnergy;
+
+    float m_triggerTileEnergy;
+
+    float m_triggerRibbonEnergy;
 
     unsigned m_nTilesTop;
 
