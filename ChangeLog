@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kadrlica  Thu Apr 19 21:01:16 PDT 2012
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	AcdHit.h 
+Log Message:
+Added ghost and trigger getters to AcdHit
+    *
+------------------------------------------------------------
 User: kadrlica  Thu Apr 19 20:59:47 PDT 2012
 Event/src/Recon/AcdRecon
 
