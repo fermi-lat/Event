@@ -19,7 +19,7 @@
  *
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.8 2011/05/20 15:02:47 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrHitPoca.h,v 1.8.30.1 2012/03/16 20:49:00 kadrlica Exp $
  */
 
 #include <vector>
@@ -98,12 +98,9 @@ namespace Event {
       return m_flags[1];
     }
 
+    /// Return true if more than 0.001 MIPs
     inline bool hasHit() const {
       return ( m_mips[0] > 0.001 || m_mips[1] > 0.001 );
-    }
-
-    inline bool hasTriggerVeto() const {
-      return ( ( (m_flags[0] >> 1) & 0x1 ) || ( (m_flags[0] >> 1) & 0x1 ) );
     }
 
     /// combine the sigma from the hit with the sigma from the track
