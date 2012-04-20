@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+TAG
+Tag name: Event-14-09-09-gr03, operation: add
+Package: Event
+User: kadrlica  Thu Apr 19 21:04:12 2012
+Files:
+  Event/Event/Recon/AcdRecon/AcdAssoc.h  1.1.2.1
+  Event/src/Recon/AcdRecon/AcdAssoc.cxx  1.1.2.1
+
+    *
+------------------------------------------------------------
 User: kadrlica  Thu Apr 19 21:04:01 PDT 2012
 Event/cmt
 
