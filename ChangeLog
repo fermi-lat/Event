@@ -1,4 +1,17 @@
 ------------------------------------------------------------
+User: heather  Tue Apr 24 21:57:10 PDT 2012
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdEventTopology.cxx AcdTkrHitPoca.cxx 
+Added Files:
+	AcdAssoc.cxx 
+Removed Files:
+	AcdCalAssoc.cxx AcdTkrAssoc.cxx 
+Log Message:
+P8 merge
+    *
+------------------------------------------------------------
 User: heather  Tue Apr 24 21:57:09 PDT 2012
 Event/doc
 
