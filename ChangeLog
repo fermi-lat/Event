@@ -1,5 +1,18 @@
 ------------------------------------------------------------
 User: heather  Tue Apr 24 21:57:07 PDT 2012
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdEventTopology.h AcdHit.h AcdReconV2.h AcdTkrHitPoca.h 
+Added Files:
+	AcdAssoc.h 
+Removed Files:
+	AcdCalAssoc.h AcdTkrAssoc.h 
+Log Message:
+P8 merge
+    *
+------------------------------------------------------------
+User: heather  Tue Apr 24 21:57:07 PDT 2012
 Event
 
 Modified Files:
