@@ -10,7 +10,7 @@
 *
 * @authors Tracker Folks
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLinkInfo.h,v 1.1 2011/12/05 03:17:06 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLinkInfo.h,v 1.1.2.3 2012/01/31 18:08:52 usher Exp $
 */
 
 #ifndef __TkrVecPointsLinkInfo_H

@@ -52,7 +52,7 @@ static const CLID& CLID_AcdHitCol = InterfaceID("AcdHitCol", 1, 0);
  *
  *  \author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.5 2009/12/16 03:42:44 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.6.48.1 2012/04/20 04:01:16 kadrlica Exp $
  **/
 
 namespace Event
@@ -153,7 +153,7 @@ namespace Event
 
 
     /// Return the Energy for tiles
-    float tileEnergy() const {
+    inline float tileEnergy() const {
       if ( ! m_acdId.tile() ) return -1.;
       static const float MeVMipTile10 = 1.9;
       static const float MeVMipTile12 = 2.28;
@@ -174,11 +174,27 @@ namespace Event
       return m_pha[id];
     }
 
+    /// Returns true if pmt flagged as ghost
+    inline bool getGhost(PmtId id) const {
+      static const float GhostThreshold = 0.5;
+      return (mips(id) > GhostThreshold) && !getHitMapBit(id);
+    }
+
+    /// Returns true if hit flagged as ghost by both PMTs
+    inline bool getGhost( ) const {
+      return ( getGhost(A) && getGhost(B) );
+    }
+
+    /// Returns true if trigger veto bit set for either PMT
+    inline bool getTriggerVeto( ) const {
+      return ( getHitMapBit(A) || getHitMapBit(B) );
+    }
+
     /// Returns all the flags at once as a bit mask
     inline unsigned short getFlags(PmtId id) const { 
       return m_flags[id];
     }
-        
+
     /// Denotes that the PMT was above accept (AKA zero-suppresion) threshold
     inline bool getAcceptMapBit(PmtId id) const { 
       return (m_flags[id] & PMT_ACCEPT_MASK) != 0;

@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.61 2011/10/05 19:09:09 usher Exp $
+// $Id: EventModel.h,v 1.61.4.1 2012/01/23 23:01:29 usher Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
