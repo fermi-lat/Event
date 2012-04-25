@@ -4,6 +4,8 @@
  * package manager:T.Burnett
  * EOH *
 
+ Event-14-09-09-gr04 24-Apr-2012 heather - retagging 14-09-09-gr03 since it 
+already existed. Primarily an update to AcdEventTopology to hold de-ghosted and trigger energy. Added some getters to AcdHit
  Event-14-09-09-gr03 19-Apr-2012 kadrlica Primarily an update to AcdEventTopology to hold de-ghosted and trigger energy. Added some getters to AcdHit
  Event-14-09-09-gr03 16-Mar-2012 kadrlica Add ACD flags to HitPoca
  Event-14-09-09-gr02 31-Jan-2012 TU Including small update to TkrVecPointsLinkInfo.h
