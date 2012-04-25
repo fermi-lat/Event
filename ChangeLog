@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Tue Apr 24 20:19:00 PDT 2012
+Event
+
+Modified Files:
+      Tag: GlastReleasev19r4p1
+	SConscript 
+Log Message:
+retagging to get a unique tag
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-gr28, operation: add
 Package: Event
