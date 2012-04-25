@@ -1,21 +1,21 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdTkrAssoc.cxx,v 1.3 2011/01/21 14:02:53 lbaldini Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/Attic/AcdAssoc.cxx,v 1.1.2.1 2012/03/19 15:28:26 kadrlica Exp $
 //
-//  Implementation file of AcdTkrAssoc and AcdTkrAssocCol classes
+//  Implementation file of AcdAssoc,AcdAssocCol, and AcdCalAssocCol classes
 //  
 // Authors:
 //
 //    Eric Charles
-//
+//    Alex Drlica-Wagner
 //
 
-#include "Event/Recon/AcdRecon/AcdTkrAssoc.h"
+#include "Event/Recon/AcdRecon/AcdAssoc.h"
 
 #include "GaudiKernel/MsgStream.h"
 
 using namespace Event;
 
-AcdTkrAssoc::AcdTkrAssoc()
+AcdAssoc::AcdAssoc()
   :m_index(-1),
    m_upward(true),
    m_energy(0.),
@@ -29,7 +29,7 @@ AcdTkrAssoc::AcdTkrAssoc()
 }
 
 /// Copy constructor
-AcdTkrAssoc::AcdTkrAssoc(const AcdTkrAssoc& other)
+AcdAssoc::AcdAssoc(const AcdAssoc& other)
   :m_index(other.m_index),
    m_upward(other.m_upward),
    m_energy(other.m_energy),
@@ -44,7 +44,7 @@ AcdTkrAssoc::AcdTkrAssoc(const AcdTkrAssoc& other)
 
 
 /// Constructor for use in reconstruction, 
-AcdTkrAssoc::AcdTkrAssoc(int index, bool up, float energy, 
+AcdAssoc::AcdAssoc(int index, bool up, float energy, 
                          const HepPoint3D& start, const HepVector3D& dir, float arcLength,
                          const CLHEP::HepSymMatrix& covStart, const CLHEP::HepSymMatrix& covEnd,
                          int tkrSSDVeto, float cornerDoca)
@@ -61,7 +61,7 @@ AcdTkrAssoc::AcdTkrAssoc(int index, bool up, float energy,
 }
 
 
-void AcdTkrAssoc::set(int index, bool up, float energy, 
+void AcdAssoc::set(int index, bool up, float energy, 
                       const HepPoint3D& start, const HepVector3D& dir, float arcLength,
                       const CLHEP::HepSymMatrix& covStart, const CLHEP::HepSymMatrix& covEnd,
                       int tkrSSDVeto, float cornerDoca){
@@ -78,7 +78,7 @@ void AcdTkrAssoc::set(int index, bool up, float energy,
   m_cornerDoca = cornerDoca;
 }
 
-void AcdTkrAssoc::writeOut(MsgStream& stream) const
+void AcdAssoc::writeOut(MsgStream& stream) const
 // Purpose: provide ascii output of some data members for
 //          debugging purposes
 // Input:
@@ -86,7 +86,7 @@ void AcdTkrAssoc::writeOut(MsgStream& stream) const
 {
 
   stream << MSG::DEBUG
-         << "AcdTkrAssoc " << m_index << ' ' << (m_upward ? "up" : "down") << " E=" << m_energy << ' ' 
+         << "AcdAssoc " << m_index << ' ' << (m_upward ? "up" : "down") << " E=" << m_energy << ' ' 
          << m_start << ' ' << m_dir << ' ' << " s= " << m_arcLength << " SSDVeto = " << m_tkrSSDVeto 
          << " CornerDoca = " << m_cornerDoca
          << std::endl
@@ -97,7 +97,7 @@ void AcdTkrAssoc::writeOut(MsgStream& stream) const
 
 
 
-void AcdTkrAssoc::ini()
+void AcdAssoc::ini()
 // Purpose: reset all data members to 0
 //
 { 
@@ -115,26 +115,26 @@ void AcdTkrAssoc::ini()
   m_gapPocae.clear();
 }
  
-AcdTkrAssocCol::AcdTkrAssocCol(const std::vector<AcdTkrAssoc*>& acdTkrAssocs) {
-//Purpose: take ownership of TkrAssocs from a vector
-  for ( std::vector<AcdTkrAssoc*>::const_iterator itr = acdTkrAssocs.begin();
-        itr != acdTkrAssocs.end(); itr++ ) {
-    AcdTkrAssoc* TkrAssoc = const_cast<AcdTkrAssoc*>(*itr);
-    add(TkrAssoc);
+AcdAssocCol::AcdAssocCol(const std::vector<AcdAssoc*>& acdAssocs) {
+//Purpose: take ownership of AcdAssocs from a vector
+  for ( std::vector<AcdAssoc*>::const_iterator itr = acdAssocs.begin();
+        itr != acdAssocs.end(); itr++ ) {
+    AcdAssoc* acdAssoc = const_cast<AcdAssoc*>(*itr);
+    add(acdAssoc);
   }
 }
 
-void AcdTkrAssocCol::delTkrAssocs()
-//Purpose: delete all AcdTkrAssoc object from memory
+void AcdAssocCol::delAssocs()
+//Purpose: delete all AcdAssoc object from memory
 {
-  int nTkrAssoc = num();
-  for (int iTkrAssoc = 0; iTkrAssoc < nTkrAssoc; iTkrAssoc++) {
-    delete operator[](iTkrAssoc);
+  int nAssoc = num();
+  for (int iAssoc = 0; iAssoc < nAssoc; iAssoc++) {
+    delete operator[](iAssoc);
   }
   clear();
 }
 
-void AcdTkrAssocCol::ini()
+void AcdAssocCol::ini()
 //Purpose:  delete all pointers to clusters
 // from collection 
 {
@@ -142,7 +142,7 @@ void AcdTkrAssocCol::ini()
 }
 
 
-void AcdTkrAssocCol::writeOut(MsgStream& stream) const
+void AcdAssocCol::writeOut(MsgStream& stream) const
 // Purpose: provide symbolic output of some data members
 //          of all clusters in collection for debugging purposes
 //

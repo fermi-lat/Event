@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLink.h,v 1.5 2010/11/24 16:35:47 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPointsLink.h,v 1.6.24.1 2012/02/14 04:27:50 usher Exp $
  */
 
 #ifndef TkrVecPointsLink_h
@@ -70,6 +70,7 @@ public:
     void setSkipNLayer()                  {m_statusBits      |=  SKIPNLAYER;}
     void setVerified()                    {m_statusBits      |=  VERIFIED;}
     void updateStatusBits(unsigned bits)  {m_statusBits      |=  bits;}
+    void clearStatusBits(unsigned bits)   {m_statusBits      &= ~bits;}
     void setMaxScatAngle(double ang)      {m_maxScatAngle     =  ang;}
     void setAngleToNextLink(double ang)   {m_angleToNextLink  =  ang;}
     void setDistToNextLink(double dist)   {m_distToNextLink   =  dist;}
