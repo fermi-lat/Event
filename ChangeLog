@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue May  8 18:19:23 PDT 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h 
+Log Message:
+Add rangeEnergy to the Track object
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-11-01, operation: add
 Package: Event
