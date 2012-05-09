@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.16 2011/07/24 20:11:34 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.17 2011/08/19 19:40:08 usher Exp $
 
 */
 #ifndef TkrTrack_H
@@ -155,8 +155,10 @@ namespace Event {  // NameSpace
         inline void   setTkrCalRadLen(double x)           {m_TkrCal_radlen     = x;}
         inline void   setStatusBit(unsigned int status)   {m_statusBits       |= status;}
         inline void   clearStatusBits(unsigned int bits= 0xffffffff)            
-        {m_statusBits       &= ~bits;}
+                                                          {m_statusBits       &= ~bits;}
         inline void   clearEnergyStatusBits()             {m_statusBits       &= 0xffffff0f;}
+        inline void   setRangeEnergy(double x)            {m_rangeEnergy       = x;}
+        inline double getRangeEnergy()                    const {return m_rangeEnergy;}
 
     private:    
         /// Status
@@ -193,6 +195,7 @@ namespace Event {  // NameSpace
         double       m_KalmanEnergyErr;     // Estimated Error on Kalman Energy
         double       m_TkrCal_radlen;       // Integrated Tracker radiation lengths 
         // (uses starting track param. trajectory)
+        double       m_rangeEnergy;      // energy computed from range, was overloaded on TkrKalEnergy
     };
 
     //typedef for the Container
