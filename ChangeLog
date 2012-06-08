@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Jun  8 09:41:06 PDT 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Slight tweak of sorting routine
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-03-04, operation: add
 Package: Event
