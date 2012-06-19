@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.6 2011/06/28 14:35:54 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.7 2012/06/18 19:15:58 usher Exp $
  */
 
 #ifndef TkrTree_h
@@ -38,7 +38,13 @@ class TkrTree: virtual public ContainedObject, public TkrTrackVec
 public:
     // Constructors
     TkrTree() :
-            m_headNode(0), m_bestLeaf(0), m_secondLeaf(0), m_siblingMap(0), m_axisParams(0)
+                m_headNode(0), 
+                m_bestLeaf(0), 
+                m_secondLeaf(0), 
+                m_siblingMap(0), 
+                m_axisParams(0), 
+                m_bestBranchAngleToAxis(0.), 
+                m_axisSeededAngleToAxis(0.)
             {TkrTrackVec::clear();}
 
     TkrTree(TkrVecNode*        node, 
