@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Jun 19 11:13:41 PDT 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTree.h 
+Log Message:
+Don't forget to initialize variables!
+    *
+------------------------------------------------------------
 User: usher  Mon Jun 18 12:15:58 PDT 2012
 Event/Event/Recon/TkrRecon
 
