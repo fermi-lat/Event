@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Thu Jun 28 06:11:26 PDT 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+Minor changes.
+    *
+------------------------------------------------------------
 User: lbaldini  Thu Jun 28 06:10:01 PDT 2012
 Event/src/TopLevel
 
