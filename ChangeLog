@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Thu Jun 28 08:29:08 PDT 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalClusterMap.h CalClusterVec.h 
+Log Message:
+Minor changes.
+    *
+------------------------------------------------------------
 User: lbaldini  Thu Jun 28 08:14:47 PDT 2012
 Event/Event/Recon/CalRecon
 
