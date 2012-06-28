@@ -41,7 +41,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.33 2011/01/21 14:02:52 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.34 2011/06/09 04:06:59 heather Exp $
 */
 
 namespace Event { //Namespace Event
@@ -236,16 +236,19 @@ private:
 };
 
 
-//typedef for the Gaudi TDS Container
-typedef ObjectVector<CalCluster>      CalClusterCol;
-typedef CalClusterCol::iterator       CalClusterColItr;
-typedef CalClusterCol::const_iterator CalClusterColConItr;
-
-// Define the relational table taking us back to CalXtalRecData objects
-typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster> CalClusterHitTab;
-typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster> CalClusterHitRel;
-typedef RelationList<CalXtalRecData, CalCluster>                  CalClusterHitTabList;
-
+  // typedef for the Gaudi TDS Container.
+  // This is the object owning the clusters and responsible for deleting them when
+  // it's time to cleanup.
+  // We're generally not going to loop over this collection.
+  typedef ObjectVector<CalCluster>      CalClusterCol;
+  typedef CalClusterCol::iterator       CalClusterColItr;
+  typedef CalClusterCol::const_iterator CalClusterColConItr;
+  
+  // Define the relational table taking us back to CalXtalRecData objects
+  typedef Event::RelTable<Event::CalXtalRecData, Event::CalCluster> CalClusterHitTab;
+  typedef Event::Relation<Event::CalXtalRecData, Event::CalCluster> CalClusterHitRel;
+  typedef RelationList<CalXtalRecData, CalCluster>                  CalClusterHitTabList;
+  
 }; //Namespace Event
 
 #endif        
