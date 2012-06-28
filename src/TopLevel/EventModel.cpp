@@ -1,5 +1,5 @@
 // File and Version Information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.87 2011/10/05 19:09:09 usher Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/TopLevel/EventModel.cpp,v 1.88 2011/12/05 03:17:06 usher Exp $
 
 #define _Event_EventModel_CPP_
 
@@ -111,26 +111,19 @@ std::string EventModel::TkrRecon::TkrDiagnosticFlag          = EventModel::TkrRe
 //reconstructed Cal data
 std::string EventModel::CalRecon::Event               = EventModel::EventHeader + "/CalRecon";
 std::string EventModel::CalRecon::CalXtalRecCol       = EventModel::CalRecon::Event + "/CalXtalRecCol";
-//@@@FP 07/09/05
-//std::string EventModel::CalRecon::CalMIPsCol          = EventModel::CalRecon::Event + "/CalMIPsCol";
-//@@@FP 07/09/05
 std::string EventModel::CalRecon::CalMipTrackCol      = EventModel::CalRecon::Event + "/CalMipTrackCol";
 std::string EventModel::CalRecon::CalClusterCol       = EventModel::CalRecon::Event + "/CalClusterCol";
+std::string EventModel::CalRecon::CalClusterMap       = EventModel::CalRecon::Event + "/CalClusterMap";
+std::string EventModel::CalRecon::CalRawClusterVec    = EventModel::CalRecon::Event + "/CalRawClusterVec";
+std::string EventModel::CalRecon::CalUberCluster      = EventModel::CalRecon::Event + "/CalUberCluster";
 std::string EventModel::CalRecon::CalEventEnergyCol   = EventModel::CalRecon::Event + "/CalEventEnergyCol";
 std::string EventModel::CalRecon::CalEventEnergyMap   = EventModel::CalRecon::Event + "/CalEventEnergyMap";
 std::string EventModel::CalRecon::CalClusterHitTab    = EventModel::CalRecon::Event + "/CalClusterHitTab";
-//@@@FP 07/09/05
-//std::string EventModel::CalRecon::CalXtalMIPsTab      = EventModel::CalRecon::Event + "/CalXtalMIPsTab";
-//@@@FP 07/09/05
-//@@@CL 01/06/06 BEGIN:
-std::string EventModel::CalRecon::GcrXtalCol      = EventModel::CalRecon::Event + "/GcrXtalCol";
-std::string EventModel::CalRecon::GcrReconVals     = EventModel::CalRecon::Event + "/GcrReconVals";
-//@@@CL 01/06/06 END
-//@@@CL 06/27/06 BEGIN:
-std::string EventModel::CalRecon::GcrSelectedXtalsCol      = EventModel::CalRecon::Event + "/GcrSelectedXtalsCol";
-//@@@CL 06/27/06 END
-std::string EventModel::CalRecon::GcrTrack      = EventModel::CalRecon::Event + "/GcrTrack";
-std::string EventModel::CalRecon::GcrSelectVals     = EventModel::CalRecon::Event + "/GcrSelectVals";
+std::string EventModel::CalRecon::GcrXtalCol          = EventModel::CalRecon::Event + "/GcrXtalCol";
+std::string EventModel::CalRecon::GcrReconVals        = EventModel::CalRecon::Event + "/GcrReconVals";
+std::string EventModel::CalRecon::GcrSelectedXtalsCol = EventModel::CalRecon::Event + "/GcrSelectedXtalsCol";
+std::string EventModel::CalRecon::GcrTrack            = EventModel::CalRecon::Event + "/GcrTrack";
+std::string EventModel::CalRecon::GcrSelectVals       = EventModel::CalRecon::Event + "/GcrSelectVals";
 
 // reconstructed ACD data
 std::string EventModel::AcdRecon::Event               = EventModel::EventHeader + "/AcdRecon";
