@@ -41,7 +41,7 @@ static const CLID& CLID_CalClusterCol = InterfaceID("CalClusterCol", 1, 0);
 *  
 *  @author The CalRecon Rewrite Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.34 2011/06/09 04:06:59 heather Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalCluster.h,v 1.35 2012/06/28 13:11:26 lbaldini Exp $
 */
 
 namespace Event { //Namespace Event
@@ -206,6 +206,7 @@ namespace Event { //Namespace Event
     // explicitely the centroid it's interested in (i.e. from the fit or from the
     // moments analysis).
     const Point & getPosition()                  const { return m_momParams.getCentroid(); }
+    Point getCorPosition(Vector vaxis)     { return m_momParams.getCorCentroid(vaxis); }
 
     // TBD make obsolete in favour of getAxis()? See the comments three lines above.
     const Vector & getDirection()                const { return m_momParams.getAxis(); }
