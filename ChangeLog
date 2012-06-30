@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: bruel  Sat Jun 30 08:17:55 PDT 2012
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalParams.cxx 
+Log Message:
+Cal cluster centroid correction
+    *
+------------------------------------------------------------
+User: bruel  Sat Jun 30 08:17:55 PDT 2012
 Event/Event/Recon/CalRecon
 
 Modified Files:
