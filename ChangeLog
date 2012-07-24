@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Tue Jul 24 03:01:37 PDT 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalCluster.h 
+Log Message:
+Some obsolete comments removed.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-bm01, operation: add
 Package: Event
