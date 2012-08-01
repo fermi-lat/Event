@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Aug  1 15:04:45 PDT 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+Making vc90 compliant
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-01, operation: add
 Package: Event
