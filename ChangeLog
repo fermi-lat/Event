@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Wed Aug  8 08:29:16 PDT 2012
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h 
+Log Message:
+More work on comparators to attack the strict weak ordering issue
+    *
+------------------------------------------------------------
 User: usher  Tue Aug  7 20:14:43 PDT 2012
 Event/Event/Recon/TkrRecon
 
