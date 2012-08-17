@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: jrb  Thu Aug 16 17:03:42 PDT 2012
+GlastRelease-scons/Event
+
+Modified Files:
+	EventLib.py 
+Log Message:
+for Windows no-installed-headers
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-13-01, operation: add
 Package: Event
