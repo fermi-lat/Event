@@ -1,5 +1,15 @@
 ------------------------------------------------------------
 User: heather  Mon Aug 27 22:13:14 PDT 2012
+Event/cmt
+
+Modified Files:
+      Tag: GlastRelease-20-04-02-br01
+	requirements 
+Log Message:
+remove init of m_iterator for opt vc90
+    *
+------------------------------------------------------------
+User: heather  Mon Aug 27 22:13:14 PDT 2012
 Event/Event/RelTable
 
 Modified Files:
