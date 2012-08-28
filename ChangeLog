@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Aug 27 22:13:13 PDT 2012
+Event
+
+Modified Files:
+      Tag: GlastRelease-20-04-02-br01
+	SConscript 
+Log Message:
+remove init of m_iterator for opt vc90
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-02-br01, operation: add
 Package: Event
