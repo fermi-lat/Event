@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: heather  Tue Aug 28 12:08:05 PDT 2012
-Event
-
-Modified Files:
-	SConscript 
-Log Message:
-put vc90 patch on HEAD
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-04-02-gr01, operation: add
 Package: Event
