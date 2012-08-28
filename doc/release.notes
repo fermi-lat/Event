@@ -4,6 +4,8 @@
  * package manager:T.Burnett
  * EOH *
 
+ Event-14-13-01-gr01 28-Aug-2012 heather remove initialization of m_iterator
+     for optimized vc90
  Event-14-13-01 09-Aug-2012 TU Modifications aimed at running on windows with Visual Studio 2008
  Event-14-13-00 02-Jul-2012 TU Change CalCluster interface container, include centroid correction by P. Bruel
  Event-14-12-00 08-May-2012  lsrea Add rangeEnergy to TkrTrack
