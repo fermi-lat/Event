@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: heather  Tue Aug 28 12:08:06 PDT 2012
+Event/Event/RelTable
+
+Modified Files:
+	RelKey.h 
+Log Message:
+put vc90 patch on HEAD
+    *
+------------------------------------------------------------
 User: heather  Tue Aug 28 12:08:05 PDT 2012
 Event
 
