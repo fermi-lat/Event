@@ -1,5 +1,14 @@
 ------------------------------------------------------------
 User: bruel  Wed Oct  3 07:12:58 PDT 2012
+Event/Event/TopLevel
+
+Modified Files:
+	EventModel.h 
+Log Message:
+Luca and Philippe: cleaning and using new class container of clusters CalClusterMap. Philippe: fixing CalLikelihoodEnergy. Carmelo: new unbiasing of EvtEnergyCorr.
+    *
+------------------------------------------------------------
+User: bruel  Wed Oct  3 07:12:58 PDT 2012
 Event/Event/Recon/TkrRecon
 
 Modified Files:
