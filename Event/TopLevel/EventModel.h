@@ -1,4 +1,4 @@
-// $Id: EventModel.h,v 1.63 2012/04/25 04:57:09 heather Exp $
+// $Id: EventModel.h,v 1.64 2012/06/28 13:10:00 lbaldini Exp $
 
 #ifndef _H_GlastEvent_EventModel_
 #define _H_GlastEvent_EventModel_
@@ -182,6 +182,7 @@ public:
        static std::string CalClusterMap;
        static std::string CalRawClusterVec;
        static std::string CalUberCluster;
+       static std::string CalUber2Cluster;
        static std::string CalEventEnergyCol;
        static std::string CalEventEnergyMap;
        static std::string CalClusterHitTab;
