@@ -2,6 +2,72 @@
 TAG
 Tag name: Event-14-15-00, operation: add
 Package: Event
+User: heather  Thu Oct  4 09:57:56 2012
+Files:
+  Event/mgr/.cvsignore  1.1.1.1
+  Event/mgr/cleanup.csh  1.2
+  Event/mgr/requirements  1.46
+  Event/mgr/cleanup.sh  1.2
+  Event/mgr/Makefile  1.1.1.1
+  Event/src/mainpage.h  1.6
+  Event/src/Digi/GltDigi.cxx  1.2
+  Event/src/Factories/HitInstanciation.cpp  1.5
+  Event/src/Factories/GlastEvent_load.cpp  1.7
+  Event/src/Factories/DigiInstantiation.cpp  1.2
+  Event/src/Factories/TopInstantiation.cpp  1.8
+  Event/src/Factories/MCInstanciation.cpp  1.8
+  Event/src/Factories/RawInstantiation.cpp  1.4
+  Event/src/Factories/GlastEvent_dll.cpp  1.3
+  Event/src/Factories/IrfInstantiation.cpp  1.3
+  Event/src/Hits/SiLayers.cpp  1.4
+  Event/src/MonteCarlo/D2Entry.cxx  1.1
+  Event/src/MonteCarlo/McPositionHit.cxx  1.13
+  Event/src/MonteCarlo/McParticle.cxx  1.23
+  Event/src/MonteCarlo/McEventStructure.cxx  1.3
+  Event/src/MonteCarlo/McIntegratingHit.cxx  1.15
+  Event/src/MonteCarlo/McTrajectory.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdTkrPoint.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdTkrIntersection.cxx  1.6
+  Event/src/Recon/AcdRecon/AcdTkrPoca.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdTkrLocalData.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdAssoc.cxx  1.2
+  Event/src/Recon/AcdRecon/AcdPocaMap.cxx  1.2
+  Event/src/Recon/AcdRecon/AcdTkrGapPoca.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdReconV2.cxx  1.3
+  Event/src/Recon/AcdRecon/AcdHit.cxx  1.5
+  Event/src/Recon/AcdRecon/AcdPocaData.cxx  1.4
+  Event/src/Recon/AcdRecon/AcdSplashVars.cxx  1.2
+  Event/src/Recon/AcdRecon/AcdEventTopology.cxx  1.4
+  Event/src/Recon/AcdRecon/AcdTkrHitPoca.cxx  1.7
+  Event/src/Recon/CalRecon/CalMomParams.cxx  1.9
+  Event/src/Recon/CalRecon/CalParams.cxx  1.9
+  Event/src/Recon/CalRecon/CalMipClasses.cxx  1.4
+  Event/src/Recon/CalRecon/CalEventEnergy.cxx  1.1
+  Event/src/Recon/CalRecon/GcrSelectClasses.cxx  1.3
+  Event/src/Recon/CalRecon/CalClassParams.cxx  1.4
+  Event/src/Recon/CalRecon/GcrReconClasses.cxx  1.3
+  Event/src/Recon/CalRecon/CalCluster.cxx  1.15
+  Event/src/Recon/CalRecon/CalFitParams.cxx  1.3
+  Event/src/Recon/CalRecon/CalClusterMap.cxx  1.2
+  Event/src/Recon/CalRecon/CalNBCClassParams.cxx  1.5
+  Event/src/Recon/CalRecon/CalClusterVec.cxx  1.1
+  Event/src/Recon/CalRecon/CalMSTreeParams.cxx  1.2
+  Event/src/Recon/CalRecon/CalXtalsParams.cxx  1.4
+  Event/src/Recon/TkrRecon/TkrVertex.cxx  1.12
+  Event/src/Recon/TkrRecon/TkrTrackHit.cxx  1.14
+  Event/src/Recon/TkrRecon/TkrVecPoint.cxx  1.2
+  Event/src/Recon/TkrRecon/TkrTrack.cxx  1.4
+  Event/src/Recon/TkrRecon/TkrTrackParams.cxx  1.5
+  Event/src/TopLevel/EventModel.cpp  1.90
+  Event/src/test/test_RelTabs.cxx  1.7
+  Event/src/test/test_TkrRecon.cxx  1.3
+  Event/src/test/testmain.cxx  1.11
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: Event-14-15-00, operation: add
+Package: Event
 User: heather  Wed Oct  3 09:36:08 2012
 Files:
   Event/.cvsignore  1.5
