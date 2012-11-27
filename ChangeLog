@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: lbaldini  Tue Nov 27 06:24:45 PST 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalXtalRecData.h 
+Log Message:
+Modified to accomodate the new members and methods to track the xtal saturation.
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-06-04, operation: add
 Package: Event
