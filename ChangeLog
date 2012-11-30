@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: carmelo  Fri Nov 30 02:33:12 PST 2012
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalParams.cxx 
+Log Message:
+function to convert Cal CovMatrix representation
+    *
+------------------------------------------------------------
 User: carmelo  Fri Nov 30 02:33:11 PST 2012
 Event/Event/Recon/CalRecon
 
