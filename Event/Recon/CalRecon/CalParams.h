@@ -22,7 +22,7 @@
 * 
 * @author Bill Atwood, Tracy Usher
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.10 2011/01/21 14:02:52 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalParams.h,v 1.11 2012/06/30 15:17:55 bruel Exp $
 */
 
 #include <iostream>
@@ -93,6 +93,12 @@ namespace Event { //Namespace Event
 
     /// Errors in a HepMatrix
     CLHEP::HepMatrix     getAxisErrs()     const ;
+
+    /// Errors in a HepMatrix 
+    /// in 5x5 ACD Representation and in 4x4 Tkr Representation
+    /// see AcdRecon/doc/formulae.tex for definitions
+    CLHEP::HepMatrix     getMomErrsAcdRep() const ;
+    CLHEP::HepMatrix     getMomErrsTkrRep() const ;
 
     /// Direct access to errors
     inline double        getxDirxDir()     const { return m_axisxx; }
