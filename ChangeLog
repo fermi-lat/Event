@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: carmelo  Fri Nov 30 02:33:11 PST 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalParams.h 
+Log Message:
+function to convert Cal CovMatrix representation
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-07-00, operation: add
 Package: Event
