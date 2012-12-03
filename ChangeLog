@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: bruel  Mon Dec  3 10:18:20 PST 2012
+Event/Event/Recon/CalRecon
+
+Modified Files:
+	CalXtalRecData.h 
+Log Message:
+Ph. Bruel: change CalXtalRecData.h to be able to change the energy of xtals with only one saturated end
+    *
+------------------------------------------------------------
 User: carmelo  Fri Nov 30 02:33:12 PST 2012
 Event/src/Recon/CalRecon
 
