@@ -39,7 +39,7 @@ static const CLID& CLID_CalXtalRecData = InterfaceID("CalXtalRecData", 1, 0);
 * 
 * @author  A.Chekhtman
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.19 2012/11/27 14:24:45 lbaldini Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/CalRecon/CalXtalRecData.h,v 1.20 2012/12/03 18:18:20 bruel Exp $
 */
 
 namespace Event 
@@ -126,10 +126,10 @@ namespace Event
 
       void setEnergy(const idents::CalXtalId::XtalFace face, double energy)
       {
-	if(face==idents::CalXtalId::POS)
-	  m_eneP=energy;
-	else 
-	  m_eneM=energy;
+        if(face==idents::CalXtalId::POS)
+          m_eneP=energy;
+        else 
+          m_eneM=energy;
       }
               
     private:
@@ -214,13 +214,13 @@ namespace Event
     }
 
     void setEnergy(const unsigned short readoutIndex,
-		     const idents::CalXtalId::XtalFace face, double energy)
+                     const idents::CalXtalId::XtalFace face, double energy)
     {
       if(readoutIndex < int(m_recData.size()))
-	{
-	  ((m_recData[readoutIndex])).setEnergy(face,energy);
-	  setEnergyCorrected();
-	}
+        {
+          ((m_recData[readoutIndex])).setEnergy(face,energy);
+          setEnergyCorrected();
+        }
     }
         
         
