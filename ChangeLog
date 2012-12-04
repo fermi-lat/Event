@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: carmelo  Tue Dec  4 06:40:16 PST 2012
+Event/src/Recon/CalRecon
+
+Modified Files:
+	CalParams.cxx 
+Log Message:
+protect cov matrix for zDir=0 case
+    *
+------------------------------------------------------------
 User: bruel  Tue Dec  4 05:39:32 PST 2012
 Event/Event/Recon/CalRecon
 
