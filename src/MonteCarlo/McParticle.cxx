@@ -1,4 +1,4 @@
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/MonteCarlo/McParticle.cxx,v 1.22 2007/07/24 04:33:20 lsrea Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/src/MonteCarlo/McParticle.cxx,v 1.23 2009/01/15 17:59:33 usher Exp $
 
 #include <iostream>
 #include "Event/MonteCarlo/McParticle.h"
@@ -46,6 +46,8 @@ void McParticle::initialize( McParticle* mother,
     m_initialPosition = initialPosition;
     m_process = process;
     if( mother != this) mother->m_daughters.push_back(this);
+    m_initialMaterialId = -1;
+    m_initialMaterialName = "";
 }
 
 void McParticle::finalize(const CLHEP::HepLorentzVector& finalMomentum,
@@ -53,6 +55,8 @@ void McParticle::finalize(const CLHEP::HepLorentzVector& finalMomentum,
 {
     m_finalFourMomentum = finalMomentum;
     m_finalPosition = finalPosition;
+    m_finalMaterialId     = -1;
+    m_finalMaterialName   = "";
 }
 
 

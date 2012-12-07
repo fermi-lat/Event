@@ -34,7 +34,7 @@
  * Changes:     M.Ozaki 2000-12-05 : Based on LHCbEvent's MCParticle rev 1.1.1.2
  *              M.Ozaki 2001-01-05 : MCParticle -> McParticle
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/MonteCarlo/McParticle.h,v 1.34 2006/03/21 01:29:44 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/Event/MonteCarlo/McParticle.h,v 1.35 2007/07/24 04:33:20 lsrea Exp $
  */
 #include "GaudiKernel/IInterface.h"
 
@@ -134,6 +134,42 @@ class McParticle  : virtual public ContainedObject  {
     /// access the process name
     const std::string getProcess()const{return m_process;};
 
+    /// set the name and the index of the material building up the initial volume
+    void setInitialMaterial(std::string s, int i = -1) {
+        m_initialMaterialName = s;
+        m_initialMaterialId = i;
+    }
+
+    /// set the index and the name of the material building up the initial volume
+    void setInitialMaterial(int i, std::string s = "") {
+        m_initialMaterialId = i;
+        m_initialMaterialName = s;
+    }
+
+    /// set the name and the index of the material building up the final volume
+    void setFinalMaterial(std::string s, int i = -1) {
+        m_finalMaterialName = s;
+        m_finalMaterialId = i;
+    }
+
+    /// set the index and the name of the material building up the final volume
+    void setFinalMaterial(int i, std::string s = "") {
+        m_finalMaterialId = i;
+        m_finalMaterialName = s;
+    }
+
+    /// get the index of the material building up the initial volume
+    const int getInitialMaterialId() const { return m_initialMaterialId; }
+
+    /// get the name of the material building up the initial volume
+    const std::string getInitialMaterialName() const { return m_initialMaterialName; }
+
+    /// get the index of the material building up the final volume
+    const int getFinalMaterialId() const { return m_finalMaterialId; }
+
+    /// get the name of the material building up the final volume
+    const std::string getFinalMaterialName() const { return m_finalMaterialName; }
+
     /// set the initial and final volume identifiers
     void setInitialId(idents::VolumeIdentifier id){m_initialId = id;};
     void setFinalId(idents::VolumeIdentifier id){m_finalId = id;};
@@ -186,8 +222,14 @@ void transform(
     idents::VolumeIdentifier   m_initialId;
     /// Volume identifiers where the particle stop
     idents::VolumeIdentifier   m_finalId;
-    
-
+    /// Index of the material of the volume in which the particle starts
+    int                        m_initialMaterialId;
+    /// String with the name of the material of the volume in which the particle starts
+    std::string                m_initialMaterialName;
+    /// Index of the material of the volume in which the particle stops
+    int                        m_finalMaterialId;
+    /// String with the name of the material of the volume in which the particle stops
+    std::string                m_finalMaterialName;
 };
 
 
@@ -236,6 +278,11 @@ inline std::ostream& McParticle::fillStream( std::ostream& s ) const
   return s << "class McParticle"
     << " :"
     << "\n    Particle ID                = " << m_particleID
+    << "\n    pointer to particle        = " << this
+    << "\n    pointer to mother particle = " << m_mother
+    << "\n    process                    = " << m_process
+    << "\n    initial material (id,name) = " << m_initialMaterialId << ", " << m_initialMaterialName
+    << "\n    final material (id,name)   = " << m_finalMaterialId << ", " << m_finalMaterialName
     << "\n    Status Flags               = " << m_statusFlags
     << "\n    Initial position (x, y, z) = ( "
     << EventFloatFormat (EventFormat::width, EventFormat::precision )
