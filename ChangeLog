@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Fri Dec  7 05:48:40 PST 2012
+Event/Event/MonteCarlo
+
+Modified Files:
+	McParticle.h 
+Log Message:
+new class member variables: material (name and id) of initial and final volume
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-16-00, operation: add
 Package: Event
