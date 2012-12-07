@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: kuss  Fri Dec  7 05:48:41 PST 2012
+Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+new class member variables: material (name and id) of initial and final volume
+
+    *
+------------------------------------------------------------
 User: kuss  Fri Dec  7 05:48:40 PST 2012
 Event/Event/MonteCarlo
 
