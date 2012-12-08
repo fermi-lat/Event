@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Fri Dec  7 16:41:09 PST 2012
+GlastRelease-scons/Event/src/MonteCarlo
+
+Modified Files:
+	McParticle.cxx 
+Log Message:
+Temporarily backing out previous changes for this GlastRelease, will review and recover for next GR
+    *
+------------------------------------------------------------
 User: usher  Fri Dec  7 16:41:07 PST 2012
 GlastRelease-scons/Event/Event/MonteCarlo
 
