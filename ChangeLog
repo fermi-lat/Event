@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Wed Jan 30 17:21:43 PST 2013
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrHitPoca.cxx 
+Log Message:
+Hopefully fixed AcdTrkHitPoca sorting
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-05, operation: add
 Package: Event
