@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue Feb  5 07:34:30 PST 2013
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrVecNodes.h TkrVecPoint.h 
+Log Message:
+Add access members for status word
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-06, operation: add
 Package: Event
