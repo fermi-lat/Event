@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.21 2012/08/08 15:29:15 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecNodes.h,v 1.22 2012/10/03 14:12:58 bruel Exp $
  */
 
 #ifndef TkrVecNode_h
@@ -137,6 +137,8 @@ public:
     const bool                          canNodeBeShared()         const {return (m_statusBits & NODE_CAN_BE_SHARED)       != 0;}
     const bool                          isOnBestBranch()          const {return (m_statusBits & NODE_ON_BEST_BRANCH)      != 0;}
     const bool                          isOnNextBestBranch()      const {return (m_statusBits & NODE_ON_NEXT_BEST_BRANCH) != 0;}
+    // Access to full status bit mask
+    const unsigned int                  getStatusBits()           const {return m_statusBits;}
     // Get the number of BiLayers from this node along best branch
     const int                           getBestNumBiLayers()      const {return m_bestNumBiLayers;}
     // Get the rms deviations from this node along best branch
