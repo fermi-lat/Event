@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.17 2011/08/19 19:40:08 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.18 2012/05/09 01:19:23 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -55,11 +55,11 @@ namespace Event {  // NameSpace
         //         [ Pat Rec Info  ] [Pass ] [ E-Loss] [ Track Energy ]  [Track Fit Status]
         // High bits:
         //        |  0   0   0   0  |  0   0   0   0  |  0   0   0   0  |  0   0   0   0   |
-        //                                     T                 K   C     T   C    [Ghosts]
-        //                                     r   G             i   o     r   o
-        //                                     i   2             n   m     e   s
-        //                                     g   5             k   p     e   m
-        //                                     G   5
+        //                                     T         M   C   K   C     T   C    [Ghosts]
+        //                                     r   G     C   o   i   o     r   o
+        //                                     i   2         m   n   m     e   s
+        //                                     g   5         b   k   p     e   m
+        //                                     G   5         o
 
         enum StatusBits {
             FOUND      =   0x00001,  //Set if track has been "found" by pat rec
@@ -86,6 +86,8 @@ namespace Event {  // NameSpace
 
             COMPOSITE  = 0x0100000, // set if "hits" are composite positions instead of clusters
             HASKINKS   = 0x0200000, // set if the track has kinks in it
+            COMBO      = 0x0400000, // set if track was found by Combo Patrec
+            MC         = 0x0800000, // set if track was found by MonteCarlo Patrec
 
             GHOST255   = 0x01000000, // set if there are ToT 255's on track
             TRIGGHOST  = 0x02000000  // set if there are "trigger" ghosts
