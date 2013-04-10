@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Wed Apr 10 16:26:17 PDT 2013
+GlastRelease-scons/Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h 
+Log Message:
+Added a bit to TkrTrack.h
+
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp43, operation: add
 Package: Event
