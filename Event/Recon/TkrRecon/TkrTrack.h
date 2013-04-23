@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.20 2013/04/10 23:26:17 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.21 2013/04/23 18:20:59 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -165,7 +165,9 @@ namespace Event {  // NameSpace
         inline void   clearEnergyStatusBits()             {m_statusBits       &= 0xffffff0f;}
         inline void   setRangeEnergy(double x)            {m_rangeEnergy       = x;}
         inline double getRangeEnergy()                    const {return m_rangeEnergy;}
-        inline bool   isSet(unsigned int statusBits)      {return statusBits&m_statusBits;}
+
+        inline bool   isSet(unsigned int statusBits) const {return (statusBits&m_statusBits)!=0;}
+
     private:    
         /// Status
         unsigned int m_statusBits;
