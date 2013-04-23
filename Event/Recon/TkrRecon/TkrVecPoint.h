@@ -8,7 +8,7 @@
 *
 * @authors b. allgood, w. atwood and l. rochester
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPoint.h,v 1.4 2012/05/07 23:03:39 usher Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrVecPoint.h,v 1.5 2013/02/05 15:34:30 usher Exp $
 */
 
 #ifndef __TkrVecPoint_H
@@ -136,6 +136,8 @@ public:
     /// inequality operator
     bool operator!=(const TkrVecPoint& point) const;
     //@}
+
+	void setPosition(Point position) {m_position = position;}
 
 private:
 

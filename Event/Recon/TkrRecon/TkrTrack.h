@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.19 2013/04/02 16:50:05 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.20 2013/04/10 23:26:17 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -94,7 +94,7 @@ namespace Event {  // NameSpace
             GHOST255   = 0x01000000, // set if there are ToT 255's on track
             TRIGGHOST  = 0x02000000, // set if there are "trigger" ghosts
 
-            ALIGNED    = 0x010000000 // alignment correction made to this track
+            ALIGNED    = 0x10000000  // alignment correction made to this track
         }; 
 
         /// Utility 
