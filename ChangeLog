@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: lsrea  Tue Apr 23 11:21:00 PDT 2013
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrTrack.h TkrVecPoint.h TkrVecPointsLink.h 
+Log Message:
+Changes for patrec alignment
+
+    *
+------------------------------------------------------------
 User: lsrea  Wed Apr 10 16:26:17 PDT 2013
 GlastRelease-scons/Event/Event/Recon/TkrRecon
 
