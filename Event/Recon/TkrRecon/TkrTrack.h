@@ -1,7 +1,7 @@
 /** file TkrTrach.h
 * @author The Tracking Software Group
 *
-* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.21 2013/04/23 18:20:59 lsrea Exp $
+* $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTrack.h,v 1.22 2013/04/23 20:22:38 lsrea Exp $
 
 */
 #ifndef TkrTrack_H
@@ -14,7 +14,7 @@
 #include "Event/Recon/TkrRecon/TkrTrackHit.h"
 
 // Declare Gaudi object interface ID
-static const CLID& CLID_TkrTrack = InterfaceID("TkrTrack",  2, 0);
+static const CLID& CLID_TkrTrack = InterfaceID("TkrTrack",  3, 0);
 
 namespace Event {  // NameSpace
 
