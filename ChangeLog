@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 28 15:02:44 PDT 2013
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+Get the bit definition right!
+    *
+------------------------------------------------------------
 User: usher  Tue May 28 14:58:59 PDT 2013
 Event/Event/Recon/TkrRecon
 
