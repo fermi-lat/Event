@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: usher  Tue May 28 14:58:59 PDT 2013
+Event/Event/Recon/TkrRecon
+
+Modified Files:
+	TkrCluster.h 
+Log Message:
+Adding bits for the concept of merged clusters
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-17-35-24-lp45, operation: add
 Package: Event
