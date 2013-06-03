@@ -28,7 +28,7 @@ static const CLID& CLID_AcdTkrGapPocaCol = InterfaceID("AcdTkrGapPocaCol", 1, 0)
  * 
  * @author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrGapPoca.h,v 1.5 2011/01/21 14:02:51 lbaldini Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdTkrGapPoca.h,v 1.6 2011/05/20 15:02:47 heather Exp $
  */
 
 namespace Event {
@@ -36,6 +36,10 @@ namespace Event {
   class AcdTkrGapPoca : public Event::AcdTkrLocalCoords, public Event::AcdPocaData  {
 
   typedef HepGeom::Point3D<double> HepPoint3D;
+  
+  private:
+
+   static unsigned s_uid;
     
   public:
     
@@ -101,6 +105,11 @@ namespace Event {
       return m_vetoSigmaProp;
     }
 
+    /// return the UID for sorting
+    inline unsigned getUID() const {
+      return m_uid;
+    }
+
     /// set only the data at this level
     inline void set(const idents::AcdGapId& gapId, int trackIndex, 
                     float vetoSigmaHit, float vetoSigmaProj, float vetoSigmaProp) {
@@ -131,6 +140,8 @@ namespace Event {
     /// An estimator of the chance that a track went into this gap
     float m_vetoSigmaProp;
 
+     /// A UID for sorting
+     unsigned m_uid;
   };
  
 
