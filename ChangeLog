@@ -1,4 +1,14 @@
 ------------------------------------------------------------
+User: heather  Mon Jun  3 07:53:31 PDT 2013
+Event
+
+Modified Files:
+      Tag: GlastRelease-20-08-14-br01
+	SConscript 
+Log Message:
+create branch for now for TkrCluster updates
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-14-br01, operation: add
 Package: Event
