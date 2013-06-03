@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun  3 15:22:26 PDT 2013
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrGapPoca.cxx AcdTkrHitPoca.cxx 
+Log Message:
+Protect AcdTkrHitPoca and AcdTkrGapPoca sorting
+    *
+------------------------------------------------------------
 User: echarles  Mon Jun  3 15:22:25 PDT 2013
 Event/Event/Recon/AcdRecon
 
