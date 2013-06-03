@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jun  3 15:22:25 PDT 2013
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdTkrGapPoca.h AcdTkrHitPoca.h 
+Log Message:
+Protect AcdTkrHitPoca and AcdTkrGapPoca sorting
+    *
+------------------------------------------------------------
 TAG
 Tag name: Event-14-16-04-gr01, operation: add
 Package: Event
