@@ -5,7 +5,7 @@
  *
  * @author Tracy Usher
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.7 2012/06/18 19:15:58 usher Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/GlastRelease-scons/Event/Event/Recon/TkrRecon/TkrTree.h,v 1.8 2012/06/19 18:13:41 usher Exp $
  */
 
 #ifndef TkrTree_h
@@ -57,7 +57,9 @@ public:
             m_bestLeaf(bestLeaf), 
             m_secondLeaf(secondLeaf), 
             m_siblingMap(nodeSiblingMap), 
-            m_axisParams(axisParams)
+            m_axisParams(axisParams),
+            m_bestBranchAngleToAxis(0.),
+            m_axisSeededAngleToAxis(0.)
             {TkrTrackVec::clear(); if (track) push_back(track);}
 
     virtual ~TkrTree() 
