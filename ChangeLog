@@ -1,13 +1,4 @@
 ------------------------------------------------------------
-User: usher  Mon Jun 24 08:44:53 PDT 2013
-Event/Event/Recon/TkrRecon
-
-Modified Files:
-	TkrTree.h 
-Log Message:
-make sure tree axis angle variables are initialized when TkrTree created
-    *
-------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-08-17, operation: add
 Package: Event
