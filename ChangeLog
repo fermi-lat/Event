@@ -2,6 +2,14 @@
 TAG
 Tag name: GlastRelease-17-35-24-lp48, operation: add
 Package: Event
+User: heather  Thu Jul 18 10:20:05 2013
+Files:
+
+    *
+------------------------------------------------------------
+TAG
+Tag name: GlastRelease-17-35-24-lp48, operation: add
+Package: Event
 User: heather  Thu Jul 18 09:55:35 2013
 Files:
   Event/.cvsignore  1.4
