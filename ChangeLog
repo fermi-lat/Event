@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 29 20:39:51 PDT 2013
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdAssoc.cxx 
+Log Message:
+null initialize m_point in AcdAssoc
+    *
+------------------------------------------------------------
 User: echarles  Mon Jul 29 20:39:50 PDT 2013
 Event/Event/Recon/AcdRecon
 
