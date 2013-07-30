@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Mon Jul 29 20:39:50 PDT 2013
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdAssoc.h 
+Log Message:
+null initialize m_point in AcdAssoc
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-09-01, operation: add
 Package: Event
