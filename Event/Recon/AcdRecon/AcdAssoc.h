@@ -33,7 +33,7 @@ typedef HepGeom::Vector3D<double> HepVector3D;
  *  \author Eric Charles
  *  \author Alex Drlica-Wagner
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdAssoc.h,v 1.2 2012/04/25 04:57:07 heather Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdAssoc.h,v 1.3 2013/05/24 23:34:03 echarles Exp $
  **/
 
 namespace Event
@@ -50,9 +50,6 @@ namespace Event
     /// Default constructor
     AcdAssoc();
 
-    /// Copy constructor
-    AcdAssoc(const AcdAssoc& other);
-
     /// Constructor for use in reconstruction, 
     AcdAssoc(int index, bool up, float energy, 
 	     const HepPoint3D& start, const HepVector3D& dir, float arcLength,
@@ -61,8 +58,8 @@ namespace Event
 	     float energy15, float energy30, float energy45,
 	     float triggerEnergy15, float triggerEnergy30, float triggerEnergy45);
     
-    /// Destructor is trivial
-    virtual ~AcdAssoc() {};
+    /// Destructor 
+    virtual ~AcdAssoc();
     
     /// Direct access to parameters
     inline int getTrackIndex() const { return m_index; }
@@ -126,7 +123,7 @@ namespace Event
       m_gapPocae.push_back(&poca);
     }    
 
-    /// add a gapPoca
+    /// set the AcdTkrPoint
     inline void setPoint(AcdTkrPoint& point) {
       m_point = &point;
     }    
