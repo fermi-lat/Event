@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 13 19:36:12 PST 2014
+Event/Event/Recon/AcdRecon
+
+Modified Files:
+	AcdHit.h 
+Log Message:
+Added function allowing you to change the accept map bits in an AcdHit, this is needed to get them right for overlay events
+    *
+------------------------------------------------------------
 User: echarles  Thu Feb 13 19:36:11 PST 2014
 Event/src/Recon/AcdRecon
 
