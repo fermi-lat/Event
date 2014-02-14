@@ -1,4 +1,13 @@
 ------------------------------------------------------------
+User: echarles  Thu Feb 13 19:36:11 PST 2014
+Event/src/Recon/AcdRecon
+
+Modified Files:
+	AcdHit.cxx 
+Log Message:
+Added function allowing you to change the accept map bits in an AcdHit, this is needed to get them right for overlay events
+    *
+------------------------------------------------------------
 TAG
 Tag name: GlastRelease-20-09-06, operation: add
 Package: Event
