@@ -52,7 +52,7 @@ static const CLID& CLID_AcdHitCol = InterfaceID("AcdHitCol", 1, 0);
  *
  *  \author Eric Charles
  *
- * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.6.48.1 2012/04/20 04:01:16 kadrlica Exp $
+ * $Header: /nfs/slac/g/glast/ground/cvs/Event/Event/Recon/AcdRecon/AcdHit.h,v 1.7 2012/04/25 04:57:07 heather Exp $
  **/
 
 namespace Event
@@ -125,6 +125,9 @@ namespace Event
     void set(const idents::AcdId&, unsigned short flagsA, unsigned short flagsB, 
              unsigned short phaA, unsigned short phaB,
              float mipsPmtA, float mipsPmtB);
+    
+    /// this is to allow us to kill accept map bits for periodic triggers in the overlays
+    void correctAcceptMapBits(bool acceptA, bool acceptB);
 
     /// Returns the id of the tile or ribbon
     inline const idents::AcdId& getAcdId() const { return m_acdId; };

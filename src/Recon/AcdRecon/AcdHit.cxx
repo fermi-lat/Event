@@ -1,5 +1,5 @@
 // File and Version information:
-// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.4 2007/12/06 20:28:43 echarles Exp $
+// $Header: /nfs/slac/g/glast/ground/cvs/Event/src/Recon/AcdRecon/AcdHit.cxx,v 1.5 2011/01/21 14:02:53 lbaldini Exp $
 //
 //  Implementation file of AcdHit and AcdHitCol classes
 //  
@@ -111,6 +111,20 @@ void AcdHit::setFlags(const Event::AcdDigi& digi)
   m_flags[B] |= (digi.getHeaderParityError(Event::AcdDigi::B)==Event::AcdDigi::ERROR) << PMT_HEADER_PARITY_ERROR_BIT;
   
 }
+
+
+void AcdHit::correctAcceptMapBits(bool acceptA, bool acceptB) 
+/// this is to allow us to kill accept map bits for periodic triggers in the overlays
+{
+  // This masks out the accept bit
+  static unsigned short clearAcceptMask(0xFFFE);
+  m_flags[A] &= clearAcceptMask;
+  m_flags[B] &= clearAcceptMask;
+  
+  if (acceptA)  m_flags[A] |= PMT_ACCEPT_MASK;
+  if (acceptB)  m_flags[B] |= PMT_ACCEPT_MASK;
+}
+
 
 AcdHitCol::AcdHitCol(const std::vector<AcdHit*>& acdhits) {
 //Purpose: take ownership of hits from a vector
